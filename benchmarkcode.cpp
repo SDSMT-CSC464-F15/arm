@@ -1,5 +1,7 @@
 #include <iostream>
 #include <fstream>
+#include <chrono>
+#include <ctime>
 
 using namespace std;
 
@@ -22,12 +24,23 @@ int main()
      yfin >> y[i];  
   }
 
+  chrono::time_point<chrono::system_clock> start, end;
+  start = chrono::system_clock::now();
+
   for ( int i = 0; i < 100000; i ++)
   {
-     add[i] = x[i] + y[i];
-     mult[i] = x[i] * y[i];
-     div[i] = x[i] / y[i];
+     for ( int j = 0; j < 1000; j ++)
+     {
+        add[i] = x[i] + y[j];
+        mult[i] = x[i] * y[j];
+        div[i] = x[i] / y[j];
+     }
   }
+
+  end = chrono::system_clock::now();
+
+  chrono::duration<double> elapsed_time = end - start;
+  cout << "Took a total of: " << elapsed_time.count() << "s\n";
 
   cout << add[0] << endl << mult [0] << endl << div[0] << endl;
 
