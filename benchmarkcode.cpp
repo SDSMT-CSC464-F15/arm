@@ -29,18 +29,46 @@ int main()
 
   for ( int i = 0; i < 100000; i ++)
   {
-     for ( int j = 0; j < 1000; j ++)
+     for ( int j = 0; j < 100000; j ++)
      {
         add[i] = x[i] + y[j];
-        mult[i] = x[i] * y[j];
-        div[i] = x[i] / y[j];
      }
   }
 
   end = chrono::system_clock::now();
 
   chrono::duration<double> elapsed_time = end - start;
-  cout << "Took a total of: " << elapsed_time.count() << "s\n";
+  cout << "Addition took a total of: " << elapsed_time.count() << "s\n";
+
+  start = chrono::system_clock::now();
+
+  for ( int i = 0; i < 100000; i ++)
+  {
+     for ( int j = 0; j < 100000; j ++)
+     {
+        mult[i] = x[i] * y[j];
+     }
+  }
+
+  end = chrono::system_clock::now();
+
+  elapsed_time = end - start;
+  cout << "Multiplication took a total of: " << elapsed_time.count() << "s\n";
+
+  start = chrono::system_clock::now();
+
+  for ( int i = 0; i < 100000; i ++)
+  {
+     for ( int j = 0; j < 100000; j ++)
+     {
+        div[i] = x[i] / y[j];
+     }
+  }
+
+  end = chrono::system_clock::now();
+
+  elapsed_time = end - start;
+  cout << "Division took a total of: " << elapsed_time.count() << "s\n";
 
   cout << add[0] << endl << mult [0] << endl << div[0] << endl;
 
