@@ -7,18 +7,21 @@
 
 void hello( void )
 {
-  int my_rank = imp_get_thread_num();
+  int my_rank = omp_get_thread_num();
   int thread_count = omp_get_num_threads();
 
   printf( "Hello from thread %d of %d\n", my_rank, thread_count );
 }
 
-int main()
+int main( int argc, char** argv )
 {
+    if( argc != 2 )
+    {
+        return 0;
+    }
 
- //   #pragma omp parallel
- //   parallel_prog();
-
+    int desired_num_threads = strtol( argv[1], NULL, 10 );
+ 
     // current thread ID in parallel region
     int this_thread = omp_get_thread_num();
     // number of threads available in this parallel region
@@ -33,7 +36,21 @@ int main()
     printf( "Number of processes: %d\n", num_procs );
     printf( "Max number of threads requested: %d\n", max_threads );
 
+    # pragma omp parallel num_threads( num_procs )
+    hello();
+    
+    # pragma omp critical
+    printf( "We are done\n" );
 
+    int i;
+    int n = 249;
+    printf( "N: %d\n", n );
+    # pragma omp parallel for num_threads( num_procs )
+    for( i = 0; i < n; i++ )
+    {
+        this_thread = omp_get_thread_num();
+        printf( "Hi from thread %d\n", this_thread );
+    }
 
     return 0;
 }

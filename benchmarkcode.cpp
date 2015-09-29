@@ -1,9 +1,12 @@
 #include <iostream>
 #include <fstream>
-#include <chrono>
+#include <chrono> /* c++11 */
 #include <ctime>
+#include <omp.h>
 
 using namespace std;
+
+/* Compile: g++ -g -Wall -fopenmp -std=c++11 benchmarkcode.cpp -o benchmark */ 
 
 int main()
 {
@@ -12,11 +15,13 @@ int main()
   double add[100000] = {0};
   double mult[100000] = {0};
   double div[100000] = {0};
-
+  int num_procs = omp_get_num_procs();
   ifstream xfin, yfin;
 
   xfin.open("RandomNumbersX.txt");
   yfin.open("RandomNumbersY.txt");
+
+  cout << "Number of processers: " << num_procs << endl;
 
   // fill arrays with the random numbers
   for ( int i = 0; i < 100000; i++ )
@@ -29,6 +34,7 @@ int main()
   chrono::time_point<chrono::system_clock> start, end;
   start = chrono::system_clock::now();
 
+  # pragma omp parallel for num_threads( num_procs )
   for ( int i = 0; i < 100000; i ++)
   {
      for ( int j = 0; j < 100000; j ++)
@@ -45,6 +51,7 @@ int main()
   // multiplation
   start = chrono::system_clock::now();
 
+  # pragma omp parallel for num_threads( num_procs )
   for ( int i = 0; i < 100000; i ++)
   {
      for ( int j = 0; j < 100000; j ++)
@@ -61,6 +68,7 @@ int main()
   // division
   start = chrono::system_clock::now();
 
+  # pragma omp parallel for num_threads( num_procs )
   for ( int i = 0; i < 100000; i ++)
   {
      for ( int j = 0; j < 100000; j ++)
