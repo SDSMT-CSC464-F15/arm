@@ -18,12 +18,14 @@ int main()
   xfin.open("RandomNumbersX.txt");
   yfin.open("RandomNumbersY.txt");
 
+  // fill arrays with the random numbers
   for ( int i = 0; i < 100000; i++ )
   {
      xfin >> x[i];
      yfin >> y[i];  
   }
 
+  // addition
   chrono::time_point<chrono::system_clock> start, end;
   start = chrono::system_clock::now();
 
@@ -40,6 +42,7 @@ int main()
   chrono::duration<double> elapsed_time = end - start;
   cout << "Addition took a total of: " << elapsed_time.count() << "s\n";
 
+  // multiplation
   start = chrono::system_clock::now();
 
   for ( int i = 0; i < 100000; i ++)
@@ -55,6 +58,7 @@ int main()
   elapsed_time = end - start;
   cout << "Multiplication took a total of: " << elapsed_time.count() << "s\n";
 
+  // division
   start = chrono::system_clock::now();
 
   for ( int i = 0; i < 100000; i ++)
