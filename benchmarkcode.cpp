@@ -51,7 +51,7 @@ int main()
   // multiplation
   start = chrono::system_clock::now();
 
-  # pragma omp parallel for num_threads( num_procs )
+  # pragma omp parallel for num_threads( num_procs  )
   for ( int i = 0; i < 100000; i ++)
   {
      for ( int j = 0; j < 100000; j ++)
