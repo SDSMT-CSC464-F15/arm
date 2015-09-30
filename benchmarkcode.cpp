@@ -3,6 +3,7 @@
 #include <chrono> /* c++11 */
 #include <ctime>
 #include <omp.h>
+#include <math.h>
 
 using namespace std;
 
@@ -15,6 +16,7 @@ int main()
   double add[100000] = {0};
   double mult[100000] = {0};
   double div[100000] = {0};
+  int sine[100000] = {0};
   int num_procs = omp_get_num_procs();
   ifstream xfin, yfin;
 
@@ -61,7 +63,6 @@ int main()
   }
 
   end = chrono::system_clock::now();
-
   elapsed_time = end - start;
   cout << "Multiplication took a total of: " << elapsed_time.count() << "s\n";
 
@@ -78,9 +79,25 @@ int main()
   }
 
   end = chrono::system_clock::now();
+  elapsed_time = end - start;
+  cout << "Division took a total of: " << elapsed_time.count() << " s\n";
+
+  // sine
+  start = chrono::system_clock::now();
+
+  # pragma omp parallel for num_threads( num_procs )
+  for ( int i = 0; i < 100000; i++ )
+  {
+     for ( int j = 0; j < 100000; j ++ )
+     {
+        sine[i] = sin(x[i]);
+     }
+  }
+
+  end = chrono::system_clock::now();
 
   elapsed_time = end - start;
-  cout << "Division took a total of: " << elapsed_time.count() << "s\n";
+  cout << "Sine took a total of: " << elapsed_time.count() << "s\n";
 
   cout << add[0] << endl << mult [0] << endl << div[0] << endl;
 
