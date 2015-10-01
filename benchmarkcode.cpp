@@ -16,7 +16,7 @@ int main()
   double add[100000] = {0};
   double mult[100000] = {0};
   double div[100000] = {0};
-  int sine[100000] = {0};
+  double sine = 0;
   int num_procs = omp_get_num_procs();
   ifstream xfin, yfin;
 
@@ -90,7 +90,7 @@ int main()
   {
      for ( int j = 0; j < 100000; j ++ )
      {
-        sine[i] = sin(x[i]);
+        sine = sin(x[i]);
      }
   }
 
@@ -99,7 +99,7 @@ int main()
   elapsed_time = end - start;
   cout << "Sine took a total of: " << elapsed_time.count() << "s\n";
 
-  cout << add[0] << endl << mult [0] << endl << div[0] << endl;
+  cout << add[0] << endl << mult [0] << endl << div[0] << endl << sine << endl;
 
   return 0;
 };
