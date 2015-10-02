@@ -1,0 +1,141 @@
+\documentclass{article}
+\usepackage{fancyhdr}
+\usepackage{color}
+\usepackage{titlesec}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{tabto}
+\usepackage{tabularx}
+
+\definecolor{TitleColor}{rgb}{0.0, 0.0, 0.5}
+\definecolor{SectionColor}{rgb}{0.0, 0.0, 0.7}
+\definecolor{SubsectionColor}{rgb}{0.0, 0.0, 0.8}
+
+\titleformat{\section}{\normalfont\Large\bfseries\color{SectionColor}}{\thesection}{1em}{}[{\titlerule[2.0pt]}]
+\titleformat{\subsection}{\normalfont\bfseries\color{SubsectionColor}}{\thesection}{1em}{}
+
+\title{\normalfont\Large\bfseries\color{TitleColor}Sprint Report \#1}
+\date{\normalfont\bfseries\color{TitleColor}\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{Team Overview}
+\subsection*{Project}
+\tab{ARM Cluster}
+
+\subsection*{Members}
+\begin{itemize}
+	\item Andrew Hoover
+	\item Samantha Krantz
+	\item Christine Sorensen
+\end{itemize}
+
+\subsection*{Sponser}
+\tab{Dr. Christer Karlsson}
+
+\section*{Project Overview}
+The goal of this project to build a cluster of 6-12 single-board computers that has the most Floating Point Operations as possible per U.S. Dollar per Watt. Three single-board computers were tested; ODroid 4xU, Raspberry Pi 2B, PcDuino 8. The best one will be selected and the cluster will be created under a budget of \$1,200. Then, alternative modes of communication besides Ethernet will be investigates using other pins and ports. The computers will be linked in a topology that will be determined during this investigation.
+
+\section*{Project Environment}
+\subsection*{Project Context}
+The project is created on a Linux OS. Github is used to share the materials. The code is written in C++. OpenMP is used to run the code in parallel. A Kill-A-Watt monitor is used to test the power of the running devices.
+\newline \newline The following single-board computers are tested:
+\begin{itemize}
+	\item ODroid 4xU
+	\item Raspberry Pi 2B
+	\item PcDuino 8
+\end{itemize} 
+
+\section*{Deliverables}
+\begin{itemize}
+	\item Mission Statement
+	\item User Stories
+	\item Benchmark Code
+	\item Experiment Reports
+	\item Software Contract
+	\item Design Document
+	\item Benchmark Log
+\end{itemize}
+
+\section*{Sprint Report}
+\subsection*{Work for this sprint included:}
+\begin{itemize}
+	\item Wrote Mission Statement and Elevator Speech
+	\item Drew up Software Contract
+	\item Chose Christine Sorensen as team lead
+	\item Wrote user stories
+	\item Obtained ODroid 4xU, Raspberry Pi 2B, and PcDuino 8 single-board computers
+	\item Wrote number generating code
+	\item Wrote benchmark code that ran addition, multiplication, division, and sine floating point operations
+	\item Added OpenMP to run the benchmark code on all cores
+	\item Ran the code on the computers
+	\item Logged times
+	\item Calculated the GFlops
+	\item Calculated the GFlops/Dollar/Watts
+	\item Determined best computer for the ARM Cluster
+\end{itemize}
+\subsection*{Work that is carried over into Sprint 2 is as follows:}
+\begin{itemize}
+	\item Order more of the computers that proved best from Sprint 1 and maintain the given budget of \$1,200.
+\end{itemize}
+
+\section*{Experimentation}
+\subsection*{Testing}
+Benchmark code was written that tested the length of time to add, multiply, divide, and sine two arrays consisting of 100,000 random floating point numbers that were generated in a seperate number generated program outputting numbers between one and one thousand. The code ran on all cores of the devices.
+
+\subsection*{Results}
+The PcDuino 8 was not working correctly so it was removed from our selection. This did not cause a huge effect in the project considering each PcDuino costs about \$160 and therefore was not a front runner in our experimentation.
+
+The Raspberry Pi 2B with 4 cores and the ODrioid 4xU with 8 cores were tested. The results were as follows:
+
+\begin{center}
+
+\begin{tabular}{ | l || l | l | l | l | }
+\hline
+\multicolumn{5}
+{ |c| }{ Length of Time (seconds) } \\
+\hline
+Device & Addition & Multiplication & Division & Sine \\
+\hline
+ODroid 4xU & 29.925 & 31.341 & 37.032 & 227.40 \\
+\hline
+Raspberry Pi 2B & 221.645 & 221.034 & 297.204 & 1468.63 \\
+\hline
+\end{tabular}
+
+\vspace{5mm}
+
+\begin{tabular}{ | l || l | l | l | l | }
+\hline
+\multicolumn{5}
+{ |c| }{ Gigaflops } \\
+\hline
+Device & Addition & Multiplication & Division & Sine \\
+\hline
+ODroid 4xU & 0.311 & 0.297 & 0.251 & 0.0410 \\
+\hline
+Raspberry Pi 2B & 0.0420 & 0.0421 & 0.0313 & 0.00634 \\
+\hline
+\end{tabular}
+
+\vspace{5mm}
+
+\begin{tabular}{ | l || l | l | l | l | }
+\hline
+\multicolumn{5}
+{ |c| }{ Gigaflops per Dollar per Watts } \\
+\hline
+Device & Addition & Multiplication & Division & Sine \\
+\hline
+ODroid 4xU & 0.00028 & 0.000268 & 0.000226 & 0.0000369 \\
+\hline
+Raspberry Pi 2B & 0.0003 & 0.0003 & 0.000224 & 0.0000453 \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection*{Conclusion}
+The Raspberry Pi 2B proved to be be better than the ODroid 4xU, however they were very close. We are inconclusive as to whick one will be used for the cluster. In the following Sprint 2, we will look into the ordering parts and our budget to make a choice as to which of the two single-board computers we will use.
+
+\end{document}
