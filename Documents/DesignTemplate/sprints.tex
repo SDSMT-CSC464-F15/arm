@@ -2,95 +2,50 @@
 
 
 \section{Sprint Report \#1}
-\subsection{Deliverables}
+
+\subsection*{Deliverables}
 \begin{itemize}
 	\item Mission Statement
 	\item User Stories
+	\item Number Generating Code
 	\item Benchmark Code
-	\item Experiment Reports
-	\item Software Contract
-	\item Design Document
 	\item Benchmark Log
+	\item Signed Software Contract
+	\item Updated Design Document
 \end{itemize}
 
-\subsection{Work for this sprint included:}
+\subsection*{Work for this sprint included:}
 \begin{itemize}
 	\item Wrote Mission Statement and Elevator Speech
 	\item Drew up Software Contract
-	\item Chose Christine Sorensen as team lead
 	\item Wrote user stories
 	\item Obtained ODroid 4xU, Raspberry Pi 2B, and PcDuino 8 single-board computers
 	\item Wrote number generating code
 	\item Wrote benchmark code that ran addition, multiplication, division, and sine floating point operations
 	\item Added OpenMP to run the benchmark code on all cores
-	\item Ran the code on the computers
+	\item Ran the code each of the single-board computers
 	\item Logged times
 	\item Calculated the GFlops
 	\item Calculated the GFlops/Dollar/Watts
-	\item Determined best computer for the ARM Cluster
+	\item Determined best computer
 \end{itemize}
-\subsection{Work that is carried over into Sprint 2 is as follows:}
+\subsection*{Work that is carried over into Sprint 2 is as follows:}
 \begin{itemize}
-	\item Order more of the computers that proved best from Sprint 1 and maintain the given budget of \$1,200.
+	\item Using the benchmark results to determine which computer to use
+	\item Order more of the computers that proved best from Sprint 1 and maintain the given budget of \$1,200
+	\item Find a topology that best fits the cluster
 \end{itemize}
 
-\subsection{Benchmarking}
-Benchmark code was written that tested the length of time to add, multiply, divide, and sine two arrays consisting of 100,000 random floating point numbers that were generated in a seperate number generated program outputting numbers between one and one thousand. The code ran on all cores of the devices.
-
-\subsection{Results}
-The PcDuino 8 was not working correctly so it was removed from our selection. This did not cause a huge effect in the project considering each PcDuino costs about \$160 and therefore was not a front runner in our experimentation.
-
-The Raspberry Pi 2B with 4 cores and the ODrioid 4xU with 8 cores were tested. The results were as follows:
-
-\begin{center}
-
-\begin{tabular}{ | l || l | l | l | l | }
-\hline
-\multicolumn{5}
-{ |c| }{ Length of Time (seconds) } \\
-\hline
-Device & Addition & Multiplication & Division & Sine \\
-\hline
-ODroid 4xU & 29.925 & 31.341 & 37.032 & 227.40 \\
-\hline
-Raspberry Pi 2B & 221.645 & 221.034 & 297.204 & 1468.63 \\
-\hline
-\end{tabular}
-
-\vspace{5mm}
-
-\begin{tabular}{ | l || l | l | l | l | }
-\hline
-\multicolumn{5}
-{ |c| }{ Gigaflops } \\
-\hline
-Device & Addition & Multiplication & Division & Sine \\
-\hline
-ODroid 4xU & 0.311 & 0.297 & 0.251 & 0.0410 \\
-\hline
-Raspberry Pi 2B & 0.0420 & 0.0421 & 0.0313 & 0.00634 \\
-\hline
-\end{tabular}
-
-\vspace{5mm}
-
-\begin{tabular}{ | l || l | l | l | l | }
-\hline
-\multicolumn{5}
-{ |c| }{ Gigaflops per Dollar per Watts } \\
-\hline
-Device & Addition & Multiplication & Division & Sine \\
-\hline
-ODroid 4xU & 0.00028 & 0.000268 & 0.000226 & 0.0000369 \\
-\hline
-Raspberry Pi 2B & 0.0003 & 0.0003 & 0.000224 & 0.0000453 \\
-\hline
-\end{tabular}
-\end{center}
-
-\subsection{Conclusion}
-The Raspberry Pi 2B proved to be be better than the ODroid 4xU, however they were very close. We are inconclusive as to whick one will be used for the cluster. In the following Sprint 2, we will look into the ordering parts and our budget to make a choice as to which of the two single-board computers we will use.
-
+\subsection*{Backlog}
+\begin{itemize}
+	\item Decide on a computer based on the results of the benchmarking
+	\item Calculate prices on supplies and computers while maintaining below the budget
+	\item Ordering said supplies and computers
+	\item Build the cluster to perform floating-point operations
+	\item Benchmark the cluster
+	\item Experiment with different connections
+	\item Create a new mode of communication
+\end{itemize}
 
 \section{Sprint Report \#2}
 The sprint reports should be inserted here.     Reports focus on process.  Design elements can be inserted into the design chapter with the report discussing the design element in more of an overview fashion.
