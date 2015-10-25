@@ -10,8 +10,8 @@ This test can be run over the existing network by the following steps:
 
 $ ssh andrewdesktop@208.107.223.45
 	Password: design
-$ iperf -s
-	Leave that running, SSH into another instance on andrewdesktop
+$ iperf -s &
+	Leave that running in the background.
 $ ssh odroid@10.42.0.2
 	Password: odroid
 $ iperf -c 10.42.0.1
