@@ -1,0 +1,15 @@
+PREAMBLE
+
+/~ buffer_size, number_of_arrivals, packet_size, discarded_packets, queue_length~/
+
+END
+
+MAIN
+
+/~START SIMULATION~/
+use 7 for output
+
+print 1 lines thus
+Hello fucking world
+
+END

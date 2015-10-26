@@ -1,0 +1,27 @@
+PREAMBLE
+
+Processes include PACKET and ARRIVAL
+Every PACKET has a packet_size
+Resources include Transmission
+Define number_of_arrivals, packet_size, queue_length,
+discarded_packets as integer variables
+Define avg_interarrival_time, loss_ratio as real variables
+
+Define miliseconds to mean units
+
+END
+
+MAIN
+
+create every Transmission(1)
+
+let u.Transmission(1) = 1
+activate an ARRIVAL now
+
+START SIMULATION
+
+use 7 for output
+
+print 1 lines thus
+Hello fucking world
+END
