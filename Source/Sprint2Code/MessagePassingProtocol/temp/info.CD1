@@ -1,0 +1,9 @@
+0 0 begin module c:\users\1959287\desktop\arm\source\sprint2code\messagepassingprotocol\sources\source.sim
+ line       1  PREAMBLE
+ status     1  PREAMBLE
+ line      14  MAIN
+ status     1  MAIN
+ line      34  Rarrival
+ status     1  Rarrival
+ line      43  Rpacket
+ status     1  Rpacket

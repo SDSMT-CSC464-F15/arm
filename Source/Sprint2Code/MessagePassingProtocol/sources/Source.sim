@@ -18,10 +18,41 @@ create every Transmission(1)
 let u.Transmission(1) = 1
 activate an ARRIVAL now
 
+let avg_interarrival_time = 10.0 ''milliseconds
+let queue_length = 0
+let discarded_packets = 0
+
 START SIMULATION
 
 use 7 for output
 
 print 1 lines thus
 Hello fucking world
+
 END
+
+PROCESS ARRIVAL
+Define i as an integer variable
+for i = 1 to number_of_arrivals,
+do
+activate a PACKET now
+wait exponential.f( avg_interarrival_time, 2 ) miliseconds
+loop
+END
+
+PROCESS PACKET
+if queue_length < 3
+    let queue_length = queue_length + 1
+    Request 1 Transmission(1)
+    let queue_length = queue_length - 1
+    work exponential.f( 1.048, 2 ) miliseconds /~work for 1048 bits~/
+    Relinquish 1 Transmission(1)  
+
+else
+    let discarded_packets = discarded_packets + 1
+    
+always
+
+END
+
+        
