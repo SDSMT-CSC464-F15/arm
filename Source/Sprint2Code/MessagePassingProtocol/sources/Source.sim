@@ -3,11 +3,15 @@ PREAMBLE
 Processes include PACKET and ARRIVAL
 Every PACKET has a packet_size
 Resources include Transmission
-Define number_of_arrivals, packet_size, queue_length,
+Define number_of_arrivals, packet_size, queue_length, queue_length1,
 discarded_packets as integer variables
 Define avg_interarrival_time, loss_ratio as real variables
+Define 
 
 Define miliseconds to mean units
+
+Accumulate util as the average of N.X.Transmission
+Accumulate max_buffer as the maximum of N.Q.Transmission
 
 END
 
@@ -18,6 +22,7 @@ create every Transmission(1)
 let u.Transmission(1) = 1
 activate an ARRIVAL now
 
+let number_of_arrivals = 10
 let avg_interarrival_time = 10.0 ''milliseconds
 let queue_length = 0
 let discarded_packets = 0
@@ -26,11 +31,15 @@ START SIMULATION
 
 use 7 for output
 
-print 1 lines thus
-Hello fucking world
+print 4 lines with util, max_buffer, loss_ratio thus
+
+Utilization: ****.**** milliseconds
+Max buffer size: *****
+Packet loss ratio: *****.****
 
 END
-
+/~Standard A push B with a limited sized queue in B~/
+/~ 
 PROCESS ARRIVAL
 Define i as an integer variable
 for i = 1 to number_of_arrivals,
@@ -54,5 +63,28 @@ else
 always
 
 END
+~/
 
-        
+PROCESS ARRIVAL
+Define i as an integer variable
+for i = 1 to number_of_arrivals,
+do
+activate a PACKET now
+wait exponential.f( avg_interarrival_time, 2 ) miliseconds
+loop
+END
+
+PROCESS PACKET
+if queue_length < 3
+    let queue_length = queue_length + 1
+    Request 1 Transmission(1)
+    let queue_length = queue_length - 1
+    work exponential.f( 1.048, 2 ) miliseconds /~work for 1048 bits~/
+    Relinquish 1 Transmission(1)  
+
+else
+    let discarded_packets = discarded_packets + 1
+    
+always
+
+END        
