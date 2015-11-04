@@ -1,0 +1,115 @@
+\documentclass{article}
+\usepackage{fancyhdr}
+\usepackage{color}
+\usepackage{titlesec}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{tabto}
+\usepackage{tabularx}
+
+\definecolor{TitleColor}{rgb}{0.0, 0.0, 0.5}
+\definecolor{SectionColor}{rgb}{0.0, 0.0, 0.7}
+\definecolor{SubsectionColor}{rgb}{0.0, 0.0, 0.8}
+
+\titleformat{\section}{\normalfont\Large\bfseries\color{SectionColor}}{\thesection}{1em}{}[{\titlerule[2.0pt]}]
+\titleformat{\subsection}{\normalfont\bfseries\color{SubsectionColor}}{\thesection}{1em}{}
+
+\title{\normalfont\Large\bfseries\color{TitleColor}Sprint Report \#1}
+\date{\normalfont\bfseries\color{TitleColor}\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{Team Overview}
+\subsection*{Project}
+\tab{ARM Cluster}
+
+\subsection*{Members}
+\begin{itemize}
+	\item Andrew Hoover
+	\item Samantha Krantz
+	\item Christine Sorensen
+\end{itemize}
+
+\subsection*{Sponsor}
+\tab{Dr. Christer Karlsson}
+
+\section*{Sponsor Overview}
+\subsection*{Sponsor Description}
+Dr. Christer Karlsson is an Assistant Professor at South Dakota School of Mines and Technology in Rapid City, SD. The former Captain in the Swedish Army has been teaching in the Mathmatical and Computer Sciences department for the last three years. He focuses his research on parallel computing and multicore architectures.
+
+\subsection*{Sponsor Goal}
+To produce the fastest and most cost efficient homogenous ARM cluster of single-board computers.
+
+\subsection*{Sponsor Needs}
+\begin{itemize}
+	\item A selection of a single-board computer to fit well with the cluster
+	\item Cluster that meets the requirements yet is under a strict budget
+	\item An alternative mode of communication between the computers
+\end{itemize}
+
+\section*{Project Overview}
+The goal of this project to build a cluster of 6-12 single-board computers that has the most Floating Point Operations as possible per U.S. Dollar per Watt. Three single-board computers were tested; ODroid 4xU, Raspberry Pi 2B, PcDuino 8. The best one will be selected and the cluster will be created under a budget of \$1,200. Then, alternative modes of communication besides Ethernet will be investigates using other pins and ports. The computers will be linked in a topology that will be determined during this investigation.
+
+\section*{Project Environment}
+\subsection*{Project Boundaries}
+\begin{itemize}
+	\item Entire project will stay in budget
+	\item Cluster must consist of 6-12 single board computers, all being the same
+	\item A new communication mode must be developed
+\end{itemize}
+\subsection*{Project Context}
+The project is created on a Linux OS. Github is used to share the materials. The code is written in C++. OpenMP is used to run the code in parallel. A Kill-A-Watt monitor is used to test the power of the running devices.
+\newline \newline The following single-board computers are tested:
+\begin{itemize}
+	\item ODroid 4xU
+	\item Raspberry Pi 2B
+	\item PcDuino 8
+\end{itemize} 
+
+\section*{Deliverables}
+\begin{itemize}
+	\item Mission Statement
+	\item User Stories
+	\item Number Generating Code
+	\item Benchmark Code
+	\item Benchmark Log
+	\item Signed Software Contract
+	\item Updated Design Document
+\end{itemize}
+
+\section*{Sprint Report}
+\subsection*{Work for this sprint included:}
+\begin{itemize}
+	\item Wrote Mission Statement and Elevator Speech
+	\item Drew up Software Contract
+	\item Wrote user stories
+	\item Obtained ODroid 4xU, Raspberry Pi 2B, and PcDuino 8 single-board computers
+	\item Wrote number generating code
+	\item Wrote benchmark code that ran addition, multiplication, division, and sine floating point operations
+	\item Added OpenMP to run the benchmark code on all cores
+	\item Ran the code each of the single-board computers
+	\item Logged times
+	\item Calculated the GFlops
+	\item Calculated the GFlops/Dollar/Watts
+	\item Determined best computer
+\end{itemize}
+\subsection*{Work that is carried over into Sprint 2 is as follows:}
+\begin{itemize}
+	\item Using the benchmark results to determine which computer to use
+	\item Order more of the computers that proved best from Sprint 1 and maintain the given budget of \$1,200
+	\item Find a topology that best fits the cluster
+\end{itemize}
+
+\section*{Backlog}
+\begin{itemize}
+	\item Decide on a computer based on the results of the benchmarking
+	\item Calculate prices on supplies and computers while maintaining below the budget
+	\item Ordering said supplies and computers
+	\item Build the cluster to perform floating-point operations
+	\item Benchmark the cluster
+	\item Experiment with different topologies
+	\item Create a new mode of communication
+\end{itemize}
+
+\end{document}
