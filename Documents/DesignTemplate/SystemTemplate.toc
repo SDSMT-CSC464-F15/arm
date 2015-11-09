@@ -115,8 +115,8 @@
 \contentsline {chapter}{\numberline {C}Sprint Reports}{C-1}{appendix.C}
 \contentsline {section}{\numberline {1}Sprint Report \#1}{C-1}{section.C.1}
 \contentsline {section}{\numberline {2}Sprint Report \#2}{C-2}{section.C.2}
-\contentsline {section}{\numberline {3}Sprint Report \#3}{C-2}{section.C.3}
-\contentsline {section}{\numberline {4}Sprint Report ...}{C-2}{section.C.4}
+\contentsline {section}{\numberline {3}Sprint Report \#3}{C-3}{section.C.3}
+\contentsline {section}{\numberline {4}Sprint Report ...}{C-3}{section.C.4}
 \contentsline {chapter}{\numberline {D}Industrial Experience and Resumes}{D-1}{appendix.D}
 \contentsline {section}{\numberline {1}Resumes}{D-1}{section.D.1}
 \contentsline {section}{\numberline {2}ABET: Industrial Experience Reports}{D-1}{section.D.2}

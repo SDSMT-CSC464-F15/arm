@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.21)  6 NOV 2015 10:17
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.21)  9 NOV 2015 13:43
 entering extended mode
 **SprintReport2.tex
 
@@ -222,7 +222,7 @@ t2.aux) )
 Here is how much of TeX's memory you used:
  2032 strings out of 493921
  27729 string characters out of 3144870
- 92188 words of memory out of 3000000
+ 93188 words of memory out of 3000000
  5337 multiletter control sequences out of 15000+200000
  7895 words of font info for 28 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -232,7 +232,7 @@ cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
 /cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
 mr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
 10.pfb>
-Output written on SprintReport2.pdf (2 pages, 63218 bytes).
+Output written on SprintReport2.pdf (2 pages, 63196 bytes).
 PDF statistics:
  25 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
