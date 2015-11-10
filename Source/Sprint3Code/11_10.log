@@ -1,0 +1,28 @@
+Odroid #2 was being troublesome. I hooked up #1 and #2 to the network. From #1 I tried pinging #2 and ssh-ing. It wasn't happening.
+I switched #2 with #3 and it worked fine.
+When I hooked up just #2 to the screen, nothing was coming up. I had to unplug-plug and then the fans started going and it was working again.
+
+I'm trying to connect to the internet so I can install vim because vi is a bitch.
+Found this:
+sudo /etc/init.d/networking restart
+
+To change hostname
+sudo vi /etc/hostname
+Overwrite "odroid" with new hostname
+Reboot
+You're golden
+...or not.
+#2 isn't ping-ing to Snow_White, but Snow_White will ping to odroid
+
+I found /etc/hosts
+it has 127.0.0.1    localhost
+127.0.0.1   odroid
+
+I'm going to change odroid to its new name
+
+In /etc/nsswitch.conf, I'm changing 
+hosts:  files mdns4_minimal [NOTFOUND=return] dns
+to
+hosts: files dns
+
+Have to leave. It's still not working.

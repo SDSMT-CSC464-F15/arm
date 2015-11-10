@@ -1,22 +1,33 @@
-Set IP Address
+//Andrew, if you just want to clean this up and write the precise notes, that would be awesome
 
-sudo vi /etc/network/interfaces
+***Set IP Address***
 
-<insert text>
+-sudo vi /etc/network/interfaces
 
-ifconfig to confirm
+-This should be in there:
+# interfaces(5) file used by ifup(8) and ifdown(8)
+# Include files from /etc/netword/interfaces.d
+source-directory /etc/network/interfaces.d
+auto eth0
+iface eth0 inet static
+address 192.168.1.11 //or whatever you want the ip address to be
+gateway 192.168.1.1
 
-Insert another odroid into switch
+-ifconfig to confirm ip address
 
-ping its ip address
+-Insert another odroid into switch
 
-ssh into its
+-Ping its ip address
+ping <ipaddress>
 
+-ssh into it
+
+-iperf (Andrew knows more about this if you want to edit this)
 iperf can time and ping the network
 iperf -s //sets server odrooid
 iperf -c <ip address> //sets client
 
-//set up network
+***set up network***
 sudo ifdown eth0
 sudo ifup eth0
 
