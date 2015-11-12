@@ -1,0 +1,16 @@
+11/12/2015
+
+We have been having an error on #3 and #4.
+
+Andrew has mounted it. (See his log) but when we run it, it shows:
+Buffer I/O error on device mmlskdfj, logical block 0
+
+#2 has been working just fine. We are able to ping #3 and #4, but we can't ssh
+into it.
+
+When you boot #2, it shows the same error, but it actually boots (after a few moments)
+
+Karlsson helped us. He told us to re-image the busted odroids. We can find 
+the image on the site.
+
+So that's what we are doing.
