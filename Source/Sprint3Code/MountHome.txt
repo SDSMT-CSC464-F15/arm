@@ -1,0 +1,3 @@
+To mount the home directory of Snow Whtie on any of the other ODroid, execute:
+mount -t nfs 192.168.1.11:/home /home
+on any of the dwarves.
