@@ -1,0 +1,11 @@
+***********************
+Take down the passwords from the ODROIDS for when you ssh into them. 
+MPI won't work with the passwords
+ssh-keygen
+Enter through it all
+and thenssh-copy-id <ipaddress>
+
+************************
+
+To ssh via hostname, edit /etc/hosts
+Add <ipaddress> <hostname>

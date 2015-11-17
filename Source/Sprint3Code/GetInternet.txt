@@ -1,5 +1,5 @@
 To get internet connection on the ODroids, first plug in an ethernet cable connected to the internet.
-Then edit /etc/network/interfaces to add # in front of the last four lines.
+Then edit (sudo) /etc/network/interfaces to add # in front of the last four lines.
 Reset eth0 by executing:
 sudo ifdown eth0
 sudo ifup eth0

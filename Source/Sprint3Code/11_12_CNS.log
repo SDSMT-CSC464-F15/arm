@@ -31,3 +31,29 @@ Annnddddd it won't load at all...
 #5 bypassesed the logical block error, but now it's stuck on some long-ass error. 
 
 We're looking at /etc/exports
+
+
+It wants it asychronous (?)
+Karlsson moved the fstab -> fstab.back, and then he copied fstab~ to fstab so
+now it loads console
+
+Something in the boot sequence, trying to write something to a read only (?)
+
+HALLALUUUJAAAHHAAA!!!!!!! WE GOT IT BACK!!
+Changed fstab file to the original that it came with:
+LABEL=boot		/media/boot		vfat		defaults 0	1
+UUID=e139ce78-9841-40fe-8823-96a304a09859		/		ext4	defaults,noatime 	0		1
+
+"With the power of Karlsson, anything is possible." -Andrew Hoover
+
+TO DO: Take down the passwords from the ODROIDS for when you ssh into them. 
+MPI won't work with the passwords
+ssh-keygen
+Enter through it all
+and thenssh-copy-id <ipaddress>
+
+To ssh via hostname, edit /etc/hosts
+Add
+<ipaddress> <hostname>
+
+WOOO!!!!
