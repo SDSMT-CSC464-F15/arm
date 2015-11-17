@@ -8,7 +8,7 @@ if os.geteuid() != 0:
 
 addComment = False
 removeComment = False
-for line in fileinput.input("/etc/network/interfaces2", inplace=True):
+for line in fileinput.input("/etc/network/interfaces", inplace=True):
 	if line == "auto eth0\n":
 		addComment = True
 	if line == "# auto eth0\n":
