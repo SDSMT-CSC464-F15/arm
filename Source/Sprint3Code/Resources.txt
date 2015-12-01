@@ -1,0 +1,5 @@
+Helpful resources:
+
+http://linuxphilia.blogspot.com/2012/06/setting-up-network-based-centralized.html
+
+http://michaelminn.com/linux/home_network/

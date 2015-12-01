@@ -1,5 +1,3 @@
-//Andrew, if you just want to clean this up and write the precise notes, that would be awesome
-
 ***Set IP Address***
 
 -sudo vi /etc/network/interfaces
@@ -10,7 +8,7 @@
 source-directory /etc/network/interfaces.d
 auto eth0
 iface eth0 inet static
-address 192.168.1.11 //or whatever you want the ip address to be
+address 192.168.1.11 //change whatever you want the ip address to be here
 gateway 192.168.1.1
 
 -ifconfig to confirm ip address
@@ -21,9 +19,9 @@ gateway 192.168.1.1
 ping <ipaddress>
 
 -ssh into it
+ssh <ipaddress>
 
--iperf (Andrew knows more about this if you want to edit this)
-iperf can time and ping the network
+-iperf, iperf can time and ping the network
 iperf -s //sets server odrooid
 iperf -c <ip address> //sets client
 
@@ -38,24 +36,12 @@ Share home drive
 Hooked Snow White to internet
 sudo apt-get install nfs-kernel-server
 
-Hmmm, not working. The odroid is not connected to the internet.
-Tried commenting out our interfaces
-Reboot
-Connected!
-
 apt-get again
 /etc/eports
 
-http://linuxphilia.blogspot.com/2012/06/setting-up-network-based-centralized.html
-
-http://michaelminn.com/linux/home_network/
-
-Installed nfs-kernel-server onto Snow White
-Trouble mounting
-Now we need to install a client onto the others
-
-This involves connecting internet to the other odroids...UGHGHGHGHGH
 
 On client
 sudo apt-get install nfs-common
 sudo mount -t nfs <ipsnowwhite>:/home /home
+
+-ah, cns

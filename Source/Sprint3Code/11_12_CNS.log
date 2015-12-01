@@ -46,14 +46,20 @@ UUID=e139ce78-9841-40fe-8823-96a304a09859		/		ext4	defaults,noatime 	0		1
 
 "With the power of Karlsson, anything is possible." -Andrew Hoover
 
+***********************
 TO DO: Take down the passwords from the ODROIDS for when you ssh into them. 
 MPI won't work with the passwords
 ssh-keygen
 Enter through it all
 and thenssh-copy-id <ipaddress>
 
+************************
 To ssh via hostname, edit /etc/hosts
 Add
 <ipaddress> <hostname>
 
+
+
 WOOO!!!!
+
+-cns

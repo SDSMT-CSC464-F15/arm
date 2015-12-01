@@ -25,4 +25,8 @@ hosts:  files mdns4_minimal [NOTFOUND=return] dns
 to
 hosts: files dns
 
+reboot?
+
 Have to leave. It's still not working.
+
+-cns
