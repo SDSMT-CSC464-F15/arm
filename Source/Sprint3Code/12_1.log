@@ -1,0 +1,14 @@
+12/1/15
+
+Replaced Sleepy and Sneezy with new ODROIDS. Everything is now working.
+
+We're being anal about these so we don't need to replace any new ones. 
+We've been shutting them down manually by ssh-ing into each and doing
+-sudo shutdown now
+We have an idea to write script to shutdown all the odroids
+
+We also have an idea to write a script to mount the home directory to all
+of the odroids
+However, we're not sure how to get past the sudo password
+We're looking at the file
+/etc/sudoers
