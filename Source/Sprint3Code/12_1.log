@@ -12,3 +12,11 @@ of the odroids
 However, we're not sure how to get past the sudo password
 We're looking at the file
 /etc/sudoers
+
+Wrote code to mount. However, you have to type password and accept esa 
+fingerprint(?), but it's faster than typing out command every time
+
+MPI code mpi_text works on everything!!!
+
+Copied the mount code to kill the dwarfs. It works, still have to type
+the password for all of them however.
