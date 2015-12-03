@@ -1,0 +1,29 @@
+Tests on 12/3/15
+
+	N= 29, 30, 34, 35   NB=1, 2, 3, 4 P= 2, 1, 4 Q= 2, 4, 1
+	Time=0
+
+	Running linpack using all 8 cores on all 8 devices: 7.701e-04    (last test used as a reference point) 
+	 Slower than expected
+	
+	Running linpack using all 8 cores on only Snow White: 6.444e-02   (last test used as a reference point)
+	 Faster than using all 8 cores on all 8 devices
+	 
+	Running linpack using 4 cores on Snow White: 6.500e-02            (last test used as a reference point)
+	 Essentially the same as using all 8 cores on Snow White
+	 
+	Running  linpack using 1 core from the first 4 devices: 7.434e-04 (last test used as a reference point)
+	 Little, if any, change from running all 8 cores on all 8 devices
+	 
+	 Running linpack using 1 core from all 8 devices: 7.728e-04       (last test used as a reference point)
+	 
+	 
+	 
+	 N=10000 NB=64 P=1 Q=4
+	 Time= about 78.5 seconds
+	 Error=0.0012464
+	 
+	 Running linpack using all 8 cores on all 8 devices: 8.500e+00 (first test was taking too long to get to the last)
+	 
+	 Running linpack using all 8 cores on Snow White: 6.319e+00    (first test)
+	 
