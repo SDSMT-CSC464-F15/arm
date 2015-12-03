@@ -1,3 +1,5 @@
+#!/bin/usr/python
+
 import os
 
 def Main():
@@ -6,7 +8,7 @@ def Main():
 
 	for host in hosts:
 		if host != 'snow_white':
-			cmd = "ssh odroid@" + host + " 'mount -t nfs snow_white:/home /home'"
+			cmd = "ssh odroid@" + host + " 'sudo mount -t nfs snow_white:/home /home'"
 			os.system( cmd )
 
 if __name__ == '__main__':
