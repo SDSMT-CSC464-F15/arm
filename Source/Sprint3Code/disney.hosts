@@ -1,0 +1,10 @@
+##is max-slots 4 or 8?
+linux07 slots=1 max-slots=4
+snow_white  slots=1 max-slots=4
+dopey   slots=1 max-slots=4
+sleepy  slots=1 max-slots=4
+grumpy  slots=1 max-slots=4
+doc slots=1 max-slots=4
+happy   slots=1 max-slots=4
+bashful slots=1 max-slots=4
+sneezy  slots=1 max-slots=4

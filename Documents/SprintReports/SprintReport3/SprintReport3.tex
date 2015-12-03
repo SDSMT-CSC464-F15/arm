@@ -1,0 +1,126 @@
+\documentclass{article}
+\usepackage{fancyhdr}
+\usepackage{color}
+\usepackage{titlesec}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{tabto}
+\usepackage{tabularx}
+
+\definecolor{TitleColor}{rgb}{0.0, 0.0, 0.5}
+\definecolor{SectionColor}{rgb}{0.0, 0.0, 0.7}
+\definecolor{SubsectionColor}{rgb}{0.0, 0.0, 0.8}
+
+\titleformat{\section}{\normalfont\Large\bfseries\color{SectionColor}}{\thesection}{1em}{}[{\titlerule[2.0pt]}]
+\titleformat{\subsection}{\normalfont\bfseries\color{SubsectionColor}}{\thesection}{1em}{}
+
+\title{\normalfont\Large\bfseries\color{TitleColor}Sprint Report \#3}
+\date{\normalfont\bfseries\color{TitleColor}\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{Team Overview}
+\subsection*{Project}
+\tab{ARM Cluster}
+
+\subsection*{Members}
+\begin{itemize}
+	\item Andrew Hoover
+	\item Samantha Kranstz
+	\item Christine Sorensen
+\end{itemize}
+
+\subsection*{Sponsor}
+\tab{Dr. Christer Karlsson}
+
+\subsection*{Meeting Times}
+\tab{Tuesdays and Thursdays at 1:00pm}
+\subsection*{Work Times}
+\tab{Tuesdays and Thursdays at 10:00am}
+
+\section*{Sprint Overview}
+
+\section*{Setback}
+
+
+\section*{Deliverables}
+\begin{itemize}
+	\item Built cluster
+	\item MPI code
+	\item Mounted home directory
+	\item Shutdown script
+	\item Mounting script
+	\item LINPACK and ATLAS installed on ODROIDs
+	\item MPI installed on ODROIDs
+	\item Hostnames
+	\item Fixed IP Addresses
+	\item SSH configuration
+\end{itemize}
+
+\section*{Activities}
+
+\subsection*{Andrew Hoover}
+\begin{itemize}
+	\item Installed LINPACK and ATLAS
+	\item Assembled cluster
+	\item Replaced broken ODROIDS
+	\item Fixed IP address on the ODROIDS
+	\item Connectd all ODROIDS over network
+	\item Accessed the internet through the ODROIDS
+	\item Mounted home directory of Snow White on the other ODROIDS
+	\item Wrote script to shut down all ODROIDs
+	\item Wrote script to run LINPACK on ODROIDs for specified number of processes
+	\item Removed the sudo password
+	\item Wrote script to change network configuration to all access to the internet or local network
+	\item Assembled cluster
+	\item Debugged boot-up error
+	\item Benchmarked cluster using LINPACK and MPI code
+\end{itemize}
+\subsection*{Samantha Kranstz}
+\begin{itemize}
+	\item Created client presentation 
+	\item Assembled cluster
+	\item Debugged boot-up error
+	\item Benchmarked cluster using LINPACK and MPI code
+	\item Researched patents
+\end{itemize}
+\subsection*{Christine Sorensen}
+\begin{itemize}
+	\item Assigned hostnames to each of the ODROIDs
+	\item Configured ssh on ODROIDs
+	\item Replaced broken ODROIDs
+	\item Wrote MPI code to run on all cores of the clusters
+	\item Updated design documentation
+	\item Wrote script to mount home directory of Snow White onto all ODROIDS at once
+	\item Added ODROID's hostnames to the others' known hosts list
+	\item Wrote sprint report 
+	\item Assembled cluster
+	\item Debugged boot-up error
+	\item Benchmarked cluster using LINPACK and MPI code
+\end{itemize}
+
+\subsection*{Work that is carried over into Sprint 3 is as follows:}
+\begin{itemize}
+	\item Design cluster
+	\item Build cluster
+	\item Benchmark cluster
+	\item Test message-passing
+\end{itemize}
+
+\section*{Backlog}
+\begin{itemize}
+	\item Build the cluster
+	\item Code for the cluster
+	\item Benchmark the cluster
+	\item Experiment with different topologies
+	\item Create a new mode of communication
+\end{itemize}
+
+\section*{Goals}
+\begin{itemize}
+	\item Go to research symposium
+	\item Prepare Design Fair
+\end{itemize}
+
+\end{document}

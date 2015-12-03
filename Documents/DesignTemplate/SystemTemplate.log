@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.21)  7 OCT 2015 21:44
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.21)  9 NOV 2015 13:50
 entering extended mode
 **SystemTemplate.tex
 (C:\Users\1959287\Desktop\arm\Documents\DesignTemplate\SystemTemplate.tex
@@ -1524,11 +1524,6 @@ ABD: EveryShipout initializing macros [1
 ]
 (C:\Users\1959287\Desktop\arm\Documents\DesignTemplate\SystemTemplate.toc
 [3] [4]
-Overfull \hbox (0.4722pt too wide) detected at line 120
- []\OT1/cmr/m/n/10 D-1
- []
-
-
 Overfull \hbox (0.4722pt too wide) detected at line 121
  []\OT1/cmr/m/n/10 D-1
  []
@@ -1549,8 +1544,8 @@ Overfull \hbox (0.4722pt too wide) detected at line 124
  []
 
 
-Overfull \hbox (9.08334pt too wide) detected at line 128
- []\OT1/cmr/m/n/10 BM-1
+Overfull \hbox (0.4722pt too wide) detected at line 125
+ []\OT1/cmr/m/n/10 D-1
  []
 
 
@@ -1560,11 +1555,16 @@ Overfull \hbox (9.08334pt too wide) detected at line 129
 
 
 Overfull \hbox (9.08334pt too wide) detected at line 130
- []\OT1/cmr/m/n/10 BM-2
+ []\OT1/cmr/m/n/10 BM-1
  []
 
 
 Overfull \hbox (9.08334pt too wide) detected at line 131
+ []\OT1/cmr/m/n/10 BM-2
+ []
+
+
+Overfull \hbox (9.08334pt too wide) detected at line 132
  []\OT1/cmr/m/n/10 BM-2
  []
 
@@ -1605,7 +1605,17 @@ Overfull \hbox (5.92586pt too wide) in paragraph at lines 25--25
  []
 
 
-Overfull \hbox (7.03629pt too wide) in paragraph at lines 17--41
+Overfull \hbox (5.92586pt too wide) in paragraph at lines 27--27
+[]|\OT1/cmr/bx/it/10 11/09/15|  
+ []
+
+
+Overfull \hbox (5.92586pt too wide) in paragraph at lines 29--29
+[]|\OT1/cmr/bx/it/10 11/09/15|  
+ []
+
+
+Overfull \hbox (7.03629pt too wide) in paragraph at lines 17--44
 [] 
  []
 
@@ -1613,7 +1623,7 @@ Overfull \hbox (7.03629pt too wide) in paragraph at lines 17--41
 
 ] (C:\Users\1959287\Desktop\arm\Documents\DesignTemplate\overview.tex
 Chapter 1.
-<./diagram.png, id=699, 722.7pt x 542.025pt>
+<./diagram.png, id=704, 722.7pt x 542.025pt>
 File: ./diagram.png Graphic file (type png)
  <use ./diagram.png>
 Package pdftex.def Info: ./diagram.png used on input line 48.
@@ -1637,6 +1647,16 @@ l.4 \chapter
             {Project Overview} <C:/Users/1959287/Desktop/arm/Documents/DesignTe
 mplate/diagram.png>]
 Chapter 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+
+ []
+
 ) (C:\Users\1959287\Desktop\arm\Documents\DesignTemplate\requirements.tex
 [3
 
@@ -1731,7 +1751,7 @@ Chapter 12.
 
 ]) [29] [30
 
-] <SoftwareContract.pdf, id=906, 614.295pt x 794.97pt>
+] <SoftwareContract.pdf, id=907, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf>
@@ -1742,7 +1762,7 @@ File: SoftwareContract.pdf Graphic file (type pdf)
 Package pdftex.def Info: SoftwareContract.pdf used on input line 67.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
-<SoftwareContract.pdf, id=909, page=1, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=910, page=1, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 1>
@@ -1768,7 +1788,7 @@ Package pdftex.def Info: SoftwareContract.pdf, page1 used on input line 67.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [1 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplate/SoftwareContract.pdf
 >]
-<SoftwareContract.pdf, id=915, page=2, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=916, page=2, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 2>
@@ -1785,7 +1805,7 @@ Package pdftex.def Info: SoftwareContract.pdf, page2 used on input line 67.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [2 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplate/SoftwareContract.pdf
 >]
-<SoftwareContract.pdf, id=921, page=3, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=922, page=3, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 3>
@@ -1802,7 +1822,7 @@ Package pdftex.def Info: SoftwareContract.pdf, page3 used on input line 67.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [3 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplate/SoftwareContract.pdf
 >]
-<SoftwareContract.pdf, id=928, page=4, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=929, page=4, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 4>
@@ -1819,7 +1839,7 @@ Package pdftex.def Info: SoftwareContract.pdf, page4 used on input line 67.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [4 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplate/SoftwareContract.pdf
 >]
-<SoftwareContract.pdf, id=934, page=5, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=935, page=5, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 5>
@@ -1848,12 +1868,16 @@ Appendix B.
 
 ]
 Appendix C.
-(C:\Users\1959287\Desktop\arm\Documents\DesignTemplate\sprints.tex [1])
-[2]
-Appendix D.
-(C:\Users\1959287\Desktop\arm\Documents\DesignTemplate\industrial.tex) [1
+(C:\Users\1959287\Desktop\arm\Documents\DesignTemplate\sprints.tex [1]
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+
+ []
+
+[2]) [3] [4
 
 ]
+Appendix D.
+(C:\Users\1959287\Desktop\arm\Documents\DesignTemplate\industrial.tex) [1]
 [2
 
 ]
@@ -1876,55 +1900,39 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 106.
 (C:\Users\1959287\Desktop\arm\Documents\DesignTemplate\SystemTemplate.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 106.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 106.
-
-
-Package rerunfilecheck Warning: File `SystemTemplate.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `SystemTemplate.out':
-(rerunfilecheck)             Before: 44CD1CC2189287C2B2C2AA4A1FDE78CD;8200
-(rerunfilecheck)             After:  89A380512A6C16B6025FD252C4C2B919;8261.
+Package rerunfilecheck Info: File `SystemTemplate.out' has not changed.
+(rerunfilecheck)             Checksum: 89A380512A6C16B6025FD252C4C2B919;8261.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 106.
  ) 
 Here is how much of TeX's memory you used:
  25929 strings out of 493921
- 461291 string characters out of 3144870
- 586723 words of memory out of 3000000
- 28356 multiletter control sequences out of 15000+200000
+ 461272 string characters out of 3144870
+ 586724 words of memory out of 3000000
+ 28357 multiletter control sequences out of 15000+200000
  17336 words of font info for 69 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  64i,18n,65p,3300b,1359s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{subsection.1.2.3} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.2.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.2.1} has been referenced but does not 
-exist, replaced by a fixed one
-
- <C:\Users\1959287\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
-tcrm1000.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
-x12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx7
-.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10
-.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.p
-fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb>
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:
-/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Progr
-am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x8
-6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on SystemTemplate.pdf (67 pages, 3801587 bytes).
+ <C:\Users\1959287\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
+0\tcrm1000.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
+x7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti
+10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10
+.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pf
+b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><
+C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (
+x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on SystemTemplate.pdf (69 pages, 3807077 bytes).
 PDF statistics:
- 1132 PDF objects out of 1200 (max. 8388607)
- 255 named destinations out of 1000 (max. 500000)
- 1034 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1141 PDF objects out of 1200 (max. 8388607)
+ 254 named destinations out of 1000 (max. 500000)
+ 1042 words of extra memory for PDF output out of 10000 (max. 10000000)
 

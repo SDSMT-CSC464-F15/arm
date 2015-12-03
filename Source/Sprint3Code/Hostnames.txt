@@ -1,0 +1,11 @@
+IP Address - hostname
+192.168.1.11 - snow_white
+192.168.1.12 - dopey
+192.168.1.13 - sleepy
+192.168.1.14 - grumpy
+192.168.1.15 - doc
+192.168.1.16 - happy
+192.168.1.17 - bashful
+192.168.1.18 - sneezy
+
+-cns

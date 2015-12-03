@@ -1,0 +1,38 @@
+Overview of the state of the cluster as of sprint 3 conclusion.
+
+Hardware:
+  - Eight functioning odroids, two non functioning.
+  - One switch.
+  - Power supply with nine power cables.
+  - Eight one gigabit ethernet cables.
+  - All securely mounted on an acrylic board. 
+
+Configuration:
+  - All odroids are on the same network, connected over the switch (192.169.1.x)
+  - All odroids are named, and able to recognize the IP address of the names of
+    the others (i.e. any command that needs an IP can be executed with the name
+    instead, such as ping dopey or ssh happy)
+  - Snow White can SSH into any dwarf without a password, and vise versa.
+  - Any dwarf can execute sudo without needed a password input.
+  - The /home directory of Snow White is an NFS share that the dwarfs can mount.
+
+Software:
+  - Linpack and ATLAS are built on Snow White, in the home directory.
+  - MPI is installed and working on all eight devices.
+  - Four tools exist in Snow White in the /usr/bin directory:
+      mountHomeDir - mounts the /home directory of all seven dwarfs to the /home
+        directory of Snow White.
+      killDwarfs - shuts down the seven dwarfs.
+      changeNetwork - changes the network configuration to allow the device to
+        connect to the interent instead of the local network, or vise vera.
+      linpack - executes linpack on a given number of processes. 
+
+Knowledge:
+  - Speed of Etherent switch: ~750 Mbps
+  - Maximum gigaflops possible: ~3e-4
+
+Set backs:
+  - Two odroids burned, they have been replaced.
+  - Editing /etc/fstab to automatically mount the home directory of Snow White
+    on the dwarfs proved unsuccessful. This is something the team will continue
+    to persue in future sprints.
