@@ -20,3 +20,6 @@ MPI code mpi_text works on everything!!!
 
 Copied the mount code to kill the dwarfs. It works, still have to type
 the password for all of them however.
+
+the mpi_hello test works if you give everything max 4 slots, when each ODROID actually has 8 cores.
+Linepack works for benchmarking. We have yet to translate what the numbers mean.
