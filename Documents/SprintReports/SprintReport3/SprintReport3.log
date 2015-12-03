@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.21)  3 DEC 2015 10:09
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.21)  3 DEC 2015 10:31
 entering extended mode
 **SprintReport3.tex
 
@@ -214,11 +214,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
 (C:\Users\1959287\Desktop\arm\Documents\SprintReports\SprintReport3\SprintRepor
-t3.aux) )
-(\end occurred inside a group at level 1)
-
-### simple group (level 1) entered at line 38 ({)
-### bottom level 
+t3.aux) ) 
 Here is how much of TeX's memory you used:
  2032 strings out of 493921
  27729 string characters out of 3144870
@@ -226,13 +222,12 @@ Here is how much of TeX's memory you used:
  5337 multiletter control sequences out of 15000+200000
  7895 words of font info for 28 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 24i,6n,43p,225b,213s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
-10.pfb>
-Output written on SprintReport3.pdf (2 pages, 61943 bytes).
+ 24i,6n,43p,225b,187s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx
+10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12
+.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pf
+b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on SprintReport3.pdf (2 pages, 61932 bytes).
 PDF statistics:
  25 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
