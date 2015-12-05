@@ -40,9 +40,53 @@
 \tab{Tuesdays and Thursdays at 10:00am}
 
 \section*{Sprint Overview}
-
-\section*{Setback}
-
+\subsection*{Work for this sprint included:}
+\begin{itemize}
+	\item Built cluster
+	\begin{itemize}
+		\item All parts for the cluster were ordered. Parts included:
+		\begin{itemize}
+			\item 8 ODROID XU4's
+			\item Switch
+			\item Power box
+			\item Ethernet cables
+			\item Acrylic board
+			\item Accessories, such as handles and power switches
+		\end{itemize}
+		\item The ODROIDs, switch and power box were mounted onto the acrylic board. ODROIDs were connected to the switch and the power box.
+	\end{itemize}
+	\item Set up cluster
+	\begin{itemize}
+		\item Fixed IP addresses to each ODROID
+		\item Assigned a hostname to each ODROID
+		\item Configured cluster network
+		\item NFS share
+		\item Configured sudo
+		\item Set-up ssh between ODROIDS
+	\end{itemize}
+	\item Benchmarked cluster
+	\begin{itemize}
+		\item Installed LINPACK
+		\item Wrote MPI code to run on the cluster
+		\item Ran the MPI code with LINPACK on the cluster
+		\item Gathered data
+	\end{itemize}
+	\item Setbacks
+	\begin{itemize}
+		\item Backorder
+		\begin{itemize}
+			\item The remaining ODROIDs were backordered, delaying to assembling of the cluster.
+		\end{itemize}	
+		\item Broken ODROIDs
+		\begin{itemize}
+			\item Two of the ODROIDs needed to be replaced. It was believed that the two ODROIDs were placed on the power supply without covering which exposed the soldering on the bottom to sepatate it from the metal which might have crossed circuits causing the ODROIDs to not power up. Ordering the new ODROIDs put us behind in our timeline.
+		\end{itemize}
+		\item Installing LINPACK
+		\begin{itemize}
+			\item The installation of LINPACK was complicated and prompted issues. It took longer than expected to complete.
+		\end{itemize}
+	\end{itemize}
+\end{itemize}
 
 \section*{Deliverables}
 \begin{itemize}
@@ -100,27 +144,25 @@
 	\item Benchmarked cluster using LINPACK and MPI code
 \end{itemize}
 
-\subsection*{Work that is carried over into Sprint 3 is as follows:}
+\subsection*{Work that is carried over into Sprint 4 is as follows:}
 \begin{itemize}
-	\item Design cluster
-	\item Build cluster
-	\item Benchmark cluster
-	\item Test message-passing
+	\item Research new methods of connection
+	\item Take action on these new methods
+	\item Benchmark
+	\item Complete abstract for research symposium
 \end{itemize}
 
 \section*{Backlog}
 \begin{itemize}
-	\item Build the cluster
-	\item Code for the cluster
+	\item Research new connection methods
 	\item Benchmark the cluster
 	\item Experiment with different topologies
 	\item Create a new mode of communication
+	\item Design documentation
+	\item Research symposium
+	\begin{itemize}
+		\item Complete abstract
+	\end{itemize}
+	\item Design Fair
 \end{itemize}
-
-\section*{Goals}
-\begin{itemize}
-	\item Go to research symposium
-	\item Prepare Design Fair
-\end{itemize}
-
 \end{document}
