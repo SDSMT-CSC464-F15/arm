@@ -27,3 +27,40 @@ Tests on 12/3/15
 	 
 	 Running linpack using all 8 cores on Snow White: 6.319e+00    (first test)
 	 
+	 
+	 
+	 
+	 Tests on 12/7/15
+
+	N = 10000; NB = 64;
+	Running LINPACK using all 8 cores on all 8 devices
+	P = 1; Q = 64;
+				3.69 Gigaflops 
+	P = 2; Q = 32;
+				5.733 Gigaflops; 116.31 Seconds
+	P = 8; Q = 8;
+				8.767 Gigaflops; 76.06 Seconds
+	P = 4; Q = 16;
+				10.37 Gigaflops; 
+				
+	N = 36800; NB = 64;
+	Running LINPACK using all 8 cores on all 8 devices
+	P = 4; Q = 16;
+				10.48 Gigaflops; 3169.95 Seconds
+	
+	
+	N = 10000; NB = 8;
+	Running LINPACK using all 8 cores on only Snow White
+	P = 2; Q = 4; 
+				2.054 Gigaflops; 324.61 Seconds
+							
+	N = 10000; NB = 64;
+	Running LINPACK using all 8 cores on only Snow White
+	P = 2; Q = 4;
+				3.166 Gigaflops
+				
+	P = 1; Q = 8;
+				2.936 Gigaflops
+	
+	
+	 
