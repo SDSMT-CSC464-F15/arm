@@ -65,4 +65,73 @@ Raspberry Pi 2B & 0.0003 & 0.0003 & 0.000224 & 0.0000453 \\
 
 \item [10/1/15] The results show that the Raspberry Pi and the ODroid perform nearly the same. The Raspberry Pi in our benchmarking proved the best. However, it is inconclusive as to which computer will be used.
 
+\item [10/24/15] Decided to go with the ODroid. Performance and the number of ports outweighted the cost of the Raspberry Pi.
+
+\end{description}
+
+\section{Ethernet Benchmark}
+\begin{description}
+\item [10/25/15] Created network between a machine with gigabit ethernet port and ODroid. Installed n both the server machine and ODroid.
+
+\begin{center}
+\begin{tabular}{ | l || l | }
+\hline
+\multicolumn{2}
+{ |c| }{ Ethernet Speed } \\
+\hline
+Device & Speed (Mbps) \\
+\hline
+ODroid XU4 & 615 - 625 \\
+\hline
+\end{tabular}
+\end{center}
+
+\end{description}
+
+\section{Hardware Test}
+\begin{description}
+\item [11/03/15] All eight ODroids are functional. To test them, each device was connected to a router with internet access via ethernet. A monitor was connected through HDMI, and the mouse and keyboard were connected to both USB 3.0 ports to ensure they worked. The packages mpi-default-dev and openmpi-bin were installed. The test mpi code found this director and successfully compiled and executed. No issues found.
+\end{description}
+
+\section{Switch Benchmark}
+\begin{description}
+\item [11/03/15] With two ODroid devices attached to the switch via direct ethernet (no USB 3.0 to ethernet adapter), the connection speed was tested with iperf.
+
+\begin{center}
+\begin{tabular}{ | l || l | }
+\hline
+\multicolumn{2}
+{ |c| }{ Switch Speed } \\
+\hline
+Device & Speed (Mbps) \\
+\hline
+ODroid XU4 & 775 - 800 \\
+\hline
+\end{tabular}
+\end{center}
+
+This is notably faster than the previous benchmark between one ODroid and a non-ODroid machine not using a switch.
+\end{description}
+
+\section{USB to Ethernet Benchmark}
+\begin{description}
+\item [11/03/15] Tested speed of USB 3.0 to ethernet adapter using iperf. Found slower than direct ethernet conection. Test speeds varied greatly. The USB ethernet adapted was faster acting as a server than a client.
+
+\begin{center}
+\begin{tabular}{ | l || l | }
+\hline
+\multicolumn{2}
+{ |c| }{ USB 3.0 to Ethernet Adapter Speed } \\
+\hline
+Device & Speed (Mbps) \\
+\hline
+ODroid XU4 & 300 - 700 \\
+\hline
+\end{tabular}
+\end{center}
+
+In contrast, the ethernet connections were consistent reguardless of which device was the client or server.
+
+\item [11/05/15] There isn't a found way to connect two devices over USB-ethernet to ethernet directly. When attached to the switch, the devices can communicate. IF using the USB to ethernet adapter, they would be directly connected without the switch. Therefore, it was unable to directly connect devices. \\ \\
+The drastically lower speed of the USB to ethernet adapters and the inability to directly connect the devices means that the devices are very unlikely to be useful for this project.
 \end{description}

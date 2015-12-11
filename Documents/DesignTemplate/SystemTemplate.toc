@@ -88,6 +88,10 @@
 \contentsline {subsubsection}{\numberline {10.1.2.a}myfunction}{21}{subsubsection.10.1.2.1}
 \contentsline {chapter}{\numberline {11}Experimental Log}{23}{chapter.11}
 \contentsline {section}{\numberline {11.1}Benchmarking the Individual Computers}{23}{section.11.1}
+\contentsline {section}{\numberline {11.2}Ethernet Benchmark}{24}{section.11.2}
+\contentsline {section}{\numberline {11.3}Hardware Test}{24}{section.11.3}
+\contentsline {section}{\numberline {11.4}Switch Benchmark}{24}{section.11.4}
+\contentsline {section}{\numberline {11.5}USB to Ethernet Benchmark}{24}{section.11.5}
 \contentsline {chapter}{\numberline {12}Research Results}{25}{chapter.12}
 \contentsline {section}{\numberline {12.1}Result 1}{25}{section.12.1}
 \contentsline {section}{\numberline {12.2}Result 2}{25}{section.12.2}
