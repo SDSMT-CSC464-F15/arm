@@ -93,7 +93,6 @@
 \contentsline {section}{\numberline {12.2}Result 2}{25}{section.12.2}
 \contentsline {section}{\numberline {12.3}Conclusions}{25}{section.12.3}
 \contentsline {section}{\numberline {12.4}Further work}{25}{section.12.4}
-\contentsline {chapter}{Bibliography}{27}{chapter*.7}
 \contentsline {chapter}{Software Agreement}{SA-1}{chapter.13}
 \contentsline {chapter}{\numberline {A}Product Description}{A-1}{appendix.A}
 \contentsline {chapter}{\numberline {B}Publications}{B-1}{appendix.B}
@@ -109,8 +108,3 @@
 \contentsline {section}{\numberline {1}Resumes}{D-1}{section.D.1}
 \contentsline {chapter}{\numberline {E}Acknowledgment}{E-1}{appendix.E}
 \contentsline {chapter}{\numberline {F}Supporting Materials}{F-1}{appendix.F}
-\contentsline {chapter}{\LaTeX \ Example}{BM-1}{appendix*.8}
-\contentsline {section}{\numberline {1}Introduction}{BM-1}{section.F.1}
-\contentsline {section}{\numberline {2}Ordinary Text}{BM-1}{section.F.2}
-\contentsline {section}{\numberline {3}Displayed Text}{BM-2}{section.F.3}
-\contentsline {section}{\numberline {4}Build process}{BM-2}{section.F.4}
