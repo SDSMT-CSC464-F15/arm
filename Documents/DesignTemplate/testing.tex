@@ -2,20 +2,20 @@
 
 \chapter{System  and Unit Testing}
 
-This section describes the approach taken with regard to system and unit testing. 
+Testing for our project inluded mainly testing aspects of our hardware. Future sprints will include testing for the software we design as our message passing protocol over USB or GPIO pins, but for the first three sprints our goal was to chose the most efficient hardware and benchmark the amount of gigaflops able to be produced by the cluster, and how much the Ethernet network slows down the system. To accomplish this, we tested the physical capabilities of the hardware.
 
 \section{Overview}
-Provides a brief overview of the testing approach, testing frameworks, and general 
-how testing is/will be done to provide a measure of success for the system. 
+We first tested the computational speed of the ODROID XU4 and Raspberry PI 2B. We then tested the amount of power used by each device with a voltimeter. From these tests, the ODROID produced more gigaflops per watt per dollar, influencing our choice to build our cluster out of ODROID XU4s.
 
+We then needed to test several aspects of the ODROID. The Ethernet speed over a switch was tested, and the amount of gigaflops produced by an individual device as well as the entire cluser working in parallel was tested using an existing benchmarking method.
 
 
 \section{Dependencies}
-Describe the basic dependencies which should include unit testing frameworks and 
-reference material. 
+To test the gigaflops of the cluster, we build and used LINPACK. To test the Ethernet speed, the tool iperf was used.
 
 
 \section{Test Setup and Execution}
-Describe how test cases were developed, setup, and executed.  This section can 
-be extremely involved if a complete list of test cases was warranted for the system. 
+The first tests were to compare the ODROID XU4 and Raspberry Pi 2B. The computational speed was testing by writing a program in C++ to read two large arrays of floating point values into memory and compute four different computations accross the arrays; addition, multiplication, divison, and sine. We recorded how long it took each device to complete the calcuations, and used the timing as a point of comparision between the two devices. The power consumption during runtime was also tested using a voltimeter while the C++ code was executed. The amount of gigflops per watt per dollar was computed to favor the ODROID, influencing our decision to build the cluster out of them.
+
+The next series of tests were the hardware capabilities of the ODROID xU4. The Ethernet speed was tested by using iperf on two nodes, which is a tool availible in the default debian repositories to test the connection speed over Ethernet. Also, a USB to Ethernet device was tested in the same way. Once we knew that information, we tested the amount of gigaflops as recorded by a reliable tool, LINPACK. To do this we had to download the source code, create a Makefile for the ARM architecture, and build the executable. Once done, we adjusted the settings to a square matrix of size 38,600, used 4 and 16 for the P and Q values that determine how many cores to run the code on, and ran the test. \
 
