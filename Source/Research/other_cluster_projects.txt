@@ -1,0 +1,31 @@
+Hobby Category
+
+
+Research Category
+   Tennessee Oak Ridge Cluster Project (TORC)
+       "  The research areas of the project include:
+ 	             Computing across mixed Unix and NT clusters
+    		Combining clusters across administrative domains
+    		Performance evaluation of multiple interconnects and protocols (VIA, FM,.)
+    		Development of a cluster management tool suite
+    		COTS cluster driven immersive devices -- cost effective CAVES
+   	 	Testbed for evaluating heterogeneous clusters
+    		Support research on NetSolve, Harness, Atlas, and Scalapack projects"
+
+	VIA -  Virtual Interface Adapter - is a network protocol.  It is usually a network kind of interface but is usually a very high-performance, dedicated connection between two systems. Part of that high performance comes from specialized, dedicated hardware that knows that it has a dedicted connection and therefore doesn't have to deal with normal network addressing issues.
+
+	FM -
+	COTS -
+	CAVES -
+	NT cluster -
+          
+	There are several clusters both at UT and ORNL that are a part of the resources 
+             available to the TORC project. Presently the largest is High TORC.
+
+
+
+             HighTORC: 64-node cluster
+             (128 Pentium III processors)
+
+
+Corporation Category
