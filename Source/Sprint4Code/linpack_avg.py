@@ -8,26 +8,16 @@ def main():
         print "Usage: python linpack_avg.py <text file from the linpack test>"
         sys.exit(0)
 
-    ## for my selfish reasons
-    for a in sys.argv:
-        print a
-
-
     # get the lines with the values
     lines_with_values = find_values()
-
-    ##for my selfish reasons
-    ##words = lines_with_values[2].split()
-    ##print words
 
     # extract the values from the lines with the values
     values = extract_values( lines_with_values )
 
-    ##for my selfish reasons
-    print values
-
+    # calculate the averate
     average = calculate_average( values )
-
+    
+    print "The average: "
     print average
 
 
@@ -47,12 +37,10 @@ def find_values():
     for line in fin:   
         # if we're counting the lines
         if i <= 4:
-            print i
             # if we reached the line with the values
             if i == 4:
                 # grab that value
                 lines_with_values = lines_with_values + [line]
-                ##print line
                 # nullify counter
                 i = 10
             # if we're still counting, increment
@@ -60,10 +48,9 @@ def find_values():
                 i = i + 1
         # start counting lines once we reached a passed test
         elif "PASSED" in line:
-            print "we got a pass!"
             i = 1
 
-    # return the lines
+    # return the lines containing the value
     return lines_with_values
 
 def extract_values( lines ):
@@ -71,21 +58,38 @@ def extract_values( lines ):
     # holds the values
     values = []
 
+    # for each line, split into words
     for line in lines:
         words = line.split()
+        # extract the last word which holds the value for that test
         values = values + [words[ len(words) - 1]]   
 
+    # return the list of the values
     return values
 
-def calculate_average( str_values ):
+def calculate_average( values ):
 
-    num_values = len( str_values ) - 1
+    num_values = len( values ) - 1
     sum_values = 0
 
-    for i in range( 0, len( str_values ) - 2 ):
-        sum_value = sum_values + float( i )
+    # add the values
+    for i in range( 0, num_values ):
+        ##
+        print sum_values
+        # if it's a valid value, add it to the total sum
+        if is_float( values[i] ):
+            sum_values = sum_values + float( values[i] )
 
+    # calculate the average and return it
     return sum_values / num_values
+
+def is_float( value ):
+
+    try:
+        float( value )
+        return True
+    except:
+        return False
 
 if __name__ == "__main__":
     main()
