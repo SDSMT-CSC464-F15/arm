@@ -1,5 +1,6 @@
 import re
 import sys
+from decimal import Decimal
 
 def main():
 
@@ -17,14 +18,11 @@ def main():
     # calculate the averate
     average = calculate_average( values )
     
-    print "The average: "
-    print average
-
+    print '%.3E' % Decimal( average ) + ' Gflops average'
 
 def find_values():
 
     # open file
-    print sys.argv[1]
     fin = open( sys.argv[1] )
 
     # counter to count lines to values
@@ -74,8 +72,6 @@ def calculate_average( values ):
 
     # add the values
     for i in range( 0, num_values ):
-        ##
-        print sum_values
         # if it's a valid value, add it to the total sum
         if is_float( values[i] ):
             sum_values = sum_values + float( values[i] )
