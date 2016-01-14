@@ -1,0 +1,19 @@
+#!/bin/bash
+
+cd /home/odroid/hpl-2.1/bin/armv7l
+printf "snow_white  slots=1 max-slots=8" > disney.hosts
+mpiexec -np 8 -hostfile disney.hosts ./xhpl > results1.txt
+printf "snow_white  slots=1 max-slots=8\ndopey slots=1 max-slots=8" > disney.hosts
+mpiexec -np 16 -hostfile disney.hosts ./xhpl > results2.txt
+printf "snow_white  slots=1 max-slots=8\ndopey slots=1 max-slots=8\nsleepy slots=1 max-slots=8" > disney.hosts
+mpiexec -np 24 -hostfile disney.hosts ./xhpl > results3.txt
+printf "snow_white  slots=1 max-slots=8\ndopey slots=1 max-slots=8\nsleepy slots=1 max-slots=8\ngrumpy slots=1 max-slots=8" > disney.hosts
+mpiexec -np 32 -hostfile disney.hosts ./xhpl > results4.txt
+printf "snow_white  slots=1 max-slots=8\ndopey slots=1 max-slots=8\nsleepy slots=1 max-slots=8\ngrumpy slots=1 max-slots=8\ndoc slots=1 max-slots=8" > disney.hosts
+mpiexec -np 40 -hostfile disney.hosts ./xhpl > results5.txt
+printf "snow_white  slots=1 max-slots=8\ndopey slots=1 max-slots=8\nsleepy slots=1 max-slots=8\ngrumpy slots=1 max-slots=8\ndoc slots=1 max-slots=8\nhappy slots=1 max-slots=8" > disney.hosts
+mpiexec -np 48 -hostfile disney.hosts ./xhpl > results6.txt
+printf "snow_white  slots=1 max-slots=8\ndopey slots=1 max-slots=8\nsleepy slots=1 max-slots=8\ngrumpy slots=1 max-slots=8\ndoc slots=1 max-slots=8\nhappy slots=1 max-slots=8\nbashful slots=1 max-slots=8" > disney.hosts
+mpiexec -np 56 -hostfile disney.hosts ./xhpl > results7.txt
+printf "snow_white  slots=1 max-slots=8\ndopey slots=1 max-slots=8\nsleepy slots=1 max-slots=8\ngrumpy slots=1 max-slots=8\ndoc slots=1 max-slots=8\nhappy slots=1 max-slots=8\nbashful slots=1 max-slots=8\nsneezy slots=1-max-slots=8" > disney.hosts
+mpiexec -np 64 -hostfile disney.hosts ./xhpl > results8.txt
