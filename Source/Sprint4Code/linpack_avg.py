@@ -1,32 +1,55 @@
 import re
 import sys
 from decimal import Decimal
+import pylab
+import matplotlib
+import math
 
 def main():
 
     # check to see if the usage is valid
-    if len( sys.argv ) is not 2:
-        print "Usage: python linpack_avg.py <text file from the linpack test>"
+    if len( sys.argv ) is not 1:
+        print "Usage: python linpack_avg.py"
         sys.exit(0)
 
-    # get the lines with the values
-    lines_with_values = find_values()
+    # holds the average results and the number of ODROIDS to be graphed
+    x = [1, 2, 3, 4, 5, 6, 7, 8]
+    y = []
 
-    # extract the values from the lines with the values
-    values = extract_values( lines_with_values )
+    # files containing the results
+    results = [ 'results1.txt', 'results2.txt', 'results3.txt', 'results4.txt', 'results5.txt', 'results6.txt', 'results7.txt', 'results8.txt' ]
 
-    # calculate the averate
-    average = calculate_average( values )
+    # counter for number odroids was tested
+    num_odroids = 1
+
+    # go through each test result
+    for result in results:
+        # get the lines with the values
+        lines_with_values = find_values( result )
+
+        # extract the values from the lines with the values
+        values = extract_values( lines_with_values )
+
+        # calculate the averate
+        average = calculate_average( values )
     
-    print '%.3E' % Decimal( average ) + ' Gflops average'
+        print 'Average on ' + str(num_odroids) + ' ODROIDS: ' + '%.3E' % Decimal( average ) + ' Gflops'
 
-def find_values():
+        # increment the ODROID counter
+        num_odroids = num_odroids + 1
+
+        # add average to graph
+        y = y + [average]
+
+    graph_scatter( x, y )
+
+def find_values( file_name ):
 
     # open file
-    fin = open( sys.argv[1] )
+    fin = open( file_name )
 
     # counter to count lines to values
-    i = 1
+    i = 10
 
     # hold the lines
     lines_with_values = []
@@ -34,9 +57,9 @@ def find_values():
     # go through each line in file
     for line in fin:   
         # if we're counting the lines
-        if i <= 4:
+        if i <= 2:
             # if we reached the line with the values
-            if i == 4:
+            if i == 2:
                 # grab that value
                 lines_with_values = lines_with_values + [line]
                 # nullify counter
@@ -45,7 +68,7 @@ def find_values():
             else:
                 i = i + 1
         # start counting lines once we reached a passed test
-        elif "PASSED" in line:
+        elif "Gflops" in line:
             i = 1
 
     # return the lines containing the value
@@ -86,6 +109,14 @@ def is_float( value ):
         return True
     except:
         return False
+
+def graph_scatter( x, y ):
+
+    pylab.xlabel( 'Number of ODROIDS' )
+    pylab.ylabel( 'Average speed (GFlops)' )
+    pylab.title( 'LINPACK Test Results' )
+    matplotlib.pyplot.scatter( x, y )
+    matplotlib.pyplot.show()
 
 if __name__ == "__main__":
     main()

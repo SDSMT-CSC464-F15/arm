@@ -1,2 +1,10 @@
+LOG:
 Changing sleepy's fstab with the line:
 >192.168.1.11:/home /home nfs auto 0 0
+Can now mount home directory automatically.
+
+TO DO:
+Script to find average results of LINPACK -Christine
+Connect to network -Karlsson
+Run all combinations of LINPACK on cluster -Andrew
+Figure out how to mount homedirectory automatically -Andrew

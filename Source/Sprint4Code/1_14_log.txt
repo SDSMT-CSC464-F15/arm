@@ -1,0 +1,12 @@
+LOGGED:
+Debugged linpack_avg.py script to accurately find average.
+Finished LINPACK on just snow_white on all 8 cores
+Currently testing snow_white and dopey
+
+TO DO:
+script to make scatterplot -Christine
+Finish testing //Andrew to take overnight to finish
+Install debian packaging on snow white -Andrew
+    -Package LINPACK for ARM
+Install pyUsb -Christine
+Get USB to USB cord
