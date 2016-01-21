@@ -1,0 +1,10 @@
+#is max-slots 4 or 8?
+#xlinux07 slots=1 max-slots=4
+snow_white  slots=1 max-slots=8
+dopey   slots=1 max-slots=8
+sleepy  slots=1 max-slots=8
+grumpy  slots=1 max-slots=8
+doc 	slots=1 max-slots=8
+happy   slots=1 max-slots=8
+bashful slots=1 max-slots=8
+sneezy  slots=1 max-slots=8
