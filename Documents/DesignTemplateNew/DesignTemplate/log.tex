@@ -1,0 +1,145 @@
+% New Templete!!
+% !TEX root = DesignDocument.tex
+
+
+\chapter{Experimental Log}
+
+For research projects one needs to keep a log of all research/lab activities.   
+
+%% If you have multiple labs, you may want to break the labs into sections, check 
+%% with the profession on format.
+%% \section{Lab 1}
+
+%%\begin{description}
+%%\item [10/15/15]  Ran modified filter on data sets 1 - 6.  Results were ...
+%%\item [10/17/15]  Changed tolerance on sensor and collected data.  These ...
+%%\end{description}
+
+\section{Benchmarking the Individual Computers}
+
+\begin{description}
+\item [9/17/15]  PcDuino isn't working according to Dr. Karlsson. The PcDuinos are about \$160 each, so chances were that the PcDuino wasn't going to be selected for the cluster. We will not put the PcDuino in consideration with our benchmarking.
+\item [9/17/15]  PcDuino isn't working according to Dr. Karlsson. The PcDuinos are about \$160 each, so chances were that the PcDuino wasn't going to be selected for the cluster. We will not put the PcDuino in consideration with our benchmarking.
+\item [9/22/15] We begin work on benchmarking the remaining candidates. The code we will be using to benchmark the two devices will test the addition, multiplication, division, trigonmetric function in single and double point precision of two massively large arrays filled with random numbers.
+\item [9/29/15] OpenMP is added to the benchmark code so the program runs on all cores. Results are as follows: \newline
+
+\begin{center}
+\begin{tabular}{ | l || l | l | l | l | }
+\hline
+\multicolumn{5}
+{ |c| }{ Length of Time (seconds) } \\
+\hline
+Device & Addition & Multiplication & Division & Sine \\
+\hline
+ODroid 4xU & 29.925 & 31.341 & 37.032 & 227.40 \\
+\hline
+Raspberry Pi 2B & 221.645 & 221.034 & 297.204 & 1468.63 \\
+\hline
+\end{tabular}
+\end{center}
+
+\item [9/30/15] The gigaflops are calculated. \newline
+\begin{center}
+\begin{tabular}{ | l || l | l | l | l | }
+\hline
+\multicolumn{5}
+{ |c| }{ Gigaflops } \\
+\hline
+Device & Addition & Multiplication & Division & Sine \\
+\hline
+ODroid 4xU & 0.311 & 0.297 & 0.251 & 0.0410 \\
+\hline
+Raspberry Pi 2B & 0.0420 & 0.0421 & 0.0313 & 0.00634 \\
+\hline
+\end{tabular}
+\end{center}
+
+\item [10/1/15] The wattage is measured when the devices are running these operations. Using the wattage, the metric of GFlops/Dollar/Watt is calculated. \newline
+
+\begin{center}
+\begin{tabular}{ | l || l | l | l | l | }
+\hline
+\multicolumn{5}
+{ |c| }{ Gigaflops per Dollar per Watts } \\
+\hline
+Device & Addition & Multiplication & Division & Sine \\
+\hline
+ODroid 4xU & 0.00028 & 0.000268 & 0.000226 & 0.0000369 \\
+\hline
+Raspberry Pi 2B & 0.0003 & 0.0003 & 0.000224 & 0.0000453 \\
+\hline
+\end{tabular}
+\end{center}
+
+\item [10/1/15] The results show that the Raspberry Pi and the ODroid perform nearly the same. The Raspberry Pi in our benchmarking proved the best. However, it is inconclusive as to which computer will be used.
+
+\item [10/24/15] Decided to go with the ODroid. Performance and the number of ports outweighted the cost of the Raspberry Pi.
+
+\end{description}
+
+\section{Ethernet Benchmark}
+\begin{description}
+\item [10/25/15] Created network between a machine with gigabit ethernet port and ODroid. Installed n both the server machine and ODroid.
+
+\begin{center}
+\begin{tabular}{ | l || l | }
+\hline
+\multicolumn{2}
+{ |c| }{ Ethernet Speed } \\
+\hline
+Device & Speed (Mbps) \\
+\hline
+ODroid XU4 & 615 - 625 \\
+\hline
+\end{tabular}
+\end{center}
+
+\end{description}
+
+\section{Hardware Test}
+\begin{description}
+\item [11/03/15] All eight ODroids are functional. To test them, each device was connected to a router with internet access via ethernet. A monitor was connected through HDMI, and the mouse and keyboard were connected to both USB 3.0 ports to ensure they worked. The packages mpi-default-dev and openmpi-bin were installed. The test mpi code found this director and successfully compiled and executed. No issues found.
+\end{description}
+
+\section{Switch Benchmark}
+\begin{description}
+\item [11/03/15] With two ODroid devices attached to the switch via direct ethernet (no USB 3.0 to ethernet adapter), the connection speed was tested with iperf.
+
+\begin{center}
+\begin{tabular}{ | l || l | }
+\hline
+\multicolumn{2}
+{ |c| }{ Switch Speed } \\
+\hline
+Device & Speed (Mbps) \\
+\hline
+ODroid XU4 & 775 - 800 \\
+\hline
+\end{tabular}
+\end{center}
+
+This is notably faster than the previous benchmark between one ODroid and a non-ODroid machine not using a switch.
+\end{description}
+
+\section{USB to Ethernet Benchmark}
+\begin{description}
+\item [11/03/15] Tested speed of USB 3.0 to ethernet adapter using iperf. Found slower than direct ethernet conection. Test speeds varied greatly. The USB ethernet adapted was faster acting as a server than a client.
+
+\begin{center}
+\begin{tabular}{ | l || l | }
+\hline
+\multicolumn{2}
+{ |c| }{ USB 3.0 to Ethernet Adapter Speed } \\
+\hline
+Device & Speed (Mbps) \\
+\hline
+ODroid XU4 & 300 - 700 \\
+\hline
+\end{tabular}
+\end{center}
+
+In contrast, the ethernet connections were consistent reguardless of which device was the client or server.
+
+\item [11/05/15] There isn't a found way to connect two devices over USB-ethernet to ethernet directly. When attached to the switch, the devices can communicate. IF using the USB to ethernet adapter, they would be directly connected without the switch. Therefore, it was unable to directly connect devices. \\ \\
+The drastically lower speed of the USB to ethernet adapters and the inability to directly connect the devices means that the devices are very unlikely to be useful for this project.
+\end{description}
