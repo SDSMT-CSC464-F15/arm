@@ -1,7 +1,15 @@
 This directory contains the necessary tools to build a debian package named
 Linpack that has the high performance linpack executable built for ARM 
-architecture. To create the package, run
+architecture. To create the package, the dependencies are
+devscripts
+debhelper
+build-essential.
+
+With those installed, run
+
 ./create
+
+The filal .deb package will be in the linpackPackage directory.
 
 Differences between the linpack code availible online and what is in the
 contents of this directory are the debian subdirectory and all of it's 
