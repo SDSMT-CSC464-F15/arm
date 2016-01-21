@@ -1,0 +1,12 @@
+Source: linpack
+Maintainer: Andrew Hoover <andrew.hoover@mines.sdsmt.edu>
+Section: misc
+Priority: optional
+Standards-Version: 3.9.2
+Build-Depends: 
+
+Package: linpack
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: linpack
+  linpack installs HPL linpack.

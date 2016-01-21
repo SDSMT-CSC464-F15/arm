@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Tue, 19 Jan 2016 17:20:18 +0000
+Source: linpack
+Binary: linpack
+Architecture: source armhf
+Version: 1.0-1
+Distribution: UNRELEASED
+Urgency: low
+Maintainer: Andrew Hoover <andrew.hoover@mines.sdsmt.edu>
+Changed-By: <andrew.hoover@mines.sdsmt.edu>
+Description:
+ linpack    - linpack
+Changes:
+ linpack (1.0-1) UNRELEASED; urgency=low
+ .
+   * Initial release. (Closes: #XXXXXX)
+Checksums-Sha1:
+ 23cc73a0c78bbe71ccf3a2bb0b822c418ea0ed41 735 linpack_1.0-1.dsc
+ d692f67a6b7054aaa69500142fe1b3cd28a4a970 934884 linpack_1.0.orig.tar.bz2
+ c375a7abb49ee501fdd33f3f5cb1f54f2b301339 720 linpack_1.0-1.debian.tar.xz
+ 6a949444cbc0590d89a953ee4b5f03812d8ce19c 132736 linpack_1.0-1_armhf.deb
+Checksums-Sha256:
+ 4ed92e2cceda69cd7b338eaf225a023055011ce7341f582d98e1912fa9e87a19 735 linpack_1.0-1.dsc
+ abcfb3f4aad89a202c6d7b9ae598863f845c0c3b0b1cec83d8fd204f7465ef09 934884 linpack_1.0.orig.tar.bz2
+ 7798cf1977eb857a2c941fa5cc4926210b673ce28825377145de244db5ef2da8 720 linpack_1.0-1.debian.tar.xz
+ c95e176f44279bb8ac6be0a36e15be7f574e54b5e29c6df459b141531016f8a9 132736 linpack_1.0-1_armhf.deb
+Files:
+ 4821261ef5959cdfac48c491fa0504a7 735 misc optional linpack_1.0-1.dsc
+ c9c5553eac9370dea6983b8071798a3c 934884 misc optional linpack_1.0.orig.tar.bz2
+ cffcbd654c3635ae67f41e63535d426d 720 misc optional linpack_1.0-1.debian.tar.xz
+ 2ab51ed8bf548fad9caf5dac971fdaaa 132736 misc optional linpack_1.0-1_armhf.deb

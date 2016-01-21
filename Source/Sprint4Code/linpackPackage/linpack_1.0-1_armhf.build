@@ -1,0 +1,979 @@
+ dpkg-buildpackage -rfakeroot -D -us -uc
+dpkg-buildpackage: warning: using a gain-root-command while being root
+dpkg-buildpackage: source package linpack
+dpkg-buildpackage: source version 1.0-1
+dpkg-buildpackage: source distribution UNRELEASED
+dpkg-buildpackage: source changed by <andrew.hoover@mines.sdsmt.edu>
+ dpkg-source --before-build linpack_1.0.orig
+dpkg-buildpackage: host architecture armhf
+ fakeroot debian/rules clean
+dh clean
+   dh_testdir
+   dh_auto_clean
+make[1]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+make -f Make.top clean_src       arch=armv7l
+make[2]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+( cd src/auxil/armv7l;        make clean )
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/auxil/armv7l'
+/bin/rm -f *.o *.grd
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/auxil/armv7l'
+( cd src/blas/armv7l;         make clean )
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/blas/armv7l'
+/bin/rm -f *.o *.grd
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/blas/armv7l'
+( cd src/comm/armv7l;         make clean )
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/comm/armv7l'
+/bin/rm -f *.o *.grd
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/comm/armv7l'
+( cd src/grid/armv7l;         make clean )
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/grid/armv7l'
+/bin/rm -f *.o *.grd
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/grid/armv7l'
+( cd src/panel/armv7l;        make clean )
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/panel/armv7l'
+/bin/rm -f *.o *.grd
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/panel/armv7l'
+( cd src/pauxil/armv7l;       make clean )
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/pauxil/armv7l'
+/bin/rm -f *.o *.grd
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/pauxil/armv7l'
+( cd src/pfact/armv7l;        make clean )
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/pfact/armv7l'
+/bin/rm -f *.o *.grd
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/pfact/armv7l'
+( cd src/pgesv/armv7l;        make clean )
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/pgesv/armv7l'
+/bin/rm -f *.o *.grd
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/pgesv/armv7l'
+make[2]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+make -f Make.top clean_tst       arch=armv7l
+make[2]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+( cd testing/matgen/armv7l;   make clean )
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig/testing/matgen/armv7l'
+/bin/rm -f *.o *.grd
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig/testing/matgen/armv7l'
+( cd testing/timer/armv7l;    make clean )
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig/testing/timer/armv7l'
+/bin/rm -f *.o *.grd
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig/testing/timer/armv7l'
+( cd testing/pmatgen/armv7l;  make clean )
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig/testing/pmatgen/armv7l'
+/bin/rm -f *.o *.grd
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig/testing/pmatgen/armv7l'
+( cd testing/ptimer/armv7l;   make clean )
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig/testing/ptimer/armv7l'
+/bin/rm -f *.o *.grd
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig/testing/ptimer/armv7l'
+( cd testing/ptest/armv7l;    make clean )
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig/testing/ptest/armv7l'
+/bin/rm -f *.o *.grd
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig/testing/ptest/armv7l'
+make[2]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+make[1]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+   dh_clean
+ dpkg-source -b linpack_1.0.orig
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building linpack using existing ./linpack_1.0.orig.tar.bz2
+dpkg-source: info: building linpack in linpack_1.0-1.debian.tar.xz
+dpkg-source: info: building linpack in linpack_1.0-1.dsc
+ debian/rules build
+dh build
+   dh_testdir
+   dh_auto_configure
+   dh_auto_build
+make[1]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+make -f Make.top startup_dir     arch=armv7l
+make[2]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+mkdir include/armv7l
+mkdir: cannot create directory ‘include/armv7l’: File exists
+Make.top:74: recipe for target 'startup_dir' failed
+make[2]: [startup_dir] Error 1 (ignored)
+mkdir lib
+mkdir: cannot create directory ‘lib’: File exists
+Make.top:74: recipe for target 'startup_dir' failed
+make[2]: [startup_dir] Error 1 (ignored)
+mkdir lib/armv7l
+mkdir: cannot create directory ‘lib/armv7l’: File exists
+Make.top:74: recipe for target 'startup_dir' failed
+make[2]: [startup_dir] Error 1 (ignored)
+mkdir bin
+mkdir: cannot create directory ‘bin’: File exists
+Make.top:74: recipe for target 'startup_dir' failed
+make[2]: [startup_dir] Error 1 (ignored)
+mkdir bin/armv7l
+mkdir: cannot create directory ‘bin/armv7l’: File exists
+Make.top:74: recipe for target 'startup_dir' failed
+make[2]: [startup_dir] Error 1 (ignored)
+make[2]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+make -f Make.top startup_src     arch=armv7l
+make[2]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+make -f Make.top leaf le=src/auxil       arch=armv7l
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+( cd src/auxil ; mkdir armv7l )
+mkdir: cannot create directory ‘armv7l’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[3]: [leaf] Error 1 (ignored)
+( cd src/auxil/armv7l ; \
+            ln -s /home/odroid/arm/Source/Sprint3Code/hpl-2.1/Make.armv7l Make.inc )
+ln: failed to create symbolic link ‘Make.inc’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[3]: [leaf] Error 1 (ignored)
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+make -f Make.top leaf le=src/blas        arch=armv7l
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+( cd src/blas ; mkdir armv7l )
+mkdir: cannot create directory ‘armv7l’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[3]: [leaf] Error 1 (ignored)
+( cd src/blas/armv7l ; \
+            ln -s /home/odroid/arm/Source/Sprint3Code/hpl-2.1/Make.armv7l Make.inc )
+ln: failed to create symbolic link ‘Make.inc’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[3]: [leaf] Error 1 (ignored)
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+make -f Make.top leaf le=src/comm        arch=armv7l
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+( cd src/comm ; mkdir armv7l )
+mkdir: cannot create directory ‘armv7l’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[3]: [leaf] Error 1 (ignored)
+( cd src/comm/armv7l ; \
+            ln -s /home/odroid/arm/Source/Sprint3Code/hpl-2.1/Make.armv7l Make.inc )
+ln: failed to create symbolic link ‘Make.inc’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[3]: [leaf] Error 1 (ignored)
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+make -f Make.top leaf le=src/grid        arch=armv7l
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+( cd src/grid ; mkdir armv7l )
+mkdir: cannot create directory ‘armv7l’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[3]: [leaf] Error 1 (ignored)
+( cd src/grid/armv7l ; \
+            ln -s /home/odroid/arm/Source/Sprint3Code/hpl-2.1/Make.armv7l Make.inc )
+ln: failed to create symbolic link ‘Make.inc’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[3]: [leaf] Error 1 (ignored)
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+make -f Make.top leaf le=src/panel       arch=armv7l
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+( cd src/panel ; mkdir armv7l )
+mkdir: cannot create directory ‘armv7l’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[3]: [leaf] Error 1 (ignored)
+( cd src/panel/armv7l ; \
+            ln -s /home/odroid/arm/Source/Sprint3Code/hpl-2.1/Make.armv7l Make.inc )
+ln: failed to create symbolic link ‘Make.inc’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[3]: [leaf] Error 1 (ignored)
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+make -f Make.top leaf le=src/pauxil      arch=armv7l
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+( cd src/pauxil ; mkdir armv7l )
+mkdir: cannot create directory ‘armv7l’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[3]: [leaf] Error 1 (ignored)
+( cd src/pauxil/armv7l ; \
+            ln -s /home/odroid/arm/Source/Sprint3Code/hpl-2.1/Make.armv7l Make.inc )
+ln: failed to create symbolic link ‘Make.inc’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[3]: [leaf] Error 1 (ignored)
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+make -f Make.top leaf le=src/pfact       arch=armv7l
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+( cd src/pfact ; mkdir armv7l )
+mkdir: cannot create directory ‘armv7l’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[3]: [leaf] Error 1 (ignored)
+( cd src/pfact/armv7l ; \
+            ln -s /home/odroid/arm/Source/Sprint3Code/hpl-2.1/Make.armv7l Make.inc )
+ln: failed to create symbolic link ‘Make.inc’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[3]: [leaf] Error 1 (ignored)
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+make -f Make.top leaf le=src/pgesv       arch=armv7l
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+( cd src/pgesv ; mkdir armv7l )
+mkdir: cannot create directory ‘armv7l’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[3]: [leaf] Error 1 (ignored)
+( cd src/pgesv/armv7l ; \
+            ln -s /home/odroid/arm/Source/Sprint3Code/hpl-2.1/Make.armv7l Make.inc )
+ln: failed to create symbolic link ‘Make.inc’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[3]: [leaf] Error 1 (ignored)
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+make[2]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+make -f Make.top startup_tst     arch=armv7l
+make[2]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+make -f Make.top leaf le=testing/matgen  arch=armv7l
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+( cd testing/matgen ; mkdir armv7l )
+mkdir: cannot create directory ‘armv7l’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[3]: [leaf] Error 1 (ignored)
+( cd testing/matgen/armv7l ; \
+            ln -s /home/odroid/arm/Source/Sprint3Code/hpl-2.1/Make.armv7l Make.inc )
+ln: failed to create symbolic link ‘Make.inc’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[3]: [leaf] Error 1 (ignored)
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+make -f Make.top leaf le=testing/timer   arch=armv7l
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+( cd testing/timer ; mkdir armv7l )
+mkdir: cannot create directory ‘armv7l’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[3]: [leaf] Error 1 (ignored)
+( cd testing/timer/armv7l ; \
+            ln -s /home/odroid/arm/Source/Sprint3Code/hpl-2.1/Make.armv7l Make.inc )
+ln: failed to create symbolic link ‘Make.inc’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[3]: [leaf] Error 1 (ignored)
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+make -f Make.top leaf le=testing/pmatgen arch=armv7l
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+( cd testing/pmatgen ; mkdir armv7l )
+mkdir: cannot create directory ‘armv7l’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[3]: [leaf] Error 1 (ignored)
+( cd testing/pmatgen/armv7l ; \
+            ln -s /home/odroid/arm/Source/Sprint3Code/hpl-2.1/Make.armv7l Make.inc )
+ln: failed to create symbolic link ‘Make.inc’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[3]: [leaf] Error 1 (ignored)
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+make -f Make.top leaf le=testing/ptimer  arch=armv7l
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+( cd testing/ptimer ; mkdir armv7l )
+mkdir: cannot create directory ‘armv7l’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[3]: [leaf] Error 1 (ignored)
+( cd testing/ptimer/armv7l ; \
+            ln -s /home/odroid/arm/Source/Sprint3Code/hpl-2.1/Make.armv7l Make.inc )
+ln: failed to create symbolic link ‘Make.inc’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[3]: [leaf] Error 1 (ignored)
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+make -f Make.top leaf le=testing/ptest   arch=armv7l
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+( cd testing/ptest ; mkdir armv7l )
+mkdir: cannot create directory ‘armv7l’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[3]: [leaf] Error 1 (ignored)
+( cd testing/ptest/armv7l ; \
+            ln -s /home/odroid/arm/Source/Sprint3Code/hpl-2.1/Make.armv7l Make.inc )
+ln: failed to create symbolic link ‘Make.inc’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[3]: [leaf] Error 1 (ignored)
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+make[2]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+make -f Make.top refresh_src     arch=armv7l
+make[2]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+cp makes/Make.auxil    src/auxil/armv7l/Makefile
+cp makes/Make.blas     src/blas/armv7l/Makefile
+cp makes/Make.comm     src/comm/armv7l/Makefile
+cp makes/Make.grid     src/grid/armv7l/Makefile
+cp makes/Make.panel    src/panel/armv7l/Makefile
+cp makes/Make.pauxil   src/pauxil/armv7l/Makefile
+cp makes/Make.pfact    src/pfact/armv7l/Makefile
+cp makes/Make.pgesv    src/pgesv/armv7l/Makefile
+make[2]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+make -f Make.top refresh_tst     arch=armv7l
+make[2]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+cp makes/Make.matgen   testing/matgen/armv7l/Makefile
+cp makes/Make.timer    testing/timer/armv7l/Makefile
+cp makes/Make.pmatgen  testing/pmatgen/armv7l/Makefile
+cp makes/Make.ptimer   testing/ptimer/armv7l/Makefile
+cp makes/Make.ptest    testing/ptest/armv7l/Makefile
+make[2]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+make -f Make.top refresh_src     arch=armv7l
+make[2]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+cp makes/Make.auxil    src/auxil/armv7l/Makefile
+cp makes/Make.blas     src/blas/armv7l/Makefile
+cp makes/Make.comm     src/comm/armv7l/Makefile
+cp makes/Make.grid     src/grid/armv7l/Makefile
+cp makes/Make.panel    src/panel/armv7l/Makefile
+cp makes/Make.pauxil   src/pauxil/armv7l/Makefile
+cp makes/Make.pfact    src/pfact/armv7l/Makefile
+cp makes/Make.pgesv    src/pgesv/armv7l/Makefile
+make[2]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+make -f Make.top refresh_tst     arch=armv7l
+make[2]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+cp makes/Make.matgen   testing/matgen/armv7l/Makefile
+cp makes/Make.timer    testing/timer/armv7l/Makefile
+cp makes/Make.pmatgen  testing/pmatgen/armv7l/Makefile
+cp makes/Make.ptimer   testing/ptimer/armv7l/Makefile
+cp makes/Make.ptest    testing/ptest/armv7l/Makefile
+make[2]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+make -f Make.top build_src       arch=armv7l
+make[2]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+( cd src/auxil/armv7l;         make )
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/auxil/armv7l'
+/usr/bin/gcc -o HPL_dlacpy.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_dlacpy.c
+/usr/bin/gcc -o HPL_dlatcpy.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_dlatcpy.c
+/usr/bin/gcc -o HPL_fprintf.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_fprintf.c
+/usr/bin/gcc -o HPL_warn.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_warn.c
+/usr/bin/gcc -o HPL_abort.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_abort.c
+/usr/bin/gcc -o HPL_dlaprnt.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_dlaprnt.c
+/usr/bin/gcc -o HPL_dlange.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_dlange.c
+/usr/bin/gcc -o HPL_dlamch.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l    ../HPL_dlamch.c
+ar r /home/odroid/arm/Source/Sprint3Code/hpl-2.1/lib/armv7l/libhpl.a  HPL_dlacpy.o           HPL_dlatcpy.o          HPL_fprintf.o HPL_warn.o             HPL_abort.o            HPL_dlaprnt.o HPL_dlange.o HPL_dlamch.o
+echo /home/odroid/arm/Source/Sprint3Code/hpl-2.1/lib/armv7l/libhpl.a 
+/home/odroid/arm/Source/Sprint3Code/hpl-2.1/lib/armv7l/libhpl.a
+touch lib.grd
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/auxil/armv7l'
+( cd src/blas/armv7l;          make )
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/blas/armv7l'
+/usr/bin/gcc -o HPL_dcopy.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_dcopy.c
+/usr/bin/gcc -o HPL_daxpy.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_daxpy.c
+/usr/bin/gcc -o HPL_dscal.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_dscal.c
+/usr/bin/gcc -o HPL_idamax.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_idamax.c
+/usr/bin/gcc -o HPL_dgemv.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_dgemv.c
+/usr/bin/gcc -o HPL_dtrsv.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_dtrsv.c
+/usr/bin/gcc -o HPL_dger.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_dger.c
+/usr/bin/gcc -o HPL_dgemm.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_dgemm.c
+/usr/bin/gcc -o HPL_dtrsm.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_dtrsm.c
+ar r /home/odroid/arm/Source/Sprint3Code/hpl-2.1/lib/armv7l/libhpl.a  HPL_dcopy.o            HPL_daxpy.o            HPL_dscal.o HPL_idamax.o           HPL_dgemv.o            HPL_dtrsv.o HPL_dger.o             HPL_dgemm.o            HPL_dtrsm.o
+echo /home/odroid/arm/Source/Sprint3Code/hpl-2.1/lib/armv7l/libhpl.a 
+/home/odroid/arm/Source/Sprint3Code/hpl-2.1/lib/armv7l/libhpl.a
+touch lib.grd
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/blas/armv7l'
+( cd src/comm/armv7l;          make )
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/comm/armv7l'
+/usr/bin/gcc -o HPL_1ring.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_1ring.c
+/usr/bin/gcc -o HPL_1rinM.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_1rinM.c
+/usr/bin/gcc -o HPL_2ring.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_2ring.c
+/usr/bin/gcc -o HPL_2rinM.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_2rinM.c
+/usr/bin/gcc -o HPL_blong.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_blong.c
+/usr/bin/gcc -o HPL_blonM.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_blonM.c
+/usr/bin/gcc -o HPL_packL.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_packL.c
+/usr/bin/gcc -o HPL_copyL.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_copyL.c
+/usr/bin/gcc -o HPL_binit.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_binit.c
+/usr/bin/gcc -o HPL_bcast.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_bcast.c
+/usr/bin/gcc -o HPL_bwait.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_bwait.c
+/usr/bin/gcc -o HPL_send.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_send.c
+/usr/bin/gcc -o HPL_recv.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_recv.c
+/usr/bin/gcc -o HPL_sdrv.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_sdrv.c
+ar r /home/odroid/arm/Source/Sprint3Code/hpl-2.1/lib/armv7l/libhpl.a  HPL_1ring.o            HPL_1rinM.o            HPL_2ring.o HPL_2rinM.o            HPL_blong.o            HPL_blonM.o HPL_packL.o            HPL_copyL.o            HPL_binit.o HPL_bcast.o            HPL_bwait.o            HPL_send.o HPL_recv.o             HPL_sdrv.o
+echo /home/odroid/arm/Source/Sprint3Code/hpl-2.1/lib/armv7l/libhpl.a 
+/home/odroid/arm/Source/Sprint3Code/hpl-2.1/lib/armv7l/libhpl.a
+touch lib.grd
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/comm/armv7l'
+( cd src/grid/armv7l;          make )
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/grid/armv7l'
+/usr/bin/gcc -o HPL_grid_init.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_grid_init.c
+/usr/bin/gcc -o HPL_pnum.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_pnum.c
+/usr/bin/gcc -o HPL_grid_info.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_grid_info.c
+/usr/bin/gcc -o HPL_grid_exit.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_grid_exit.c
+/usr/bin/gcc -o HPL_broadcast.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_broadcast.c
+/usr/bin/gcc -o HPL_reduce.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_reduce.c
+/usr/bin/gcc -o HPL_all_reduce.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_all_reduce.c
+/usr/bin/gcc -o HPL_barrier.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_barrier.c
+/usr/bin/gcc -o HPL_min.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_min.c
+/usr/bin/gcc -o HPL_max.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_max.c
+/usr/bin/gcc -o HPL_sum.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_sum.c
+ar r /home/odroid/arm/Source/Sprint3Code/hpl-2.1/lib/armv7l/libhpl.a  HPL_grid_init.o        HPL_pnum.o             HPL_grid_info.o HPL_grid_exit.o        HPL_broadcast.o        HPL_reduce.o HPL_all_reduce.o       HPL_barrier.o          HPL_min.o HPL_max.o              HPL_sum.o
+echo /home/odroid/arm/Source/Sprint3Code/hpl-2.1/lib/armv7l/libhpl.a 
+/home/odroid/arm/Source/Sprint3Code/hpl-2.1/lib/armv7l/libhpl.a
+touch lib.grd
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/grid/armv7l'
+( cd src/panel/armv7l;         make )
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/panel/armv7l'
+/usr/bin/gcc -o HPL_pdpanel_new.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_pdpanel_new.c
+/usr/bin/gcc -o HPL_pdpanel_init.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_pdpanel_init.c
+/usr/bin/gcc -o HPL_pdpanel_disp.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_pdpanel_disp.c
+/usr/bin/gcc -o HPL_pdpanel_free.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_pdpanel_free.c
+ar r /home/odroid/arm/Source/Sprint3Code/hpl-2.1/lib/armv7l/libhpl.a  HPL_pdpanel_new.o      HPL_pdpanel_init.o     HPL_pdpanel_disp.o HPL_pdpanel_free.o
+echo /home/odroid/arm/Source/Sprint3Code/hpl-2.1/lib/armv7l/libhpl.a 
+/home/odroid/arm/Source/Sprint3Code/hpl-2.1/lib/armv7l/libhpl.a
+touch lib.grd
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/panel/armv7l'
+( cd src/pauxil/armv7l;        make )
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/pauxil/armv7l'
+/usr/bin/gcc -o HPL_indxg2l.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_indxg2l.c
+/usr/bin/gcc -o HPL_indxg2lp.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_indxg2lp.c
+/usr/bin/gcc -o HPL_indxg2p.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_indxg2p.c
+/usr/bin/gcc -o HPL_indxl2g.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_indxl2g.c
+/usr/bin/gcc -o HPL_infog2l.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_infog2l.c
+/usr/bin/gcc -o HPL_numroc.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_numroc.c
+/usr/bin/gcc -o HPL_numrocI.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_numrocI.c
+/usr/bin/gcc -o HPL_dlaswp00N.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_dlaswp00N.c
+/usr/bin/gcc -o HPL_dlaswp10N.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_dlaswp10N.c
+/usr/bin/gcc -o HPL_dlaswp01N.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_dlaswp01N.c
+/usr/bin/gcc -o HPL_dlaswp01T.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_dlaswp01T.c
+/usr/bin/gcc -o HPL_dlaswp02N.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_dlaswp02N.c
+/usr/bin/gcc -o HPL_dlaswp03N.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_dlaswp03N.c
+/usr/bin/gcc -o HPL_dlaswp03T.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_dlaswp03T.c
+/usr/bin/gcc -o HPL_dlaswp04N.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_dlaswp04N.c
+/usr/bin/gcc -o HPL_dlaswp04T.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_dlaswp04T.c
+/usr/bin/gcc -o HPL_dlaswp05N.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_dlaswp05N.c
+/usr/bin/gcc -o HPL_dlaswp05T.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_dlaswp05T.c
+/usr/bin/gcc -o HPL_dlaswp06N.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_dlaswp06N.c
+/usr/bin/gcc -o HPL_dlaswp06T.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_dlaswp06T.c
+/usr/bin/gcc -o HPL_pwarn.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_pwarn.c
+/usr/bin/gcc -o HPL_pabort.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_pabort.c
+/usr/bin/gcc -o HPL_pdlaprnt.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_pdlaprnt.c
+/usr/bin/gcc -o HPL_pdlamch.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_pdlamch.c
+/usr/bin/gcc -o HPL_pdlange.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_pdlange.c
+ar r /home/odroid/arm/Source/Sprint3Code/hpl-2.1/lib/armv7l/libhpl.a  HPL_indxg2l.o          HPL_indxg2lp.o         HPL_indxg2p.o HPL_indxl2g.o          HPL_infog2l.o          HPL_numroc.o HPL_numrocI.o          HPL_dlaswp00N.o        HPL_dlaswp10N.o HPL_dlaswp01N.o        HPL_dlaswp01T.o        HPL_dlaswp02N.o HPL_dlaswp03N.o        HPL_dlaswp03T.o        HPL_dlaswp04N.o HPL_dlaswp04T.o        HPL_dlaswp05N.o        HPL_dlaswp05T.o HPL_dlaswp06N.o        HPL_dlaswp06T.o        HPL_pwarn.o HPL_pabort.o           HPL_pdlaprnt.o         HPL_pdlamch.o HPL_pdlange.o
+echo /home/odroid/arm/Source/Sprint3Code/hpl-2.1/lib/armv7l/libhpl.a 
+/home/odroid/arm/Source/Sprint3Code/hpl-2.1/lib/armv7l/libhpl.a
+touch lib.grd
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/pauxil/armv7l'
+( cd src/pfact/armv7l;         make )
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/pfact/armv7l'
+/usr/bin/gcc -o HPL_dlocmax.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_dlocmax.c
+/usr/bin/gcc -o HPL_dlocswpN.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_dlocswpN.c
+/usr/bin/gcc -o HPL_dlocswpT.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_dlocswpT.c
+/usr/bin/gcc -o HPL_pdmxswp.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_pdmxswp.c
+/usr/bin/gcc -o HPL_pdpancrN.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_pdpancrN.c
+/usr/bin/gcc -o HPL_pdpancrT.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_pdpancrT.c
+/usr/bin/gcc -o HPL_pdpanllN.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_pdpanllN.c
+/usr/bin/gcc -o HPL_pdpanllT.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_pdpanllT.c
+/usr/bin/gcc -o HPL_pdpanrlN.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_pdpanrlN.c
+/usr/bin/gcc -o HPL_pdpanrlT.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_pdpanrlT.c
+/usr/bin/gcc -o HPL_pdrpanllN.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_pdrpanllN.c
+/usr/bin/gcc -o HPL_pdrpanllT.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_pdrpanllT.c
+/usr/bin/gcc -o HPL_pdrpancrN.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_pdrpancrN.c
+/usr/bin/gcc -o HPL_pdrpancrT.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_pdrpancrT.c
+/usr/bin/gcc -o HPL_pdrpanrlN.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_pdrpanrlN.c
+/usr/bin/gcc -o HPL_pdrpanrlT.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_pdrpanrlT.c
+/usr/bin/gcc -o HPL_pdfact.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_pdfact.c
+ar r /home/odroid/arm/Source/Sprint3Code/hpl-2.1/lib/armv7l/libhpl.a  HPL_dlocmax.o          HPL_dlocswpN.o         HPL_dlocswpT.o HPL_pdmxswp.o          HPL_pdpancrN.o         HPL_pdpancrT.o HPL_pdpanllN.o         HPL_pdpanllT.o         HPL_pdpanrlN.o HPL_pdpanrlT.o         HPL_pdrpanllN.o        HPL_pdrpanllT.o HPL_pdrpancrN.o        HPL_pdrpancrT.o        HPL_pdrpanrlN.o HPL_pdrpanrlT.o        HPL_pdfact.o
+echo /home/odroid/arm/Source/Sprint3Code/hpl-2.1/lib/armv7l/libhpl.a 
+/home/odroid/arm/Source/Sprint3Code/hpl-2.1/lib/armv7l/libhpl.a
+touch lib.grd
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/pfact/armv7l'
+( cd src/pgesv/armv7l;         make )
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/pgesv/armv7l'
+/usr/bin/gcc -o HPL_pipid.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_pipid.c
+/usr/bin/gcc -o HPL_plindx0.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_plindx0.c
+/usr/bin/gcc -o HPL_pdlaswp00N.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_pdlaswp00N.c
+/usr/bin/gcc -o HPL_pdlaswp00T.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_pdlaswp00T.c
+/usr/bin/gcc -o HPL_perm.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_perm.c
+/usr/bin/gcc -o HPL_logsort.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_logsort.c
+/usr/bin/gcc -o HPL_plindx10.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_plindx10.c
+/usr/bin/gcc -o HPL_plindx1.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_plindx1.c
+/usr/bin/gcc -o HPL_spreadN.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_spreadN.c
+/usr/bin/gcc -o HPL_spreadT.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_spreadT.c
+/usr/bin/gcc -o HPL_rollN.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_rollN.c
+/usr/bin/gcc -o HPL_rollT.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_rollT.c
+/usr/bin/gcc -o HPL_equil.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_equil.c
+/usr/bin/gcc -o HPL_pdlaswp01N.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_pdlaswp01N.c
+/usr/bin/gcc -o HPL_pdlaswp01T.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_pdlaswp01T.c
+/usr/bin/gcc -o HPL_pdupdateNN.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_pdupdateNN.c
+/usr/bin/gcc -o HPL_pdupdateNT.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_pdupdateNT.c
+/usr/bin/gcc -o HPL_pdupdateTN.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_pdupdateTN.c
+/usr/bin/gcc -o HPL_pdupdateTT.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_pdupdateTT.c
+/usr/bin/gcc -o HPL_pdtrsv.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_pdtrsv.c
+/usr/bin/gcc -o HPL_pdgesv0.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_pdgesv0.c
+/usr/bin/gcc -o HPL_pdgesvK1.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_pdgesvK1.c
+/usr/bin/gcc -o HPL_pdgesvK2.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_pdgesvK2.c
+/usr/bin/gcc -o HPL_pdgesv.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_pdgesv.c
+ar r /home/odroid/arm/Source/Sprint3Code/hpl-2.1/lib/armv7l/libhpl.a  HPL_pipid.o            HPL_plindx0.o          HPL_pdlaswp00N.o HPL_pdlaswp00T.o       HPL_perm.o             HPL_logsort.o HPL_plindx10.o         HPL_plindx1.o          HPL_spreadN.o HPL_spreadT.o          HPL_rollN.o            HPL_rollT.o HPL_equil.o            HPL_pdlaswp01N.o       HPL_pdlaswp01T.o HPL_pdupdateNN.o       HPL_pdupdateNT.o       HPL_pdupdateTN.o HPL_pdupdateTT.o       HPL_pdtrsv.o           HPL_pdgesv0.o HPL_pdgesvK1.o         HPL_pdgesvK2.o         HPL_pdgesv.o
+echo /home/odroid/arm/Source/Sprint3Code/hpl-2.1/lib/armv7l/libhpl.a 
+/home/odroid/arm/Source/Sprint3Code/hpl-2.1/lib/armv7l/libhpl.a
+touch lib.grd
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/pgesv/armv7l'
+make[2]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+make -f Make.top build_tst       arch=armv7l
+make[2]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+( cd testing/matgen/armv7l;    make )
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig/testing/matgen/armv7l'
+/usr/bin/gcc -o HPL_dmatgen.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_dmatgen.c
+/usr/bin/gcc -o HPL_ladd.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_ladd.c
+/usr/bin/gcc -o HPL_lmul.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_lmul.c
+/usr/bin/gcc -o HPL_xjumpm.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_xjumpm.c
+/usr/bin/gcc -o HPL_jumpit.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_jumpit.c
+/usr/bin/gcc -o HPL_rand.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_rand.c
+/usr/bin/gcc -o HPL_setran.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_setran.c
+ar r /home/odroid/arm/Source/Sprint3Code/hpl-2.1/lib/armv7l/libhpl.a  HPL_dmatgen.o          HPL_ladd.o             HPL_lmul.o HPL_xjumpm.o           HPL_jumpit.o           HPL_rand.o HPL_setran.o
+echo /home/odroid/arm/Source/Sprint3Code/hpl-2.1/lib/armv7l/libhpl.a 
+/home/odroid/arm/Source/Sprint3Code/hpl-2.1/lib/armv7l/libhpl.a
+touch lib.grd
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig/testing/matgen/armv7l'
+( cd testing/timer/armv7l;     make )
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig/testing/timer/armv7l'
+/usr/bin/gcc -o HPL_timer.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_timer.c
+/usr/bin/gcc -o HPL_timer_cputime.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_timer_cputime.c
+/usr/bin/gcc -o HPL_timer_walltime.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_timer_walltime.c
+ar r /home/odroid/arm/Source/Sprint3Code/hpl-2.1/lib/armv7l/libhpl.a  HPL_timer.o            HPL_timer_cputime.o    HPL_timer_walltime.o
+echo /home/odroid/arm/Source/Sprint3Code/hpl-2.1/lib/armv7l/libhpl.a 
+/home/odroid/arm/Source/Sprint3Code/hpl-2.1/lib/armv7l/libhpl.a
+touch lib.grd
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig/testing/timer/armv7l'
+( cd testing/pmatgen/armv7l;   make )
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig/testing/pmatgen/armv7l'
+/usr/bin/gcc -o HPL_pdmatgen.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_pdmatgen.c
+ar r /home/odroid/arm/Source/Sprint3Code/hpl-2.1/lib/armv7l/libhpl.a  HPL_pdmatgen.o
+echo /home/odroid/arm/Source/Sprint3Code/hpl-2.1/lib/armv7l/libhpl.a 
+/home/odroid/arm/Source/Sprint3Code/hpl-2.1/lib/armv7l/libhpl.a
+touch lib.grd
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig/testing/pmatgen/armv7l'
+( cd testing/ptimer/armv7l;    make )
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig/testing/ptimer/armv7l'
+/usr/bin/gcc -o HPL_ptimer.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_ptimer.c
+/usr/bin/gcc -o HPL_ptimer_cputime.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_ptimer_cputime.c
+/usr/bin/gcc -o HPL_ptimer_walltime.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_ptimer_walltime.c
+ar r /home/odroid/arm/Source/Sprint3Code/hpl-2.1/lib/armv7l/libhpl.a  HPL_ptimer.o           HPL_ptimer_cputime.o   HPL_ptimer_walltime.o
+echo /home/odroid/arm/Source/Sprint3Code/hpl-2.1/lib/armv7l/libhpl.a 
+/home/odroid/arm/Source/Sprint3Code/hpl-2.1/lib/armv7l/libhpl.a
+touch lib.grd
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig/testing/ptimer/armv7l'
+( cd testing/ptest/armv7l;     make )
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig/testing/ptest/armv7l'
+/usr/bin/gcc -o HPL_pddriver.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_pddriver.c
+/usr/bin/gcc -o HPL_pdinfo.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_pdinfo.c
+../HPL_pdinfo.c: In function ‘HPL_pdinfo’:
+../HPL_pdinfo.c:304:7: warning: ignoring return value of ‘fgets’, declared with attribute warn_unused_result [-Wunused-result]
+       (void) fgets( line, HPL_LINE_MAX - 2, infp );
+       ^
+../HPL_pdinfo.c:305:7: warning: ignoring return value of ‘fgets’, declared with attribute warn_unused_result [-Wunused-result]
+       (void) fgets( auth, HPL_LINE_MAX - 2, infp );
+       ^
+../HPL_pdinfo.c:309:7: warning: ignoring return value of ‘fgets’, declared with attribute warn_unused_result [-Wunused-result]
+       (void) fgets( line, HPL_LINE_MAX - 2, infp );
+       ^
+../HPL_pdinfo.c:311:7: warning: ignoring return value of ‘fgets’, declared with attribute warn_unused_result [-Wunused-result]
+       (void) fgets( line, HPL_LINE_MAX - 2, infp );
+       ^
+../HPL_pdinfo.c:327:7: warning: ignoring return value of ‘fgets’, declared with attribute warn_unused_result [-Wunused-result]
+       (void) fgets( line, HPL_LINE_MAX - 2, infp ); 
+       ^
+../HPL_pdinfo.c:337:7: warning: ignoring return value of ‘fgets’, declared with attribute warn_unused_result [-Wunused-result]
+       (void) fgets( line, HPL_LINE_MAX - 2, infp ); lineptr = line;
+       ^
+../HPL_pdinfo.c:351:7: warning: ignoring return value of ‘fgets’, declared with attribute warn_unused_result [-Wunused-result]
+       (void) fgets( line, HPL_LINE_MAX - 2, infp );
+       ^
+../HPL_pdinfo.c:361:7: warning: ignoring return value of ‘fgets’, declared with attribute warn_unused_result [-Wunused-result]
+       (void) fgets( line, HPL_LINE_MAX - 2, infp ); lineptr = line;
+       ^
+../HPL_pdinfo.c:375:7: warning: ignoring return value of ‘fgets’, declared with attribute warn_unused_result [-Wunused-result]
+       (void) fgets( line, HPL_LINE_MAX - 2, infp );
+       ^
+../HPL_pdinfo.c:379:7: warning: ignoring return value of ‘fgets’, declared with attribute warn_unused_result [-Wunused-result]
+       (void) fgets( line, HPL_LINE_MAX - 2, infp );
+       ^
+../HPL_pdinfo.c:389:7: warning: ignoring return value of ‘fgets’, declared with attribute warn_unused_result [-Wunused-result]
+       (void) fgets( line, HPL_LINE_MAX - 2, infp ); lineptr = line;
+       ^
+../HPL_pdinfo.c:400:7: warning: ignoring return value of ‘fgets’, declared with attribute warn_unused_result [-Wunused-result]
+       (void) fgets( line, HPL_LINE_MAX - 2, infp ); lineptr = line;
+       ^
+../HPL_pdinfo.c:426:7: warning: ignoring return value of ‘fgets’, declared with attribute warn_unused_result [-Wunused-result]
+       (void) fgets( line, HPL_LINE_MAX - 2, infp );
+       ^
+../HPL_pdinfo.c:431:7: warning: ignoring return value of ‘fgets’, declared with attribute warn_unused_result [-Wunused-result]
+       (void) fgets( line, HPL_LINE_MAX - 2, infp );
+       ^
+../HPL_pdinfo.c:440:7: warning: ignoring return value of ‘fgets’, declared with attribute warn_unused_result [-Wunused-result]
+       (void) fgets( line, HPL_LINE_MAX - 2, infp ); lineptr = line;
+       ^
+../HPL_pdinfo.c:453:7: warning: ignoring return value of ‘fgets’, declared with attribute warn_unused_result [-Wunused-result]
+       (void) fgets( line, HPL_LINE_MAX - 2, infp );
+       ^
+../HPL_pdinfo.c:462:7: warning: ignoring return value of ‘fgets’, declared with attribute warn_unused_result [-Wunused-result]
+       (void) fgets( line, HPL_LINE_MAX - 2, infp ); lineptr = line;
+       ^
+../HPL_pdinfo.c:476:7: warning: ignoring return value of ‘fgets’, declared with attribute warn_unused_result [-Wunused-result]
+       (void) fgets( line, HPL_LINE_MAX - 2, infp );
+       ^
+../HPL_pdinfo.c:485:7: warning: ignoring return value of ‘fgets’, declared with attribute warn_unused_result [-Wunused-result]
+       (void) fgets( line, HPL_LINE_MAX - 2, infp ); lineptr = line;
+       ^
+../HPL_pdinfo.c:499:7: warning: ignoring return value of ‘fgets’, declared with attribute warn_unused_result [-Wunused-result]
+       (void) fgets( line, HPL_LINE_MAX - 2, infp );
+       ^
+../HPL_pdinfo.c:508:7: warning: ignoring return value of ‘fgets’, declared with attribute warn_unused_result [-Wunused-result]
+       (void) fgets( line, HPL_LINE_MAX - 2, infp ); lineptr = line;
+       ^
+../HPL_pdinfo.c:521:7: warning: ignoring return value of ‘fgets’, declared with attribute warn_unused_result [-Wunused-result]
+       (void) fgets( line, HPL_LINE_MAX - 2, infp );
+       ^
+../HPL_pdinfo.c:530:7: warning: ignoring return value of ‘fgets’, declared with attribute warn_unused_result [-Wunused-result]
+       (void) fgets( line, HPL_LINE_MAX - 2, infp ); lineptr = line;
+       ^
+../HPL_pdinfo.c:546:7: warning: ignoring return value of ‘fgets’, declared with attribute warn_unused_result [-Wunused-result]
+       (void) fgets( line, HPL_LINE_MAX - 2, infp );
+       ^
+../HPL_pdinfo.c:555:7: warning: ignoring return value of ‘fgets’, declared with attribute warn_unused_result [-Wunused-result]
+       (void) fgets( line, HPL_LINE_MAX - 2, infp ); lineptr = line;
+       ^
+../HPL_pdinfo.c:570:7: warning: ignoring return value of ‘fgets’, declared with attribute warn_unused_result [-Wunused-result]
+       (void) fgets( line, HPL_LINE_MAX - 2, infp );
+       ^
+../HPL_pdinfo.c:579:7: warning: ignoring return value of ‘fgets’, declared with attribute warn_unused_result [-Wunused-result]
+       (void) fgets( line, HPL_LINE_MAX - 2, infp );
+       ^
+../HPL_pdinfo.c:585:7: warning: ignoring return value of ‘fgets’, declared with attribute warn_unused_result [-Wunused-result]
+       (void) fgets( line, HPL_LINE_MAX - 2, infp );
+       ^
+../HPL_pdinfo.c:591:7: warning: ignoring return value of ‘fgets’, declared with attribute warn_unused_result [-Wunused-result]
+       (void) fgets( line, HPL_LINE_MAX - 2, infp );
+       ^
+../HPL_pdinfo.c:597:7: warning: ignoring return value of ‘fgets’, declared with attribute warn_unused_result [-Wunused-result]
+       (void) fgets( line, HPL_LINE_MAX - 2, infp );
+       ^
+../HPL_pdinfo.c:603:7: warning: ignoring return value of ‘fgets’, declared with attribute warn_unused_result [-Wunused-result]
+       (void) fgets( line, HPL_LINE_MAX - 2, infp );
+       ^
+/usr/bin/gcc -o HPL_pdtest.o -c -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  ../HPL_pdtest.c
+/usr/bin/mpicc -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_CALL_CBLAS -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include -I/home/odroid/arm/Source/Sprint3Code/hpl-2.1/include/armv7l   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -fomit-frame-pointer -O3 -funroll-loops -W -Wall  -o /home/odroid/arm/Source/Sprint3Code/hpl-2.1/bin/armv7l/xhpl HPL_pddriver.o         HPL_pdinfo.o           HPL_pdtest.o /home/odroid/arm/Source/Sprint3Code/hpl-2.1/lib/armv7l/libhpl.a  /home/odroid/Downloads/ATLAS/buildDIr/lib/libcblas.a /home/odroid/Downloads/ATLAS/buildDIr/lib/libatlas.a  
+make /home/odroid/arm/Source/Sprint3Code/hpl-2.1/bin/armv7l/HPL.dat
+make[4]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig/testing/ptest/armv7l'
+make[4]: '/home/odroid/arm/Source/Sprint3Code/hpl-2.1/bin/armv7l/HPL.dat' is up to date.
+make[4]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig/testing/ptest/armv7l'
+touch dexe.grd
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig/testing/ptest/armv7l'
+make[2]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+install bin/armv7l/xhpl /usr/local/bin
+install bin/armv7l/HPL.dat /usr/local/bin
+make[1]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+   dh_auto_test
+ fakeroot debian/rules binary
+dh binary
+   dh_testroot
+   dh_prep
+   dh_installdirs
+   debian/rules override_dh_auto_install
+make[1]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+/usr/bin/make DESTDIR=$(pwd)/debian/linpack prefix=/usr install
+make[2]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+/usr/bin/make -f Make.top startup_dir     arch=armv7l
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+mkdir include/armv7l
+mkdir: cannot create directory ‘include/armv7l’: File exists
+Make.top:74: recipe for target 'startup_dir' failed
+make[3]: [startup_dir] Error 1 (ignored)
+mkdir lib
+mkdir: cannot create directory ‘lib’: File exists
+Make.top:74: recipe for target 'startup_dir' failed
+make[3]: [startup_dir] Error 1 (ignored)
+mkdir lib/armv7l
+mkdir: cannot create directory ‘lib/armv7l’: File exists
+Make.top:74: recipe for target 'startup_dir' failed
+make[3]: [startup_dir] Error 1 (ignored)
+mkdir bin
+mkdir: cannot create directory ‘bin’: File exists
+Make.top:74: recipe for target 'startup_dir' failed
+make[3]: [startup_dir] Error 1 (ignored)
+mkdir bin/armv7l
+mkdir: cannot create directory ‘bin/armv7l’: File exists
+Make.top:74: recipe for target 'startup_dir' failed
+make[3]: [startup_dir] Error 1 (ignored)
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+/usr/bin/make -f Make.top startup_src     arch=armv7l
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+/usr/bin/make -f Make.top leaf le=src/auxil       arch=armv7l
+make[4]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+( cd src/auxil ; mkdir armv7l )
+mkdir: cannot create directory ‘armv7l’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[4]: [leaf] Error 1 (ignored)
+( cd src/auxil/armv7l ; \
+            ln -s /home/odroid/arm/Source/Sprint3Code/hpl-2.1/Make.armv7l Make.inc )
+ln: failed to create symbolic link ‘Make.inc’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[4]: [leaf] Error 1 (ignored)
+make[4]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+/usr/bin/make -f Make.top leaf le=src/blas        arch=armv7l
+make[4]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+( cd src/blas ; mkdir armv7l )
+mkdir: cannot create directory ‘armv7l’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[4]: [leaf] Error 1 (ignored)
+( cd src/blas/armv7l ; \
+            ln -s /home/odroid/arm/Source/Sprint3Code/hpl-2.1/Make.armv7l Make.inc )
+ln: failed to create symbolic link ‘Make.inc’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[4]: [leaf] Error 1 (ignored)
+make[4]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+/usr/bin/make -f Make.top leaf le=src/comm        arch=armv7l
+make[4]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+( cd src/comm ; mkdir armv7l )
+mkdir: cannot create directory ‘armv7l’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[4]: [leaf] Error 1 (ignored)
+( cd src/comm/armv7l ; \
+            ln -s /home/odroid/arm/Source/Sprint3Code/hpl-2.1/Make.armv7l Make.inc )
+ln: failed to create symbolic link ‘Make.inc’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[4]: [leaf] Error 1 (ignored)
+make[4]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+/usr/bin/make -f Make.top leaf le=src/grid        arch=armv7l
+make[4]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+( cd src/grid ; mkdir armv7l )
+mkdir: cannot create directory ‘armv7l’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[4]: [leaf] Error 1 (ignored)
+( cd src/grid/armv7l ; \
+            ln -s /home/odroid/arm/Source/Sprint3Code/hpl-2.1/Make.armv7l Make.inc )
+ln: failed to create symbolic link ‘Make.inc’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[4]: [leaf] Error 1 (ignored)
+make[4]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+/usr/bin/make -f Make.top leaf le=src/panel       arch=armv7l
+make[4]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+( cd src/panel ; mkdir armv7l )
+mkdir: cannot create directory ‘armv7l’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[4]: [leaf] Error 1 (ignored)
+( cd src/panel/armv7l ; \
+            ln -s /home/odroid/arm/Source/Sprint3Code/hpl-2.1/Make.armv7l Make.inc )
+ln: failed to create symbolic link ‘Make.inc’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[4]: [leaf] Error 1 (ignored)
+make[4]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+/usr/bin/make -f Make.top leaf le=src/pauxil      arch=armv7l
+make[4]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+( cd src/pauxil ; mkdir armv7l )
+mkdir: cannot create directory ‘armv7l’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[4]: [leaf] Error 1 (ignored)
+( cd src/pauxil/armv7l ; \
+            ln -s /home/odroid/arm/Source/Sprint3Code/hpl-2.1/Make.armv7l Make.inc )
+ln: failed to create symbolic link ‘Make.inc’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[4]: [leaf] Error 1 (ignored)
+make[4]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+/usr/bin/make -f Make.top leaf le=src/pfact       arch=armv7l
+make[4]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+( cd src/pfact ; mkdir armv7l )
+mkdir: cannot create directory ‘armv7l’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[4]: [leaf] Error 1 (ignored)
+( cd src/pfact/armv7l ; \
+            ln -s /home/odroid/arm/Source/Sprint3Code/hpl-2.1/Make.armv7l Make.inc )
+ln: failed to create symbolic link ‘Make.inc’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[4]: [leaf] Error 1 (ignored)
+make[4]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+/usr/bin/make -f Make.top leaf le=src/pgesv       arch=armv7l
+make[4]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+( cd src/pgesv ; mkdir armv7l )
+mkdir: cannot create directory ‘armv7l’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[4]: [leaf] Error 1 (ignored)
+( cd src/pgesv/armv7l ; \
+            ln -s /home/odroid/arm/Source/Sprint3Code/hpl-2.1/Make.armv7l Make.inc )
+ln: failed to create symbolic link ‘Make.inc’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[4]: [leaf] Error 1 (ignored)
+make[4]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+/usr/bin/make -f Make.top startup_tst     arch=armv7l
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+/usr/bin/make -f Make.top leaf le=testing/matgen  arch=armv7l
+make[4]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+( cd testing/matgen ; mkdir armv7l )
+mkdir: cannot create directory ‘armv7l’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[4]: [leaf] Error 1 (ignored)
+( cd testing/matgen/armv7l ; \
+            ln -s /home/odroid/arm/Source/Sprint3Code/hpl-2.1/Make.armv7l Make.inc )
+ln: failed to create symbolic link ‘Make.inc’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[4]: [leaf] Error 1 (ignored)
+make[4]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+/usr/bin/make -f Make.top leaf le=testing/timer   arch=armv7l
+make[4]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+( cd testing/timer ; mkdir armv7l )
+mkdir: cannot create directory ‘armv7l’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[4]: [leaf] Error 1 (ignored)
+( cd testing/timer/armv7l ; \
+            ln -s /home/odroid/arm/Source/Sprint3Code/hpl-2.1/Make.armv7l Make.inc )
+ln: failed to create symbolic link ‘Make.inc’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[4]: [leaf] Error 1 (ignored)
+make[4]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+/usr/bin/make -f Make.top leaf le=testing/pmatgen arch=armv7l
+make[4]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+( cd testing/pmatgen ; mkdir armv7l )
+mkdir: cannot create directory ‘armv7l’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[4]: [leaf] Error 1 (ignored)
+( cd testing/pmatgen/armv7l ; \
+            ln -s /home/odroid/arm/Source/Sprint3Code/hpl-2.1/Make.armv7l Make.inc )
+ln: failed to create symbolic link ‘Make.inc’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[4]: [leaf] Error 1 (ignored)
+make[4]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+/usr/bin/make -f Make.top leaf le=testing/ptimer  arch=armv7l
+make[4]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+( cd testing/ptimer ; mkdir armv7l )
+mkdir: cannot create directory ‘armv7l’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[4]: [leaf] Error 1 (ignored)
+( cd testing/ptimer/armv7l ; \
+            ln -s /home/odroid/arm/Source/Sprint3Code/hpl-2.1/Make.armv7l Make.inc )
+ln: failed to create symbolic link ‘Make.inc’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[4]: [leaf] Error 1 (ignored)
+make[4]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+/usr/bin/make -f Make.top leaf le=testing/ptest   arch=armv7l
+make[4]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+( cd testing/ptest ; mkdir armv7l )
+mkdir: cannot create directory ‘armv7l’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[4]: [leaf] Error 1 (ignored)
+( cd testing/ptest/armv7l ; \
+            ln -s /home/odroid/arm/Source/Sprint3Code/hpl-2.1/Make.armv7l Make.inc )
+ln: failed to create symbolic link ‘Make.inc’: File exists
+Make.top:188: recipe for target 'leaf' failed
+make[4]: [leaf] Error 1 (ignored)
+make[4]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+/usr/bin/make -f Make.top refresh_src     arch=armv7l
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+cp makes/Make.auxil    src/auxil/armv7l/Makefile
+cp makes/Make.blas     src/blas/armv7l/Makefile
+cp makes/Make.comm     src/comm/armv7l/Makefile
+cp makes/Make.grid     src/grid/armv7l/Makefile
+cp makes/Make.panel    src/panel/armv7l/Makefile
+cp makes/Make.pauxil   src/pauxil/armv7l/Makefile
+cp makes/Make.pfact    src/pfact/armv7l/Makefile
+cp makes/Make.pgesv    src/pgesv/armv7l/Makefile
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+/usr/bin/make -f Make.top refresh_tst     arch=armv7l
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+cp makes/Make.matgen   testing/matgen/armv7l/Makefile
+cp makes/Make.timer    testing/timer/armv7l/Makefile
+cp makes/Make.pmatgen  testing/pmatgen/armv7l/Makefile
+cp makes/Make.ptimer   testing/ptimer/armv7l/Makefile
+cp makes/Make.ptest    testing/ptest/armv7l/Makefile
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+/usr/bin/make -f Make.top refresh_src     arch=armv7l
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+cp makes/Make.auxil    src/auxil/armv7l/Makefile
+cp makes/Make.blas     src/blas/armv7l/Makefile
+cp makes/Make.comm     src/comm/armv7l/Makefile
+cp makes/Make.grid     src/grid/armv7l/Makefile
+cp makes/Make.panel    src/panel/armv7l/Makefile
+cp makes/Make.pauxil   src/pauxil/armv7l/Makefile
+cp makes/Make.pfact    src/pfact/armv7l/Makefile
+cp makes/Make.pgesv    src/pgesv/armv7l/Makefile
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+/usr/bin/make -f Make.top refresh_tst     arch=armv7l
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+cp makes/Make.matgen   testing/matgen/armv7l/Makefile
+cp makes/Make.timer    testing/timer/armv7l/Makefile
+cp makes/Make.pmatgen  testing/pmatgen/armv7l/Makefile
+cp makes/Make.ptimer   testing/ptimer/armv7l/Makefile
+cp makes/Make.ptest    testing/ptest/armv7l/Makefile
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+/usr/bin/make -f Make.top build_src       arch=armv7l
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+( cd src/auxil/armv7l;         /usr/bin/make )
+make[4]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/auxil/armv7l'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/auxil/armv7l'
+( cd src/blas/armv7l;          /usr/bin/make )
+make[4]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/blas/armv7l'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/blas/armv7l'
+( cd src/comm/armv7l;          /usr/bin/make )
+make[4]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/comm/armv7l'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/comm/armv7l'
+( cd src/grid/armv7l;          /usr/bin/make )
+make[4]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/grid/armv7l'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/grid/armv7l'
+( cd src/panel/armv7l;         /usr/bin/make )
+make[4]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/panel/armv7l'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/panel/armv7l'
+( cd src/pauxil/armv7l;        /usr/bin/make )
+make[4]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/pauxil/armv7l'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/pauxil/armv7l'
+( cd src/pfact/armv7l;         /usr/bin/make )
+make[4]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/pfact/armv7l'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/pfact/armv7l'
+( cd src/pgesv/armv7l;         /usr/bin/make )
+make[4]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/pgesv/armv7l'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig/src/pgesv/armv7l'
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+/usr/bin/make -f Make.top build_tst       arch=armv7l
+make[3]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+( cd testing/matgen/armv7l;    /usr/bin/make )
+make[4]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig/testing/matgen/armv7l'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig/testing/matgen/armv7l'
+( cd testing/timer/armv7l;     /usr/bin/make )
+make[4]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig/testing/timer/armv7l'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig/testing/timer/armv7l'
+( cd testing/pmatgen/armv7l;   /usr/bin/make )
+make[4]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig/testing/pmatgen/armv7l'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig/testing/pmatgen/armv7l'
+( cd testing/ptimer/armv7l;    /usr/bin/make )
+make[4]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig/testing/ptimer/armv7l'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig/testing/ptimer/armv7l'
+( cd testing/ptest/armv7l;     /usr/bin/make )
+make[4]: Entering directory '/home/odroid/linpackPackage/linpack_1.0.orig/testing/ptest/armv7l'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig/testing/ptest/armv7l'
+make[3]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+install bin/armv7l/xhpl /home/odroid/linpackPackage/linpack_1.0.orig/debian/linpack/usr/bin
+install bin/armv7l/HPL.dat /home/odroid/linpackPackage/linpack_1.0.orig/debian/linpack/usr/bin
+make[2]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+make[1]: Leaving directory '/home/odroid/linpackPackage/linpack_1.0.orig'
+   dh_installdocs
+   dh_installchangelogs
+   dh_installman
+   dh_perl
+   dh_link
+   dh_compress
+   dh_fixperms
+   dh_strip
+   dh_makeshlibs
+   dh_shlibdeps
+   dh_installdeb
+   dh_gencontrol
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package `linpack' in `../linpack_1.0-1_armhf.deb'.
+ dpkg-genchanges  >../linpack_1.0-1_armhf.changes
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build linpack_1.0.orig
+dpkg-buildpackage: full upload (original source is included)
+Now running lintian...
+warning: the authors of lintian do not recommend running it with root privileges!
+E: linpack changes: changed-by-name-missing <andrew.hoover@mines.sdsmt.edu>
+E: linpack source: source-is-missing bin/armv7l/xhpl
+E: linpack source: source-contains-unsafe-symlink testing/timer/armv7l/Make.inc
+E: linpack source: source-contains-unsafe-symlink testing/ptimer/armv7l/Make.inc
+E: linpack source: source-contains-unsafe-symlink testing/ptest/armv7l/Make.inc
+E: linpack source: source-contains-unsafe-symlink testing/pmatgen/armv7l/Make.inc
+E: linpack source: source-contains-unsafe-symlink testing/matgen/armv7l/Make.inc
+E: linpack source: source-contains-unsafe-symlink src/pgesv/armv7l/Make.inc
+E: linpack source: source-contains-unsafe-symlink src/pfact/armv7l/Make.inc
+E: linpack source: source-contains-unsafe-symlink src/pauxil/armv7l/Make.inc
+E: linpack source: source-contains-unsafe-symlink src/panel/armv7l/Make.inc
+E: linpack source: source-contains-unsafe-symlink src/grid/armv7l/Make.inc
+E: linpack source: source-contains-unsafe-symlink src/comm/armv7l/Make.inc
+E: linpack source: source-contains-unsafe-symlink src/blas/armv7l/Make.inc
+E: linpack source: source-contains-unsafe-symlink src/auxil/armv7l/Make.inc
+E: linpack source: package-uses-debhelper-but-lacks-build-depends
+W: linpack source: package-needs-versioned-debhelper-build-depends 9
+W: linpack source: ancient-standards-version 3.9.2 (current is 3.9.6)
+W: linpack: wrong-bug-number-in-closes l3:#XXXXXX
+W: linpack: new-package-should-close-itp-bug
+W: linpack: copyright-without-copyright-notice
+E: linpack: description-starts-with-package-name
+E: linpack: description-too-short linpack
+E: linpack: description-is-pkg-name linpack
+W: linpack: description-starts-with-leading-spaces
+W: linpack: zero-byte-file-in-doc-directory usr/share/doc/linpack/copyright
+W: linpack: binary-without-manpage usr/bin/HPL.dat
+W: linpack: binary-without-manpage usr/bin/xhpl
+W: linpack: executable-not-elf-or-script usr/bin/HPL.dat
+Finished running lintian.

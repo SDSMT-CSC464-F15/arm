@@ -1,0 +1,10 @@
+Package: linpack
+Version: 1.0-1
+Architecture: armhf
+Maintainer: Andrew Hoover <andrew.hoover@mines.sdsmt.edu>
+Installed-Size: 603
+Depends: libc6 (>= 2.7), libopenmpi1.6
+Section: misc
+Priority: optional
+Description: linpack
+  linpack installs HPL linpack.
