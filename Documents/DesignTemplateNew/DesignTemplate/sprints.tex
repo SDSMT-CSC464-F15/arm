@@ -1,0 +1,255 @@
+% New templete!!
+% !TEX root = DesignDocument.tex
+
+\section{Sprint Report \#1}
+
+\subsection*{Overview}
+
+\subsection*{Deliverables}
+\begin{itemize}
+	\item Mission Statement
+	\item User Stories
+	\item Number Generating Code
+	\item Benchmark Code
+	\item Benchmark Log
+	\item Signed Software Contract
+	\item Updated Design Document
+\end{itemize}
+
+\subsection*{Work for this sprint included:}
+\begin{itemize}
+	\item Wrote Mission Statement and Elevator Speech
+	\item Drew up Software Contract
+	\item Wrote user stories
+	\item Obtained ODroid 4xU, Raspberry Pi 2B, and PcDuino 8 single-board computers
+	\item Wrote number generating code
+	\item Wrote benchmark code that ran addition, multiplication, division, and sine floating point operations
+	\item Added OpenMP to run the benchmark code on all cores
+	\item Ran the code each of the single-board computers
+	\item Logged times
+	\item Calculated the GFlops
+	\item Calculated the GFlops/Dollar/Watts
+	\item Determined best computer
+\end{itemize}
+
+\subsection*{Work that is carried over into Sprint 2 is as follows:}
+\begin{itemize}
+	\item Using the benchmark results to determine which computer to use
+	\item Order more of the computers that proved best from Sprint 1 and maintain the given budget of \$1,200
+	\item Find a topology that best fits the cluster
+\end{itemize}
+
+\subsection*{Backlog}
+\begin{itemize}
+	\item Decide on a computer based on the results of the benchmarking
+	\item Calculate prices on supplies and computers while maintaining below the budget
+	\item Ordering said supplies and computers
+	\item Build the cluster to perform floating-point operations
+	\item Benchmark the cluster
+	\item Experiment with different connections
+	\item Create a new mode of communication
+\end{itemize}
+
+\section{Sprint Report \#2}
+
+\subsection*{Deliverables}
+\begin{itemize}
+	\item Budget
+	\item Harware Tests
+	\item Switch Benchmark
+	\item Ethernet Benchmard
+	\item USB to Ethernet
+	\item MPI Code
+	\item Message-Passing Protocol Design
+	\item Updated Design Document
+\end{itemize}
+
+\subsection*{Overview}
+During this sprint, our team first decided to use the ODROID devices instead of Raspberry PIs based on our findings from sprint one. We roughly planned out our budget for ethernet cables, the switch, varius USB cables, power strips, and the devices themselves and extra memory for them. At this stage, we did not chose exactly what we would buy, but we narrowed our budget enough to know that the number of devices we could have without going over the limit set by our sponser was eight. Dr. Karlsson then ordered seven more ODroids, an eight port switch, eight ethernet cables, and one USB to RJ45 device to benchmark USB to ethernet speeds. We encountered an issue where the order was backordered, and we did not receive the devices until over two weeks laters. Once we did get them, we benchmarked the speed over ethernet between two devices through the switch, and the speed when one device was using a USB to RJ45 to connect to the switch. We also attempted to benchmark the direct connection between RJ45 on one device connected directly to the ethernet of another device, but found that we would need a crossover cable. We concluded our sprint by setting up all eight devices by installing MPI and giving them static IP addresses on the network over the switch. \newline \newline Dr. Karlsson as been informed of a research synposium and has suggested our team take part of it. We are adding this to our goals for Senior Design to take part in that.
+
+\subsection*{Work for this sprint included:}
+
+\subsubsection*{Andrew Hoover}
+\begin{itemize}
+	\item Benchmarked:
+		\begin{itemize}
+			\item Switch
+			\item Ethernet
+			\item USB to Ethernet
+		\end{itemize}
+	\item Tested hardware
+	\item Tested MPI code on ODROIDs
+\end{itemize}
+
+\subsubsection*{Samantha Krantz}
+\begin{itemize}
+	\item Researched supplies
+	\item Finialized budget
+	\item Researched patents and other clusters
+\end{itemize}
+
+\subsubsection*{Christine Sorensen}
+\begin{itemize}
+	\item Designed message-passing protocol
+	\item Sampled MPI code
+	\item Updated Design Document
+	\item Sprint report document
+\end{itemize}
+
+\subsection*{Work that is carried over into Sprint 3 is as follows:}
+\begin{itemize}
+	\item Design the cluster
+	\item Build the cluster
+	\item Benchmark cluster
+	\item Test message-passing using the other pins and ports
+\end{itemize}
+
+\subsection*{Backlog}
+\begin{itemize}
+	\item Build the cluster to perform floating-point operations
+	\item Benchmark the cluster
+	\item Experiment with different connections
+	\item Create a new mode of communication
+\end{itemize}
+
+\subsection*{Goals}
+\begin{itemize}
+	\item Design Fair
+	\item Research Symposium
+\end{itemize}
+
+\section{Sprint Report \#3}
+
+\subsection*{Deliverables}
+\begin{itemize}
+	\item Built cluster
+	\item MPI code
+	\item Mounted home directory
+	\item Shutdown script
+	\item Mounting script
+	\item LINPACK and ATLAS installed on ODROIDs
+	\item MPI installed on ODROIDs
+	\item Hostnames
+	\item Fixed IP Addresses
+	\item SSH configuration
+\end{itemize}
+
+\subsection{Overview}
+\begin{itemize}
+	\item Built cluster
+	\begin{itemize}
+		\item All parts for the cluster were ordered. Parts included:
+		\begin{itemize}
+			\item 8 ODROID XU4's
+			\item Switch
+			\item Power box
+			\item Ethernet cables
+			\item Acrylic board
+			\item Accessories, such as handles and power switches
+		\end{itemize}
+		\item The ODROIDs, switch and power box were mounted onto the acrylic board. ODROIDs were connected to the switch and the power box.
+	\end{itemize}
+	\item Set up cluster
+	\begin{itemize}
+		\item Fixed IP addresses to each ODROID
+		\item Assigned a hostname to each ODROID
+		\item Configured cluster network
+		\item NFS share
+		\item Configured sudo
+		\item Set-up ssh between ODROIDS
+	\end{itemize}
+	\item Benchmarked cluster
+	\begin{itemize}
+		\item Installed LINPACK
+		\item Wrote MPI code to run on the cluster
+		\item Ran the MPI code with LINPACK on the cluster
+		\item Gathered data
+	\end{itemize}
+	\item Setbacks
+	\begin{itemize}
+		\item Backorder
+		\begin{itemize}
+			\item The remaining ODROIDs were backordered, delaying to assembling of the cluster.
+		\end{itemize}	
+		\item Broken ODROIDs
+		\begin{itemize}
+			\item Two of the ODROIDs needed to be replaced. It was believed that the two ODROIDs were placed on the power supply without covering which exposed the soldering on the bottom to sepatate it from the metal which might have crossed circuits causing the ODROIDs to not power up. Ordering the new ODROIDs put us behind in our timeline.
+		\end{itemize}
+		\item Installing LINPACK
+		\begin{itemize}
+			\item The installation of LINPACK was complicated and prompted issues. It took longer than expected to complete.
+		\end{itemize}
+	\end{itemize}
+\end{itemize}
+
+\subsection*{Work for this sprint included:}
+\subsubsection*{Andrew Hoover}
+\begin{itemize}
+	\item Installed LINPACK and ATLAS
+	\item Assembled cluster
+	\item Replaced broken ODROIDS
+	\item Fixed IP address on the ODROIDS
+	\item Connected all ODROIDS over network
+	\item Accessed the internet through the ODROIDS
+	\item Mounted home directory of Snow White on the other ODROIDS
+	\item Wrote script to shut down all ODROIDs
+	\item Wrote script to run LINPACK on ODROIDs for specified number of processes
+	\item Removed the sudo password
+	\item Wrote script to change network configuration to all access to the internet or local network
+	\item Assembled cluster
+	\item Debugged boot-up error
+	\item Benchmarked cluster using LINPACK and MPI code
+\end{itemize}
+
+\subsubsection*{Samantha Kranstz}
+\begin{itemize}
+	\item Created client presentation 
+	\item Assembled cluster
+	\item Debugged boot-up error
+	\item Benchmarked cluster using LINPACK and MPI code
+	\item Researched patents
+\end{itemize}
+
+\subsubsection*{Christine Sorensen}
+\begin{itemize}
+	\item Assigned hostnames to each of the ODROIDs
+	\item Configured ssh on ODROIDs
+	\item Replaced broken ODROIDs
+	\item Wrote MPI code to run on all cores of the clusters
+	\item Updated design documentation
+	\item Wrote script to mount home directory of Snow White onto all ODROIDS at once
+	\item Added ODROID's hostnames to the others' known hosts list
+	\item Wrote sprint report 
+	\item Assembled cluster
+	\item Debugged boot-up error
+	\item Benchmarked cluster using LINPACK and MPI code
+\end{itemize}
+
+\subsection*{Work that is carried over into Sprint 4 is as follows:}
+\begin{itemize}
+	\item Research new methods of connection
+	\item Take action on these new methods
+	\item Benchmark
+	\item Complete abstract for research symposium
+\end{itemize}
+
+\subsection*{Backlog}
+\begin{itemize}
+	\item Research new connection methods
+	\item Benchmark the cluster
+	\item Experiment with different topologies
+	\item Create a new mode of communication
+	\item Design documentation
+	\item Research symposium
+	\begin{itemize}
+		\item Complete abstract
+	\end{itemize}
+	\item Design Fair
+\end{itemize}
+
+\section{Sprint Report \#4}
+
+\section{Sprint Report \#5}
+
+\section{Sprint Report \#6}
+

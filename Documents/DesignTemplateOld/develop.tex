@@ -1,0 +1,44 @@
+% !TEX root = SystemTemplate.tex
+%% Need to find where to put these in new templete
+\chapter{Development Environment}
+The basic purpose for this section is to give a developer all of the necessary 
+information to setup their development environment to run, test, and/or develop.
+
+
+
+
+\section{Development IDE and Tools}
+Describe which IDE and provide links to installs and/or reference material. 
+
+\section{Source  Control}
+All source code and documentation, including development practices and usage instructions, exist
+on the team github repository located at 
+https://github.com/SDSMT-CSC464-F15/arm/
+The repository has public viewing right, and includes information about it's contents in the README.
+
+
+\section{Dependencies}
+The only dependencies for our project are the build enviroment changes listed below. No   
+
+\section{Build  Environment}
+Our build enviroment was the operating system Ubuntu 15.04. Many modifications to the build environment,
+including installing packages and altering /etc/* files, were required for the project. All these changes
+are documented in the github repository. So far, the installed packages include:
+\begin{itemize}
+	\item nfs-common
+	\item nfs-kernel-server
+	\item openmpi-devel
+	\item vim
+\end{itemize}
+The altered system files are:
+\begin{itemize}
+	\item /etc/hosts
+	\item /etc/hostname
+	\item /etc/fstab
+	\item /etc/exports
+\end{itemize}
+
+\section{Development Machine Setup}
+If warranted, provide a list of steps and details associated with setting up a 
+machine for use by a developer. 
+
