@@ -1,0 +1,14 @@
+**How to communicate via GPIO**
+
+In:
+> cd /sys/class/gpio
+> echo <pin_num> > export
+It makes gpio<pin_num>
+> cd gpio<pin_num>
+In direction:
+     in or out
+In value:
+    value like 0 or 1
+
+**Unmount the GPIO pin**
+echo 7 > unexport
