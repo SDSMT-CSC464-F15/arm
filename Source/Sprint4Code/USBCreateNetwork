@@ -1,0 +1,18 @@
+#!/bin/bash
+
+ssh doc sudo modprobe g_ether
+ssh doc dmesg
+ssh doc sudo ifconfig usb0 192.168.2.25
+
+ssh happy sudo modprobe g_ether
+ssh happy dmesg
+ssh happy sudo ifconfig usb0 192.168.2.26
+
+ssh bashful sudo modprobe g_ether
+ssh bashful dmesg
+ssh bashful sudo ifconfig usb0 192.168.2.27
+
+ssh sneezy sudo modprobe g_ether
+ssh sneezy dmesg
+ssh sneezy sudo ifconfig usb0 192.168.2.28
+
