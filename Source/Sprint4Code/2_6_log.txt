@@ -1,0 +1,5 @@
+2-6-16
+
+Trying to install wiringpi2 onto homedirectory, however it is not working.
+
+Online sources says to update kernel.
