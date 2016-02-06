@@ -3,3 +3,14 @@
 Trying to install wiringpi2 onto homedirectory, however it is not working.
 
 Online sources says to update kernel.
+
+apt-get updrage linux-image-xu3
+Got a purple screen (see image)
+Ignore warning errors.
+
+UPDATED!!!!
+
+Testing it on Snow White.
+
+Type gpio readall, shows pin mapping
+Everything isn't in order. "Bah humbug" - Andrew
