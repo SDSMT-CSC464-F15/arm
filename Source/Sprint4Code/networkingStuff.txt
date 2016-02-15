@@ -1,0 +1,125 @@
+Snow White			Dopey				Grumpy				Sleepy
+192.168.0.1			192.168.1.1			192.168.3.1			192.168.2.1
+192.168.0.2			192.168.1.2			192.168.3.2			192.168.2.2
+
+Doc					Happy				Sneezy				Bashful
+192.168.4.1			192.168.5.1			192.168.7.1			192.168.6.1
+192.168.4.2			192.168.5.2			192.168.7.2			192.168.6.2
+
+
+
+192.168.0.0
+Default			Gateway
+192.168.1.0		192.168.0.1
+192.168.2.0		192.168.0.1 - 192.168.1.1 - 192.168.3.1
+192.168.3.0		192.168.0.1 - 192.168.1.1
+192.168.4.0		192.168.0.2
+192.168.5.0		192.168.0.1 - 192.168.1.2
+				192.168.0.2 - 192.168.4.1
+192.168.6.0		192.168.0.1 - 192.168.1.1 - 192.168.3.1 - 192.168.2.2
+				192.168.0.2 - 192.168.4.1 - 192.168.5.1 - 192.168.7.1
+192.168.7.0		192.168.0.2 - 192.168.4.1 - 192.168.5.1
+				192.168.0.1 - 192.168.1.1 - 192.168.3.2
+
+
+FORMAT in /etc/networking/interfaces
+
+iface eth0 inet static
+	address 192.168.x.11
+	netmask 255.255.0.0
+	up route add -net 192.168.x.0 netmask 255.255.0.0 gw 192.168.x.11/12
+
+iface eth1 inet static
+	address 192.168.x.12
+	netmask 255.255.0.0
+	up route add -net 192.168.x.0 netmask 255.255.0.0 gw  192.168.x.11/12
+
+Snow White:
+
+route add 192.168.1.0 mask 255.255.255.0 192.168.0.11 dev eth0
+route add 192.168.2.0 mask 255.255.255.0 192.168.0.11 dev eth0
+route add 192.168.3.0 mask 255.255.255.0 192.168.0.11 dev eth0
+route add 192.168.4.0 mask 255.255.255.0 192.168.0.12 dev eth1
+route add 192.168.5.0 mask 255.255.255.0 192.168.0.12 dev eth1
+route add 192.168.6.0 mask 255.255.255.0 192.168.0.11 dev eth0
+route add 192.168.7.0 mask 255.255.255.0 192.168.0.12 dev eth1
+
+Dopey:
+
+route add 192.168.0.0 mask 255.255.255.0 192.168.1.12 dev eth1
+route add 192.168.2.0 mask 255.255.255.0 192.168.1.11 dev eth0
+route add 192.168.3.0 mask 255.255.255.0 192.168.1.11 dev eth0
+route add 192.168.4.0 mask 255.255.255.0 192.168.1.12 dev eth1
+route add 192.168.5.0 mask 255.255.255.0 192.168.1.12 dev eth1
+route add 192.168.6.0 mask 255.255.255.0 192.168.1.11 dev eth0
+route add 192.168.7.0 mask 255.255.255.0 192.168.1.11 dev eth0
+
+Sleepy:
+
+route add 192.168.0.0 mask 255.255.255.0 192.168.2.12 dev eth1
+route add 192.168.1.0 mask 255.255.255.0 192.168.2.12 dev eth1
+route add 192.168.3.0 mask 255.255.255.0 192.168.2.12 dev eth1
+route add 192.168.4.0 mask 255.255.255.0 192.168.2.11 dev eth0
+route add 192.168.5.0 mask 255.255.255.0 192.168.2.11 dev eth0
+route add 192.168.6.0 mask 255.255.255.0 192.168.2.11 dev eth0
+route add 192.168.7.0 mask 255.255.255.0 192.168.2.11 dev eth0
+
+
+Grumpy:
+
+route add 192.168.0.0 mask 255.255.255.0 192.168.3.12 dev eth1
+route add 192.168.1.0 mask 255.255.255.0 192.168.3.12 dev eth1
+route add 192.168.2.0 mask 255.255.255.0 192.168.3.11 dev eth0
+route add 192.168.4.0 mask 255.255.255.0 192.168.3.12 dev eth1
+route add 192.168.5.0 mask 255.255.255.0 192.168.3.11 dev eth0
+route add 192.168.6.0 mask 255.255.255.0 192.168.3.11 dev eth0
+route add 192.168.7.0 mask 255.255.255.0 192.168.3.11 dev eth0
+
+Doc:
+
+route add 192.168.0.0 mask 255.255.255.0 192.168.3.12 dev eth1
+route add 192.168.1.0 mask 255.255.255.0 192.168.3.12 dev eth1
+route add 192.168.2.0 mask 255.255.255.0 192.168.3.11 dev eth0
+route add 192.168.3.0 mask 255.255.255.0 192.168.3.12 dev eth1
+route add 192.168.5.0 mask 255.255.255.0 192.168.3.11 dev eth0
+route add 192.168.6.0 mask 255.255.255.0 192.168.3.11 dev eth0
+route add 192.168.7.0 mask 255.255.255.0 192.168.3.11 dev eth0
+
+Happy:
+
+route add 192.168.0.0 mask 255.255.255.0 192.168.3.12 dev eth1
+route add 192.168.1.0 mask 255.255.255.0 192.168.3.12 dev eth1
+route add 192.168.2.0 mask 255.255.255.0 192.168.3.11 dev eth0
+route add 192.168.3.0 mask 255.255.255.0 192.168.3.11 dev eth0
+route add 192.168.4.0 mask 255.255.255.0 192.168.3.12 dev eth1
+route add 192.168.6.0 mask 255.255.255.0 192.168.3.11 dev eth0
+route add 192.168.7.0 mask 255.255.255.0 192.168.3.11 dev eth0
+
+Sneezy:
+
+route add 192.168.0.0 mask 255.255.255.0 192.168.3.11 dev eth0
+route add 192.168.1.0 mask 255.255.255.0 192.168.3.11 dev eth0
+route add 192.168.2.0 mask 255.255.255.0 192.168.3.11 dev eth0
+route add 192.168.3.0 mask 255.255.255.0 192.168.3.11 dev eth0
+route add 192.168.4.0 mask 255.255.255.0 192.168.3.12 dev eth1
+route add 192.168.5.0 mask 255.255.255.0 192.168.3.12 dev eth1
+route add 192.168.7.0 mask 255.255.255.0 192.168.3.12 dev eth1
+
+Bashful:
+
+route add 192.168.0.0 mask 255.255.255.0 192.168.3.12 dev eth1
+route add 192.168.1.0 mask 255.255.255.0 192.168.3.11 dev eth0
+route add 192.168.2.0 mask 255.255.255.0 192.168.3.11 dev eth0
+route add 192.168.3.0 mask 255.255.255.0 192.168.3.11 dev eth0
+route add 192.168.4.0 mask 255.255.255.0 192.168.3.12 dev eth1
+route add 192.168.5.0 mask 255.255.255.0 192.168.3.12 dev eth1
+route add 192.168.6.0 mask 255.255.255.0 192.168.3.11 dev eth0
+
+
+
+
+
+
+
+
+
