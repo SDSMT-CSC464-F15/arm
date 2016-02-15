@@ -1,0 +1,7 @@
+2/11/16
+
+.61 MBits/sec on GPIO
+750 MBits/sec on Ethernet (iperf)
+
+120 times slower than ethernet
+Only using one pin though.
