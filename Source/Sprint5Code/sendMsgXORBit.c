@@ -5,6 +5,7 @@
 // This is assuming the devices are in a hypercube
 //
 
+
 #include <stdio.h>
 #include <stdlib.h>
 

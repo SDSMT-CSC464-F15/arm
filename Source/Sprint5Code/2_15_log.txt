@@ -1,6 +1,7 @@
 
 Working on communicating between dwarfs in cluster via network.
 
+
 ***
 Originally was wokring on communicating in a 8 node ring, however, we decided to just
 jump right into working on a hypercube.
