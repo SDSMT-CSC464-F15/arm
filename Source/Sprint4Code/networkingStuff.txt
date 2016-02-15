@@ -22,6 +22,18 @@ Default			Gateway
 				192.168.0.1 - 192.168.1.1 - 192.168.3.2
 
 
+FORMAT in /etc/networking/interfaces
+
+iface eth0 inet static
+	address 192.168.x.11
+	netmask 255.255.0.0
+	up route add -net 192.168.x.0 netmask 255.255.0.0 gw 192.168.x.11/12
+
+iface eth1 inet static
+	address 192.168.x.12
+	netmask 255.255.0.0
+	up route add -net 192.168.x.0 netmask 255.255.0.0 gw  192.168.x.11/12
+
 Snow White:
 
 route add 192.168.1.0 mask 255.255.255.0 192.168.0.11 dev eth0
