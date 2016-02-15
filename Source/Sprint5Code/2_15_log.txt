@@ -1,0 +1,41 @@
+
+Working on communicating between dwarfs in cluster via network.
+
+***
+Originally was wokring on communicating in a 8 node ring, however, we decided to just
+jump right into working on a hypercube.
+All connected via GreyCode.
+
+***
+Was thinking maybe do an XOR and compare bit to tell which dwarf to go where 
+next.
+
+Or, this could be use to calculate the shortest distance, include that as a header
+for the packet, and send it on its wayward son.
+
+***
+New idea however, what about creating a text file in each ODROID that will tell how
+to get to each ODROID, for example...
+
+Hypothetical connection: 
+
+Doc - Grumpy - Sneezy - Sleepy 
+|                             \
+Dopey - SnowWhite - Bashful - Happy
+
+Say you want to go from Grumpy  to Happy. A text file in Group would say:
+
+Doc - Doc
+Dopey - Doc
+SnowWhite - Doc
+Bashful - Sneezy
+Happy - Sneezy
+Sleepy - Sneezy
+Sneezy - Sneezy
+
+NOTE: Default is going clockwise. Happy from Doc can be achieved both was in the 
+    shortest path via Dopey and Grumpy, but it'll say Grumpy.
+
+In the text file, you would find "Happy", and next to it, it tells you to go to
+"Sneezy". It will then go to Sneezy. In its text file, you'll look for "Happy" and
+it'll tell you to go to "Sleepy" and so on an so fourth from now until ever amen.
