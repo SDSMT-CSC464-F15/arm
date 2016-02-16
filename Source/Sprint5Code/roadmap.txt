@@ -1,0 +1,8 @@
+snow_white
+dopey   dopey
+sleepy  dopey
+grumpy  dopey
+doc     doc
+happy   dopey
+bashful dopey
+sneezy  doc

@@ -4,7 +4,8 @@
 // XOR's them, and from that, determine the path for communication.
 // This is assuming the devices are in a hypercube
 //
-
+// In progress...
+//
 
 #include <stdio.h>
 #include <stdlib.h>
