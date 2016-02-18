@@ -1,0 +1,22 @@
+**How to communicate via GPIO**
+
+In:
+> cd /sys/class/gpio
+> echo <pin_num> > export
+Note: Use the export number, not the index number
+It makes gpio<pin_num>
+> cd gpio<pin_num>
+In direction:
+     in or out
+> echo <in|out> > direction
+In value:
+    value like 0 or 1
+> echo <val> > value
+
+Check the recieving value, see if it's the same as the sending value.
+Change the sending value, and see if the recieving value changes.
+
+It's pretty neat.
+
+**Unmount the GPIO pin**
+echo 7 > unexport

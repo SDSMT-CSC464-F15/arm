@@ -13,11 +13,11 @@ def main():
         sys.exit(0)
 
     # holds the average results and the number of ODROIDS to be graphed
-    x = [4, 8]
+    x = [1, 2, 3, 4, 5, 6, 7, 8]
     y = []
 
     # files containing the results
-    results = [ '8cores.txt', '4cores.txt' ]
+    results = [ 'resultsRedQueen8.txt', 'resultsRedQueen4.txt' ]
 
     # counter for number odroids was tested
     num_odroids = 1
@@ -112,7 +112,7 @@ def is_float( value ):
 
 def graph_scatter( x, y ):
 
-    pylab.xlabel( 'Number of cores used' )
+    pylab.xlabel( 'Number of ODROIDS' )
     pylab.ylabel( 'Average speed (GFlops)' )
     pylab.title( 'LINPACK Test Results' )
     matplotlib.pyplot.scatter( x, y )

@@ -1,0 +1,128 @@
+\documentclass{article}
+\usepackage{fancyhdr}
+\usepackage{color}
+\usepackage{titlesec}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{tabto}
+\usepackage{tabularx}
+
+\definecolor{TitleColor}{rgb}{0.0, 0.0, 0.0}
+\definecolor{SectionColor}{rgb}{0.3, 0.3, 0.3}
+\definecolor{SubsectionColor}{rgb}{0.4, 0.4, 0.4}
+
+\titleformat{\section}{\normalfont\Large\bfseries\color{SectionColor}}{\thesection}{1em}{}[{\titlerule[2.0pt]}]
+\titleformat{\subsection}{\normalfont\bfseries\color{SubsectionColor}}{\thesection}{1em}{}
+
+\title{\normalfont\Large\bfseries\color{TitleColor}Sprint Report \#4}
+\date{\normalfont\bfseries\color{TitleColor}\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{Team Overview}
+\subsection*{Project}
+\tab{ARM Cluster}
+
+\subsection*{Members}
+\begin{itemize}
+	\item Andrew Hoover
+	\item Christine Sorensen
+\end{itemize}
+
+\subsection*{Sponsor}
+\tab{Dr. Christer Karlsson}
+
+\subsection*{Meeting Times}
+\tab{Tuesdays and Thursdays at 1:00pm}
+\subsection*{Work Times}
+\tab{Tuesdays and Thursdays at 10:00am}
+
+\section*{Sprint Overview}
+\subsection*{Work for this sprint included:}
+\begin{itemize}
+	\item Graph Benchmark Results
+	\begin{itemize}
+		\item Ran LINPACK on a one to eight devices and recorded results.
+		\item Graphed the speeds using Python libraries.
+	\end{itemize}
+	\item Compare Cluster to i7
+	\begin{itemize}
+		\item Installed LINPACK on Dr. Karlsson's i7 named Red Queen.
+		\item Ran the test and recorded the gigaflops on four to eight cores.
+	\end{itemize}
+	\item Created LINPACK as debian package for ARM.
+	\item Researched USB communcation.
+	\begin{itemize}
+		\item No method for USB communication was found for USB 3.0.
+		\item USB 2.0 was determined to be too slow to be feasible.
+	\end{itemize}
+	\item Researched GPIO communication.
+	\begin{itemize}
+		\item Communication by using the file system in /sys/class/gpio was demonstrated to work.
+		\item WiringPi for ODroid was installed.
+		\item The kernels on the devices were updated to be able to use WiringPi.
+		\item Communication in C using WiringPi and the GPIO pins was demonstrated to work.
+	\end{itemize} 
+	\item MICS conference.
+	\begin{itemize}
+		\item Wrote the abstract for our research to deliver to MICS.
+		\item Reviewed the abstract with our client.
+		\item Peer reviewed the abstract with antoher local team attending MICS.
+		\item Submitted the abstract to MICS.
+	\end{itemize}
+\end{itemize}
+
+\section*{Deliverables}
+\begin{itemize}
+	\item Graphs of total gigaflops performed depending on amount of devices used.
+	\item Debian package of LINPACK for ARM.
+	\item Found USB communication to not be feasible.
+	\item Able to send bits over GPIO between ODroid devices.
+	\item MICS abstract.
+\end{itemize}
+
+\section*{Activities}
+
+\subsection*{Andrew Hoover}
+\begin{itemize}
+	\item Created LINPACK debian package.
+	\item Ran LINPACK on differing amount of devices in the cluster and saved the results.
+	\item Installed LINPACK on Dr. Karlsson's i7 to compare to the cluster.
+	\item Researched USB communication.
+	\item Debugged WiringPi.
+	\item Spent some more time debugging WiringPi.
+	\item Was able to get WiringPi to work for C.
+	\item Updated kernel's of ODroids.
+	\item Edited sprint report.
+\end{itemize}
+\subsection*{Christine Sorensen}
+\begin{itemize}
+	\item Wrote MICS abstract.
+	\item Wrote Python code to graph LINPACK results.
+	\item Created documentation.
+	\item Researched GPIO communication.
+	\item Talked to faculty about GPIO and instuctional uses for the cluster.
+	\item Debugged WiringPi.
+	\item Spent some more time debugging WiringPi.
+	\item Was able to get WiringPi to work for C.
+	\item Wrote initial sprint report.
+\end{itemize}
+
+\subsection*{Work that is carried over into Sprint 5 is as follows:}
+\begin{itemize}
+	\item Use protocols for data transfer over GPIO.
+	\item Benchmark those protocols and compare to Ethernet.
+	\item Continue working on MICS.
+	\item Write abstract for SDSMT's Research Symposium.
+	\item Communicate via other topologies.
+\end{itemize}
+
+\section*{Backlog}
+\begin{itemize}
+	\item MICS presentation.
+	\item SDSMT Research Symnposium. 
+	\item Design Documentation.
+	\item Design Fair.
+\end{itemize}
+\end{document}

@@ -13,7 +13,7 @@ def main():
         sys.exit(0)
 
     # holds the average results and the number of ODROIDS to be graphed
-    x = [4, 8]
+    x = [1, 2]
     y = []
 
     # files containing the results

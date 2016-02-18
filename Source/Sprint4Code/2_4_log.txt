@@ -1,0 +1,22 @@
+2 4 2016
+
+Using UART to connect Doc and Happy together
+
+Doing the echo
+
+Build wiringPi on every device before use	// note: write script to?
+
+Running test.c on Doc
+
+Running testRecieve.c on Happy
+
+Not recieving correctly.
+
+Swapped the two.
+
+Still not recieving correctly.
+
+Switching to SPI between Doc and Happy.
+
+Manual is working correctly
+

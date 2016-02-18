@@ -1,0 +1,40 @@
+2-6-16
+
+Trying to install wiringpi2 onto homedirectory, however it is not working.
+
+Online sources says to update kernel.
+
+>apt-get updrage linux-image-xu3
+Got a purple screen (see image)
+Ignore warning errors.
+
+UPDATED!!!!
+
+Testing it on Snow White.
+
+Type gpio readall, shows pin mapping
+Everything isn't in order. "Bah humbug" - Andrew
+
+"Callup" - handles serial connection
+"putty"
+"tty"
+
+Finally figured out the pin mapping for wiringpi. What a bitch a rudy doo
+
+Having problems with switching to each device and hooking to internet via ethernet.
+We had originally changed the fstab file so it would mount the home directory of Snow White automatically at start up.
+
+The dwarfs complained. We are changing the fstab to their original glory. We already have a script to mount each.
+
+Now we're updating the kernels of each droid.
+
+>sudo apt-get update && sudo apt-get dist upgrade
+
+disable fstab (comment out)
+edit etc/interfaces, comment out code
+reboot
+connect to internet ethernet while rebooting
+uname -a to check current kernel
+sudo apt-get update, updates the repos
+sudo apt-get upgrade linux-image-xu3
+Sing the jepordy theme song
