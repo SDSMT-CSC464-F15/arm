@@ -1,0 +1,22 @@
+
+Example in Bashful:
+In /etc/ftab
+	Comment out where it boots automatically
+In /etc/interfaces
+	Change address to its network 192.168.6.11
+	
+	Add
+
+		up route add -net 192.168.7.12 netmask 255.255.0.0 gw 192.168.6.11
+
+		auto eth1
+		iface eth1 inet static
+		adress 192.168.6.12
+		netmask 255.255.0.0
+		up route add -net 192.168.5.11 netmask 255.255.0.0 gw 192.168.6.12
+
+> sudo eth0 down
+> sudo eth0 up
+
+Coming up with some errors
+
