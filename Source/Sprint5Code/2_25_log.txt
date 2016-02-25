@@ -1,0 +1,34 @@
+NETWORKING - 
+
+Each device should have the /etc/network/interfaces file such as:
+
+auto eth0
+iface eth0 inet static
+	address 192.168.x.11
+	netmask 255.255.0.0
+	gateway 192.168.0.1
+
+auto eth1
+iface eth1 inet static
+	address 192.168.x.12
+	netmask 255.255.0.0
+	gateway 192.168.0.1
+
+where eth0 is the Ethernet port, and eth1 is the USB to Ethernet port, and X is the number of the device (0 - 7).
+
+With that configured, the Ethernet port of device N should be connected to the USB to Ethernet port of device N + 1 (i.e. snow white to dopey, dopey to sleepy, etc.). THe USB to Ethernet port of each device is then connected to the Ethernet port of the device behind it. 
+
+Once that is set up, each device needs to run the following two commands:
+
+sudo route add -host 192.168.x+1.11 gw 192.168.x.12
+sudo route add -host 192.168.x-1.12 gw 192.168.x.11
+
+where y is the number of the device. This will allow each device to ping the devices next to it. 
+
+In theory, I'm pretty sure that adding something like
+
+sudo route add -host 192.168.x-2.12 gw 192.168.x.11
+
+should let the device then be able to ping the one that's two behind it. But that's not working :(
+
+Also going x+2 doesn't work. Just checked. I am filled with an unending well of sorrow.
