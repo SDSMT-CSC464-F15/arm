@@ -1,0 +1,8 @@
+2-25-16
+
+The ip addresses of the ODROIDS have changed.
+I'm changing the /etc/hosts files to update the dwarfs ipaddress
+in order to ssh via hostname
+
+I have to add these to the authenticity of host ECDSA key fingerprint
+Updated sneezy's, bashful, snow_white, and sleepy's hosts files
