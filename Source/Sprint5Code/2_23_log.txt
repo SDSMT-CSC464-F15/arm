@@ -6,3 +6,6 @@ See creatingNetThreeEth.txt
 
 Sleepy is showing just a black screen. It still has the mouse, but just a black
 screen. Come on man, you can do it!
+
+Trying to update routing table so that things work pretty much so each dwarf
+knows what port to use to connect to each dwarf.

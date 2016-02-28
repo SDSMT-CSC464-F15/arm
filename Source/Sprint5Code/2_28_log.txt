@@ -1,0 +1,48 @@
+2-28-2016
+
+Talked to Dr. Qiao last Friday. Taught us about routhing tables.
+
+First off, every ODROID's ip address should be the same for the
+first three values of the ip address.
+
+Example:
+192.168.0.xx
+All ODROIDS must have that.
+
+This was one of the errors we were having. We thought we could have
+separate thrid values for each ODROID.
+
+Example:
+Dopey would be:
+192.169.1.xx
+xx would be each port of Dopey.
+
+That doesn't work though.
+
+Also, another theing we learned was that the mask should be:
+255.255.255.255
+This is because 255 is some large ass number of 1's for its binary value.
+Masking is and-ing it with our ip address.
+And-ing it with all 1's makes the values static and important.
+And-ing with 0's makes them flexible.
+
+Our mistake was using:
+255.255.255.0
+NO! NOT THE ZERO!!!
+
+We also create each ethernet port.
+eth0 eth1...
+
+Gateway is a direct connection, MUST be on the other side of the line.
+The gateway points to the next path on the ODROID.
+It's similar to my 'roadmap.txt' file.
+There needs to be a routing table (roadmap) on each ODROID. Each is unique.
+
+Also, there may need to be internal forwarding.
+Say a packet is sent to an ODROID, but it's not the destination.
+It needs to be sent to the other ODROIDs port.
+Psuedo code:
+if( dest != recieving port )
+{
+    forward to other port.
+}
