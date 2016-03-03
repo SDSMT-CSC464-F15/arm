@@ -1,0 +1,20 @@
+3/3/2016
+
+Trying to run LINPACK on all of the dwarfs.
+We currently have them hooked up in a loop.
+Last time, Andrew was having troubles running it on row 1 of dwarfs
+	that were connected in a loop.
+
+Snow White lost MPI somehow???
+Now LINPACK isn't working.
+
+When LINPACK runs, it shows no output. However, the dwarfs continue to spin.
+
+In the meantime, we're going to Bashful. Our latest issue was that it won't
+	show on the screen. It's just a black screen but it shows the mouse.
+	I.E. Bashful is living up to its name. It's being bashful.
+	It really only does that if it falls asleep.
+	We took care of that. Bashful won't sleep anymore. Mwahahaha.
+
+Had to change the ip addresses on bashful again. We have to update some of
+	the ip addresses on the odroids. This is a bitch and a half.

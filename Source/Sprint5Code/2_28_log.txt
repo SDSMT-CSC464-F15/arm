@@ -46,3 +46,29 @@ if( dest != recieving port )
 {
     forward to other port.
 }
+
+Andrew got connection connection to the ODROIDs from one to the other through another dwarf!
+Updated the routing tables to what Qiao suggested. Then ran these commands in the middle odroid.
+
+>-A FORWARD -i eth1 -o eth2 -j ACCEPT
+>-A FORWARD -r eth2 -o eth1 -j ACCEPT
+>sysct1 -w net.ipv4.conf.all.forwarding=1
+
+I got the GPIO code to send 64 bytes of data
+From Bashful to Sneezy pinging 64 bytes:
+0.822 ms
+0.834 ms
+0.871 ms
+0.910 ms
+0.849 ms
+
+Doing ./read Sneezy and ./write Bashful
+send 1	1.081ms	NOT RECIEVED
+send 3	1.065ms	Recieved
+send 4	1.065ms	NOT RECIEVED
+send 5	1.065ms Recieved
+send 6	1.065ms	Recieved
+send 7	1.068ms	NOT RECIEVED
+send 8	1.065ms	Recieved
+send 9	1.064ms	Recieved
+send 10	1.117ms	Recieved
