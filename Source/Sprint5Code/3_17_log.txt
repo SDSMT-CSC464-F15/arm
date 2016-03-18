@@ -1,0 +1,9 @@
+3_17_16
+
+Resetting the network to run the old LINPACK in the old settings
+	with the hpl that we had when it was connected with
+	a switch.
+
+Oh shit. Using OpenMPI with LINPACK gets confused when using multi
+	network interfaces on one device. Switching to MPIch because
+	it may work better.
