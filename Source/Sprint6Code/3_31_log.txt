@@ -1,0 +1,8 @@
+3/31/16
+
+It is found that linpack only runs on 4 of the cores... maybe
+
+It was only using the A7's originally and now trying with A15's.
+
+It may be that the original results of the LINPACK test was on the A7's
+Only using two cores
