@@ -42,14 +42,39 @@ The bibliography is automatically constructed.
  \section{Architecture and System Design}
  %%This is where you will place the overall system design or the architecture.   This section should be image rich.  There is the old phrase {\it a picture is worth a thousand words}, in this class it could be worth a hundred points (well if you sum up over the entire team).   One needs to enter the design and why a particular design has been done.   
  %% Andrew labeled this secion as Cluster Configure in our old template
- The first design we implemented was a star topology, with each device of the eight devices connected over Ethernet to a central switch. Each device was configured to be on the same network and capable of communicating over the switch via IP addresses. We configured the /home directory of our head node, Snow White, to be an NFS export that the seven other nodes would mount in their /home directory. 
- 
- 
+The first architecture we implemented was a star topology, with each device of the eight devices connected over Ethernet to a central switch. Each device was configured to be on the same network and capable of communicating over the switch via IP addresses. We configured the /home directory of our head node, Snow White, to be an NFS export that the seven other nodes would mount in their /home directory. This allowed for any change to be made on one device to be mirrored on the others. Also, it allowed for MPI programs located anywhere in the /home directory to be run, as all the devices would see the same executable in the same path.
+
+\begin{figure}[h]
+	\caption{Star topology.}
+	\centering
+		\includegraphics[scale=0.5]{cluster_star.png}
+\end{figure}
+
+	The next tolopogy we implemented was a ring. A USB to Ethernet device was attached to each ODroid, giving them a total of two network interfaces. Each interface was assigned a unique IP address, as shown in Figure Yada. This allowed the cluster to be connected without the switch, and instead with each ODroid connected to the ajacent two forming a ring. For communication to be possible, routing information had to be specified to allow each device to know the path to follow to connect to the other seven. To do this, the /etc/networking/interfaces file was edited to add seven routes, four from one network interface and three from the other. Each route specified which port to use to next to go to any given ODroid. For instance, Snow White had a route with the information that if any program tries to access Sleepy on 192.168.0.3, it would go through Dopey at 192.168.0.1, and then Dopey had it's own routing table for how to access Sleepy.
+	The routing tables were designed such that each ODroid would take the fewest possible hops to get to any other. When the ODroids were equidistant, such as Snow White to Doc where going clockwise or counter-clockwise would each take four hops, the convention used was to go clockwise. This would allow the network traffic to overlap as little as possible in order to maximize effeciency. Therefore, each ODroid had a unique routing table. 
+
+\begin{figure}[h]
+	\caption{IP addresses for ring topology.}
+	\centering
+		\includegraphics[scale=0.5]{cluster_ipaddresses.png}
+\end{figure}
+
+	The third architecture we used was a hypercube topology. To implement it, a third network interface was added by connecting a second USB to Ethernet device on the final USB 3.0 port. An IP address was assigned to that interface as well, and more routing table information was added. This allowed more connections to be made, decreasing the maximum amount of hops needed to get from any one node to another, as shown in Figure Blada. 
+
+\begin{figure}[h]
+	\caption{Diagram of hypercube topology.}
+	\centering
+		\includegraphics[scale=0.5]{HyperCube2.png}
+\end{figure}
+
+
  \subsection{Design Selection}
  %%Failed designs, design ideas, rejected designs here.
+	For the purposes of benchmarking the cluster, the star topology was used. It was found that MPI does not work with multiple network interfaces on the same subnet existing on the same node. Therefore, in order to be able to use the benchmarking tool Linpack the star topology had to be used, as it was the only design that had only one network interface per ODroid.
  
  \subsection{Data Structures and Algorithms}
  %%Describe the special data structures and any special algorithms.
+	
  
  \subsection{Data Flow}
  
@@ -58,15 +83,12 @@ The bibliography is automatically constructed.
  \subsection{Classes}
  
  \subsection{UML}
- 
- \subsection{GUI}
- 
- \subsection{MVVM, etc}
 
 \section{Major Component \#1 }
 
 \subsection{Technologies  Used}
-%%This section provides a list of technologies used for this component.  The details for the technologies have already been provided in the Overview section. 
+%%This section provides a list of technologies used for this component.  The details for the technologies have already been provided in the Overview section.
+	 
 
 \subsection{Component  Overview}
 %%This section can take the form of a list of features. 
@@ -84,7 +106,7 @@ The bibliography is automatically constructed.
 
 \subsection{Design Details}
 %%This is where the details are presented and may contain subsections.   Here is an example code listing:
-First, we made the devices able to communicate on the same network. We assigned each device a static IP address by editing the /etc/networking/interfaces file to incluce the IP address chosen for the device. All addresses were on the 192.168.1.1 network, and the last number was 11 through 18 for the eight devices.
+First, we made the devices able to communicate on the same network. We assigned each device a static IP address by editing the /etc/networking/interfaces file to incluce the IP address chosen for the device. All addresses were on the 192.168.1.X network, and the last number was 11 through 18 for the eight devices.
 
 Next, we set each device to be able to use our naming convention in place of an IP address for any purpose, such as by using "ssh sleepy" instead of "ssh 192.168.1.13". To do this, we changed the /etc/hostname file to replace "odroid" with the name we wanted, and added entries to /etc/hosts to include the IP address of the other seven decives. 
 

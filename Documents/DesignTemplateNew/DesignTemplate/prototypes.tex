@@ -7,27 +7,145 @@
 This chapter is for recording each prototype developed.  It is a historical record of what you accomplished in 464/465.   This should be organized according to Sprints.  It should have the basic description of the sprint deliverable and what was accomplished.  Screen shots, photos, captures from video, etc should be used.  
 
 \section{Sprint 1 Prototype}
+
+The work completed in the first sprint was largely information gathering. The goal was to determine which single-board computer best matched our needs for the cluster. We accomplished this by measuring the speed of each device in terms of addition, multiplication, division and the sine function accross numberous floating point values. 
+
 \subsection{Deliverable}
+
+\begin{itemize}
+\item Mission Statement
+\item User Stories
+\item Number Generating Code
+\item Benchmark Code
+\item Benchmark Log
+\item Signed Software Contract
+\item Updated Design Document
+\end{itemize}
+
 \subsection{Backlog}
+
+\begin{itemize}
+\item Decide on a computer based on the results of the benchmarking
+\item Calculate prices on supplies and computers while maintaining below the budget
+\item Ordering said supplies and computers
+\item Build the cluster to perform floating-point operations
+\item Benchmark the cluster
+\item Experiment with different topologies
+\item Create a new mode of communication
+\end{itemize}
+
 \subsection{Success/Fail}
 
+We successfuly found data for which device was faster, the cost of each device, and the power consumption while running.
+
 \section{Sprint 2 Prototype}
+
+This sprint also feature information gathering and preliminary work for knowlege we would need in creating the cluster. The decision was made to build the cluster out of ODroids, and the devices were ordered. The speed of the Ethernet port was tested while we waited for the devices to come in.
+
 \subsection{Deliverable}
+
+\begin{itemize}
+\item Budget
+\item Hardware Test
+\item Switch Benchmark
+\item Ethernet Benchmark
+\item USB to Ethernet Benchmark
+\item MPI Code
+\item Message-Passing Protocol
+\end{itemize}
+
 \subsection{Backlog}
+
+\begin{itemize}
+\item Build the cluster
+\item Code for the cluster
+\item Benchmark the cluster
+\item Experiment with different topologies
+\item Create a new mode of communication
+\end{itemize}
+
 \subsection{Success/Fail}
+
+The ODroids were backordered, and took two weeks longer than expected to arrive. In the meantime, we were able to test the speed of the Ethernet port with the ODroid that we had, and we tested the speed of a USB to Ethernet device. 
 
 \section{Sprint 3 Prototype}
 \subsection{Deliverable}
+
+\begin{itemize}
+\item Built cluster
+\item MPI code
+\item Mounted home directory
+\item Shutdown script
+\item Mounting script
+\item LINPACK and ATLAS installed on ODROIDs
+\item MPI installed on ODROIDs
+\item Hostnames
+\item Fixed IP Addresses
+\item SSH configuration
+\end{itemize}
+
 \subsection{Backlog}
+
+\begin{itemize}
+\item Research new connection methods
+\item Benchmark the cluster
+\item Experiment with different topologies
+\item Create a new mode of communication
+\item Design documentation
+\item Research symposium
+\begin{enumerate}
+\item Complete abstract
+\end{enumerate}
+\item Design Fair
+\end{itemize}
+
 \subsection{Success/Fail}
 
 \section{Sprint 4 Prototype}
 \subsection{Deliverable}
+
+\begin{itemize}
+\item Graphs of total gigaflops performed depending on amount of devices used.
+\item Debian package of LINPACK for ARM.
+\item Found USB communication to not be feasible.
+\item Able to send bits over GPIO between ODroid devices.
+\item MICS abstract.
+\end {itemize}
+
 \subsection{Backlog}
+
+\begin{itemize}
+\item MICS presentation.
+\item SDSMT Research Symnposium.
+\item Design Documentation.
+\item Design Fair.
+\end{itemize}
+
 \subsection{Success/Fail}
 
 \section{Sprint 5 Prototype}
 \subsection{Deliverable}
+
+\begin{itemize}
+\item Design for the hypercube and ring topology.
+\item Routing tables for each of the ODROIDs.
+\item The cluster connected with new topology.
+\item Able to send bits over GPIO between ODroid devices.
+\item Acceptance into MICS.
+\item First draft of MICS paper.
+\item SDSMT Research Symposium abstract.
+\end{itemize}
+
 \subsection{Backlog}
+
+\begin{itemize}
+\item MICS presentation.
+\item SDSMT Research Symnposium.
+\item Completed hypercube cluster.
+\item Conglomerate data results.
+\item Design Documentation.
+\item Design Fair.
+\end{itemize}
+
 \subsection{Success/Fail}
 
