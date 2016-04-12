@@ -69,6 +69,9 @@ This sprint also feature information gathering and preliminary work for knowlege
 The ODroids were backordered, and took two weeks longer than expected to arrive. In the meantime, we were able to test the speed of the Ethernet port with the ODroid that we had, and we tested the speed of a USB to Ethernet device. 
 
 \section{Sprint 3 Prototype}
+
+The Cluster of eight ODroid XU4s was assembled, completing our first physical prototype. The ODroids were attached to a piece of plexiglass, along with a power supply with a 5 volt power cord for each ODroid, and an 8 port switch. Each ODroid was configured for our needs. First, each was assigned a static IP address in the network 192.168.0.X, and given it's hostname in accordinace with our naming convention of Snow_White and the seven dwarfs. The final configuration for this sprint was to use RSA keys to allow each device to SSH to each other seven without prompting for a password. This was essential to allow MPI code to run. We also created some helper scripts to set up the cluster when it was booted. These included a script to use NFS to mount the /home directory of Snow_White on the /home directory of the dwarfs. This was also essential to let MPI code located in the /home of Snow_White to run on the cluster, as the same executable would be found in the same path on the dwarfs. We also created a script to shutdown the dwarfs from Snow_White. 
+
 \subsection{Deliverable}
 
 \begin{itemize}
@@ -102,6 +105,9 @@ The ODroids were backordered, and took two weeks longer than expected to arrive.
 \subsection{Success/Fail}
 
 \section{Sprint 4 Prototype}
+
+Thies sprint was largely the completion of benchmarking the cluster. We downlowned the source for High Performance Linpack, a tool used to test the speed of supercomputers. It worked with OpenMPI and ATLAS, a linear algebra package. We also had to build ATLAS for ARM. The benchmarking was a success and we found the speed of the cluster using all cores on all devices. Once that was complete, we began looking in to USB and GPIO communication.
+
 \subsection{Deliverable}
 
 \begin{itemize}
