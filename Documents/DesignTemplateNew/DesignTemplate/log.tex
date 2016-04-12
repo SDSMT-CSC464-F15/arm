@@ -140,6 +140,33 @@ ODroid XU4 & 300 - 700 \\
 
 In contrast, the ethernet connections were consistent reguardless of which device was the client or server.
 
-\item [11/05/15] There isn't a found way to connect two devices over USB-ethernet to ethernet directly. When attached to the switch, the devices can communicate. IF using the USB to ethernet adapter, they would be directly connected without the switch. Therefore, it was unable to directly connect devices. \\ \\
+\item [11/05/15] There isn't a found way to connect two devices over USB-ethernet to ethernet directly. When attached to the switch, the devices can communicate. If using the USB to ethernet adapter, they would be directly connected without the switch. Therefore, it was unable to directly connect devices. \\ \\
 The drastically lower speed of the USB to ethernet adapters and the inability to directly connect the devices means that the devices are very unlikely to be useful for this project.
+\end{description}
+
+%skipping to sprint 4 right now
+\section{USB to USB Communication}
+\begin{description}
+\item [1/26/16] Figuring out how to communicate through USB. In /etc/network/interface, changed USB's from static to dhcp. Then performed sudo ifup usb0.
+Setting up the USB IP Addresses:
+Go the the ODROID to change.
+
+
+ 	\$ wget http://tex.stackexchange.com
+	\$ sudo modprob g_ether
+	\$ dmesg
+	\$ sudo ifconfig usb0 ipaddress 
+	\$ config
+
+\langle dog \rangle
+
+Verify the USB IP address was changed.
+
+Changed Doc, Happy, Bashful, and Sneezy's USB IP addresses:
+Doc - 192.168.1.25
+Happy - 192.168.1.26
+Bashful - 192.168.1.27
+Sneezy - 192.168.1.28
+
+\item[2/1/16] Over USB 2.0, it is possible to use USB crossover cables to simulate Ethernet over USB. The same technology is possible for USB 3.0, but no operating system currently supports it, Linux or otherwise. As such, direct communication would have to be done in a different way than Ethernet, such as PyUSB. However, there is no found way to communicate from hsot node to another host node using PyUSB.
 \end{description}
