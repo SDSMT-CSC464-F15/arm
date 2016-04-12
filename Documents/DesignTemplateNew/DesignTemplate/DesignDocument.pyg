@@ -1,0 +1,5 @@
+ 	$ wget http://tex.stackexchange.com
+	$ sudo modprob g_ether
+	$ dmesg
+	$ sudo ifconfig usb0 ipaddress
+	$ config

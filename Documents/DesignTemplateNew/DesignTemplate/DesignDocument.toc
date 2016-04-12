@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 \contentsline {chapter}{Title}{i}{Doc-Start}
 \contentsline {chapter}{Contents}{vi}{chapter*.1}
 \contentsline {chapter}{Overview Statements}{ix}{chapter*.3}
@@ -172,3 +173,5 @@
 \contentsline {section}{\numberline {2}Ordinary Text}{BM-1}{section.E.2}
 \contentsline {section}{\numberline {3}Displayed Text}{BM-2}{section.E.3}
 \contentsline {section}{\numberline {4}Build process}{BM-2}{section.E.4}
+=======
+>>>>>>> baf68aae81d5e48e782933ab57d9e622f308be61

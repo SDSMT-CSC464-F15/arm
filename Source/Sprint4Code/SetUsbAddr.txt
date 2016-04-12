@@ -1,3 +1,4 @@
+1/26/2016
 Go to that ODROID
 >sudo modprob g_ether
 >dmesg
