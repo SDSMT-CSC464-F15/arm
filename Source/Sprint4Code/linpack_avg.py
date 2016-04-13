@@ -17,7 +17,7 @@ def main():
     y = []
 
     # files containing the results
-    results = [ 'results1.txt', 'results2.txt', 'results3.txt', 'results4.txt', 'results5.txt', 'results6.txt', 'results7.txt', 'results8.txt' ]
+    results = [ 'results1.txt', 'results2.txt', 'results3new.txt', 'results4.txt', 'results5.txt', 'results6.txt', 'results7.txt', 'results8.txt' ]
 
     # counter for number odroids was tested
     num_odroids = 1
@@ -29,6 +29,7 @@ def main():
 
         # extract the values from the lines with the values
         values = extract_values( lines_with_values )
+        print values
 
         # calculate the averate
         average = calculate_average( values )
@@ -40,6 +41,7 @@ def main():
 
         # add average to graph
         y = y + [average]
+	print y
 
     graph_scatter( x, y )
 
@@ -59,7 +61,7 @@ def find_values( file_name ):
         # if we're counting the lines
         if i <= 2:
             # if we reached the line with the values
-            if i == 2:
+            if i == 2 and ":" not in line:
                 # grab that value
                 lines_with_values = lines_with_values + [line]
                 # nullify counter

@@ -70,17 +70,15 @@ The first architecture we implemented was a star topology, with each device of t
 
  \subsection{Design Selection}
  %%Failed designs, design ideas, rejected designs here.
-	For the purposes of benchmarking the cluster, the star topology was used. It was found that MPI does not work with multiple network interfaces on the same subnet existing on the same node. It also did not work on our cluster even when the IP addresses were changed so that the networks were on different subnets. Therefore, in order to be able to use the benchmarking tool Linpack the star topology had to be used, as it was the only design that had only one network interface per ODroid.
+	For the purposes of benchmarking the cluster, the star topology was used. It was found that MPI does not work with multiple network interfaces on the same subnet existing on the same node. Therefore, in order to be able to use the benchmarking tool Linpack the star topology had to be used, as it was the only design that had only one network interface per ODroid.
  
  \subsection{Data Structures and Algorithms}
  %%Describe the special data structures and any special algorithms.
 	
-
+ 
  \subsection{Data Flow}
  
  \subsection{Communications}
-	To communicate between devices, many different methods were tested. First, Ethernet communication through a switch was used to set up the initial cluster. The communication was configured by setting each port with a static IP address to allow the devices to exist on the same network.
-	USB and GPIO communication were also tested. USB to USB was found to be impossible due to USB 3.0 host to host communication being not supported by any existing operating system. GPIO communication was successful using WiringPi with C code. However, it was found to be much slower than Ethernet, and creating any type of large scale communication efforts would have been beyond the scope of this project.
  
  \subsection{Classes}
  
@@ -108,7 +106,7 @@ The first architecture we implemented was a star topology, with each device of t
 
 \subsection{Design Details}
 %%This is where the details are presented and may contain subsections.   Here is an example code listing:
-First, we made the devices able to communicate on the same network. We assigned each device a static IP address by editing the /etc/networking/interfaces file to incluce the IP address chosen for the device. All addresses were on the 192.168.1.X network, and the last number was 11 through 18 for the eight devices.
+First, we made the devices able to communicate on the same network. We assigned each device a static IP address by editing the /etc/networking/interfaces file to incluce the IP address chosen for the device. All addresses were on the 192.168.1.1 network, and the last number was 11 through 18 for the eight devices.
 
 Next, we set each device to be able to use our naming convention in place of an IP address for any purpose, such as by using "ssh sleepy" instead of "ssh 192.168.1.13". To do this, we changed the /etc/hostname file to replace "odroid" with the name we wanted, and added entries to /etc/hosts to include the IP address of the other seven decives. 
 

@@ -70,7 +70,7 @@ The ODroids were backordered, and took two weeks longer than expected to arrive.
 
 \section{Sprint 3 Prototype}
 
-The Cluster of eight ODroid XU4s was assembled, completing our first physical prototype. The ODroids were attached to a piece of plexiglass, along with a power supply with a 5 volt power cord for each ODroid, and an 8 port switch. Each ODroid was configured for our needs. First, each was assigned a static IP address in the network 192.168.0.X, and given it's hostname in accordinace with our naming convention of Snow White and the seven dwarfs. The final configuration for this sprint was to use RSA keys to allow each device to SSH to each other seven without prompting for a password. This was essential to allow MPI code to run. We also created some helper scripts to set up the cluster when it was booted. These included a script to use NFS to mount the /home directory of Snow White on the /home directory of the dwarfs. This was also essential to let MPI code located in the /home of Snow White to run on the cluster, as the same executable would be found in the same path on the dwarfs. We also created a script to shutdown the dwarfs from Snow White. 
+The Cluster of eight ODroid XU4s was assembled, completing our first physical prototype. The ODroids were attached to a piece of plexiglass, along with a power supply with a 5 volt power cord for each ODroid, and an 8 port switch. Each ODroid was configured for our needs. First, each was assigned a static IP address in the network 192.168.0.X, and given it's hostname in accordinace with our naming convention of Snow_White and the seven dwarfs. The final configuration for this sprint was to use RSA keys to allow each device to SSH to each other seven without prompting for a password. This was essential to allow MPI code to run. We also created some helper scripts to set up the cluster when it was booted. These included a script to use NFS to mount the /home directory of Snow_White on the /home directory of the dwarfs. This was also essential to let MPI code located in the /home of Snow_White to run on the cluster, as the same executable would be found in the same path on the dwarfs. We also created a script to shutdown the dwarfs from Snow_White. 
 
 \subsection{Deliverable}
 
@@ -104,11 +104,9 @@ The Cluster of eight ODroid XU4s was assembled, completing our first physical pr
 
 \subsection{Success/Fail}
 
-We succeeded in creating and configured the cluster. Our largest failure was a setback from improperly changing the /etc/fstab file and causing the dwarfs to not boot. The goal was to make the devices mount the /home directory of Snow White on boot, but was ineffective. After a few days we were able to read the MMC card with a MMC to USB device and edit the fstab file manually using a different computer.
-
 \section{Sprint 4 Prototype}
 
-This sprint was largely the completion of benchmarking the cluster. We downloaned the source for High Performance Linpack, a tool used to test the speed of supercomputers. It worked with OpenMPI and ATLAS, a linear algebra package. We also had to build ATLAS for ARM. The benchmarking was a success and we found the speed of the cluster using all cores on all devices. Once that was complete, we began looking in to USB and GPIO communication.
+Thies sprint was largely the completion of benchmarking the 
 
 \subsection{Deliverable}
 
@@ -131,12 +129,7 @@ This sprint was largely the completion of benchmarking the cluster. We downloane
 
 \subsection{Success/Fail}
 
-We successfully bencharked the cluster using Linpack.
-
 \section{Sprint 5 Prototype}
-
-For our final sprint, we tested the USB and GPIO communication. It was determined that netiher were pratcical for our purposes due to the scope of the project and the low speed. In order to try and increase the gigaflops of the system, we instead experimented with different topologies. We used USB to Ethernet devices to add more network interfaces to each ODroid and attach them in a ring. This allowed a different method of communication instead of using the switch. In order for communication to work, we had to assign IP addresses to the new interfaces on the 192.168.X.Y network, where X is the ODroid number 0-7, and Y was the number of the interface for that device. We also created our abstract for the SDSMT Reseach Symposium, and for the MICS conference. We wrote a first draft of the MICS paper as well in preparation of our presentation in April 23rd. 
-
 \subsection{Deliverable}
 
 \begin{itemize}
@@ -162,4 +155,3 @@ For our final sprint, we tested the USB and GPIO communication. It was determine
 
 \subsection{Success/Fail}
 
-Our largest failure this sprint was our inability to benchmark the different topologies. We found that MPI does not work with different network interfaces on the same subnet. Even after changing the IP addresses so that each IP address was on a different subnet, the code still did not work. Therefore, we are unable to use Linpack to benchmark the cluster in the ring or hypercube topology.
