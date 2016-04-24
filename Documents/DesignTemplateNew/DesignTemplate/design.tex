@@ -3,7 +3,7 @@
 
 \chapter{Design  and Implementation}
 
-The design of the cluster is going change as we test different configurations to determine which is capable of producing the most gigaflops, and as we test different connection methods as we design our custom data transfer protocol. This section will outline the different designs we have created, how they were implemented, and our plans for implementing future designs going forward.
+The design of the cluster is going to change as we test different configurations to determine which is capable of producing the most gigaflops, and as we test different connection methods. This section will outline the different designs we have created, how they were implemented, and our plans for implementing future designs going forward.
 
 %%
 \begin{comment}
@@ -77,9 +77,10 @@ The first architecture we implemented was a star topology, with each device of t
 	
 
  \subsection{Data Flow}
+	For this project, the most significant data flow was how LINPACK processes were distributed. The goal was to divide the work as much as possible, both across the cluster and within each device itself. In order to accomplish this, MPI was used with LINPACK to spawn as many processes as needed and run them on different cores. 
  
  \subsection{Communications}
-	To communicate between devices, many different methods were tested. First, Ethernet communication through a switch was used to set up the initial cluster. The communication was configured by setting each port with a static IP address to allow the devices to exist on the same network.
+	To communicate between devices, many different methods were tested. First, Ethernet communication through a switch was used to set up the initial cluster. The communication was configured by setting each port with a static IP address to allow the devices to exist on the same network. Communication could then occur through the switch very easily, as each device was physically connected to each other device. 
 	USB and GPIO communication were also tested. USB to USB was found to be impossible due to USB 3.0 host to host communication being not supported by any existing operating system. GPIO communication was successful using WiringPi with C code. However, it was found to be much slower than Ethernet, and creating any type of large scale communication efforts would have been beyond the scope of this project.
  
  \subsection{Classes}
@@ -186,7 +187,7 @@ Finally, we used SSH tools that are installed by default on Ubuntu 15.
 %%This section can take the form of a list of features. 
 The features implented by this configuration were:
 
-\begin{itemize}
+\begin{itemize} 
 	\item All devices recognizing the others over Ethernet.
 	\item SSH without requiring a password.
 	\item Mount home directory of Snow White on the dwarfs.
