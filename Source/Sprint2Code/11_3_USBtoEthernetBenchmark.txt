@@ -15,3 +15,5 @@ Additionally, I have not found a way to connect two devices over USB-ethernet
 In conclusion, the drasically lower speed of the USB to etherent adpaters 
 	and the inability to directly connect devices means that the devices are 
 	very unlikely to useful for our purposes.
+
+ADDED TO DOCUMENTATION

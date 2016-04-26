@@ -15,6 +15,7 @@ For research projects one needs to keep a log of all research/lab activities.
 %%\item [10/17/15]  Changed tolerance on sensor and collected data.  These ...
 %%\end{description}
 
+% Sprint 1
 \section{Benchmarking the Individual Computers}
 
 \begin{description}
@@ -80,6 +81,7 @@ Raspberry Pi 2B & 0.0003 & 0.0003 & 0.000224 & 0.0000453 \\
 
 \end{description}
 
+% Sprint 2
 \section{Ethernet Benchmark}
 \begin{description}
 \item [10/25/15] Created network between a machine with gigabit Ethernet port and ODROID. Installed iperf, a tool in the standard Debian repositories to text the network speed, on both the server machine and ODROID. \\
@@ -167,17 +169,15 @@ The drastically lower speed of the USB to ethernet adapters and the inability to
 \end{description}
 
 %Sprint 3
-
-
-% Sprint 4
 \section{Auto-Mounting Snow White's Home Directory}
 \begin{description}
-\item [1/16/16] Attempting to auto-mount Snow White's homedirectory onto the dwarfs. Changed Sleepy's fstab file with this line: \\ \\
+\item [11/10/15] Attempting to auto-mount Snow White's homedirectory onto the dwarfs. Changed Sleepy's fstab file with this line: \\ \\
 %need to figure out > in front of the line below
 192.168.1.11:/home /hom nfs auto 0 0 \\ \\
 We can now mount Snow White's home directory automatically onto Sleepy. Adding this to other dwarfs' fstab file.
 \end{description}
 
+% Sprint 4
 \section{Creating a Debian Package}
 \begin{description}
 \item [1/18/16] To create a simple Debian package, we followed the instructions located at:\\ \\
