@@ -1,0 +1,46 @@
+1/14/16
+Some quick notes on how I set up my build environment.
+First, I created SSH keys on Red Queen with the command
+
+ssh-keygen
+
+and leaving all options as default by hitting enter through the prompts.
+
+
+The first thing I used the keys for was to configure my Github account to
+not make me enter my password every time I pushed to the repo. To do this,
+I called
+
+cat .ssh/id_rsa.pub
+
+and copied and pasted the public RSA key in to Github under the settings > 
+SSH keys option. I then cloned the current repository with
+
+git clone git@github.com:SDSMT-CSC464-F15/arm
+
+
+The next thing I did was use the keys to be able to SSH to Snow_White without
+being prompted for a password. I did this with
+
+ssh-copy-id odroid@snow_white
+	
+
+Finally, I configured my SSH settings so I wouldn't have to type out
+odroid@snow_white every time I needed to ssh over or use scp to move files.
+I did this by created the file
+
+.ssh/config
+
+and putting in the contents
+
+Host sw
+	HostName snow_white
+	User odroid
+
+Now, I can SSH to the cluster with the command
+
+ssh sw
+
+or copy files from the repository with
+
+scp [path to the file on Red Queen] sw:[path to where I want the file on Snow White]

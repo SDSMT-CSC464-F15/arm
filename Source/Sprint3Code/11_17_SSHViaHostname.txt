@@ -1,0 +1,18 @@
+11/17/15
+
+How to ssh via the host name:
+
+-Add every ODROID to the hosts list. Go to /etc/hosts:
+sudo vim /etc/hosts
+-Add the others' IP Address and hostname
+<ipaddress> <hostname>
+192.168.1.11 snowwhite
+
+
+-In order to perform MPI, you must take down the passwords from each 
+of the ODROIDS so you don't need them to ssh:
+ssh-keygen
+-<Enter> through all of the prompts, then:
+ssh-copy-id <ipaddress>
+
+-CS

@@ -5,3 +5,5 @@
 
 120 times slower than ethernet
 Only using one pin though.
+
+ADDED TO DOCUMENTATION

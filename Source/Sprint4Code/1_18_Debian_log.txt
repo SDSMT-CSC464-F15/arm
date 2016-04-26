@@ -1,0 +1,8 @@
+1/18/16
+To create a sample debian package, I followed the instructions located at
+https://wiki.debian.org/IntroDebianPackaging
+This let me create a debian package. Going forward, the next step is to use
+the instructions to make hpl in to a debian package.
+
+ADD TO DOCUMENTATION
+

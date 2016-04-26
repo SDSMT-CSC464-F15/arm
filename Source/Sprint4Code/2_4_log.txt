@@ -1,4 +1,4 @@
-2 4 2016
+2/4/2016
 
 Using UART to connect Doc and Happy together
 

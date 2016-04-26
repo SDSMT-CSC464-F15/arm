@@ -1,0 +1,9 @@
+11/10/15
+
+Snow White's home drive does not automatically mount to the others when they are rebooted.
+
+To fix this, edited /etc/fstab, added the line:
+<ipsnowwhite>:/home /home auto 0 0
+to all of the seven dwarves. Success.
+
+-ah

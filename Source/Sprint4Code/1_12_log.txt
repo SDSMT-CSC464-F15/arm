@@ -8,3 +8,5 @@ Script to find average results of LINPACK -Christine
 Connect to network -Karlsson
 Run all combinations of LINPACK on cluster -Andrew
 Figure out how to mount homedirectory automatically -Andrew
+
+Added to documentation

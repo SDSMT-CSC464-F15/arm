@@ -1,0 +1,17 @@
+11/3/15
+
+The speed of the USB 3.0 to ethernet adapter, tested with iperf, 
+	was notably slower than a direct ethernet connection. 
+The tests varied greatly, between 300 mbps and 700 mbps. 
+The USB ethernet adpated was faster acting as a server than a client, 
+	with the highest value as a client being only about 475 mbps. 
+In contrast, the ethernet connections were consistent regardless of 
+	which device was the client or server, and stayed between 775 and 800 mbps.
+Additionally, I have not found a way to connect two devices over USB-ethernet 
+	to etherent directly. When attached to the switch, the devices and 
+	communicate; however, if we were using the USB to ethernet adapters they 
+	would be directly connected, without the switch. Therefore, being unable 
+	to direct connect devices defeats the purpose of the adapters.
+In conclusion, the drasically lower speed of the USB to etherent adpaters 
+	and the inability to directly connect devices means that the devices are 
+	very unlikely to useful for our purposes.

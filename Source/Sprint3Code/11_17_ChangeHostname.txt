@@ -1,0 +1,18 @@
+11/17/15
+
+How to change Host Name:
+
+In /etc/hostname:
+Overwrite "odroid" with new hostname
+
+In /etc/hosts, it has 127.0.0.1    
+-localhost
+-127.0.0.1   odroid
+changed the later to the new hostname
+
+In /etc/nsswitch.conf, I'm changing 
+-hosts:  files mdns4_minimal [NOTFOUND=return] dns
+to
+-hosts: files dns
+
+-cns

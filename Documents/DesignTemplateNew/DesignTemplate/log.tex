@@ -18,10 +18,13 @@ For research projects one needs to keep a log of all research/lab activities.
 \section{Benchmarking the Individual Computers}
 
 \begin{description}
-\item [9/17/15]  PcDuino isn't working according to Dr. Karlsson. The PcDuinos are about \$160 each, so chances were that the PcDuino wasn't going to be selected for the cluster. We will not put the PcDuino in consideration with our benchmarking.
-\item [9/17/15]  PcDuino isn't working according to Dr. Karlsson. The PcDuinos are about \$160 each, so chances were that the PcDuino wasn't going to be selected for the cluster. We will not put the PcDuino in consideration with our benchmarking.
-\item [9/22/15] We begin work on benchmarking the remaining candidates. The code we will be using to benchmark the two devices will test the addition, multiplication, division, trigonmetric function in single and double point precision of two massively large arrays filled with random numbers.
-\item [9/29/15] OpenMP is added to the benchmark code so the program runs on all cores. Results are as follows: \newline
+\item [9/17/15]  PcDuino isn't working according to Dr. Karlsson. The PcDuinos are about \$160 each, so chances were that the PcDuino wasn't going to be selected for the cluster. We will not put the PcDuino in consideration with our benchmarking. \\
+
+\item [9/17/15]  PcDuino isn't working according to Dr. Karlsson. The PcDuinos are about \$160 each, so chances were that the PcDuino wasn't going to be selected for the cluster. We will not put the PcDuino in consideration with our benchmarking. \\
+
+\item [9/22/15] We begin work on benchmarking the remaining candidates. The code we will be using to benchmark the two devices will test the addition, multiplication, division, trigonmetric function in single and double point precision of two massively large arrays filled with random numbers. \\
+
+\item [9/29/15] OpenMP is added to the benchmark code so the program runs on all cores. Results are as follows: \\
 
 \begin{center}
 \begin{tabular}{ | l || l | l | l | l | }
@@ -38,7 +41,7 @@ Raspberry Pi 2B & 221.645 & 221.034 & 297.204 & 1468.63 \\
 \end{tabular}
 \end{center}
 
-\item [9/30/15] The gigaflops are calculated. \newline
+\item [9/30/15] The gigaflops are calculated. \\
 \begin{center}
 \begin{tabular}{ | l || l | l | l | l | }
 \hline
@@ -54,7 +57,7 @@ Raspberry Pi 2B & 0.0420 & 0.0421 & 0.0313 & 0.00634 \\
 \end{tabular}
 \end{center}
 
-\item [10/1/15] The wattage is measured when the devices are running these operations. Using the wattage, the metric of GFlops/Dollar/Watt is calculated. \newline
+\item [10/1/15] The wattage is measured when the devices are running these operations. Using the wattage, the metric of GFlops/Dollar/Watt is calculated. \\
 
 \begin{center}
 \begin{tabular}{ | l || l | l | l | l | }
@@ -71,15 +74,26 @@ Raspberry Pi 2B & 0.0003 & 0.0003 & 0.000224 & 0.0000453 \\
 \end{tabular}
 \end{center}
 
-\item [10/1/15] The results show that the Raspberry Pi and the ODroid perform nearly the same. The Raspberry Pi in our benchmarking proved the best. However, it is inconclusive as to which computer will be used.
+\item [10/1/15] The results show that the Raspberry Pi and the ODroid perform nearly the same. The Raspberry Pi in our benchmarking proved the best. However, it is inconclusive as to which computer will be used. \\
 
-\item [10/24/15] Decided to go with the ODroid. Performance and the number of ports outweighted the cost of the Raspberry Pi.
+\item [10/24/15] Decided to go with the ODroid. Performance and the number of ports outweighted the cost of the Raspberry Pi. \\
 
 \end{description}
 
 \section{Ethernet Benchmark}
 \begin{description}
-\item [10/25/15] Created network between a machine with gigabit ethernet port and ODroid. Installed n both the server machine and ODroid.
+\item [10/25/15] Created network between a machine with gigabit Ethernet port and ODROID. Installed iperf, a tool in the standard Debian repositories to text the network speed, on both the server machine and ODROID. \\
+
+This text can be run over the existing network by the following steps: \\
+%add dollar signs or >
+ssh andrewdesktop@108.107.223.45 \\
+Password: design \\
+iperf -s \& \\
+Leave that running in the background. \\
+ssh odroid@10.42.0.2 \\
+Password: odroid \\
+iperf -c 10.42.0.1 \\
+This will take a few seconds to run then give the network speed. The network 10.42.0.1 is over a 1000 Mbps wired connection between the ODROID and andrewdesktop. \\
 
 \begin{center}
 \begin{tabular}{ | l || l | }
@@ -98,12 +112,20 @@ ODroid XU4 & 615 - 625 \\
 
 \section{Hardware Test}
 \begin{description}
-\item [11/03/15] All eight ODroids are functional. To test them, each device was connected to a router with internet access via ethernet. A monitor was connected through HDMI, and the mouse and keyboard were connected to both USB 3.0 ports to ensure they worked. The packages mpi-default-dev and openmpi-bin were installed. The test mpi code found this director and successfully compiled and executed. No issues found.
+\item [11/03/15] All eight ODroids are functional. To test them, each device was connected to a router with internet access via Ethernet. A monitor was connected through HDMI, and the mouse and keyboard were connected to both USB 3.0 ports to ensure they worked. The packages mpi-default-dev and openmpi-bin were installed. The test MPI code found this directory and successfully compiled and executed. No issues found on any device. \\
 \end{description}
 
 \section{Switch Benchmark}
 \begin{description}
-\item [11/03/15] With two ODroid devices attached to the switch via direct ethernet (no USB 3.0 to ethernet adapter), the connection speed was tested with iperf.
+\item [11/03/15] With two ODROID devices attached to the switch via direct ethernet (no USB 3.0 to ethernet adapter), the connection speed was tested. This was accomplished by one device running: \\
+
+%add $ or >
+iperf -s \\
+
+and the other running: \\
+
+%use <>
+iperf -c [IP of the first device]
 
 \begin{center}
 \begin{tabular}{ | l || l | }
@@ -118,12 +140,12 @@ ODroid XU4 & 775 - 800 \\
 \end{tabular}
 \end{center}
 
-This is notably faster than the previous benchmark between one ODroid and a non-ODroid machine not using a switch.
+This is notably faster than the previous benchmark between one ODROID and a non-ODROID machine not using a switch.
 \end{description}
 
 \section{USB to Ethernet Benchmark}
 \begin{description}
-\item [11/03/15] Tested speed of USB 3.0 to ethernet adapter using iperf. Found slower than direct ethernet conection. Test speeds varied greatly. The USB ethernet adapted was faster acting as a server than a client.
+\item [11/03/15] Tested speed of USB 3.0 to ethernet adapter using iperf. Found slower than direct ethernet conection. Test speeds varied greatly, between 300 Mbps and 700 Mbps. The USB ethernet adapted was faster acting as a server than a client with the highest value as a client being only about 475 Mbps. In contrast, the ethernet connections were consistent reguarless of which device was the client or server, and stayed between 775 and 800 Mbps. 
 
 \begin{center}
 \begin{tabular}{ | l || l | }
@@ -138,13 +160,32 @@ ODroid XU4 & 300 - 700 \\
 \end{tabular}
 \end{center}
 
-In contrast, the ethernet connections were consistent reguardless of which device was the client or server.
+Additionally, there hasn't been a found way to connect two devices over USB-ethernet to ethernet directly. When attached to the switch, the devices can communicate; however, if we were using the USB to ethernet adapters, they would be directly connected, without the switch. Therefore, being unable to direct connect devices defeats the purpose of the adapters. In conclusion, the drastically lower speed of the USB to Ethernet adapters and the inability to directly connect devices means that the devices are very unlikely to useful for our purposes. \\
 
 \item [11/05/15] There isn't a found way to connect two devices over USB-ethernet to ethernet directly. When attached to the switch, the devices can communicate. If using the USB to ethernet adapter, they would be directly connected without the switch. Therefore, it was unable to directly connect devices. \\ \\
 The drastically lower speed of the USB to ethernet adapters and the inability to directly connect the devices means that the devices are very unlikely to be useful for this project.
 \end{description}
 
-%skipping to sprint 4 right now
+%Sprint 3
+
+
+% Sprint 4
+\section{Auto-Mounting Snow White's Home Directory}
+\begin{description}
+\item [1/16/16] Attempting to auto-mount Snow White's homedirectory onto the dwarfs. Changed Sleepy's fstab file with this line: \\ \\
+%need to figure out > in front of the line below
+192.168.1.11:/home /hom nfs auto 0 0 \\ \\
+We can now mount Snow White's home directory automatically onto Sleepy. Adding this to other dwarfs' fstab file.
+\end{description}
+
+\section{Creating a Debian Package}
+\begin{description}
+\item [1/18/16] To create a simple Debian package, we followed the instructions located at:\\ \\
+\url{https://wiki.debian.org/IntroDebianPackaging}\\ \\
+%add the steps here?
+This let us create a Debian package. Going forward, the next step is to use the instructions to make HPLinpack into a Debian package.
+\end{description}
+
 \section{USB to USB Communication}
 \begin{description}
 \item [1/26/16] Figuring out how to communicate through USB. In /etc/network/interface, changed USB's from static to dhcp. Then performed sudo ifup usb0.
@@ -163,10 +204,79 @@ Go the the ODROID to change.
 Verify the USB IP address was changed.
 
 Changed Doc, Happy, Bashful, and Sneezy's USB IP addresses:
-Doc - 192.168.1.25
-Happy - 192.168.1.26
-Bashful - 192.168.1.27
-Sneezy - 192.168.1.28
-
+	\begin{itemize}
+		\item Doc - 192.168.1.25
+		\item Happy - 192.168.1.26
+		\item Bashful - 192.168.1.27
+		\item Sneezy - 192.168.1.28
+	\end{itemize}
 \item[2/1/16] Over USB 2.0, it is possible to use USB crossover cables to simulate Ethernet over USB. The same technology is possible for USB 3.0, but no operating system currently supports it, Linux or otherwise. As such, direct communication would have to be done in a different way than Ethernet, such as PyUSB. However, there is no found way to communicate from hsot node to another host node using PyUSB.
+\end{description}
+
+\section{GPIO Communication}
+\begin{description}
+\item [2/4/16]  Connected index pin 8 (UART TXD) (Export Pin 172) on Doc to index pin 6 (UART RXD) (Export Pin 171) on Happy. Communicating by changing the physical bit in the corresponding GPIO export pin file (not the physical index number).  \\
+%put a gpio diagram somewhere and reference it here
+
+In Happy: \\
+%add > before these
+cd /sys/class/gpio\\
+Mount the export pin: \\
+echo 171 greatherthan export\\
+It makes gpio171\\
+cd gpio171 \\
+Edit the text file direction:\\
+echo in greaterthan direction \\
+
+In Doc: \\
+%add the > before these
+cd /sys/class/gpio \\
+echo 172 greaterthan export \\
+It makes a directory for that pin number. \\
+cd gpio172 \\
+Edit the text file direction to out: \\
+echo out greaterthan direction \\
+Edit the text file direction: \\
+echo 1 greatherthan value\\
+
+In Happy: \\
+cd /sys/class/gpio/gpio171 \\
+echo value \\
+It'll print 1\\
+
+Repeat with value 0. Happy's value will be 0. \\
+
+To unmount the GPIO Export Pin: \\
+In Happy: \\
+cd /sys/class/gpio \\
+echo 171 greaterthan unexport \\
+
+In Doc: \\
+cd /sys/class/gpio \\
+echo 172 greaterthan unexport
+
+\item [2/11/16] Successfully got wiringPi to work between two dwarfs. We got 0.61 MBits/sec on GPIO with one pin. Communication speed between two dwarfs through Ethernet was 750 MBits/sec. This was found using iperf. GPIO was 120 times slower than Ethernet. It was concluded that GPIO will not be continued for this project.
+
+\end{description}
+
+\section{Updating Kernel}
+\begin{description}
+\item [2/6/16] Trying to install the wiringPi2 library on the ODROIDs to communicate via GPIO. Our online sources said we need to update the kernels. \\
+
+Change the fstab so it doesn't mount Snow White's home directory automatically. (Comment out) \\
+Edit etc/interfaces, comment out so the ODROID can connect to the internet.\\
+Reboot the ODROID.\\
+Connect to internet ethernet while rebooting. \\
+Check the current kernel: \\
+uname -a \\
+Update the repos: \\
+sudo apt-get update \\
+Upgrade the kernel: \\
+apt-get upgrade linux-image-xu3 \\
+Got a purple screen prompting if we want to continue and if we know what we're doing. Continued. \\
+Ignore warning errors. \\
+Check the current kernel to see if it successfully updated: \\
+uname -a \\
+Upgrade all of the packages for the kernel: \\
+sudo apt-get update \&\& sudo apt-get dist upgrade
 \end{description}

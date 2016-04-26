@@ -1,0 +1,9 @@
+12/2/15
+
+In order to use the tools we created easily, they have been formatted as 
+executable commands by adding #!/bin/bash or #!/bin/usr/python and calling
+chmod +x <file name> on them. This will allow us to put them in /usr/bin and
+call them from any directory to easily mount all the dwarfs, shutdown all the
+dwarfs, change and reboot the network to use the internet or go back on to the
+switch, or execute linpack. While not a drastic change, this should prove to
+make our lives a little easier.

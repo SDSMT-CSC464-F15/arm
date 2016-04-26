@@ -1,9 +1,0 @@
-With two ODroid devices attached to the switch via direct ethernet (no USB 3.0 to ethernet adapter), the connection speed was testing. This was accomplished by one device running
-
-iperf -s
-
-and the other running
-
-iperf -c [IP of the first device].
-
-This method found the connection speed to be between 775 mbps and 800 mbps in all tests. This is notably faster than the previous benchmark between one ODroid and a non-ODroid machine not using a switch.

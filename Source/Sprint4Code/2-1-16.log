@@ -1,8 +1,0 @@
-USB Communication:
-
-Over 2.0, it is possible to use USB crossover cables to simulate Ethernet over
-USB. The same technology is possible for USB 3.0, but no operating system
-currently supports it, linux or otherwise. As such, direct communication
-would have to be done in a different way than Ethernet, such as PyUSB. However,
-I have not found a way to communicate from a host node to another host node by
-using PyUSB.

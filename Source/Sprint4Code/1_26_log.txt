@@ -2,3 +2,5 @@ Figuring out how to communicate through usb's.
 
 In /etc/network/interface, changed usb's from static to dhcp
 Then performed sudo ifup usb0
+
+ADDED TO DOCUMENTATION

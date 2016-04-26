@@ -1,0 +1,15 @@
+2/16/16
+The ODroid XU4 UART has a default baud rate of 115200, and maximum of 921600(1). 
+This means that the maximum possible data transer speed is 0.88Mpbs (921600/1024^2). 
+This is drastically slower than Ethernet communication, which we benchmarked at a minimum of 750 Mpbs. 
+In fact, in order to make a protocol faster than Ethernet, even if we used all 40 pins to tranfer data, 
+	we would need each pin to send over 19.5 million bits per second ( (750 * 1024^2) / 40 ). 
+WiringPi, in our preliminary testing, was only able to send about 500,000 bits per second on a pin. 
+Therefore, I conclude that it is likely that GPIO communication is only practical in terms of theoretical protocols, 
+	and our cluster will always be faster using Ethernet. 
+Moving forward, in terms of researching if it's possible for the cluster to compute more gigaflops than our current set-up, 
+	I believe that experimenting with different designs of Etherent clusterings is our most promising solution.
+
+(1) http://forum.odroid.com/viewtopic.php?f=97&t=18736
+
+
