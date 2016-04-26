@@ -111,17 +111,17 @@
 \contentsline {section}{\numberline {6.2}Sprint 2 Prototype}{20}{section.6.2}
 \contentsline {subsection}{\numberline {6.2.1}Deliverable}{20}{subsection.6.2.1}
 \contentsline {subsection}{\numberline {6.2.2}Backlog}{20}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Success/Fail}{20}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.3}Success/Fail}{21}{subsection.6.2.3}
 \contentsline {section}{\numberline {6.3}Sprint 3 Prototype}{21}{section.6.3}
 \contentsline {subsection}{\numberline {6.3.1}Deliverable}{21}{subsection.6.3.1}
 \contentsline {subsection}{\numberline {6.3.2}Backlog}{21}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Success/Fail}{21}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {6.3.3}Success/Fail}{22}{subsection.6.3.3}
 \contentsline {section}{\numberline {6.4}Sprint 4 Prototype}{22}{section.6.4}
 \contentsline {subsection}{\numberline {6.4.1}Deliverable}{22}{subsection.6.4.1}
 \contentsline {subsection}{\numberline {6.4.2}Backlog}{22}{subsection.6.4.2}
 \contentsline {subsection}{\numberline {6.4.3}Success/Fail}{22}{subsection.6.4.3}
 \contentsline {section}{\numberline {6.5}Sprint 5 Prototype}{22}{section.6.5}
-\contentsline {subsection}{\numberline {6.5.1}Deliverable}{22}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.1}Deliverable}{23}{subsection.6.5.1}
 \contentsline {subsection}{\numberline {6.5.2}Backlog}{23}{subsection.6.5.2}
 \contentsline {subsection}{\numberline {6.5.3}Success/Fail}{23}{subsection.6.5.3}
 \contentsline {chapter}{\numberline {7}Release -- Setup -- Deployment}{27}{chapter.7}
@@ -155,8 +155,9 @@
 \contentsline {section}{\numberline {11.3}Result 3}{37}{section.11.3}
 \contentsline {section}{\numberline {11.4}Result 4}{38}{section.11.4}
 \contentsline {section}{\numberline {11.5}Result 5}{38}{section.11.5}
-\contentsline {section}{\numberline {11.6}Conclusions}{38}{section.11.6}
-\contentsline {section}{\numberline {11.7}Further work}{38}{section.11.7}
+\contentsline {section}{\numberline {11.6}Result 6}{39}{section.11.6}
+\contentsline {section}{\numberline {11.7}Conclusions}{39}{section.11.7}
+\contentsline {section}{\numberline {11.8}Further work}{39}{section.11.8}
 \contentsline {chapter}{Software Agreement}{SA-1}{chapter.12}
 \contentsline {chapter}{\numberline {A}Product Description}{A-1}{appendix.A}
 \contentsline {chapter}{\numberline {B}Publications}{B-1}{appendix.B}

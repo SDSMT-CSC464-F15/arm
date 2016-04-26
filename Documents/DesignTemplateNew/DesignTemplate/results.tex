@@ -45,7 +45,7 @@ Another alternate form of communication tested was GPIO. The library WiringPi wa
 
 \section{Result 5}
 
-Our final result was using LINPACK to test the amount of Gigaflops produced by the cluster. 
+Our final result was using LINPACK to test the amount of Gigaflops produced by the cluster. First we configured and ran the test on a single device using all four of the A7 cores. We found that the maximum was 3.05 Gigaflops. Then, with the cluster in a star topology, we increased the amount of nodes we ran LINACK on up to all eight, and the results are graphed in Figure~\ref{linpackresults} The most Gigaflops we were able to get from the A7 cores on all of the ODROIDS together was 13.38.
 
 \begin{figure}[tbh]
 \begin{center}
@@ -54,6 +54,34 @@ Our final result was using LINPACK to test the amount of Gigaflops produced by t
 \caption{LINPACK results. \label{linpackresults}}
 \end{figure}
 
+The next step was to use the A15 cores. This proved to be difficult as described earlier, due to the operating system preferring to use the A7 cores and providing no user control over proccess affinity. However, we were able to get a few results out of the A15s as shown in Table~\ref{a15} The HTOP utility was used to confirm that the A15 core were indeed being used. 
+
+\begin{table}[tbh]
+\caption{A15 core speed. \label{a15}}
+\begin{center}
+\begin{tabular}{|r|l|}
+  \hline
+  1 core per node &  17.05 Gigaflops \\
+  2 core per node &  26.23 Gigaflops \\ 
+  \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\section{Result 6}
+
+We also benchmarked a standard i7 desktop using LINPACK, specifically Dr. Karlsson's, for a point of comparison to our cluster. It had four hyperthreaded cores for a total of eight different processes that can be running simultaneously. The total cost of this machine was roughly comprable to the total cost of our cluster, so it made sense to compare the computational power of the two. We found the i7 desktop machine to be able to produce about 61 Gigaflops. 
+
 \section{Conclusions}
 
-\section{Further work}  
+In conclusion, we found that Ethernet was the fastest communication method we had availible. We were able to transfer data at a rate of roughly 750 Mbps. In comparison, GPIO communication with WiringPi was only able to send 0.5 Mbps per pin. Even with all 40 GPIO pins, communication protocols we would write ourselves with GPIO would be significantly slower than Etherent. USB to USB communication did not work at all.
+
+When using a star topology, with all ODROIDS running four processes each and using their A7 cores, for a total of 32 cores, the speed was 13.38 Gigaflops, whereas only two A15 cores on each device for a total of 16 cores produced 26.23 Gigaflops. Clearly, the A15 cores are drastically more powerful than the A7s. If we were able to force the ODROIDS to use all four of their availible A15s, it is likely that the performance of our cluster would be roughly 48 Gigaflops from the four A15s, if the pattern of increase stayed consistent. That combined with the 13.38 from the A7s would produce an approximate total of about 60 Gigaflops. This would be comprable to the performance measured from Dr. Karlsson's i7 machine.
+
+\section{Further work} 
+
+In order to gather more results in the future, we would ideally be able to benchmark the cluster with a ring and hypercube topology. This would require one of two things, the first option being to find a way to run LINPACK and MPI code over devices with multiple network interfaces. Once that was done, it would be possible to run the tests in the exact same configuration as was done for the star topology through the switch. An alternative solution would be to find a different benchmarking method entirely. The disadvantage would be the increased workload of running that new benchmark on all of the previous tested configurations we have done up to this point.
+
+Another goal for the future would be to benchmark all of the A15 cores. Since we were able to use one and two of them per node, it's clearly possible for them to be used, the difficutly lies with getting the operating system to schedule the LINPACK processes to those cores. This would involve more testing to see exactly when the OS did use the A15s and find a way to repeat it.
+
+As well as gathering more data on the performance of the cluster, more uses for the project include testing real life problems. This could include things such as the traveling salesman problem, a well known problem that can only be solved with brute force and takes a large amount of computation to solve. The cluster would be used to determine how quickly it can solve the problems, and how to most effeciently divide up the problem to solve it with parallelization.
