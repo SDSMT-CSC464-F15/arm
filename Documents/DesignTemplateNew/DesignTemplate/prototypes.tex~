@@ -40,7 +40,7 @@ The work completed in the first sprint was largely information gathering. The go
 
 We successfuly found data for which device was faster, the cost of each device, and the power consumption while running. The benchmark results are in the following tables:
 
-\begin{figure}[h]
+\begin{figure}[tbh]
 	\caption{Performance of Raspberry Pi and ODROID}
 	\centering
 		\includegraphics[scale=0.5]{pivsxu4table2.JPG}
@@ -82,7 +82,7 @@ However, the ODroids were backordered, and took two weeks longer than expected t
 
 The Cluster of eight ODroid XU4s was assembled, completing our first physical prototype. The ODroids were attached to a piece of plexiglass, along with a power supply with a 5 volt power cord for each ODroid, and an 8 port switch. The end result is pictured in the following figure.
 
-\begin{figure}[h]
+\begin{figure}[tbh]
 	\caption{Cluster in Star Topology.}
 	\centering
 		\includegraphics[scale=0.5]{IMG_20151201_104751350_HDR.jpg}
@@ -149,9 +149,9 @@ This sprint was largely the completion of benchmarking the cluster. We downloane
 
 \subsection{Success/Fail}
 
-We successfully bencharked the cluster using Linpack. Results in the following figure:
+We successfully bencharked the cluster using Linpack. Results are shown in the following graph:
 
-\begin{figure}[h]
+\begin{figure}[tbh]
 	\caption{Linpack results.}
 	\centering
 		\includegraphics[scale=0.5]{minimalgraph.JPG}

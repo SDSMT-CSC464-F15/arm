@@ -142,6 +142,7 @@
 \BOOKMARK [1][-]{section.10.3}{Hardware Test}{chapter.10}% 142
 \BOOKMARK [1][-]{section.10.4}{Switch Benchmark}{chapter.10}% 143
 \BOOKMARK [1][-]{section.10.5}{USB to Ethernet Benchmark}{chapter.10}% 144
+<<<<<<< HEAD
 \BOOKMARK [1][-]{section.10.6}{Auto-Mounting Snow White's Home Directory}{chapter.10}% 145
 \BOOKMARK [1][-]{section.10.7}{Creating a Debian Package}{chapter.10}% 146
 \BOOKMARK [1][-]{section.10.8}{USB to USB Communication}{chapter.10}% 147
@@ -174,3 +175,34 @@
 \BOOKMARK [1][-]{section.E.2}{Ordinary Text}{appendix*.5}% 174
 \BOOKMARK [1][-]{section.E.3}{Displayed Text}{appendix*.5}% 175
 \BOOKMARK [1][-]{section.E.4}{Build process}{appendix*.5}% 176
+=======
+\BOOKMARK [1][-]{section.10.6}{USB to USB Communication}{chapter.10}% 145
+\BOOKMARK [0][-]{chapter.11}{Research Results}{}% 146
+\BOOKMARK [1][-]{section.11.1}{Result 1}{chapter.11}% 147
+\BOOKMARK [1][-]{section.11.2}{Result 2}{chapter.11}% 148
+\BOOKMARK [1][-]{section.11.3}{Result 3}{chapter.11}% 149
+\BOOKMARK [1][-]{section.11.4}{Result 4}{chapter.11}% 150
+\BOOKMARK [1][-]{section.11.5}{Result 5}{chapter.11}% 151
+\BOOKMARK [1][-]{section.11.6}{Result 6}{chapter.11}% 152
+\BOOKMARK [1][-]{section.11.7}{Conclusions}{chapter.11}% 153
+\BOOKMARK [1][-]{section.11.8}{Further work}{chapter.11}% 154
+\BOOKMARK [0][-]{chapter.12}{Software Agreement}{}% 155
+\BOOKMARK [0][-]{appendix.A}{Product Description}{}% 156
+\BOOKMARK [0][-]{appendix.B}{Publications}{}% 157
+\BOOKMARK [0][-]{appendix.C}{Sprint Reports}{}% 158
+\BOOKMARK [1][-]{section.C.1}{Sprint Report \0431}{appendix.C}% 159
+\BOOKMARK [1][-]{section.C.2}{Sprint Report \0432}{appendix.C}% 160
+\BOOKMARK [1][-]{section.C.3}{Sprint Report \0433}{appendix.C}% 161
+\BOOKMARK [2][-]{subsection.C.3.1}{Overview}{section.C.3}% 162
+\BOOKMARK [1][-]{section.C.4}{Sprint Report \0434}{appendix.C}% 163
+\BOOKMARK [1][-]{section.C.5}{Sprint Report \0435}{appendix.C}% 164
+\BOOKMARK [1][-]{section.C.6}{Sprint Report \0436}{appendix.C}% 165
+\BOOKMARK [0][-]{appendix.D}{Industrial Experience and Resumes}{}% 166
+\BOOKMARK [1][-]{section.D.1}{Resumes}{appendix.D}% 167
+\BOOKMARK [0][-]{appendix.E}{Acknowledgment}{}% 168
+\BOOKMARK [0][-]{appendix*.5}{LaTeX Example}{}% 169
+\BOOKMARK [1][-]{section.E.1}{Introduction}{appendix*.5}% 170
+\BOOKMARK [1][-]{section.E.2}{Ordinary Text}{appendix*.5}% 171
+\BOOKMARK [1][-]{section.E.3}{Displayed Text}{appendix*.5}% 172
+\BOOKMARK [1][-]{section.E.4}{Build process}{appendix*.5}% 173
+>>>>>>> 20c5dbb06f855c6f97cd5d36cc938bd15a54dce7
