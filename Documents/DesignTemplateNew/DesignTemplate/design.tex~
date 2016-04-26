@@ -44,27 +44,30 @@ The bibliography is automatically constructed.
  %% Andrew labeled this secion as Cluster Configure in our old template
 The first architecture we implemented was a star topology, with each device of the eight devices connected over Ethernet to a central switch. Each device was configured to be on the same network and capable of communicating over the switch via IP addresses. We configured the /home directory of our head node, Snow White, to be an NFS export that the seven other nodes would mount in their /home directory. This allowed for any change to be made on one device to be mirrored on the others. Also, it allowed for MPI programs located anywhere in the /home directory to be run, as all the devices would see the same executable in the same path.
 
-\begin{figure}[h]
+\begin{figure}
 	\caption{Star topology.}
 	\centering
 		\includegraphics[scale=0.5]{cluster_star.png}
+	\label{fig:star}
 \end{figure}
 
-	The next tolopogy we implemented was a ring. A USB to Ethernet device was attached to each ODroid, giving them a total of two network interfaces. Each interface was assigned a unique IP address, as shown in Figure Yada. This allowed the cluster to be connected without the switch, and instead with each ODroid connected to the ajacent two forming a ring. For communication to be possible, routing information had to be specified to allow each device to know the path to follow to connect to the other seven. To do this, the /etc/networking/interfaces file was edited to add seven routes, four from one network interface and three from the other. Each route specified which port to use to next to go to any given ODroid. For instance, Snow White had a route with the information that if any program tries to access Sleepy on 192.168.0.3, it would go through Dopey at 192.168.0.1, and then Dopey had it's own routing table for how to access Sleepy.
+	The next tolopogy we implemented was a ring. A USB to Ethernet device was attached to each ODroid, giving them a total of two network interfaces. Each interface was assigned a unique IP address, as shown in Figure~\ref{fig:ipaddresses}. This allowed the cluster to be connected without the switch, and instead with each ODroid connected to the ajacent two forming a ring. For communication to be possible, routing information had to be specified to allow each device to know the path to follow to connect to the other seven. To do this, the /etc/networking/interfaces file was edited to add seven routes, four from one network interface and three from the other. Each route specified which port to use to next to go to any given ODroid. For instance, Snow White had a route with the information that if any program tries to access Sleepy on 192.168.0.3, it would go through Dopey at 192.168.0.1, and then Dopey had it's own routing table for how to access Sleepy.
 	The routing tables were designed such that each ODroid would take the fewest possible hops to get to any other. When the ODroids were equidistant, such as Snow White to Doc where going clockwise or counter-clockwise would each take four hops, the convention used was to go clockwise. This would allow the network traffic to overlap as little as possible in order to maximize effeciency. Therefore, each ODroid had a unique routing table. 
 
-\begin{figure}[h]
+\begin{figure}
 	\caption{IP addresses for ring topology.}
 	\centering
 		\includegraphics[scale=0.5]{cluster_ipaddresses.png}
+	\label{fig:ipaddresses}
 \end{figure}
 
-	The third architecture we used was a hypercube topology. To implement it, a third network interface was added by connecting a second USB to Ethernet device on the final USB 3.0 port. An IP address was assigned to that interface as well, and more routing table information was added. This allowed more connections to be made, decreasing the maximum amount of hops needed to get from any one node to another, as shown in Figure Blada. 
+	The third architecture we used was a hypercube topology. To implement it, a third network interface was added by connecting a second USB to Ethernet device on the final USB 3.0 port. An IP address was assigned to that interface as well, and more routing table information was added. This allowed more connections to be made, decreasing the maximum amount of hops needed to get from any one node to another, as shown in Figure~\ref{fig:hypercube}. 
 
 \begin{figure}[h]
 	\caption{Diagram of hypercube topology.}
 	\centering
 		\includegraphics[scale=0.5]{HyperCube2.png}
+	\label{fig:hypercube}
 \end{figure}
 
 
@@ -80,7 +83,23 @@ The first architecture we implemented was a star topology, with each device of t
 	For this project, the most significant data flow was how LINPACK processes were distributed. The goal was to divide the work as much as possible, both across the cluster and within each device itself. In order to accomplish this, MPI was used with LINPACK to spawn as many processes as needed and run them on different cores. 
  
  \subsection{Communications}
-	To communicate between devices, many different methods were tested. First, Ethernet communication through a switch was used to set up the initial cluster. The communication was configured by setting each port with a static IP address to allow the devices to exist on the same network.
+	To communicate between devices, many different methods were tested. First, Ethernet communication through a switch was used to set up the initial cluster. The communication was configured by setting each port with a static IP address to allow the devices to exist on the same network by editing the /etc/networking/interfaces file. The chosen network was 192.168.x.y, where X was the number of the node 0 through 7, and Y was 1. 192.168 was chosen as it is the industry standard for a local private network. However, we deviated from the standard by having the third character be different for each device. This was done so that when we added more network interfaces to each ODroid by using USB to Etherent devices, the last number would correspond to which interface it was, where 1 would be the built in Ethernet port and 2 and 3 would be the USB to Ethernet ports. We decided it would be simpler and more intuitive to list the IP address in the format of device number, then port number. To facilitate this, the IP addresses were masked with 255.255.0.0 instead of the standard 255.255.255.0, so that the devices could still communicate. Communication could then occur through the switch very easily, as each device was physically connected to each other device.
+	Another way Ethernet communication was used was in ring and hypercube topologies. These both did not use the switch, but rather used USB to Ethernet devices to give more network interfaces to each ODroid. This allowed them to be connected directly to each other in a ring or hypercube, as shown in the Figure~\ref{fig:ring} and Figure~\ref{rig:hypercube}. In order for the devices to be able to communicate, more software configuration had to be done. First, new IP addressess had to be statically assigned for the new interfaces, in accordinance with our numbering convenction. This was done by adding more entries to the /etc/networking/interfaces file. However, that alone was not enough for communication to occur through the entire cluster. It was possible to communicate with the adjacent devices from any given ODroids, but not the other five. For MPI and LINPACK to work, every device would have to be able to SSH to every other device. For that to be done, routing tables had to be implemented. These would serve to direct communication to any given IP address through a given gateway. The syntax of creating them is shown in Figure~\ref{fig:routing}, which we learned from Dr. Qiao. The first number indicates the IP address to be redirected whenever any process tries to access it, the netmask is always 255.255.255.255 so that only the exact IP address listed uses the route. The number at the end is the gateway to be used by the route. When these routing tables were implemented on every dwarf, it was possible for each device to communicate with all the others.
+
+ \begin{figure}
+	\caption{Routing table.}
+	\centering
+		\includegraphics[scale=0.5]{routingtable.JPG}
+	\label{fig:routing}
+\end{figure}
+
+ \begin{figure}
+	\caption{Ring topology.}
+	\centering
+		\includegraphics[scale=0.5]{ring.png}
+	\label{fig:ring}
+\end{figure}
+
 	USB and GPIO communication were also tested. USB to USB was found to be impossible due to USB 3.0 host to host communication being not supported by any existing operating system. GPIO communication was successful using WiringPi with C code. However, it was found to be much slower than Ethernet, and creating any type of large scale communication efforts would have been beyond the scope of this project.
  
  \subsection{Classes}
