@@ -88,7 +88,7 @@ Another important component is a way to test the speed of the cluster. This is e
 %%type of table of contents.  You can move these and the numbers will
 %%update correctly.
 
-The systems components were used to achieve the goals in specific ways. First the cluster was desgined in a Star Topology, as described in Figure~\ref{star}. 
+The systems components were used to achieve the goals in specific ways. First the cluster was desgined in a Star Topology, as described in Figure~\ref{star}. This was accomplished with the hardware purchased for the cluster.
 
 %% SAMPLE IMAGE WITH STUFF
 \begin{figure}[tbh]

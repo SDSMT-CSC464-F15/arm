@@ -87,27 +87,75 @@ The project work will be divided in to Sprints with set backlogs. Each Sprint wi
 %%The sprint schedule.  Can be tables or graphs.   This can be a list of dates with the visual 
 %%representation given below.
 
-Sprint 1: 9/14/15 - 10/2/15
-Sprint 2: 10/12/15 - 10/30/15
-Sprint 3: 11/9/15 - 11/27/15
-Sprint 4: 1/18/16 - 2/5/16
-Sprint 5: 2/15/16 - 3/4/16
-Sprint 6: 3/21/16 - 4/15/16
+Sprint 1: 9/14/15 - 10/2/15 \\
+Sprint 2: 10/12/15 - 10/30/15 \\
+Sprint 3: 11/9/15 - 11/27/15 \\
+Sprint 4: 1/18/16 - 2/5/16 \\
+Sprint 5: 2/15/16 - 3/4/16 \\
+Sprint 6: 3/21/16 - 4/15/16 \\
 
 \section{Timeline}
 %%Gantt chart or other type of visual representation of the project timeline.
+
+
 
 \section{Backlogs}
 %%Place the sprint backlogs here.    The product backlog will be in the chapter with the user 
 %%stories.
 
+\subsection*{Sprint 1 Backlog}
+\begin{itemize}
+	\item Decide on a computer based on the results of the benchmarking
+	\item Calculate prices on supplies and computers while maintaining below the budget
+	\item Ordering said supplies and computers
+	\item Build the cluster to perform floating-point operations
+	\item Benchmark the cluster
+	\item Experiment with different connections
+	\item Create a new mode of communication
+\end{itemize}
+
+\subsection*{Sprint 2 Backlog}
+\begin{itemize}
+	\item Build the cluster to perform floating-point operations
+	\item Benchmark the cluster
+	\item Experiment with different connections
+	\item Create a new mode of communication
+\end{itemize}
+
+\subsection*{Sprint 3 Backlog}
+\begin{itemize}
+	\item Research new connection methods
+	\item Benchmark the cluster
+	\item Experiment with different topologies
+	\item Create a new mode of communication
+	\item Design documentation
+	\item Research symposium
+	\begin{itemize}
+		\item Complete abstract
+	\end{itemize}
+	\item Design Fair
+\end{itemize}
+
+\subsection*{Sprint 4 Backlog}
+\begin{itemize}
+	\item MICS presentation.
+	\item SDSMT Research Symnposium. 
+	\item Design Documentation.
+	\item Design Fair.
+\end{itemize}
+
+\subsection*{Sprint 5 Backlog}
+\begin{itemize}
+	\item MICS presentation.
+	\item SDSMT Research Symnposium.
+	\item Completed hypercube cluster.
+	\item Conglomerate data results.
+	\item Design Documentation.
+	\item Design Fair.
+\end{itemize}
+
 \section{Burndown Charts}
 %%Place your burndown charts, team velocity information, etc here.   
-
-
-\section{Development Environment}
-%%The basic purpose for this section is to give a developer all of the necessary 
-%%information to setup their development environment to run, test, and/or develop. 
 
 
 \section{Development IDE and Tools}
@@ -117,14 +165,9 @@ Sprint 6: 3/21/16 - 4/15/16
 %%Which source control system is/was used?  How was it setup?  How does a developer 
 %%connect to it? 
 
-Github will be used for our source control. Our repository was created by Dr. Jeff McGough for our use during the project. 
-
-\section{Dependencies}
-%%Describe all dependencies associated with developing the system.
+Github will be used for our source control. Our repository was created by Dr. Jeff McGough for our use during the project. The repo is set to be public, so everyone has read access. Both team members, Dr. McGough and the Product Owner Dr. Christer Karlsson have write access.
 
 \section{Build  Environment}
-%%How are the packages built?  Are there build scripts? 
+%%How are the packages built?  Are there build scripts?
 
-\section{Development Machine Setup}
-%%If warranted, provide a list of steps and details associated with setting up a 
-%%machine for use by a developer. 
+The build environment for all the project was a version of Ubuntu 15 specifically made by HardKernel for use on the ODROID XU4. All code and processes work on the provided kernel.

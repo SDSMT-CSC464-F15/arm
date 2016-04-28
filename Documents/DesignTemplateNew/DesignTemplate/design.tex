@@ -118,8 +118,7 @@ The hardware used included a 1 Gigabit unmanaged switch, a power supply capable 
 \subsection{Component  Overview}
 %%This section can take the form of a list of features.
 
-\subsection{Phase Overview}
-%%This is an extension of the Phase Overview above, but specific to this component. It is meant to be basically a brief list with space for marking the phase status. 
+
 
 \subsection{ Architecture  Diagram}
 %%It is important to build and maintain an architecture diagram.  However, it may be that a component is best described visually with a data flow diagram. 
@@ -136,24 +135,47 @@ The hardware used included a 1 Gigabit unmanaged switch, a power supply capable 
 The next major component to the cluster was the sofware configuration to get the cluster up and running.
 
 \subsection{Technologies  Used}
-%%This section provides a list of technologies used for this component.  The details for the technologies have already been provided in the Overview section.
+%%This section provides a list of technologies used for this component.  The details for the technologies have already been provided in the Overview section. 
+We used several Linux system configuration tools to implement the cluster. We used the files
+\begin{itemize}
+	\item etc/network/interfaces
+	\item etc/exports
+	\item etc/hostname
+	\item etc/hosts
+	\item etc/fstab
+\end{itemize}
+for several different configuration setting. We also used a few packages availible from the defual debian repositories.
+\begin{itemize}
+	\item nfs-kernel-server
+	\item nfs-common
+	\item mpi-dev
+\end{itemize}
 
-Each ODROID was running a version of Ubuntu 15 specifically desinged for the ODROIDS. 
+Finally, we used SSH tools that are installed by default on Ubuntu 15.
 
 \subsection{Component  Overview}
 %%This section can take the form of a list of features.
 \begin{itemize}
-	\item 
+	\item OpenMPI
+	\item LINPACK
+	\item ATLAS
+	\item SSH
+	\item Ubuntu 15
+\end{itemize}
 
 \subsection{Phase Overview}
-%%This is an extension of the Phase Overview above, but specific to this component. It is meant to be basically a brief list with space for marking the phase status. 
+%%This is an extension of the Phase Overview above, but specific to this component. It is meant to be basically a brief list with space for marking the phase status.
+
+\begin{itemize} 
+	\item All devices recognizing the others over Ethernet.
+	\item SSH without requiring a password.
+	\item Mount home directory of Snow White on the dwarfs.
+	\item Running MPI code on all devices.
+\end{itemize}
 
 \subsection{ Architecture  Diagram}
 %%It is important to build and maintain an architecture diagram.  However, it may be that a component is best described visually with a data flow diagram. 
 
-
-\subsection{Data Flow Diagram}
-%%It is important to build and maintain a data flow diagram.  However, it may be that a component is best described visually with an architecture diagram. 
 
 
 \subsection{Design Details}
@@ -190,36 +212,10 @@ if __name__ == '__main__':
 
 \section{Major Component \#3 }
 
-\subsection{Technologies  Used}
-%%This section provides a list of technologies used for this component.  The details for the technologies have already been provided in the Overview section. 
-We used several Linux system configuration tools to implement the cluster. We used the files
-\begin{itemize}
-	\item etc/network/interfaces
-	\item etc/exports
-	\item etc/hostname
-	\item etc/hosts
-	\item etc/fstab
-\end{itemize}
-for several different configuration setting. We also used a few packages availible from the defual debian repositories.
-\begin{itemize}
-	\item nfs-kernel-server
-	\item nfs-common
-	\item mpi-dev
-\end{itemize}
-
-Finally, we used SSH tools that are installed by default on Ubuntu 15.
-
 
 \subsection{Component  Overview}
 %%This section can take the form of a list of features. 
 The features implented by this configuration were:
-
-\begin{itemize} 
-	\item All devices recognizing the others over Ethernet.
-	\item SSH without requiring a password.
-	\item Mount home directory of Snow White on the dwarfs.
-	\item Running MPI code on all devices.
-\end{itemize}
 
 
 \subsection{Phase Overview}
