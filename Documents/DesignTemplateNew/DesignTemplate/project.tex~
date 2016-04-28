@@ -120,7 +120,7 @@ Sprint 6: 3/21/16 - 4/15/16
 Github will be used for our source control. Our repository was created by Dr. Jeff McGough for our use during the project. 
 
 \section{Dependencies}
-%%Describe all dependencies associated with developing the system. 
+%%Describe all dependencies associated with developing the system.
 
 \section{Build  Environment}
 %%How are the packages built?  Are there build scripts? 

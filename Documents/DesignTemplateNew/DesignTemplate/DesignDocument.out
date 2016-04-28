@@ -143,6 +143,7 @@
 \BOOKMARK [1][-]{section.10.4}{Switch Benchmark}{chapter.10}% 143
 \BOOKMARK [1][-]{section.10.5}{USB to Ethernet Benchmark}{chapter.10}% 144
 \BOOKMARK [1][-]{section.10.6}{Auto-Mounting Snow White's Home Directory}{chapter.10}% 145
+<<<<<<< HEAD
 \BOOKMARK [1][-]{section.10.7}{Assigning IP Addresses}{chapter.10}% 146
 \BOOKMARK [1][-]{section.10.8}{Creating a Debian Package}{chapter.10}% 147
 \BOOKMARK [1][-]{section.10.9}{USB to USB Communication}{chapter.10}% 148
@@ -176,3 +177,37 @@
 \BOOKMARK [1][-]{section.E.2}{Ordinary Text}{appendix*.5}% 176
 \BOOKMARK [1][-]{section.E.3}{Displayed Text}{appendix*.5}% 177
 \BOOKMARK [1][-]{section.E.4}{Build process}{appendix*.5}% 178
+=======
+\BOOKMARK [1][-]{section.10.7}{Creating a Debian Package}{chapter.10}% 146
+\BOOKMARK [1][-]{section.10.8}{USB to USB Communication}{chapter.10}% 147
+\BOOKMARK [1][-]{section.10.9}{GPIO Communication}{chapter.10}% 148
+\BOOKMARK [1][-]{section.10.10}{Updating Kernel}{chapter.10}% 149
+\BOOKMARK [0][-]{chapter.11}{Research Results}{}% 150
+\BOOKMARK [1][-]{section.11.1}{Result 1}{chapter.11}% 151
+\BOOKMARK [1][-]{section.11.2}{Result 2}{chapter.11}% 152
+\BOOKMARK [1][-]{section.11.3}{Result 3}{chapter.11}% 153
+\BOOKMARK [1][-]{section.11.4}{Result 4}{chapter.11}% 154
+\BOOKMARK [1][-]{section.11.5}{Result 5}{chapter.11}% 155
+\BOOKMARK [1][-]{section.11.6}{Result 6}{chapter.11}% 156
+\BOOKMARK [1][-]{section.11.7}{Conclusions}{chapter.11}% 157
+\BOOKMARK [1][-]{section.11.8}{Further work}{chapter.11}% 158
+\BOOKMARK [0][-]{chapter.12}{Software Agreement}{}% 159
+\BOOKMARK [0][-]{appendix.A}{Product Description}{}% 160
+\BOOKMARK [0][-]{appendix.B}{Publications}{}% 161
+\BOOKMARK [0][-]{appendix.C}{Sprint Reports}{}% 162
+\BOOKMARK [1][-]{section.C.1}{Sprint Report \0431}{appendix.C}% 163
+\BOOKMARK [1][-]{section.C.2}{Sprint Report \0432}{appendix.C}% 164
+\BOOKMARK [1][-]{section.C.3}{Sprint Report \0433}{appendix.C}% 165
+\BOOKMARK [2][-]{subsection.C.3.1}{Overview}{section.C.3}% 166
+\BOOKMARK [1][-]{section.C.4}{Sprint Report \0434}{appendix.C}% 167
+\BOOKMARK [1][-]{section.C.5}{Sprint Report \0435}{appendix.C}% 168
+\BOOKMARK [1][-]{section.C.6}{Sprint Report \0436}{appendix.C}% 169
+\BOOKMARK [0][-]{appendix.D}{Industrial Experience and Resumes}{}% 170
+\BOOKMARK [1][-]{section.D.1}{Resumes}{appendix.D}% 171
+\BOOKMARK [0][-]{appendix.E}{Acknowledgment}{}% 172
+\BOOKMARK [0][-]{appendix*.5}{LaTeX Example}{}% 173
+\BOOKMARK [1][-]{section.E.1}{Introduction}{appendix*.5}% 174
+\BOOKMARK [1][-]{section.E.2}{Ordinary Text}{appendix*.5}% 175
+\BOOKMARK [1][-]{section.E.3}{Displayed Text}{appendix*.5}% 176
+\BOOKMARK [1][-]{section.E.4}{Build process}{appendix*.5}% 177
+>>>>>>> 7fea7063c0619b0168ece6621153ce1186fc0dcf
