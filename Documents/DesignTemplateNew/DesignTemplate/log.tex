@@ -177,6 +177,38 @@ The drastically lower speed of the USB to ethernet adapters and the inability to
 We can now mount Snow White's home directory automatically onto Sleepy. Adding this to other dwarfs' fstab file.
 \end{description}
 
+%%%% THIS NEEDS TO BE FINISHED
+\section{Assigning IP Addresses}
+\begin{description}
+\item [11/5/15] Setting up the IP addresses for the ODROIDs. \\
+sudo vim /etc/network/interfaces \\
+These lines should be in there: \\
+\# interfaces(5) file used by ifup(8) and ifdown(8) \\
+\# Invlude files from /etc/network/interfaces.d \\
+source-directory /etc/network/interfaces.d \\
+auto eth0 \\
+iface eth0 inet static \\
+address 192.168.1.11 \\
+gateway 192.168.1.1 \\
+Under address, edit what address you want.\\
+Confirm the ip address was changed: \\
+%add the >
+ifconfig \\
+Switch control to another ODROID connected on the switch. \\
+Attempt to ping to the ODROID who's IP address you changed.
+ping 192.168.1.11 \\
+It should be successful. Attempt to ssh into it. \\
+ssh 192.168.1.11 \\
+Use iperf to time and ping the network. Set up the server and set the client \\
+iperf -s
+iperf -c 192.168.1.11
+%% I NEED HELP WITH THIS ONE
+\item [11/10/15] Changing the hostnames of the ODROIDs. Working on ODROID 2, it's being difficult so I will name it Dopey. To change the hostname: \\
+% add < or $
+
+
+\end{description}
+
 % Sprint 4
 \section{Creating a Debian Package}
 \begin{description}

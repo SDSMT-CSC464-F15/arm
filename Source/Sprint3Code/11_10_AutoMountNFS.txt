@@ -8,3 +8,5 @@ To fix this, edited /etc/fstab, added the line:
 to all of the seven dwarves. Success.
 
 -ah
+
+ADDED TO DOCUMENTATION

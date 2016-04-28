@@ -147,34 +147,22 @@
 \contentsline {section}{\numberline {10.2}Ethernet Benchmark}{34}{section.10.2}
 \contentsline {section}{\numberline {10.3}Hardware Test}{34}{section.10.3}
 \contentsline {section}{\numberline {10.4}Switch Benchmark}{34}{section.10.4}
-<<<<<<< HEAD
 \contentsline {section}{\numberline {10.5}USB to Ethernet Benchmark}{35}{section.10.5}
 \contentsline {section}{\numberline {10.6}Auto-Mounting Snow White's Home Directory}{35}{section.10.6}
-\contentsline {section}{\numberline {10.7}Creating a Debian Package}{35}{section.10.7}
-\contentsline {section}{\numberline {10.8}USB to USB Communication}{35}{section.10.8}
-\contentsline {section}{\numberline {10.9}GPIO Communication}{36}{section.10.9}
-\contentsline {section}{\numberline {10.10}Updating Kernel}{37}{section.10.10}
+\contentsline {section}{\numberline {10.7}Assigning IP Addresses}{35}{section.10.7}
+\contentsline {section}{\numberline {10.8}Creating a Debian Package}{36}{section.10.8}
+\contentsline {section}{\numberline {10.9}USB to USB Communication}{36}{section.10.9}
+\contentsline {section}{\numberline {10.10}GPIO Communication}{36}{section.10.10}
+\contentsline {section}{\numberline {10.11}Updating Kernel}{37}{section.10.11}
 \contentsline {chapter}{\numberline {11}Research Results}{39}{chapter.11}
 \contentsline {section}{\numberline {11.1}Result 1}{39}{section.11.1}
 \contentsline {section}{\numberline {11.2}Result 2}{39}{section.11.2}
 \contentsline {section}{\numberline {11.3}Result 3}{39}{section.11.3}
 \contentsline {section}{\numberline {11.4}Result 4}{40}{section.11.4}
 \contentsline {section}{\numberline {11.5}Result 5}{40}{section.11.5}
-\contentsline {section}{\numberline {11.6}Conclusions}{40}{section.11.6}
-\contentsline {section}{\numberline {11.7}Further work}{40}{section.11.7}
-=======
-\contentsline {section}{\numberline {10.5}USB to Ethernet Benchmark}{34}{section.10.5}
-\contentsline {section}{\numberline {10.6}USB to USB Communication}{35}{section.10.6}
-\contentsline {chapter}{\numberline {11}Research Results}{37}{chapter.11}
-\contentsline {section}{\numberline {11.1}Result 1}{37}{section.11.1}
-\contentsline {section}{\numberline {11.2}Result 2}{37}{section.11.2}
-\contentsline {section}{\numberline {11.3}Result 3}{37}{section.11.3}
-\contentsline {section}{\numberline {11.4}Result 4}{38}{section.11.4}
-\contentsline {section}{\numberline {11.5}Result 5}{38}{section.11.5}
-\contentsline {section}{\numberline {11.6}Result 6}{39}{section.11.6}
-\contentsline {section}{\numberline {11.7}Conclusions}{39}{section.11.7}
-\contentsline {section}{\numberline {11.8}Further work}{39}{section.11.8}
->>>>>>> 20c5dbb06f855c6f97cd5d36cc938bd15a54dce7
+\contentsline {section}{\numberline {11.6}Result 6}{41}{section.11.6}
+\contentsline {section}{\numberline {11.7}Conclusions}{41}{section.11.7}
+\contentsline {section}{\numberline {11.8}Further work}{41}{section.11.8}
 \contentsline {chapter}{Software Agreement}{SA-1}{chapter.12}
 \contentsline {chapter}{\numberline {A}Product Description}{A-1}{appendix.A}
 \contentsline {chapter}{\numberline {B}Publications}{B-1}{appendix.B}
