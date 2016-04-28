@@ -4,7 +4,7 @@
 
 \chapter{Experimental Log}
 
-For research projects one needs to keep a log of all research/lab activities.   
+For research projects one needs to keep a log of all research/lab activities.
 
 %% If you have multiple labs, you may want to break the labs into sections, check 
 %% with the profession on format.
@@ -88,13 +88,13 @@ Raspberry Pi 2B & 0.0003 & 0.0003 & 0.000224 & 0.0000453 \\
 
 This text can be run over the existing network by the following steps: \\
 %add dollar signs or >
-ssh andrewdesktop@108.107.223.45 \\
-Password: design \\
-iperf -s \& \\
+> ssh andrewdesktop@108.107.223.45 \\
+>Password: design \\
+>iperf -s \& \\
 Leave that running in the background. \\
-ssh odroid@10.42.0.2 \\
-Password: odroid \\
-iperf -c 10.42.0.1 \\
+>ssh odroid@10.42.0.2 \\
+>Password: odroid \\
+>iperf -c 10.42.0.1 \\
 This will take a few seconds to run then give the network speed. The network 10.42.0.1 is over a 1000 Mbps wired connection between the ODROID and andrewdesktop. \\
 
 \begin{center}
@@ -173,7 +173,7 @@ The drastically lower speed of the USB to ethernet adapters and the inability to
 \begin{description}
 \item [11/10/15] Attempting to auto-mount Snow White's homedirectory onto the dwarfs. Changed Sleepy's fstab file with this line: \\ \\
 %need to figure out > in front of the line below
-192.168.1.11:/home /hom nfs auto 0 0 \\ \\
+192.168.1.11:/home /home nfs auto 0 0 \\ \\
 We can now mount Snow White's home directory automatically onto Sleepy. Adding this to other dwarfs' fstab file.
 \end{description}
 
@@ -203,10 +203,26 @@ Use iperf to time and ping the network. Set up the server and set the client \\
 iperf -s
 iperf -c 192.168.1.11
 %% I NEED HELP WITH THIS ONE
-\item [11/10/15] Changing the hostnames of the ODROIDs. Working on ODROID 2, it's being difficult so I will name it Dopey. To change the hostname: \\
+\end{description}
+
+\section{Naming the Dwarfs}
+\begin{description}
+\item[11/10/15] Changing the hostnames of the ODROIDs. Working on ODROID 2, it's being difficult so I will name it Dopey. To change the hostname: \\
 % add < or $
+sudo vim /etc/hostname \\
+Overwrite ``odroid'' with ``Dopey'' \\
+sudo vim /etc/hosts \\
+Replace ``127.0.0.1 odroid'' to ``127.0.0.1 dopey''
+Then reboot.
+\end{description}
 
-
+\section{Getting Internet on the ODROIDs}
+\begin{description}
+\item [11/13/15] We need internet access on the ODROIDs to install applications, such as vim. To get the internet, we had to plug in Ethernet to internet and then edit /etc/network/interfaces. Then needed to reset eth0:
+%add >
+sudo ifdown eth0
+sudo ifup eth0
+That didn't always work. Rebooting is another option.
 \end{description}
 
 % Sprint 4
@@ -287,7 +303,7 @@ In Doc: \\
 cd /sys/class/gpio \\
 echo 172 greaterthan unexport
 
-\item [2/11/16] Successfully got wiringPi to work between two dwarfs. We got 0.61 MBits/sec on GPIO with one pin. Communication speed between two dwarfs through Ethernet was 750 MBits/sec. This was found using iperf. GPIO was 120 times slower than Ethernet. It was concluded that GPIO will not be continued for this project.
+\item [2/11/16] Successfully got wiringPi to work between two dwarfs. We got 0.61 MBits\/sec on GPIO with one pin. Communication speed between two dwarfs through Ethernet was 750 MBits/sec. This was found using iperf. GPIO was 120 times slower than Ethernet. It was concluded that GPIO will not be continued for this project.
 
 \end{description}
 

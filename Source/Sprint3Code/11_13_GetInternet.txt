@@ -1,6 +1,7 @@
 11/13/15
 
--To get internet connection on the ODroids, first plug in an ethernet cable connected to the internet.
+-To get internet connection on the ODroids, first plug in an ethernet cable 
+connected to the internet.
 -Then edit 
 (sudo) /etc/network/interfaces 
 -to add # in front of the last four lines.
@@ -10,6 +11,9 @@ sudo ifdown eth0
 sudo ifup eth0
 -Alternativly, you can reboot the system.
 
--To reconnect to the network on the switch, remove those # that you added and do the same two commands.
+-To reconnect to the network on the switch, remove those # that you added 
+and do the same two commands.
 
 -ah
+
+ADDED TO DOCUMENTATION

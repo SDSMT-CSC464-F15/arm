@@ -142,10 +142,19 @@
 \contentsline {section}{\numberline {10.5}USB to Ethernet Benchmark}{39}{section.10.5}
 \contentsline {section}{\numberline {10.6}Auto-Mounting Snow White's Home Directory}{39}{section.10.6}
 \contentsline {section}{\numberline {10.7}Assigning IP Addresses}{39}{section.10.7}
+<<<<<<< HEAD
 \contentsline {section}{\numberline {10.8}Creating a Debian Package}{40}{section.10.8}
 \contentsline {section}{\numberline {10.9}USB to USB Communication}{40}{section.10.9}
 \contentsline {section}{\numberline {10.10}GPIO Communication}{40}{section.10.10}
 \contentsline {section}{\numberline {10.11}Updating Kernel}{41}{section.10.11}
+=======
+\contentsline {section}{\numberline {10.8}Naming the Dwarfs}{40}{section.10.8}
+\contentsline {section}{\numberline {10.9}Getting Internet on the ODROIDs}{40}{section.10.9}
+\contentsline {section}{\numberline {10.10}Creating a Debian Package}{40}{section.10.10}
+\contentsline {section}{\numberline {10.11}USB to USB Communication}{40}{section.10.11}
+\contentsline {section}{\numberline {10.12}GPIO Communication}{41}{section.10.12}
+\contentsline {section}{\numberline {10.13}Updating Kernel}{41}{section.10.13}
+>>>>>>> 7987554a19c57b20946f75f9b21555a73ae6ecf2
 \contentsline {chapter}{\numberline {11}Research Results}{43}{chapter.11}
 \contentsline {section}{\numberline {11.1}Result 1}{43}{section.11.1}
 \contentsline {section}{\numberline {11.2}Result 2}{43}{section.11.2}
