@@ -86,15 +86,14 @@ Raspberry Pi 2B & 0.0003 & 0.0003 & 0.000224 & 0.0000453 \\
 \begin{description}
 \item [10/25/15] Created network between a machine with gigabit Ethernet port and ODROID. Installed iperf, a tool in the standard Debian repositories to text the network speed, on both the server machine and ODROID. \\
 
-This text can be run over the existing network by the following steps: \\
-%add dollar signs or >
+This text can be run over the existing network by the following steps: \\ \\
 > ssh andrewdesktop@108.107.223.45 \\
->Password: design \\
->iperf -s \& \\
-Leave that running in the background. \\
+Password: design \\
+>iperf -s \& \\ \\
+Leave that running in the background. \\ \\
 >ssh odroid@10.42.0.2 \\
->Password: odroid \\
->iperf -c 10.42.0.1 \\
+Password: odroid \\
+>iperf -c 10.42.0.1 \\ \\
 This will take a few seconds to run then give the network speed. The network 10.42.0.1 is over a 1000 Mbps wired connection between the ODROID and andrewdesktop. \\
 
 \begin{center}
@@ -119,15 +118,10 @@ ODroid XU4 & 615 - 625 \\
 
 \section{Switch Benchmark}
 \begin{description}
-\item [11/03/15] With two ODROID devices attached to the switch via direct ethernet (no USB 3.0 to ethernet adapter), the connection speed was tested. This was accomplished by one device running: \\
-
-%add $ or >
-iperf -s \\
-
-and the other running: \\
-
-%use <>
-iperf -c [IP of the first device]
+\item [11/03/15] With two ODROID devices attached to the switch via direct ethernet (no USB 3.0 to ethernet adapter), the connection speed was tested. This was accomplished by one device running: \\ \\
+> iperf -s \\ \\
+and the other running: \\ \\
+> iperf -c [IP of the first device]
 
 \begin{center}
 \begin{tabular}{ | l || l | }
@@ -172,57 +166,151 @@ The drastically lower speed of the USB to ethernet adapters and the inability to
 \section{Auto-Mounting Snow White's Home Directory}
 \begin{description}
 \item [11/10/15] Attempting to auto-mount Snow White's homedirectory onto the dwarfs. Changed Sleepy's fstab file with this line: \\ \\
-%need to figure out > in front of the line below
-192.168.1.11:/home /home nfs auto 0 0 \\ \\
+> 192.168.1.11:/home /home nfs auto 0 0 \\ \\
 We can now mount Snow White's home directory automatically onto Sleepy. Adding this to other dwarfs' fstab file.
 \end{description}
 
 %%%% THIS NEEDS TO BE FINISHED
 \section{Assigning IP Addresses}
 \begin{description}
-\item [11/5/15] Setting up the IP addresses for the ODROIDs. \\
-sudo vim /etc/network/interfaces \\
-These lines should be in there: \\
+\item [11/5/15] Setting up the IP addresses for the ODROIDs. \\ \\
+> sudo vim /etc/network/interfaces \\ \\
+These lines should be in there: \\ \\
 \# interfaces(5) file used by ifup(8) and ifdown(8) \\
-\# Invlude files from /etc/network/interfaces.d \\
+\# Include files from /etc/network/interfaces.d \\
 source-directory /etc/network/interfaces.d \\
 auto eth0 \\
 iface eth0 inet static \\
 address 192.168.1.11 \\
-gateway 192.168.1.1 \\
+gateway 192.168.1.1 \\ \\
 Under address, edit what address you want.\\
-Confirm the ip address was changed: \\
-%add the >
-ifconfig \\
+Confirm the ip address was changed: \\ \\
+> ifconfig \\ \\
 Switch control to another ODROID connected on the switch. \\
-Attempt to ping to the ODROID who's IP address you changed.
-ping 192.168.1.11 \\
-It should be successful. Attempt to ssh into it. \\
-ssh 192.168.1.11 \\
-Use iperf to time and ping the network. Set up the server and set the client \\
-iperf -s
-iperf -c 192.168.1.11
+Attempt to ping to the ODROID who's IP address you changed. \\ \\
+> ping 192.168.1.11 \\ \\
+It should be successful. Attempt to ssh into it. \\ \\
+> ssh 192.168.1.11 \\ \\
+Use iperf to time and ping the network. Set up the server and set the client \\ \\
+> iperf -s \\
+> iperf -c 192.168.1.11 \\
 %% I NEED HELP WITH THIS ONE
 \end{description}
 
 \section{Naming the Dwarfs}
 \begin{description}
-\item[11/10/15] Changing the hostnames of the ODROIDs. Working on ODROID 2, it's being difficult so I will name it Dopey. To change the hostname: \\
-% add < or $
-sudo vim /etc/hostname \\
-Overwrite ``odroid'' with ``Dopey'' \\
-sudo vim /etc/hosts \\
-Replace ``127.0.0.1 odroid'' to ``127.0.0.1 dopey''
-Then reboot.
+\item[11/10/15] Changing the hostnames of the ODROIDs. Working on ODROID 2, it's being difficult so I will name it Dopey. To change the hostname: \\ \\
+> sudo vim /etc/hostname \\ \\
+Overwrite ``odroid'' with ``Dopey'' \\ \\
+> sudo vim /etc/hosts \\ \\
+Replace ``127.0.0.1 odroid'' to ``127.0.0.1 dopey''. \\ \\
+In /etc/nsswitch.conf, change ``hosts: files mdns4\textunderscore minimal [NOTFOUND=return] dns'' to ``hosts: files dns''
 \end{description}
 
 \section{Getting Internet on the ODROIDs}
 \begin{description}
-\item [11/13/15] We need internet access on the ODROIDs to install applications, such as vim. To get the internet, we had to plug in Ethernet to internet and then edit /etc/network/interfaces. Then needed to reset eth0:
-%add >
-sudo ifdown eth0
-sudo ifup eth0
+\item [11/13/15] We need internet access on the ODROIDs to install applications, such as vim. To get the internet, we had to plug in Ethernet to internet and then edit /etc/network/interfaces. Then needed to reset eth0: \\ \\
+> sudo ifdown eth0 \\
+> sudo ifup eth0 \\ \\
 That didn't always work. Rebooting is another option.
+\end{description}
+
+\section{SSH-ing Via Hostame}
+\begin{description}
+\item [11/17/15] For ease of use, we need to be able to ssh into each of the dwarfs by their given name. In order to do that, we need to add a list of every ODROID and their corresponding IP address to each ODROID. \\
+>sudo vim /etc/hosts \\ \\
+In there, add the others' IP Addresses and hostnames in this format: \\
+<ipaddress> <hostname> \\
+Example: 192.188.1.11 snowwhite \\ \\
+In order to perform MPI, we need to take down the passwords from each of the ODROIDs so you don't need them when you ssh: \\
+>ssh-keygen \\ \\
+Press enter through all of the promts, then: \\
+> ssh-copy-id <ipaddress>
+\end{description}
+
+\section{Starting up the Cluster}
+\begin{description}
+\item [12/1/15] We developed a procedure to safely start of the cluser:
+\begin{enumerate}
+	\item Plug the cluster into power. This will start up Snow White, the power box, and the switch.
+	\item Flip the two switches at the top of the cluster. Those will start the remaining dwarfs in their corresponding columns.
+\end{enumerate}
+It is important to run the procedure in this order so Snow White's home directory will successfully mount in the other dwarfs.
+\end{description}
+
+\section{IP Addresses}
+\begin{description}
+\item [12/1/15] We assigned IP addresses to the ODROIDs:
+\begin{itemize}
+	\item IP ADDRESS - hostname
+	\item 192.168.1.11 - snow\textunderscore white
+	\item 192.168.1.12 - dopey
+	\item 192.168.1.13 - sleepy
+	\item 192.168.1.14 - grumpy
+	\item 192.168.1.15 - doc
+	\item 192.168.1.16 - happy
+	\item 192.168.1.17 - bashful
+	\item 192.168.1.18 - sneezy
+\end{itemize}
+\end{description}
+
+\section{Formatting Executable Commands}
+\begin{description}
+\item [12/2/15] In order to use the tools we created easily, they have been formatted as executable commands through these steps:
+\begin{enumerate}
+	\item Add \#!/bin/bash or \#!/bin/usr/python to the top of the file.
+	\item > chmod +x <file>
+\end{enumerate}
+This will allow us to put them in /usr/bin and call them from any directory to easily mount all the dwarfs, shutdown all of the dwarfs, change and reboot the network to use the internet or go back on to the switch, or execute LINPACK. While not a drastic change, this should prove to make our lives a little easier.
+\end{description}
+
+\section{Current State of Cluster}
+\begin{description}
+\item [12/2/15] An overview of the cluster as the end of the first semester concludes. \\ \\
+Hardware:
+\begin{itemize}
+ 	\item Eight functioning odroids, two non functioning.
+	\item One switch.
+	\item Power supply with nine power cables.
+	\item Eight one gigabit ethernet cables.
+	\item All securely mounted on an acrylic board. 
+\end{itemize}
+Configuration:
+\begin{itemize}
+	\item All odroids are on the same network, connected over the switch (192.169.1.x)
+	\item All odroids are named, and able to recognize the IP address of the names of
+    the others (i.e. any command that needs an IP can be executed with the name
+    instead, such as ping dopey or ssh happy)
+	\item Snow White can SSH into any dwarf without a password, and vise versa.
+	\item Any dwarf can execute sudo without needed a password input.
+	\item The /home directory of Snow White is an NFS share that the dwarfs can mount.
+\end{itemize}
+Software:
+\begin{itemize}
+	\item Linpack and ATLAS are built on Snow White, in the home directory.
+	\item MPI is installed and working on all eight devices.
+	\item Four tools exist in Snow White in the /usr/bin directory:
+	\begin{enumerate}
+      	\item mountHomeDir - mounts the /home directory of all seven dwarfs to the /home
+        directory of Snow White.
+      	\item killDwarfs - shuts down the seven dwarfs.
+      	\item changeNetwork - changes the network configuration to allow the device to
+        	\item connect to the interent instead of the local network, or vise vera.
+      	\item LINPACK - executes linpack on a given number of processes. 
+      \end{enumerate}
+\end{itemize}
+Knowledge:
+\begin{itemize}
+	\item Speed of Etherent switch: ~750 Mbps
+	\item Maximum gigaflops possible: ~3e-4
+\end{itemize}
+Set backs:
+\begin{itemize}
+	\item Two odroids burned, they have been replaced.
+	\item Editing /etc/fstab to automatically mount the home directory of Snow White
+    on the dwarfs proved unsuccessful. This is something the team will continue
+    to persue in future sprints.
+\end{itemize}
 \end{description}
 
 % Sprint 4
@@ -236,21 +324,16 @@ This let us create a Debian package. Going forward, the next step is to use the 
 
 \section{USB to USB Communication}
 \begin{description}
-\item [1/26/16] Figuring out how to communicate through USB. In /etc/network/interface, changed USB's from static to dhcp. Then performed sudo ifup usb0.
-Setting up the USB IP Addresses:
-Go the the ODROID to change.
+\item [1/26/16] Figuring out how to communicate through USB. In /etc/network/interface, changed USB's from static to dhcp. Then performed: \\ \\ 
+> sudo ifup usb0 \\ \\
+Setting up the USB IP Addresses, go the the ODROID to change: \\
+> wget http://tex.stackexchange.com \\
+> sudo modprob g\textunderscore ether \\
+> dmesg \\
+> sudo ifconfig usb0 ipaddress \\
 
-
-% 	\$ wget http://tex.stackexchange.com
-	%\$ sudo modprob g_ether
-	%\$ dmesg
-	%\$ sudo ifconfig usb0 ipaddress 
-	%\$ config
-
-%\langle dog \rangle
-
-Verify the USB IP address was changed.
-
+Verify the USB IP address was changed. \\
+> ifconfig \\ \\
 Changed Doc, Happy, Bashful, and Sneezy's USB IP addresses:
 	\begin{itemize}
 		\item Doc - 192.168.1.25
@@ -267,41 +350,34 @@ Changed Doc, Happy, Bashful, and Sneezy's USB IP addresses:
 %put a gpio diagram somewhere and reference it here
 
 In Happy: \\
-%add > before these
-cd /sys/class/gpio\\
+> cd /sys/class/gpio \\ \\
 Mount the export pin: \\
-echo 171 greatherthan export\\
+> echo 171 > export \\ \\
 It makes gpio171\\
-cd gpio171 \\
+> cd gpio171 \\ \\
 Edit the text file direction:\\
-echo in greaterthan direction \\
-
+>echo in > direction \\ \\
 In Doc: \\
-%add the > before these
-cd /sys/class/gpio \\
-echo 172 greaterthan export \\
+> cd /sys/class/gpio \\
+> echo 172 > export \\
 It makes a directory for that pin number. \\
-cd gpio172 \\
+> cd gpio172 \\
 Edit the text file direction to out: \\
-echo out greaterthan direction \\
+> echo out > direction \\
 Edit the text file direction: \\
-echo 1 greatherthan value\\
-
+> echo 1 > value \\ \\
 In Happy: \\
-cd /sys/class/gpio/gpio171 \\
-echo value \\
-It'll print 1\\
-
-Repeat with value 0. Happy's value will be 0. \\
-
+> cd /sys/class/gpio/gpio171 \\
+> echo value \\
+It'll print 1 \\ \\
+Repeat with value 0. Happy's value will be 0. \\ \\
 To unmount the GPIO Export Pin: \\
 In Happy: \\
-cd /sys/class/gpio \\
-echo 171 greaterthan unexport \\
-
+> cd /sys/class/gpio \\
+> echo 171 > unexport \\ \\
 In Doc: \\
-cd /sys/class/gpio \\
-echo 172 greaterthan unexport
+> cd /sys/class/gpio \\
+> echo 172 > unexport
 
 \item [2/11/16] Successfully got wiringPi to work between two dwarfs. We got 0.61 MBits\/sec on GPIO with one pin. Communication speed between two dwarfs through Ethernet was 750 MBits/sec. This was found using iperf. GPIO was 120 times slower than Ethernet. It was concluded that GPIO will not be continued for this project.
 
@@ -309,22 +385,21 @@ echo 172 greaterthan unexport
 
 \section{Updating Kernel}
 \begin{description}
-\item [2/6/16] Trying to install the wiringPi2 library on the ODROIDs to communicate via GPIO. Our online sources said we need to update the kernels. \\
-
+\item [2/6/16] Trying to install the wiringPi2 library on the ODROIDs to communicate via GPIO. Our online sources said we need to update the kernels. \\ \\
 Change the fstab so it doesn't mount Snow White's home directory automatically. (Comment out) \\
 Edit etc/interfaces, comment out so the ODROID can connect to the internet.\\
 Reboot the ODROID.\\
 Connect to internet ethernet while rebooting. \\
 Check the current kernel: \\
-uname -a \\
+> uname -a \\ \\
 Update the repos: \\
-sudo apt-get update \\
+> sudo apt-get update \\ \\
 Upgrade the kernel: \\
-apt-get upgrade linux-image-xu3 \\
+> apt-get upgrade linux-image-xu3 \\ \\
 Got a purple screen prompting if we want to continue and if we know what we're doing. Continued. \\
 Ignore warning errors. \\
 Check the current kernel to see if it successfully updated: \\
-uname -a \\
+> uname -a \\ \\
 Upgrade all of the packages for the kernel: \\
-sudo apt-get update \&\& sudo apt-get dist upgrade
+> sudo apt-get update \&\& sudo apt-get dist upgrade
 \end{description}

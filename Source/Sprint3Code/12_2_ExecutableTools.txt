@@ -7,3 +7,5 @@ call them from any directory to easily mount all the dwarfs, shutdown all the
 dwarfs, change and reboot the network to use the internet or go back on to the
 switch, or execute linpack. While not a drastic change, this should prove to
 make our lives a little easier.
+
+ADDED TO DOCUMENTATION

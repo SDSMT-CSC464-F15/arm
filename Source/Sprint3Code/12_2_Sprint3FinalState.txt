@@ -38,3 +38,5 @@ Set backs:
   - Editing /etc/fstab to automatically mount the home directory of Snow White
     on the dwarfs proved unsuccessful. This is something the team will continue
     to persue in future sprints.
+
+ADDED TO DOCUMENTATION

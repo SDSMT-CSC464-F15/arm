@@ -7,3 +7,5 @@ Plug into power. This will start up snowwhite and the switch.
 Flip the two switches, those will start up the remaining cluster.
 
 WARNING: It is important to do bootup in this order!
+
+ADDED TO DOCUMENTATION
