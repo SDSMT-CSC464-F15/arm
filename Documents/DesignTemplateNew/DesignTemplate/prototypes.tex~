@@ -43,7 +43,7 @@ We successfuly found data for which device was faster, the cost of each device, 
 \begin{figure}[tbh]
 	\caption{Performance of Raspberry Pi and ODROID}
 	\centering
-		\includegraphics[scale=0.5]{pivsxu4table2.JPG}
+		\includegraphics[width=0.75\textwidth]{pivsxu4table2.JPG}
 \end{figure}
 
 During the completion of this Sprint we encountered no significant failures. We were not set back from our schedule and were able to complete our Sprint goals.
@@ -85,7 +85,7 @@ The Cluster of eight ODroid XU4s was assembled, completing our first physical pr
 \begin{figure}[tbh]
 	\caption{Cluster in Star Topology.}
 	\centering
-		\includegraphics[scale=0.5]{IMG_20151201_104751350_HDR.jpg}
+		\includegraphics[width=0.75\textwidth]{IMG_20151201_104751350_HDR.jpg}
 \end{figure}
 
 On the software side, each ODroid was configured for our needs. First, each was assigned a static IP address in the network 192.168.0.X, and given it's hostname in accordinace with our naming convention of Snow White and the seven dwarfs. The final configuration for this sprint was to use RSA keys to allow each device to SSH to each other seven without prompting for a password. This was essential to allow MPI code to run. We also created some helper scripts to set up the cluster when it was booted. These included a script to use NFS to mount the /home directory of Snow White on the /home directory of the dwarfs. This was also essential to let MPI code located in the /home of Snow White to run on the cluster, as the same executable would be found in the same path on the dwarfs. We also created a script to shutdown the dwarfs from Snow White. 
@@ -154,12 +154,35 @@ We successfully bencharked the cluster using Linpack. Results are shown in the f
 \begin{figure}[tbh]
 	\caption{Linpack results.}
 	\centering
-		\includegraphics[scale=0.5]{minimalgraph.JPG}
+		\includegraphics[width=0.75\textwidth]{minimalgraph.JPG}
 \end{figure}
 
 \section{Sprint 5 Prototype}
 
-For our final sprint, we tested the USB and GPIO communication. It was determined that netiher were pratcical for our purposes due to the scope of the project and the low speed. In order to try and increase the gigaflops of the system, we instead experimented with different topologies. We used USB to Ethernet devices to add more network interfaces to each ODroid and attach them in a ring. This allowed a different method of communication instead of using the switch. In order for communication to work, we had to assign IP addresses to the new interfaces on the 192.168.X.Y network, where X is the ODroid number 0-7, and Y was the number of the interface for that device. We also created our abstract for the SDSMT Reseach Symposium, and for the MICS conference. We wrote a first draft of the MICS paper as well in preparation of our presentation in April 23rd. 
+For this sprint, we tested the USB and GPIO communication. We were able to communicate over GPIO using the library WiringPi. In order to be able to do so, we had to install the source code on the ODROIDs and build it. We ran in to a few issues originally. First, the operatin system installed was not at it's most recent version, and therefore unable to work with the WiringPi libraries. We had to update each kernel individually, as shown in Figure~\ref{fig:purple} Once that was done, we still had to be able to use the library correctly. Extensive documentation existed for use with Raspberry Pis, but not for ODROID XU4s. Therefore, through a process of trial and error to see which WiringPi pin number corresponded to each physical pin, we were able to create our own in Figure~\ref{fig:gpio} 
+
+\begin{figure}[tbh]
+	\caption{Linpack results.}
+	\centering
+		\includegraphics[width=0.75\textwidth]{minimalgraph.JPG}
+	\label{fig:minimal}
+\end{figure}
+
+\begin{figure}[tbh]
+	\caption{Updating kernel.}
+	\centering
+		\includegraphics[width=0.75\textwidth]{PurpleScreen.JPG}
+	\label{fig:purple}
+\end{figure}
+
+\begin{figure}[tbh]
+	\caption{WiringPi values.}
+	\centering
+		\includegraphics[width=0.75\textwidth]{gpio.JPG}
+	\label{fig:gpio}
+\end{figure}
+
+It was determined that netiher were pratcical for our purposes due to the scope of the project and the low speed. In order to try and increase the gigaflops of the system, we instead experimented with different topologies. We used USB to Ethernet devices to add more network interfaces to each ODroid and attach them in a ring. This allowed a different method of communication instead of using the switch. In order for communication to work, we had to assign IP addresses to the new interfaces on the 192.168.X.Y network, where X is the ODroid number 0-7, and Y was the number of the interface for that device. We also created our abstract for the SDSMT Reseach Symposium, and for the MICS conference. We wrote a first draft of the MICS paper as well in preparation of our presentation in April 23rd. 
 
 \subsection{Deliverable}
 

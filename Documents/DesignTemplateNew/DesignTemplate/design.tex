@@ -143,7 +143,7 @@ The components of the hardware include:
 \subsection{Architecture  Diagram}
 %%It is important to build and maintain an architecture diagram.  However, it may be that a component is best described visually with a data flow diagram. 
 
-The architecture is designed as pictured in Figure~\ref{cluster} The ODROIDs are attached to the power supply with 5 volt cables. They are also all attached to the 1 Gigabit Ethernet switch. There are two power switches that power two halves of the cluster. It is wired so that Snow White and the switch are powered on first, and are always powered as long as the power supply is plugged in. The first power switch provides power to the first three dwarves on the same half as Snow White, and the other switch powers the other four. This is done so that the dwarves can be configured to mount the /home directory of Snow White at boot time, and ensure that Snow White is always availible to be mounted.
+The architecture is designed as pictured in Figure~\ref{fig:cluster} The ODROIDs are attached to the power supply with 5 volt cables. They are also all attached to the 1 Gigabit Ethernet switch. There are two power switches that power two halves of the cluster. It is wired so that Snow White and the switch are powered on first, and are always powered as long as the power supply is plugged in. The first power switch provides power to the first three dwarves on the same half as Snow White, and the other switch powers the other four. This is done so that the dwarves can be configured to mount the /home directory of Snow White at boot time, and ensure that Snow White is always availible to be mounted.
 
  \begin{figure}[tbh]
 	\caption{Ring topology.}
@@ -233,26 +233,4 @@ if __name__ == '__main__':
         Main()
 \end{lstlisting}
 %%This code listing is not floating or automatically numbered.  If you want auto-numbering, but it in the algorithm environment (not algorithmic however) shown above.
-
-\section{Major Component \#3 }
-
-
-\subsection{Component  Overview}
-%%This section can take the form of a list of features. 
-The features implented by this configuration were:
-
-
-\subsection{Phase Overview}
-%%This is an extension of the Phase Overview above, but specific to this component. It is meant to be basically a brief list with space for marking the phase status. 
-
-\subsection{ Architecture  Diagram}
-%%It is important to build and maintain an architecture diagram.  However, it may be that a component is best described visually with a data flow diagram. 
-
-
-\subsection{Data Flow Diagram}
-%%It is important to build and maintain a data flow diagram.  However, it may be that a component is best described visually with an architecture diagram. 
-
-
-\subsection{Design Details}
-%%This is where the details are presented and may contain subsections. 
 

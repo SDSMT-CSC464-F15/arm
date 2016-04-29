@@ -152,7 +152,7 @@ The architecture is designed as pictured in Figure~\ref{cluster} The ODROIDs are
 	\label{fig:ring}
 \end{figure}
 
-\subsection{Design Details}
+%%\subsection{Design Details}
 
 \section{Major Component \#2 }
 
@@ -233,26 +233,4 @@ if __name__ == '__main__':
         Main()
 \end{lstlisting}
 %%This code listing is not floating or automatically numbered.  If you want auto-numbering, but it in the algorithm environment (not algorithmic however) shown above.
-
-\section{Major Component \#3 }
-
-
-\subsection{Component  Overview}
-%%This section can take the form of a list of features. 
-The features implented by this configuration were:
-
-
-\subsection{Phase Overview}
-%%This is an extension of the Phase Overview above, but specific to this component. It is meant to be basically a brief list with space for marking the phase status. 
-
-\subsection{ Architecture  Diagram}
-%%It is important to build and maintain an architecture diagram.  However, it may be that a component is best described visually with a data flow diagram. 
-
-
-\subsection{Data Flow Diagram}
-%%It is important to build and maintain a data flow diagram.  However, it may be that a component is best described visually with an architecture diagram. 
-
-
-\subsection{Design Details}
-%%This is where the details are presented and may contain subsections. 
 

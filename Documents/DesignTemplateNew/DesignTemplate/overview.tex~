@@ -52,8 +52,6 @@ The first and most evident component to the cluster is the physical hardware tha
 
 Another important component is a way to test the speed of the cluster. This is essential to learn which method of clustering the devices is most effecient. As such we will dedicate a substancial amount of time to finding a reliable and useful benchmarking tool that is an industry standard so that we can compare our cluster to other similar projects.
 
-\subsection{Major System Component \#3}
-%%Describe briefly the role this major component plays in this system. 
 
 \section{Systems Goals}
 %%Briefly describe the overall goals this system plans to achieve.

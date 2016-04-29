@@ -1,15 +1,16 @@
 % !TEX encoding = UTF-8 Unicode
 % !TEX root = DesignDocument.tex
-\usepackage{float}
 
 \documentclass{book}
+
+\usepackage{float}
 
 \input{seniordesignstyle.tex} % This sets the format.
 
 % Add your title page contents here 
 \title{{\color{SDColor3} \rule{\linewidth}{0.5mm}}\\[2mm] {\huge \bfseries \color{SDColor3} ARM Cluster }\\[-1mm] {\color{SDColor3}\rule{\linewidth}{0.5mm}} \\  \vfill
 {\LARGE \bfseries \color{SDColor4} Senior Design Final Documentation }\\  \vfill 
-{\color{SDColor3} Discoverment} }
+{\color{SDColor3} A Research Tool} }
 \author{\color{SDColor3}  Andrew Kenneth Hoover \and \color{SDColor3} Christine Norma Sorensen }
 \date{\color{SDColor3} \today}
 
@@ -102,9 +103,7 @@ Thanks
 %\chapter{Course Syllabus}
 %\includepdf[pages={1-17}]{syllabus.pdf}
 
-%%% Remove after reading
-\chapter{\LaTeX\ Example}
-\input{latexexample.tex}
+
 
 
 
