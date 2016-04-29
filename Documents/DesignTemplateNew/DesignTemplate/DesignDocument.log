@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.21)  28 APR 2016 21:20
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.21)  29 APR 2016 10:35
 entering extended mode
 **DesignDocument.tex
 
@@ -1684,7 +1684,7 @@ File: ts1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [1
 
 ]
-<cluster_star.png, id=961, 325.81725pt x 506.49225pt>
+<cluster_star.png, id=966, 325.81725pt x 506.49225pt>
 File: cluster_star.png Graphic file (type png)
  <use cluster_star.png>
 Package pdftex.def Info: cluster_star.png used on input line 90.
@@ -1726,13 +1726,13 @@ File: cluster_star.png Graphic file (type png)
 Package pdftex.def Info: cluster_star.png used on input line 50.
 (pdftex.def)             Requested size: 352.31624pt x 547.69131pt.
 
-<cluster_ipaddresses.png, id=1016, 893.739pt x 603.4545pt>
+<cluster_ipaddresses.png, id=1021, 893.739pt x 603.4545pt>
 File: cluster_ipaddresses.png Graphic file (type png)
 
 <use cluster_ipaddresses.png>
 Package pdftex.def Info: cluster_ipaddresses.png used on input line 60.
 (pdftex.def)             Requested size: 352.31624pt x 237.8877pt.
- <HyperCube2.png, id=1018, 378.213pt x 286.671pt>
+ <HyperCube2.png, id=1023, 378.213pt x 286.671pt>
 File: HyperCube2.png Graphic file (type png)
 
 <use HyperCube2.png>
@@ -1745,13 +1745,13 @@ Package pdftex.def Info: HyperCube2.png used on input line 69.
 LaTeX Warning: Reference `rig:hypercube' on page 14 undefined on input line 87.
 
 
-<routingtable.JPG, id=1026, 413.74574pt x 226.446pt>
+<routingtable.JPG, id=1031, 413.74574pt x 226.446pt>
 File: routingtable.JPG Graphic file (type jpg)
  <use routingtable.JPG>
 Package pdftex.def Info: routingtable.JPG used on input line 92.
 (pdftex.def)             Requested size: 352.31624pt x 192.83589pt.
 
-<ring.png, id=1027, 701.019pt x 543.2295pt>
+<ring.png, id=1032, 701.019pt x 543.2295pt>
 File: ring.png Graphic file (type png)
  <use ring.png>
 Package pdftex.def Info: ring.png used on input line 99.
@@ -1785,7 +1785,7 @@ Chapter 5.
 (C:\Users\1959287\Desktop\arm\Documents\DesignTemplateNew\DesignTemplate\protot
 ypes.tex [22]
 Chapter 6.
-<pivsxu4table2.JPG, id=1085, 475.7775pt x 205.9695pt>
+<pivsxu4table2.JPG, id=1090, 475.7775pt x 205.9695pt>
 File: pivsxu4table2.JPG Graphic file (type jpg)
  <use pivsxu4table2.JPG>
 Package pdftex.def Info: pivsxu4table2.JPG used on input line 46.
@@ -1795,14 +1795,14 @@ Package pdftex.def Info: pivsxu4table2.JPG used on input line 46.
 
 ] [24 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/
 pivsxu4table2.JPG>]
-<IMG_20151201_104751350_HDR.jpg, id=1094, 2441.12pt x 4336.2pt>
+<IMG_20151201_104751350_HDR.jpg, id=1099, 2441.12pt x 4336.2pt>
 File: IMG_20151201_104751350_HDR.jpg Graphic file (type jpg)
 
 <use IMG_20151201_104751350_HDR.jpg>
 Package pdftex.def Info: IMG_20151201_104751350_HDR.jpg used on input line 88.
 (pdftex.def)             Requested size: 352.31624pt x 625.78857pt.
  [25]
-<minimalgraph.JPG, id=1101, 728.7225pt x 451.08525pt>
+<minimalgraph.JPG, id=1106, 728.7225pt x 451.08525pt>
 File: minimalgraph.JPG Graphic file (type jpg)
  <use minimalgraph.JPG>
 Package pdftex.def Info: minimalgraph.JPG used on input line 157.
@@ -2179,7 +2179,7 @@ Package pdftex.def Info: minimalgraph.JPG used on input line 52.
  [46]) [47] [48
 
 ]
-<SoftwareContract.pdf, id=1218, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=1223, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf>
@@ -2190,7 +2190,7 @@ File: SoftwareContract.pdf Graphic file (type pdf)
 Package pdftex.def Info: SoftwareContract.pdf used on input line 73.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
-<SoftwareContract.pdf, id=1221, page=1, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=1226, page=1, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 1>
@@ -2216,7 +2216,7 @@ Package pdftex.def Info: SoftwareContract.pdf, page1 used on input line 73.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [1 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/So
 ftwareContract.pdf>]
-<SoftwareContract.pdf, id=1228, page=2, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=1233, page=2, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 2>
@@ -2233,7 +2233,7 @@ Package pdftex.def Info: SoftwareContract.pdf, page2 used on input line 73.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [2 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/So
 ftwareContract.pdf>]
-<SoftwareContract.pdf, id=1234, page=3, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=1239, page=3, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 3>
@@ -2250,7 +2250,7 @@ Package pdftex.def Info: SoftwareContract.pdf, page3 used on input line 73.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [3 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/So
 ftwareContract.pdf>]
-<SoftwareContract.pdf, id=1240, page=4, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=1245, page=4, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 4>
@@ -2267,7 +2267,7 @@ Package pdftex.def Info: SoftwareContract.pdf, page4 used on input line 73.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [4 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/So
 ftwareContract.pdf>]
-<SoftwareContract.pdf, id=1246, page=5, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=1251, page=5, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 5>
@@ -2313,26 +2313,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--69
 Appendix D.
 
 (C:\Users\1959287\Desktop\arm\Documents\DesignTemplateNew\DesignTemplate\indust
-rial.tex <HooverResume.pdf, id=1316, 614.295pt x 794.97pt>
+rial.tex
+Underfull \hbox (badness 10000) in paragraph at lines 11--13
+
+ []
+
+<HooverResume.pdf, id=1321, 614.295pt x 794.97pt>
+File: HooverResume.pdf Graphic file (type pdf)
+ <use HooverResume.pdf>
+Package pdftex.def Info: HooverResume.pdf used on input line 20.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: HooverResume.pdf Graphic file (type pdf)
 
 <use HooverResume.pdf>
-Package pdftex.def Info: HooverResume.pdf used on input line 16.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: HooverResume.pdf Graphic file (type pdf)
- <use HooverResume.pdf>
-Package pdftex.def Info: HooverResume.pdf used on input line 16.
+Package pdftex.def Info: HooverResume.pdf used on input line 20.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
-<HooverResume.pdf, id=1319, page=1, 614.295pt x 794.97pt>
+<HooverResume.pdf, id=1324, page=1, 614.295pt x 794.97pt>
 File: HooverResume.pdf Graphic file (type pdf)
 
 <use HooverResume.pdf, page 1>
-Package pdftex.def Info: HooverResume.pdf, page1 used on input line 16.
+Package pdftex.def Info: HooverResume.pdf, page1 used on input line 20.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: HooverResume.pdf Graphic file (type pdf)
  <use HooverResume.pdf, page 1>
-Package pdftex.def Info: HooverResume.pdf, page1 used on input line 16.
+Package pdftex.def Info: HooverResume.pdf, page1 used on input line 20.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [1
 
@@ -2340,16 +2345,16 @@ Package pdftex.def Info: HooverResume.pdf, page1 used on input line 16.
 File: HooverResume.pdf Graphic file (type pdf)
 
 <use HooverResume.pdf, page 1>
-Package pdftex.def Info: HooverResume.pdf, page1 used on input line 16.
+Package pdftex.def Info: HooverResume.pdf, page1 used on input line 20.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: HooverResume.pdf Graphic file (type pdf)
  <use HooverResume.pdf, page 1>
-Package pdftex.def Info: HooverResume.pdf, page1 used on input line 16.
+Package pdftex.def Info: HooverResume.pdf, page1 used on input line 20.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: HooverResume.pdf Graphic file (type pdf)
 
 <use HooverResume.pdf, page 1>
-Package pdftex.def Info: HooverResume.pdf, page1 used on input line 16.
+Package pdftex.def Info: HooverResume.pdf, page1 used on input line 20.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [2 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/Ho
 overResume.pdf
@@ -2357,40 +2362,40 @@ overResume.pdf
 pdfTeX warning: miktex-pdftex.exe (file C:/Users/1959287/Desktop/arm/Documents/
 DesignTemplateNew/DesignTemplate/HooverResume.pdf): PDF inclusion: invalid othe
 r resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <SorensenResume.pdf, id=1339, 614.295pt x 794.97pt>
+>] <SorensenResume.pdf, id=1344, 614.295pt x 794.97pt>
 File: SorensenResume.pdf Graphic file (type pdf)
 
 <use SorensenResume.pdf>
-Package pdftex.def Info: SorensenResume.pdf used on input line 17.
+Package pdftex.def Info: SorensenResume.pdf used on input line 21.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: SorensenResume.pdf Graphic file (type pdf)
  <use SorensenResume.pdf>
-Package pdftex.def Info: SorensenResume.pdf used on input line 17.
+Package pdftex.def Info: SorensenResume.pdf used on input line 21.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
-<SorensenResume.pdf, id=1342, page=1, 614.295pt x 794.97pt>
+<SorensenResume.pdf, id=1347, page=1, 614.295pt x 794.97pt>
 File: SorensenResume.pdf Graphic file (type pdf)
 
 <use SorensenResume.pdf, page 1>
-Package pdftex.def Info: SorensenResume.pdf, page1 used on input line 17.
+Package pdftex.def Info: SorensenResume.pdf, page1 used on input line 21.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: SorensenResume.pdf Graphic file (type pdf)
  <use SorensenResume.pdf, page 1>
-Package pdftex.def Info: SorensenResume.pdf, page1 used on input line 17.
+Package pdftex.def Info: SorensenResume.pdf, page1 used on input line 21.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: SorensenResume.pdf Graphic file (type pdf)
 
 <use SorensenResume.pdf, page 1>
-Package pdftex.def Info: SorensenResume.pdf, page1 used on input line 17.
+Package pdftex.def Info: SorensenResume.pdf, page1 used on input line 21.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: SorensenResume.pdf Graphic file (type pdf)
  <use SorensenResume.pdf, page 1>
-Package pdftex.def Info: SorensenResume.pdf, page1 used on input line 17.
+Package pdftex.def Info: SorensenResume.pdf, page1 used on input line 21.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: SorensenResume.pdf Graphic file (type pdf)
 
 <use SorensenResume.pdf, page 1>
-Package pdftex.def Info: SorensenResume.pdf, page1 used on input line 17.
+Package pdftex.def Info: SorensenResume.pdf, page1 used on input line 21.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [3 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/So
 rensenResume.pdf>]) [4
@@ -2408,7 +2413,7 @@ Document.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 110.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 110.
 Package rerunfilecheck Info: File `DesignDocument.out' has not changed.
-(rerunfilecheck)             Checksum: A4C43C01F7DBE2CCBBBECD60363C951C;11854.
+(rerunfilecheck)             Checksum: E55E8C09D8BC5B2352D11477AB888357;11928.
 
 
 LaTeX Warning: There were undefined references.
@@ -2416,10 +2421,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 110.
  ) 
 Here is how much of TeX's memory you used:
- 26371 strings out of 493921
- 468080 string characters out of 3144870
- 608873 words of memory out of 3000000
- 28713 multiletter control sequences out of 15000+200000
+ 26373 strings out of 493921
+ 468114 string characters out of 3144870
+ 607873 words of memory out of 3000000
+ 28714 multiletter control sequences out of 15000+200000
  67327 words of font info for 71 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  64i,18n,72p,3300b,1369s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2439,9 +2444,9 @@ lm/lmssbo10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmssbx
 iles (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files (x86)/
 MiKTeX 2.9/fonts/type1/public/lm/lmtk10.pfb><C:/Program Files (x86)/MiKTeX 2.9/
 fonts/type1/public/lm/lmtt10.pfb>
-Output written on DesignDocument.pdf (86 pages, 8001543 bytes).
+Output written on DesignDocument.pdf (86 pages, 8009270 bytes).
 PDF statistics:
- 1510 PDF objects out of 1728 (max. 8388607)
- 310 named destinations out of 1000 (max. 500000)
- 1525 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1515 PDF objects out of 1728 (max. 8388607)
+ 311 named destinations out of 1000 (max. 500000)
+ 1533 words of extra memory for PDF output out of 10000 (max. 10000000)
 
