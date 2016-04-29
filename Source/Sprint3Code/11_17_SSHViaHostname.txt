@@ -16,3 +16,5 @@ ssh-keygen
 ssh-copy-id <ipaddress>
 
 -CS
+
+ADDED TO DOCUMENTATION

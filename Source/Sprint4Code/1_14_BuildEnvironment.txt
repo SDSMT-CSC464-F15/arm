@@ -6,7 +6,6 @@ ssh-keygen
 
 and leaving all options as default by hitting enter through the prompts.
 
-
 The first thing I used the keys for was to configure my Github account to
 not make me enter my password every time I pushed to the repo. To do this,
 I called
@@ -18,12 +17,10 @@ SSH keys option. I then cloned the current repository with
 
 git clone git@github.com:SDSMT-CSC464-F15/arm
 
-
 The next thing I did was use the keys to be able to SSH to Snow_White without
 being prompted for a password. I did this with
 
-ssh-copy-id odroid@snow_white
-	
+ssh-copy-id odroid@snow_white	
 
 Finally, I configured my SSH settings so I wouldn't have to type out
 odroid@snow_white every time I needed to ssh over or use scp to move files.

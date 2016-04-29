@@ -11,3 +11,5 @@ IP Address - hostname
 192.168.1.18 - sneezy
 
 -cns
+
+ADDED TO DOCUMENTATION

@@ -9,4 +9,4 @@ Connect to network -Karlsson
 Run all combinations of LINPACK on cluster -Andrew
 Figure out how to mount homedirectory automatically -Andrew
 
-Added to documentation
+ADDED TO DOCUMENTATION

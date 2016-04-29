@@ -16,3 +16,5 @@ to
 -hosts: files dns
 
 -cns
+
+ADDED TO DOCUMENTATION
