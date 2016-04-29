@@ -1,0 +1,41 @@
+Docmentation To Do:
+
+-* Must do
+- Maybe
+(?) Do we need it?
+
+-*Read through
+-Elevator Pitch could be extended
+-*Update Documentation Preparation
+-*Major System Component #3
+-*User stories need to be looked over
+-*Requirements: system, network, development environment
+-*Specifications
+-*Project overview: some of the things need to be expanded. 
+	You can tell there are some things Samantha wrote
+-*Terminology and Acronyms
+-*Design and Implementation: Take away tabs, make blank line between paragraphs
+-* Data structures and Algorithms
+-*Classes (?)
+-*UML (?)
+-*Component overview, architecture diagram, dataflow diagram, design details (?)
+-*Major Component #3 (?)
+-*New ring topology diagram
+-*System testing: format paragraphs to blank line between paragraphs
+-*System testing, system integration analysis, risk anal, risk mitigation (?)
+-*System texting: Successes, issues and probs, changes to backlog
+-*Prototypes: format paragraphs
+-*Prototypes: Add sprint 6
+-*Rotate image cluster in star topology fig 6.2
+-*Release, setup, deployment (?)
+-*USER DOCUMENTATION --> mostly just copy from log
+-*Business plan (?)
+-*Log: take out that first line
+-*Add the remaining of the log
+-*Results: Format paragraphs
+-Software contract: straighten out. I might still have it to rescan. -cns
+-*Product description (?)
+-*Publications: We can add our Abstracts and papers to this.
+-*Sprint reports: sprint 1, add overview, same with sprint 4 and 5
+-*Add sprint 6
+-*Acknowledgements
