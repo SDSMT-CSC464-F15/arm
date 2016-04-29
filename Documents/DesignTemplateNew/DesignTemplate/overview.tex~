@@ -28,12 +28,6 @@ This project is a research project with the goal of creating the most effecient 
 The end goal is to learn about networking, parallelization, and different communication methods. Once as much information is gathered as possible, the resulting cluster and configuration will be returned to Dr. Karlsson for him to decide what to use the project for in the future. Possibilities include handing it off to other students for continuing work, or other research.
 
 
-\section{Business Need}
-%%Use this section to define what business need exist and how this software will 
-%%meet and/or exceed that business need.   
-
-
-
 \section{Deliverables}
 
 %%Provide a complete description of the client requested deliverables.   This section should be the section your software contract references.   

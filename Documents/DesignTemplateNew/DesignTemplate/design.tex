@@ -73,9 +73,9 @@ The first architecture we implemented was a star topology, with each device of t
 
  \subsection{Design Selection}
  %%Failed designs, design ideas, rejected designs here.
-	For the purposes of benchmarking the cluster, the star topology was used. It was found that MPI does not work with multiple network interfaces on the same subnet existing on the same node. It also did not work on our cluster even when the IP addresses were changed so that the networks were on different subnets. Therefore, in order to be able to use the benchmarking tool Linpack the star topology had to be used, as it was the only design that had only one network interface per ODroid.
+	For the purposes of benchmarking the cluster, the star topology was used. It was found that MPI does not work with multiple network interfaces on the same subnet existing on the same node. It also did not work on our cluster even when the IP addresses were changed so that the networks were on different subnets. Therefore, in order to be able to use the benchmarking tool LINPACK the star topology had to be used, as it was the only design that had only one network interface per ODroid.
  
- \subsection{Data Structures and Algorithms}
+ %%\subsection{Data Structures and Algorithms}
  %%Describe the special data structures and any special algorithms.
 	
 
@@ -102,13 +102,13 @@ The first architecture we implemented was a star topology, with each device of t
 
 	USB and GPIO communication were also tested. USB to USB was found to be impossible due to USB 3.0 host to host communication being not supported by any existing operating system. GPIO communication was successful using WiringPi with C code. However, it was found to be much slower than Ethernet, and creating any type of large scale communication efforts would have been beyond the scope of this project.
  
- \subsection{Classes}
+ %%\subsection{Classes}
  
- \subsection{UML}
+ %%\subsection{UML}
 
 \section{Major Component \#1 }
 
-The first major component that went in to the design of the cluster was all of the hardware itself. 
+The first major component that went in to the design of the cluster was all of the hardware. 
 
 \subsection{Technologies  Used}
 %%This section provides a list of technologies used for this component.  The details for the technologies have already been provided in the Overview section.
@@ -118,17 +118,41 @@ The hardware used included a 1 Gigabit unmanaged switch, a power supply capable 
 \subsection{Component  Overview}
 %%This section can take the form of a list of features.
 
+The components of the hardware include:
 
+\begin{itemize}
+	\item ODROID XU4
+	\begin{itemize}
+		\item 2 USB 3.0 ports
+		\item 1 USB 2.0 port
+		\item 4 A7 cores
+		\item 4 A15 cores
+		\item 2 GB memory
+	\end{itemize}
+	\item 1 Gigabit unmanaged switch
+	\begin{itemize}
+		\item Allows communication over Ethernet between up to 8 devices
+	\end{itemize}
+	\item 1 power supply
+	\begin{itemize}
+		\item Provides 5 volts of power to each ODROID and the switch
+	\end{itemize}
+	\item Acrylic board
+\end{itemize}
 
-\subsection{ Architecture  Diagram}
+\subsection{Architecture  Diagram}
 %%It is important to build and maintain an architecture diagram.  However, it may be that a component is best described visually with a data flow diagram. 
 
+The architecture is designed as pictured in Figure~\ref{cluster} The ODROIDs are attached to the power supply with 5 volt cables. They are also all attached to the 1 Gigabit Ethernet switch. There are two power switches that power two halves of the cluster. It is wired so that Snow White and the switch are powered on first, and are always powered as long as the power supply is plugged in. The first power switch provides power to the first three dwarves on the same half as Snow White, and the other switch powers the other four. This is done so that the dwarves can be configured to mount the /home directory of Snow White at boot time, and ensure that Snow White is always availible to be mounted.
 
-\subsection{Data Flow Diagram}
-%%It is important to build and maintain a data flow diagram.  However, it may be that a component is best described visually with an architecture diagram. 
+ \begin{figure}[tbh]
+	\caption{Ring topology.}
+	\centering
+		\includegraphics[width=0.75\textwidth]{IMG_20151201_104751350_HDR.jpg}
+	\label{fig:ring}
+\end{figure}
 
-
-\subsection{Design Details}
+%%\subsection{Design Details}
 
 \section{Major Component \#2 }
 
