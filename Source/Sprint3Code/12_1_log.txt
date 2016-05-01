@@ -23,3 +23,5 @@ the password for all of them however.
 
 the mpi_hello test works if you give everything max 4 slots, when each ODROID actually has 8 cores.
 Linepack works for benchmarking. We have yet to translate what the numbers mean.
+
+ADDED TO DOCUMENTATION

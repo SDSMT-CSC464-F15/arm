@@ -41,3 +41,5 @@ ssh sw
 or copy files from the repository with
 
 scp [path to the file on Red Queen] sw:[path to where I want the file on Snow White]
+
+ADDED TO DOCUMENTATION

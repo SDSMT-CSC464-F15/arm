@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.21)  30 APR 2016 12:32
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.21)  30 APR 2016 18:44
 entering extended mode
 **DesignDocument.tex
 
@@ -1613,7 +1613,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 ]
 (C:\Users\1959287\Desktop\arm\Documents\DesignTemplateNew\DesignTemplate\Design
 Document.toc [3] [4] [5]
-Overfull \hbox (4.2223pt too wide) detected at line 146
+Overfull \hbox (4.2223pt too wide) detected at line 149
  []\T1/lmss/m/n/10 C-10
  []
 
@@ -1691,7 +1691,7 @@ File: ts1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [1
 
 ]
-<cluster_star.png, id=833, 325.81725pt x 506.49225pt>
+<cluster_star.png, id=848, 325.81725pt x 506.49225pt>
 File: cluster_star.png Graphic file (type png)
  <use cluster_star.png>
 Package pdftex.def Info: cluster_star.png used on input line 88.
@@ -1738,79 +1738,120 @@ Underfull \hbox (badness 10000) in paragraph at lines 93--99
 (C:\Users\1959287\Desktop\arm\Documents\DesignTemplateNew\DesignTemplate\design
 .tex [11] [12]
 Chapter 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
+
+ []
+
 File: cluster_star.png Graphic file (type png)
 <use cluster_star.png>
 Package pdftex.def Info: cluster_star.png used on input line 50.
 (pdftex.def)             Requested size: 352.31624pt x 547.69131pt.
 
-<cluster_ipaddresses.png, id=888, 893.739pt x 603.4545pt>
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+
+ []
+
+<cluster_ipaddresses.png, id=903, 787.14075pt x 522.753pt>
 File: cluster_ipaddresses.png Graphic file (type png)
 
 <use cluster_ipaddresses.png>
-Package pdftex.def Info: cluster_ipaddresses.png used on input line 60.
-(pdftex.def)             Requested size: 352.31624pt x 237.8877pt.
- <HyperCube2.png, id=890, 378.213pt x 286.671pt>
+Package pdftex.def Info: cluster_ipaddresses.png used on input line 61.
+(pdftex.def)             Requested size: 352.31624pt x 233.97638pt.
+ <HyperCube2.png, id=906, 378.213pt x 286.671pt>
 File: HyperCube2.png Graphic file (type png)
 
 <use HyperCube2.png>
-Package pdftex.def Info: HyperCube2.png used on input line 69.
+Package pdftex.def Info: HyperCube2.png used on input line 70.
 (pdftex.def)             Requested size: 352.31624pt x 267.05618pt.
  [13
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
 
-LaTeX Warning: Reference `rig:hypercube' on page 14 undefined on input line 87.
+ []
 
 
-<routingtable.JPG, id=898, 413.74574pt x 226.446pt>
+LaTeX Warning: Reference `rig:hypercube' on page 14 undefined on input line 89.
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
+
+ []
+
+<routingtable.JPG, id=914, 413.74574pt x 226.446pt>
 File: routingtable.JPG Graphic file (type jpg)
  <use routingtable.JPG>
-Package pdftex.def Info: routingtable.JPG used on input line 92.
+Package pdftex.def Info: routingtable.JPG used on input line 94.
 (pdftex.def)             Requested size: 352.31624pt x 192.83589pt.
 
-<ring.png, id=899, 701.019pt x 543.2295pt>
+<ring.png, id=915, 701.019pt x 543.2295pt>
 File: ring.png Graphic file (type png)
  <use ring.png>
-Package pdftex.def Info: ring.png used on input line 99.
+Package pdftex.def Info: ring.png used on input line 101.
 (pdftex.def)             Requested size: 352.31624pt x 273.01492pt.
  [14]
 
-LaTeX Warning: Reference `fig:cluster' on page 15 undefined on input line 146.
+LaTeX Warning: Reference `fig:cluster' on page 15 undefined on input line 148.
 
-<IMG_20151201_104751350_HDR.jpg, id=904, 2441.12pt x 4336.2pt>
+<IMG_20151201_104751350_HDR.jpg, id=920, 3697.815pt x 2425.06pt>
 File: IMG_20151201_104751350_HDR.jpg Graphic file (type jpg)
 
 <use IMG_20151201_104751350_HDR.jpg>
-Package pdftex.def Info: IMG_20151201_104751350_HDR.jpg used on input line 151.
+Package pdftex.def Info: IMG_20151201_104751350_HDR.jpg used on input line 153.
 
-(pdftex.def)             Requested size: 352.31624pt x 625.78857pt.
+(pdftex.def)             Requested size: 352.31624pt x 231.04915pt.
  [15]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 217.
+Underfull \hbox (badness 10000) in paragraph at lines 210--211
 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--213
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 214--215
+
+ []
+
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 219.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 219.
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 221.
 
-Overfull \hbox (46.25026pt too wide) in paragraph at lines 228--229
+Overfull \hbox (46.25026pt too wide) in paragraph at lines 230--231
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-)
+[16])
 (C:\Users\1959287\Desktop\arm\Documents\DesignTemplateNew\DesignTemplate\testin
-g.tex [16] [17] [18 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/D
+g.tex [17] [18] [19 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/D
 esignTemplate/cluster_ipaddresses.png> <C:/Users/1959287/Desktop/arm/Documents/
-DesignTemplateNew/DesignTemplate/HyperCube2.png>] [19 <C:/Users/1959287/Desktop
+DesignTemplateNew/DesignTemplate/HyperCube2.png>] [20 <C:/Users/1959287/Desktop
 /arm/Documents/DesignTemplateNew/DesignTemplate/routingtable.JPG> <C:/Users/195
-9287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/ring.png (PNG copy)
->] [20 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate
-/IMG_20151201_104751350_HDR.jpg>]
-Chapter 5.
-[21
+9287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/ring.png>] [21 <C:/
+Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/IMG_201512
+01_104751350_HDR.jpg>] [22
 
 ]
+Chapter 5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+
+ []
+
+[23]
 Underfull \hbox (badness 10000) in paragraph at lines 42--43
 
  []
@@ -1830,7 +1871,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--53
 
  []
 
-[22]
+[24]
 File: ring.png Graphic file (type png)
  <use ring.png>
 Package pdftex.def Info: ring.png used on input line 59.
@@ -1839,61 +1880,74 @@ File: HyperCube2.png Graphic file (type png)
  <use HyperCube2.png>
 Package pdftex.def Info: HyperCube2.png used on input line 66.
 (pdftex.def)             Requested size: 352.31624pt x 267.05618pt.
- [23])
+ [25])
 (C:\Users\1959287\Desktop\arm\Documents\DesignTemplateNew\DesignTemplate\protot
-ypes.tex [24]
+ypes.tex [26]
 Chapter 6.
-<pivsxu4table2.JPG, id=968, 475.7775pt x 205.9695pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
+
+ []
+
+<pivsxu4table2.JPG, id=995, 532.99126pt x 237.88875pt>
 File: pivsxu4table2.JPG Graphic file (type jpg)
  <use pivsxu4table2.JPG>
 Package pdftex.def Info: pivsxu4table2.JPG used on input line 46.
-(pdftex.def)             Requested size: 352.31624pt x 152.52817pt.
+(pdftex.def)             Requested size: 352.31624pt x 157.25388pt.
 
-[25
+[27
 
-] [26 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/
+] [28 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/
 pivsxu4table2.JPG>]
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
+
+ []
+
 File: IMG_20151201_104751350_HDR.jpg Graphic file (type jpg)
- <use IMG_20151201_104751350_HDR.jpg>
+<use IMG_20151201_104751350_HDR.jpg>
 Package pdftex.def Info: IMG_20151201_104751350_HDR.jpg used on input line 88.
-(pdftex.def)             Requested size: 352.31624pt x 625.78857pt.
- [27]
-<minimalgraph.JPG, id=983, 728.7225pt x 451.08525pt>
+(pdftex.def)             Requested size: 352.31624pt x 231.04915pt.
+ [29] [30]
+<minimalgraph.JPG, id=1013, 728.7225pt x 451.08525pt>
 File: minimalgraph.JPG Graphic file (type jpg)
  <use minimalgraph.JPG>
 Package pdftex.def Info: minimalgraph.JPG used on input line 157.
 (pdftex.def)             Requested size: 352.31624pt x 218.0809pt.
-File: minimalgraph.JPG Graphic file (type jpg)
 
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
+
+ []
+
+File: minimalgraph.JPG Graphic file (type jpg)
 <use minimalgraph.JPG>
 Package pdftex.def Info: minimalgraph.JPG used on input line 167.
 (pdftex.def)             Requested size: 352.31624pt x 218.0809pt.
- <PurpleScreen.jpg, id=986, 1284.8pt x 963.6pt>
+ <PurpleScreen.jpg, id=1016, 1284.8pt x 963.6pt>
 File: PurpleScreen.jpg Graphic file (type jpg)
 
 <use PurpleScreen.jpg>
 Package pdftex.def Info: PurpleScreen.jpg used on input line 174.
 (pdftex.def)             Requested size: 352.31624pt x 264.2336pt.
- <gpio.JPG, id=987, 536.60475pt x 240.9pt>
+ <gpio.JPG, id=1017, 536.60475pt x 240.9pt>
 File: gpio.JPG Graphic file (type jpg)
 
 <use gpio.JPG>
 Package pdftex.def Info: gpio.JPG used on input line 181.
 (pdftex.def)             Requested size: 352.31624pt x 158.16742pt.
- [28])
+ [31 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/m
+inimalgraph.JPG>])
 (C:\Users\1959287\Desktop\arm\Documents\DesignTemplateNew\DesignTemplate\userdo
-cs.tex [29] [30] [31 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/
-DesignTemplate/minimalgraph.JPG>] [32 <C:/Users/1959287/Desktop/arm/Documents/D
-esignTemplateNew/DesignTemplate/PurpleScreen.jpg> <C:/Users/1959287/Desktop/arm
-/Documents/DesignTemplateNew/DesignTemplate/gpio.JPG>]
+cs.tex [32] [33 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/Desig
+nTemplate/PurpleScreen.jpg> <C:/Users/1959287/Desktop/arm/Documents/DesignTempl
+ateNew/DesignTemplate/gpio.JPG>] [34
+
+]
 Chapter 7.
 )
 (C:\Users\1959287\Desktop\arm\Documents\DesignTemplateNew\DesignTemplate\refman
 .tex)
 (C:\Users\1959287\Desktop\arm\Documents\DesignTemplateNew\DesignTemplate\log.te
-x [33
-
-] [34
+x [35] [36
 
 ]
 Chapter 8.
@@ -1932,7 +1986,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 78--79
 
  []
 
-[35]
+[37]
 Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
@@ -1987,7 +2041,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--125
 
  []
 
-[36]
+[38]
 Underfull \hbox (badness 10000) in paragraph at lines 159--160
 
  []
@@ -2067,7 +2121,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 176--198
 
  []
 
-[37]
+[39]
 Underfull \hbox (badness 10000) in paragraph at lines 202--208
 
  []
@@ -2093,255 +2147,314 @@ Underfull \hbox (badness 10000) in paragraph at lines 202--208
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 212--216
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 212--216
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 220--229
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 220--229
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 220--229
-
- []
-
-[38] [39]
-Underfull \hbox (badness 10000) in paragraph at lines 269--271
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 319--323
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 319--323
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 327--334
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 327--334
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 327--334
+Underfull \hbox (badness 10000) in paragraph at lines 212--213
 
  []
 
 [40]
-Underfull \hbox (badness 10000) in paragraph at lines 335--338
+Underfull \hbox (badness 10000) in paragraph at lines 218--222
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--351
+Underfull \hbox (badness 10000) in paragraph at lines 218--222
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 352--381
+Underfull \hbox (badness 10000) in paragraph at lines 226--235
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 352--381
+Underfull \hbox (badness 10000) in paragraph at lines 226--235
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 352--381
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 352--381
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 352--381
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 352--381
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 352--381
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 352--381
+Underfull \hbox (badness 10000) in paragraph at lines 226--235
 
  []
 
 [41]
-Underfull \hbox (badness 10000) in paragraph at lines 388--405
+Underfull \hbox (badness 10000) in paragraph at lines 275--277
+
+ []
+
+[42]
+Underfull \hbox (badness 10000) in paragraph at lines 325--343
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 388--405
+Underfull \hbox (badness 10000) in paragraph at lines 325--343
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 388--405
+Underfull \hbox (badness 10000) in paragraph at lines 325--343
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 388--405
+Underfull \hbox (badness 10000) in paragraph at lines 325--343
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 388--405
+Underfull \hbox (badness 10000) in paragraph at lines 325--343
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--343
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--343
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 348--352
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 348--352
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 356--363
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 356--363
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 356--363
+
+ []
+
+[43]
+Underfull \hbox (badness 10000) in paragraph at lines 364--367
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 378--380
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--410
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--410
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--410
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--410
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--410
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--410
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--410
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--410
+
+ []
+
+[44]
+Underfull \hbox (badness 10000) in paragraph at lines 417--434
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 417--434
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 417--434
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 417--434
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 417--434
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 439--442
 
  []
 
 )
 (C:\Users\1959287\Desktop\arm\Documents\DesignTemplateNew\DesignTemplate\result
-s.tex [42]
+s.tex [45] [46
+
+]
 Chapter 9.
 File: pivsxu4table2.JPG Graphic file (type jpg)
 <use pivsxu4table2.JPG>
 Package pdftex.def Info: pivsxu4table2.JPG used on input line 16.
-(pdftex.def)             Requested size: 352.31624pt x 152.52817pt.
- [43
-
-]
+(pdftex.def)             Requested size: 352.31624pt x 157.25388pt.
+ [47]
 File: minimalgraph.JPG Graphic file (type jpg)
  <use minimalgraph.JPG>
 Package pdftex.def Info: minimalgraph.JPG used on input line 52.
 (pdftex.def)             Requested size: 352.31624pt x 218.0809pt.
- [44]) [45] [46
+ [48]
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
-]
-<SoftwareContract.pdf, id=1088, 614.295pt x 794.97pt>
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
+
+ []
+
+) [49] [50
+
+] <SoftwareContract.pdf, id=1123, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf>
-Package pdftex.def Info: SoftwareContract.pdf used on input line 73.
+Package pdftex.def Info: SoftwareContract.pdf used on input line 71.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: SoftwareContract.pdf Graphic file (type pdf)
  <use SoftwareContract.pdf>
-Package pdftex.def Info: SoftwareContract.pdf used on input line 73.
+Package pdftex.def Info: SoftwareContract.pdf used on input line 71.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
-<SoftwareContract.pdf, id=1091, page=1, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=1126, page=1, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 1>
-Package pdftex.def Info: SoftwareContract.pdf, page1 used on input line 73.
+Package pdftex.def Info: SoftwareContract.pdf, page1 used on input line 71.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: SoftwareContract.pdf Graphic file (type pdf)
  <use SoftwareContract.pdf, page 1>
-Package pdftex.def Info: SoftwareContract.pdf, page1 used on input line 73.
+Package pdftex.def Info: SoftwareContract.pdf, page1 used on input line 71.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 1>
-Package pdftex.def Info: SoftwareContract.pdf, page1 used on input line 73.
+Package pdftex.def Info: SoftwareContract.pdf, page1 used on input line 71.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: SoftwareContract.pdf Graphic file (type pdf)
  <use SoftwareContract.pdf, page 1>
-Package pdftex.def Info: SoftwareContract.pdf, page1 used on input line 73.
+Package pdftex.def Info: SoftwareContract.pdf, page1 used on input line 71.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 1>
-Package pdftex.def Info: SoftwareContract.pdf, page1 used on input line 73.
+Package pdftex.def Info: SoftwareContract.pdf, page1 used on input line 71.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [1 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/So
 ftwareContract.pdf>]
-<SoftwareContract.pdf, id=1097, page=2, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=1132, page=2, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 2>
-Package pdftex.def Info: SoftwareContract.pdf, page2 used on input line 73.
+Package pdftex.def Info: SoftwareContract.pdf, page2 used on input line 71.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: SoftwareContract.pdf Graphic file (type pdf)
  <use SoftwareContract.pdf, page 2>
-Package pdftex.def Info: SoftwareContract.pdf, page2 used on input line 73.
+Package pdftex.def Info: SoftwareContract.pdf, page2 used on input line 71.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 2>
-Package pdftex.def Info: SoftwareContract.pdf, page2 used on input line 73.
+Package pdftex.def Info: SoftwareContract.pdf, page2 used on input line 71.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [2 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/So
 ftwareContract.pdf>]
-<SoftwareContract.pdf, id=1103, page=3, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=1138, page=3, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 3>
-Package pdftex.def Info: SoftwareContract.pdf, page3 used on input line 73.
+Package pdftex.def Info: SoftwareContract.pdf, page3 used on input line 71.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: SoftwareContract.pdf Graphic file (type pdf)
  <use SoftwareContract.pdf, page 3>
-Package pdftex.def Info: SoftwareContract.pdf, page3 used on input line 73.
+Package pdftex.def Info: SoftwareContract.pdf, page3 used on input line 71.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 3>
-Package pdftex.def Info: SoftwareContract.pdf, page3 used on input line 73.
+Package pdftex.def Info: SoftwareContract.pdf, page3 used on input line 71.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [3 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/So
 ftwareContract.pdf>]
-<SoftwareContract.pdf, id=1110, page=4, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=1144, page=4, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 4>
-Package pdftex.def Info: SoftwareContract.pdf, page4 used on input line 73.
+Package pdftex.def Info: SoftwareContract.pdf, page4 used on input line 71.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: SoftwareContract.pdf Graphic file (type pdf)
  <use SoftwareContract.pdf, page 4>
-Package pdftex.def Info: SoftwareContract.pdf, page4 used on input line 73.
+Package pdftex.def Info: SoftwareContract.pdf, page4 used on input line 71.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 4>
-Package pdftex.def Info: SoftwareContract.pdf, page4 used on input line 73.
+Package pdftex.def Info: SoftwareContract.pdf, page4 used on input line 71.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [4 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/So
 ftwareContract.pdf>]
-<SoftwareContract.pdf, id=1116, page=5, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=1150, page=5, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 5>
-Package pdftex.def Info: SoftwareContract.pdf, page5 used on input line 73.
+Package pdftex.def Info: SoftwareContract.pdf, page5 used on input line 71.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: SoftwareContract.pdf Graphic file (type pdf)
  <use SoftwareContract.pdf, page 5>
-Package pdftex.def Info: SoftwareContract.pdf, page5 used on input line 73.
+Package pdftex.def Info: SoftwareContract.pdf, page5 used on input line 71.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 5>
-Package pdftex.def Info: SoftwareContract.pdf, page5 used on input line 73.
+Package pdftex.def Info: SoftwareContract.pdf, page5 used on input line 71.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [5 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/So
 ftwareContract.pdf>] [6
@@ -2359,7 +2472,7 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
 Appendix B.
 
 (C:\Users\1959287\Desktop\arm\Documents\DesignTemplateNew\DesignTemplate\pubs.t
-ex <MICSAbstract.pdf, id=1135, 614.295pt x 794.97pt>
+ex <MICSAbstract.pdf, id=1170, 614.295pt x 794.97pt>
 File: MICSAbstract.pdf Graphic file (type pdf)
  <use MICSAbstract.pdf>
 Package pdftex.def Info: MICSAbstract.pdf used on input line 9.
@@ -2370,7 +2483,7 @@ File: MICSAbstract.pdf Graphic file (type pdf)
 Package pdftex.def Info: MICSAbstract.pdf used on input line 9.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
-<MICSAbstract.pdf, id=1138, page=1, 614.295pt x 794.97pt>
+<MICSAbstract.pdf, id=1173, page=1, 614.295pt x 794.97pt>
 File: MICSAbstract.pdf Graphic file (type pdf)
 
 <use MICSAbstract.pdf, page 1>
@@ -2397,7 +2510,7 @@ Package pdftex.def Info: MICSAbstract.pdf, page1 used on input line 9.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [2 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/MI
 CSAbstract.pdf>]
-<MICSAbstract.pdf, id=1156, page=2, 614.295pt x 794.97pt>
+<MICSAbstract.pdf, id=1190, page=2, 614.295pt x 794.97pt>
 File: MICSAbstract.pdf Graphic file (type pdf)
 
 <use MICSAbstract.pdf, page 2>
@@ -2414,7 +2527,7 @@ Package pdftex.def Info: MICSAbstract.pdf, page2 used on input line 9.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [3 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/MI
 CSAbstract.pdf>]
-<SDSMTResearchAbstract.pdf, id=1164, 614.295pt x 794.97pt>
+<SDSMTResearchAbstract.pdf, id=1199, 614.295pt x 794.97pt>
 File: SDSMTResearchAbstract.pdf Graphic file (type pdf)
 
 <use SDSMTResearchAbstract.pdf>
@@ -2425,7 +2538,7 @@ File: SDSMTResearchAbstract.pdf Graphic file (type pdf)
 Package pdftex.def Info: SDSMTResearchAbstract.pdf used on input line 10.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
-<SDSMTResearchAbstract.pdf, id=1167, page=1, 614.295pt x 794.97pt>
+<SDSMTResearchAbstract.pdf, id=1202, page=1, 614.295pt x 794.97pt>
 File: SDSMTResearchAbstract.pdf Graphic file (type pdf)
 
 <use SDSMTResearchAbstract.pdf, page 1>
@@ -2458,7 +2571,7 @@ Package pdftex.def Info: SDSMTResearchAbstract.pdf, page1 used on input line 10
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [4 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/SD
 SMTResearchAbstract.pdf>]
-<MICSPaper.pdf, id=1194, 614.295pt x 794.97pt>
+<MICSPaper.pdf, id=1229, 614.295pt x 794.97pt>
 File: MICSPaper.pdf Graphic file (type pdf)
  <use MICSPaper.pdf>
 Package pdftex.def Info: MICSPaper.pdf used on input line 11.
@@ -2468,7 +2581,7 @@ File: MICSPaper.pdf Graphic file (type pdf)
 <use MICSPaper.pdf>
 Package pdftex.def Info: MICSPaper.pdf used on input line 11.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- <MICSPaper.pdf, id=1197, page=1, 614.295pt x 794.97pt>
+ <MICSPaper.pdf, id=1232, page=1, 614.295pt x 794.97pt>
 File: MICSPaper.pdf Graphic file (type pdf)
 
 <use MICSPaper.pdf, page 1>
@@ -2494,7 +2607,7 @@ Package pdftex.def Info: MICSPaper.pdf, page1 used on input line 11.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [5 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/MI
 CSPaper.pdf>]
-<MICSPaper.pdf, id=1212, page=2, 614.295pt x 794.97pt>
+<MICSPaper.pdf, id=1247, page=2, 614.295pt x 794.97pt>
 File: MICSPaper.pdf Graphic file (type pdf)
 
 <use MICSPaper.pdf, page 2>
@@ -2511,7 +2624,7 @@ Package pdftex.def Info: MICSPaper.pdf, page2 used on input line 11.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [6 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/MI
 CSPaper.pdf>]
-<MICSPaper.pdf, id=1230, page=3, 614.295pt x 794.97pt>
+<MICSPaper.pdf, id=1265, page=3, 614.295pt x 794.97pt>
 File: MICSPaper.pdf Graphic file (type pdf)
 
 <use MICSPaper.pdf, page 3>
@@ -2528,7 +2641,7 @@ Package pdftex.def Info: MICSPaper.pdf, page3 used on input line 11.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [7 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/MI
 CSPaper.pdf>]
-<MICSPaper.pdf, id=1238, page=4, 614.295pt x 794.97pt>
+<MICSPaper.pdf, id=1272, page=4, 614.295pt x 794.97pt>
 File: MICSPaper.pdf Graphic file (type pdf)
 
 <use MICSPaper.pdf, page 4>
@@ -2545,7 +2658,7 @@ Package pdftex.def Info: MICSPaper.pdf, page4 used on input line 11.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [8 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/MI
 CSPaper.pdf>]
-<MICSPaper.pdf, id=1245, page=5, 614.295pt x 794.97pt>
+<MICSPaper.pdf, id=1279, page=5, 614.295pt x 794.97pt>
 File: MICSPaper.pdf Graphic file (type pdf)
 
 <use MICSPaper.pdf, page 5>
@@ -2562,7 +2675,7 @@ Package pdftex.def Info: MICSPaper.pdf, page5 used on input line 11.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [9 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/MI
 CSPaper.pdf>]
-<MICSPaper.pdf, id=1252, page=6, 614.295pt x 794.97pt>
+<MICSPaper.pdf, id=1287, page=6, 614.295pt x 794.97pt>
 File: MICSPaper.pdf Graphic file (type pdf)
 
 <use MICSPaper.pdf, page 6>
@@ -2579,7 +2692,7 @@ Package pdftex.def Info: MICSPaper.pdf, page6 used on input line 11.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [10 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/M
 ICSPaper.pdf>]
-<MICSPaper.pdf, id=1259, page=7, 614.295pt x 794.97pt>
+<MICSPaper.pdf, id=1294, page=7, 614.295pt x 794.97pt>
 File: MICSPaper.pdf Graphic file (type pdf)
 
 <use MICSPaper.pdf, page 7>
@@ -2596,7 +2709,7 @@ Package pdftex.def Info: MICSPaper.pdf, page7 used on input line 11.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [11 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/M
 ICSPaper.pdf>]
-<MICSPaper.pdf, id=1265, page=8, 614.295pt x 794.97pt>
+<MICSPaper.pdf, id=1300, page=8, 614.295pt x 794.97pt>
 File: MICSPaper.pdf Graphic file (type pdf)
 
 <use MICSPaper.pdf, page 8>
@@ -2613,7 +2726,7 @@ Package pdftex.def Info: MICSPaper.pdf, page8 used on input line 11.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [12 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/M
 ICSPaper.pdf>]
-<MICSPaper.pdf, id=1271, page=9, 614.295pt x 794.97pt>
+<MICSPaper.pdf, id=1306, page=9, 614.295pt x 794.97pt>
 File: MICSPaper.pdf Graphic file (type pdf)
 
 <use MICSPaper.pdf, page 9>
@@ -2649,7 +2762,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--13
 
  []
 
-<HooverResume.pdf, id=1323, 614.295pt x 794.97pt>
+<HooverResume.pdf, id=1358, 614.295pt x 794.97pt>
 File: HooverResume.pdf Graphic file (type pdf)
  <use HooverResume.pdf>
 Package pdftex.def Info: HooverResume.pdf used on input line 20.
@@ -2660,7 +2773,7 @@ File: HooverResume.pdf Graphic file (type pdf)
 Package pdftex.def Info: HooverResume.pdf used on input line 20.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
-<HooverResume.pdf, id=1326, page=1, 614.295pt x 794.97pt>
+<HooverResume.pdf, id=1361, page=1, 614.295pt x 794.97pt>
 File: HooverResume.pdf Graphic file (type pdf)
 
 <use HooverResume.pdf, page 1>
@@ -2693,7 +2806,7 @@ overResume.pdf
 pdfTeX warning: miktex-pdftex.exe (file C:/Users/1959287/Desktop/arm/Documents/
 DesignTemplateNew/DesignTemplate/HooverResume.pdf): PDF inclusion: invalid othe
 r resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <SorensenResume.pdf, id=1347, 614.295pt x 794.97pt>
+>] <SorensenResume.pdf, id=1381, 614.295pt x 794.97pt>
 File: SorensenResume.pdf Graphic file (type pdf)
 
 <use SorensenResume.pdf>
@@ -2704,7 +2817,7 @@ File: SorensenResume.pdf Graphic file (type pdf)
 Package pdftex.def Info: SorensenResume.pdf used on input line 21.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
-<SorensenResume.pdf, id=1350, page=1, 614.295pt x 794.97pt>
+<SorensenResume.pdf, id=1384, page=1, 614.295pt x 794.97pt>
 File: SorensenResume.pdf Graphic file (type pdf)
 
 <use SorensenResume.pdf, page 1>
@@ -2736,15 +2849,15 @@ Appendix E.
 [1] [2
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 110.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 110.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 108.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 108.
 
 (C:\Users\1959287\Desktop\arm\Documents\DesignTemplateNew\DesignTemplate\Design
 Document.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 110.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 110.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 108.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 108.
 Package rerunfilecheck Info: File `DesignDocument.out' has not changed.
-(rerunfilecheck)             Checksum: 53F38A2BCC9330C47227D54EEEF66C1A;9801.
+(rerunfilecheck)             Checksum: AE4C1E2A0268557932D4E29521E73E74;10007.
 
 
 LaTeX Warning: There were undefined references.
@@ -2752,16 +2865,16 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 110.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 108.
  ) 
 Here is how much of TeX's memory you used:
- 26394 strings out of 493921
- 468497 string characters out of 3144870
- 608873 words of memory out of 3000000
- 28746 multiletter control sequences out of 15000+200000
+ 26404 strings out of 493921
+ 468603 string characters out of 3144870
+ 609873 words of memory out of 3000000
+ 28749 multiletter control sequences out of 15000+200000
  67327 words of font info for 71 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 64i,18n,72p,3300b,1369s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 64i,18n,72p,3300b,1872s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files (x86)/
 MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files (x86)/MiKTeX 2.9/font
@@ -2778,9 +2891,9 @@ lm/lmssbo10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmssbx
 iles (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files (x86)/
 MiKTeX 2.9/fonts/type1/public/lm/lmtk10.pfb><C:/Program Files (x86)/MiKTeX 2.9/
 fonts/type1/public/lm/lmtt10.pfb>
-Output written on DesignDocument.pdf (96 pages, 8712444 bytes).
+Output written on DesignDocument.pdf (100 pages, 7454754 bytes).
 PDF statistics:
- 1515 PDF objects out of 1728 (max. 8388607)
- 298 named destinations out of 1000 (max. 500000)
- 1416 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1551 PDF objects out of 1728 (max. 8388607)
+ 305 named destinations out of 1000 (max. 500000)
+ 1440 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -20,3 +20,5 @@ Switching to SPI between Doc and Happy.
 
 Manual is working correctly
 
+ADDED TO DOCUMENTATION
+

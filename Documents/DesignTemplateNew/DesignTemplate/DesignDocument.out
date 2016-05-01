@@ -108,39 +108,42 @@
 \BOOKMARK [1][-]{section.8.6}{Auto-Mounting Snow White's Home Directory}{chapter.8}% 108
 \BOOKMARK [1][-]{section.8.7}{Assigning IP Addresses}{chapter.8}% 109
 \BOOKMARK [1][-]{section.8.8}{Naming the Dwarfs}{chapter.8}% 110
-\BOOKMARK [1][-]{section.8.9}{Getting Internet on the ODROIDs}{chapter.8}% 111
-\BOOKMARK [1][-]{section.8.10}{SSH-ing Via Hostame}{chapter.8}% 112
-\BOOKMARK [1][-]{section.8.11}{Starting up the Cluster}{chapter.8}% 113
-\BOOKMARK [1][-]{section.8.12}{IP Addresses}{chapter.8}% 114
-\BOOKMARK [1][-]{section.8.13}{Formatting Executable Commands}{chapter.8}% 115
-\BOOKMARK [1][-]{section.8.14}{Current State of Cluster}{chapter.8}% 116
-\BOOKMARK [1][-]{section.8.15}{Creating a Debian Package}{chapter.8}% 117
-\BOOKMARK [1][-]{section.8.16}{USB to USB Communication}{chapter.8}% 118
-\BOOKMARK [1][-]{section.8.17}{GPIO Communication}{chapter.8}% 119
-\BOOKMARK [1][-]{section.8.18}{Updating Kernel}{chapter.8}% 120
-\BOOKMARK [0][-]{chapter.9}{Research Results}{}% 121
-\BOOKMARK [1][-]{section.9.1}{Result 1}{chapter.9}% 122
-\BOOKMARK [1][-]{section.9.2}{Result 2}{chapter.9}% 123
-\BOOKMARK [1][-]{section.9.3}{Result 3}{chapter.9}% 124
-\BOOKMARK [1][-]{section.9.4}{Result 4}{chapter.9}% 125
-\BOOKMARK [1][-]{section.9.5}{Result 5}{chapter.9}% 126
-\BOOKMARK [1][-]{section.9.6}{Result 6}{chapter.9}% 127
-\BOOKMARK [1][-]{section.9.7}{Conclusions}{chapter.9}% 128
-\BOOKMARK [1][-]{section.9.8}{Further work}{chapter.9}% 129
-\BOOKMARK [0][-]{chapter.10}{Software Agreement}{}% 130
-\BOOKMARK [0][-]{appendix.A}{Product Description}{}% 131
-\BOOKMARK [0][-]{appendix.B}{Publications}{}% 132
-\BOOKMARK [0][-]{appendix.C}{Sprint Reports}{}% 133
-\BOOKMARK [1][-]{section.C.1}{Sprint Report \0431}{appendix.C}% 134
-\BOOKMARK [1][-]{section.C.2}{Sprint Report \0432}{appendix.C}% 135
-\BOOKMARK [1][-]{section.C.3}{Sprint Report \0433}{appendix.C}% 136
-\BOOKMARK [2][-]{subsection.C.3.1}{Overview}{section.C.3}% 137
-\BOOKMARK [1][-]{section.C.4}{Sprint Report \0434}{appendix.C}% 138
-\BOOKMARK [1][-]{section.C.5}{Sprint Report \0435}{appendix.C}% 139
-\BOOKMARK [1][-]{section.C.6}{Sprint Report \0436}{appendix.C}% 140
-\BOOKMARK [0][-]{appendix.D}{Industrial Experience and Resumes}{}% 141
-\BOOKMARK [1][-]{section.D.1}{Experience}{appendix.D}% 142
-\BOOKMARK [2][-]{subsection.D.1.1}{Andrew Hoover}{section.D.1}% 143
-\BOOKMARK [2][-]{subsection.D.1.2}{Christine Sorensen}{section.D.1}% 144
-\BOOKMARK [1][-]{section.D.2}{Resumes}{appendix.D}% 145
-\BOOKMARK [0][-]{appendix.E}{Acknowledgment}{}% 146
+\BOOKMARK [1][-]{section.8.9}{Problems with the ODROIDs}{chapter.8}% 111
+\BOOKMARK [1][-]{section.8.10}{Getting Internet on the ODROIDs}{chapter.8}% 112
+\BOOKMARK [1][-]{section.8.11}{SSH-ing Via Hostame}{chapter.8}% 113
+\BOOKMARK [1][-]{section.8.12}{Starting up the Cluster}{chapter.8}% 114
+\BOOKMARK [1][-]{section.8.13}{IP Addresses}{chapter.8}% 115
+\BOOKMARK [1][-]{section.8.14}{Formatting Executable Commands}{chapter.8}% 116
+\BOOKMARK [1][-]{section.8.15}{Current State of Cluster}{chapter.8}% 117
+\BOOKMARK [1][-]{section.8.16}{Build Environment}{chapter.8}% 118
+\BOOKMARK [1][-]{section.8.17}{Creating a Debian Package}{chapter.8}% 119
+\BOOKMARK [1][-]{section.8.18}{USB to USB Communication}{chapter.8}% 120
+\BOOKMARK [1][-]{section.8.19}{GPIO Communication}{chapter.8}% 121
+\BOOKMARK [1][-]{section.8.20}{Updating Kernel}{chapter.8}% 122
+\BOOKMARK [1][-]{section.8.21}{Routing Tables}{chapter.8}% 123
+\BOOKMARK [0][-]{chapter.9}{Research Results}{}% 124
+\BOOKMARK [1][-]{section.9.1}{Result 1}{chapter.9}% 125
+\BOOKMARK [1][-]{section.9.2}{Result 2}{chapter.9}% 126
+\BOOKMARK [1][-]{section.9.3}{Result 3}{chapter.9}% 127
+\BOOKMARK [1][-]{section.9.4}{Result 4}{chapter.9}% 128
+\BOOKMARK [1][-]{section.9.5}{Result 5}{chapter.9}% 129
+\BOOKMARK [1][-]{section.9.6}{Result 6}{chapter.9}% 130
+\BOOKMARK [1][-]{section.9.7}{Conclusions}{chapter.9}% 131
+\BOOKMARK [1][-]{section.9.8}{Further work}{chapter.9}% 132
+\BOOKMARK [0][-]{chapter.10}{Software Agreement}{}% 133
+\BOOKMARK [0][-]{appendix.A}{Product Description}{}% 134
+\BOOKMARK [0][-]{appendix.B}{Publications}{}% 135
+\BOOKMARK [0][-]{appendix.C}{Sprint Reports}{}% 136
+\BOOKMARK [1][-]{section.C.1}{Sprint Report \0431}{appendix.C}% 137
+\BOOKMARK [1][-]{section.C.2}{Sprint Report \0432}{appendix.C}% 138
+\BOOKMARK [1][-]{section.C.3}{Sprint Report \0433}{appendix.C}% 139
+\BOOKMARK [2][-]{subsection.C.3.1}{Overview}{section.C.3}% 140
+\BOOKMARK [1][-]{section.C.4}{Sprint Report \0434}{appendix.C}% 141
+\BOOKMARK [1][-]{section.C.5}{Sprint Report \0435}{appendix.C}% 142
+\BOOKMARK [1][-]{section.C.6}{Sprint Report \0436}{appendix.C}% 143
+\BOOKMARK [0][-]{appendix.D}{Industrial Experience and Resumes}{}% 144
+\BOOKMARK [1][-]{section.D.1}{Experience}{appendix.D}% 145
+\BOOKMARK [2][-]{subsection.D.1.1}{Andrew Hoover}{section.D.1}% 146
+\BOOKMARK [2][-]{subsection.D.1.2}{Christine Sorensen}{section.D.1}% 147
+\BOOKMARK [1][-]{section.D.2}{Resumes}{appendix.D}% 148
+\BOOKMARK [0][-]{appendix.E}{Acknowledgment}{}% 149

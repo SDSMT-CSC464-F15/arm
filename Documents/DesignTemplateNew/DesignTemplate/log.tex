@@ -207,6 +207,12 @@ Replace ``127.0.0.1 odroid'' to ``127.0.0.1 dopey''. \\ \\
 In /etc/nsswitch.conf, change ``hosts: files mdns4\textunderscore minimal [NOTFOUND=return] dns'' to ``hosts: files dns''
 \end{description}
 
+\section{Problems with the ODROIDs}
+\begin{description}
+\item [11/12/15] We have been having errors on ODROID \#3 and ODROID \#4. When we start these up, the status on the startup prints, ``Buffer I/O error on device... logical block 0.'' We thought that we needed to re-image them. Looking at the fstab file that we changed in order for the dwarfs to mount Snow White's home directory automatically, we found a spelling error on our part. However, that didn't solve our problem. We're going to change the fstab file back to the original. \\
+\item [12/1/15] Sleepy and Sneezy have not been booting up, therefore we have had to replace them. With the two new one, we have everything now working again. We hypothesize that the ODROIDs were short circuited after we set them on top of the power box. Now that we have assembled them onto an acrylic board, they should be safe.
+\end{description}
+
 \section{Getting Internet on the ODROIDs}
 \begin{description}
 \item [11/13/15] We need internet access on the ODROIDs to install applications, such as vim. To get the internet, we had to plug in Ethernet to internet and then edit /etc/network/interfaces. Then needed to reset eth0: \\ \\
@@ -314,6 +320,29 @@ Set backs:
 \end{description}
 
 % Sprint 4
+\section{Build Environment}
+\begin{description}
+\item [1/14/16] Some quitck notes on how to set up the build environment. First, we created ssh keys on Dr. Karlsson's computer, Red Queen, with the command: \\
+> ssh-keygen \\ \\
+Leaving all of the options as default by hitting enter through the prompts.  The first thing we used the keys for was to configure the Github account to not make us enter the password every time we pushed to the repo. To do this: \\
+> cat .ssh/id\textunderscore .pub \\ \\
+Then copied and pasted the public RSA key into Github under the Settings --> SSH keys option. Then gloned the current repository with: \\
+> git clone git@github.com:SDSMT-CSC464-F15/arm \\ \\
+The next thing we did was use the keys to be able to ssh to snow\textunderscore white without being prompted for a password. Did this with: \\
+> ssh-copy-id odroid@snow\textunderscore white \\ \\
+Finally, we configured the ssh setting so we wouldn't have to type out ``odroid@snow\textunderscore white'' every time we needed to ssh over or use scp to move files. This was done by creating the file: \\
+.ssh/config \\ \\
+And then putting in the contents: \\
+Host sw 
+	HostName snow\textunderscore white
+	User odroid \\ \\
+Now, we can ssh to the cluster with the command: \\
+> ssh sw \\ \\
+or copy files from the repository with: \\
+> scp [path to the file on Red Queen] sw:[path to where to put the file on Snow White]
+\end{description}
+
+
 \section{Creating a Debian Package}
 \begin{description}
 \item [1/18/16] To create a simple Debian package, we followed the instructions located at:\\ \\
@@ -402,4 +431,12 @@ Check the current kernel to see if it successfully updated: \\
 > uname -a \\ \\
 Upgrade all of the packages for the kernel: \\
 > sudo apt-get update \&\& sudo apt-get dist upgrade
+\end{description}
+
+% Sprint 5
+\section{Routing Tables}
+\begin{description}
+\item [2/28/16] We have been connecting the cluster into a ring topology, however, we haven't been successful at communicating between two ODROIDs that are not adjacent to each other. So we seeked advice from Dr. Qiao about setting up networks and routing tables. \\ \\
+First, each ODROID should have the same first three numbers of their IP address. For instance, Snow White's IP addresses should all be 192.168.0.x, where x is the port we're assigning it. Dopey's addresses will be 192.168.1.x, again where x is the port.
+%%Pick up here, Chrissy
 \end{description}
