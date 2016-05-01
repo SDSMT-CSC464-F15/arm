@@ -11,7 +11,6 @@ Docmentation To Do:
 -*Project overview: some of the things need to be expanded. 
 	You can tell there are some things Samantha wrote
 -*Terminology and Acronyms
--*Prototypes: Add sprint 6
 -*USER DOCUMENTATION --> mostly just copy from log
 -Software contract: straighten out. I might still have it to rescan. -cns
 -*Product description (?)(???)
