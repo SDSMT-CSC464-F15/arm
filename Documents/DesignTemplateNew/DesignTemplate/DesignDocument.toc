@@ -1,9 +1,9 @@
 \contentsline {chapter}{Title}{i}{Doc-Start}
-\contentsline {chapter}{Contents}{vi}{chapter*.1}
-\contentsline {chapter}{Overview Statements}{ix}{chapter*.3}
-\contentsline {section}{\numberline {0.1}Mission Statement}{ix}{section.0.1}
-\contentsline {section}{\numberline {0.2}Elevator Pitch}{ix}{section.0.2}
-\contentsline {chapter}{Document Preparation and Updates}{xi}{chapter*.4}
+\contentsline {chapter}{Contents}{iii}{chapter*.1}
+\contentsline {chapter}{Overview Statements}{vii}{chapter*.3}
+\contentsline {section}{\numberline {0.1}Mission Statement}{vii}{section.0.1}
+\contentsline {section}{\numberline {0.2}Elevator Pitch}{vii}{section.0.2}
+\contentsline {chapter}{Document Preparation and Updates}{ix}{chapter*.4}
 \contentsline {chapter}{\numberline {1}Overview and concept of operations}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Team Members and Team Name}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Client}{1}{section.1.2}
@@ -51,8 +51,8 @@
 \contentsline {section}{\numberline {3.7}Terminology and Acronyms}{10}{section.3.7}
 \contentsline {section}{\numberline {3.8}Sprint Schedule}{10}{section.3.8}
 \contentsline {section}{\numberline {3.9}Backlogs}{10}{section.3.9}
-\contentsline {section}{\numberline {3.10}Burndown Charts}{11}{section.3.10}
-\contentsline {section}{\numberline {3.11}Source Control}{11}{section.3.11}
+\contentsline {section}{\numberline {3.10}Burndown Charts}{12}{section.3.10}
+\contentsline {section}{\numberline {3.11}Source Control}{12}{section.3.11}
 \contentsline {section}{\numberline {3.12}Build Environment}{12}{section.3.12}
 \contentsline {chapter}{\numberline {4}Design and Implementation}{13}{chapter.4}
 \contentsline {section}{\numberline {4.1}Architecture and System Design}{13}{section.4.1}
@@ -104,42 +104,58 @@
 \contentsline {subsection}{\numberline {6.6.2}Backlog}{34}{subsection.6.6.2}
 \contentsline {subsection}{\numberline {6.6.3}Success/Fail}{34}{subsection.6.6.3}
 \contentsline {chapter}{\numberline {7}User Documentation}{35}{chapter.7}
-\contentsline {section}{\numberline {7.1}User Guide}{35}{section.7.1}
-\contentsline {section}{\numberline {7.2}Installation Guide}{35}{section.7.2}
-\contentsline {section}{\numberline {7.3}Programmer Manual}{35}{section.7.3}
-\contentsline {chapter}{\numberline {8}Experimental Log}{37}{chapter.8}
-\contentsline {section}{\numberline {8.1}Benchmarking the Individual Computers}{37}{section.8.1}
-\contentsline {section}{\numberline {8.2}Ethernet Benchmark}{38}{section.8.2}
-\contentsline {section}{\numberline {8.3}Hardware Test}{38}{section.8.3}
-\contentsline {section}{\numberline {8.4}Switch Benchmark}{38}{section.8.4}
-\contentsline {section}{\numberline {8.5}USB to Ethernet Benchmark}{39}{section.8.5}
-\contentsline {section}{\numberline {8.6}Auto-Mounting Snow White's Home Directory}{39}{section.8.6}
-\contentsline {section}{\numberline {8.7}Assigning IP Addresses}{39}{section.8.7}
-\contentsline {section}{\numberline {8.8}Naming the Dwarfs}{40}{section.8.8}
-\contentsline {section}{\numberline {8.9}Problems with the ODROIDs}{40}{section.8.9}
-\contentsline {section}{\numberline {8.10}Getting Internet on the ODROIDs}{41}{section.8.10}
-\contentsline {section}{\numberline {8.11}SSH-ing Via Hostame}{41}{section.8.11}
-\contentsline {section}{\numberline {8.12}Starting up the Cluster}{41}{section.8.12}
-\contentsline {section}{\numberline {8.13}IP Addresses}{41}{section.8.13}
-\contentsline {section}{\numberline {8.14}Formatting Executable Commands}{42}{section.8.14}
-\contentsline {section}{\numberline {8.15}Current State of Cluster}{42}{section.8.15}
-\contentsline {section}{\numberline {8.16}Build Environment}{43}{section.8.16}
-\contentsline {section}{\numberline {8.17}Creating a Debian Package}{43}{section.8.17}
-\contentsline {section}{\numberline {8.18}USB to USB Communication}{44}{section.8.18}
-\contentsline {section}{\numberline {8.19}GPIO Communication}{44}{section.8.19}
-\contentsline {section}{\numberline {8.20}Updating Kernel}{45}{section.8.20}
-\contentsline {section}{\numberline {8.21}Routing Tables}{46}{section.8.21}
-\contentsline {section}{\numberline {8.22}LINPACK on Ring Topology}{47}{section.8.22}
-\contentsline {section}{\numberline {8.23}A7 and A15 Cores}{47}{section.8.23}
-\contentsline {chapter}{\numberline {9}Research Results}{49}{chapter.9}
-\contentsline {section}{\numberline {9.1}Result 1}{49}{section.9.1}
-\contentsline {section}{\numberline {9.2}Result 2}{49}{section.9.2}
-\contentsline {section}{\numberline {9.3}Result 3}{49}{section.9.3}
-\contentsline {section}{\numberline {9.4}Result 4}{50}{section.9.4}
-\contentsline {section}{\numberline {9.5}Result 5}{50}{section.9.5}
-\contentsline {section}{\numberline {9.6}Result 6}{51}{section.9.6}
-\contentsline {section}{\numberline {9.7}Conclusions}{51}{section.9.7}
-\contentsline {section}{\numberline {9.8}Further work}{51}{section.9.8}
+\contentsline {section}{\numberline {7.1}Cluster User Guide}{35}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Turning on the Cluster}{35}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}SHUTTING DOWN THE CLUSTER}{35}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.3}Benchmarking the Switch}{35}{subsection.7.1.3}
+\contentsline {subsection}{\numberline {7.1.4}Mounting the Home Directory}{35}{subsection.7.1.4}
+\contentsline {subsection}{\numberline {7.1.5}Assigning Hostnames}{36}{subsection.7.1.5}
+\contentsline {subsection}{\numberline {7.1.6}Getting Internet on the ODROIDs}{36}{subsection.7.1.6}
+\contentsline {subsection}{\numberline {7.1.7}SSH Via Hostname}{36}{subsection.7.1.7}
+\contentsline {subsection}{\numberline {7.1.8}Taking Down the Passwords}{37}{subsection.7.1.8}
+\contentsline {subsection}{\numberline {7.1.9}USB to USB Communication??}{37}{subsection.7.1.9}
+\contentsline {subsection}{\numberline {7.1.10}GPIO Communication}{37}{subsection.7.1.10}
+\contentsline {subsection}{\numberline {7.1.11}Unmounting a GPIO Pin}{37}{subsection.7.1.11}
+\contentsline {subsection}{\numberline {7.1.12}Creating Routing Tables}{38}{subsection.7.1.12}
+\contentsline {section}{\numberline {7.2}Programmer Manual}{38}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Formatting Executable Commands}{38}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}BUILD ENVIRONMETN??}{38}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}BUILD A DEBIAN PACKAGE??}{39}{subsection.7.2.3}
+\contentsline {subsection}{\numberline {7.2.4}Updating the Kernel}{39}{subsection.7.2.4}
+\contentsline {subsection}{\numberline {7.2.5}HOW TO TELL WHAT CORES ARE BEING USED}{39}{subsection.7.2.5}
+\contentsline {chapter}{\numberline {8}Experimental Log}{41}{chapter.8}
+\contentsline {section}{\numberline {8.1}Benchmarking the Individual Computers}{41}{section.8.1}
+\contentsline {section}{\numberline {8.2}Ethernet Benchmark}{42}{section.8.2}
+\contentsline {section}{\numberline {8.3}Hardware Test}{42}{section.8.3}
+\contentsline {section}{\numberline {8.4}Switch Benchmark}{42}{section.8.4}
+\contentsline {section}{\numberline {8.5}USB to Ethernet Benchmark}{43}{section.8.5}
+\contentsline {section}{\numberline {8.6}Auto-Mounting Snow White's Home Directory}{43}{section.8.6}
+\contentsline {section}{\numberline {8.7}Assigning IP Addresses}{43}{section.8.7}
+\contentsline {section}{\numberline {8.8}Naming the Dwarfs}{44}{section.8.8}
+\contentsline {section}{\numberline {8.9}Problems with the ODROIDs}{45}{section.8.9}
+\contentsline {section}{\numberline {8.10}Getting Internet on the ODROIDs}{45}{section.8.10}
+\contentsline {section}{\numberline {8.11}SSH Via Hostame}{45}{section.8.11}
+\contentsline {section}{\numberline {8.12}Starting up the Cluster}{46}{section.8.12}
+\contentsline {section}{\numberline {8.13}IP Addresses}{46}{section.8.13}
+\contentsline {section}{\numberline {8.14}Formatting Executable Commands}{46}{section.8.14}
+\contentsline {section}{\numberline {8.15}Current State of Cluster}{47}{section.8.15}
+\contentsline {section}{\numberline {8.16}Build Environment}{47}{section.8.16}
+\contentsline {section}{\numberline {8.17}Creating a Debian Package}{48}{section.8.17}
+\contentsline {section}{\numberline {8.18}USB to USB Communication}{48}{section.8.18}
+\contentsline {section}{\numberline {8.19}GPIO Communication}{49}{section.8.19}
+\contentsline {section}{\numberline {8.20}Updating Kernel}{50}{section.8.20}
+\contentsline {section}{\numberline {8.21}Routing Tables}{50}{section.8.21}
+\contentsline {section}{\numberline {8.22}LINPACK on Ring Topology}{51}{section.8.22}
+\contentsline {section}{\numberline {8.23}A7 and A15 Cores}{52}{section.8.23}
+\contentsline {chapter}{\numberline {9}Research Results}{53}{chapter.9}
+\contentsline {section}{\numberline {9.1}Result 1}{53}{section.9.1}
+\contentsline {section}{\numberline {9.2}Result 2}{53}{section.9.2}
+\contentsline {section}{\numberline {9.3}Result 3}{53}{section.9.3}
+\contentsline {section}{\numberline {9.4}Result 4}{54}{section.9.4}
+\contentsline {section}{\numberline {9.5}Result 5}{54}{section.9.5}
+\contentsline {section}{\numberline {9.6}Result 6}{55}{section.9.6}
+\contentsline {section}{\numberline {9.7}Conclusions}{55}{section.9.7}
+\contentsline {section}{\numberline {9.8}Further work}{55}{section.9.8}
 \contentsline {chapter}{Software Agreement}{SA-1}{chapter.10}
 \contentsline {chapter}{\numberline {A}Product Description}{A-1}{appendix.A}
 \contentsline {chapter}{\numberline {B}Publications}{B-1}{appendix.B}

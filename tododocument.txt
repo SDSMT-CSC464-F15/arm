@@ -5,19 +5,25 @@ Docmentation To Do:
 (?) Do we need it?
 
 -*Read through entire document
--Elevator Pitch could be extended
--*Update Documentation Preparation
--User stories need to be looked over
+-*Add page breaks where needed after we write everything
 -*Project overview: some of the things need to be expanded. 
 	You can tell there are some things Samantha wrote
--*Terminology and Acronyms
--*USER DOCUMENTATION --> mostly just copy from log
--Software contract: straighten out. I might still have it to rescan. -cns
+-*Update Documentation Preparation
 -*Product description (?)(???)
+-*In Userdocumentation, Andrew, I have some questions in there for you 
+	to answer.
+
+-Elevator Pitch could be extended
+-User stories need to be looked over
+-Terminology and Acronyms-I've been adding more as I've been working
+	on this.
+-Software contract: straighten out. I might still have it to rescan. -cns
 -Sprint reports: sprint 1, add overview, same with sprint 4 and 5
 -Take out the automatic tabs in some paragraphs
 -Add LINPACK stuff to the log
--Formatting in the logs for the stuff we write in text files like interface
 -Make tables for some of the values in the log section
 -Some sort of spiel in the Publications about what the following
 	documents are.
+-Reference the images in some locations. I commented where they would be
+	needed in log.tex and userdocs.tex. I'm not sure how necessary it
+	is though.

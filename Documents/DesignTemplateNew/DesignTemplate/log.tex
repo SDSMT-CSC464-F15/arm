@@ -78,14 +78,18 @@ Raspberry Pi 2B & 0.0003 & 0.0003 & 0.000224 & 0.0000453 \\
 \begin{description}
 \item [10/25/15] Created network between a machine with gigabit Ethernet port and ODROID. Installed iperf, a tool in the standard Debian repositories to text the network speed, on both the server machine and ODROID. \\
 
-This text can be run over the existing network by the following steps: \\ \\
-> ssh andrewdesktop@108.107.223.45 \\
-Password: design \\
->iperf -s \& \\ \\
-Leave that running in the background. \\ \\
->ssh odroid@10.42.0.2 \\
-Password: odroid \\
->iperf -c 10.42.0.1 \\ \\
+This text can be run over the existing network by the following steps:
+\begin{lstlisting}
+> ssh andrewdesktop@108.107.223.45 
+Password: design 
+> iperf -s &
+\end{lstlisting}
+Leave that running in the background.
+\begin{lstlisting}
+> ssh odroid@10.42.0.2
+Password: odroid
+> iperf -c 10.42.0.1
+\end{lstlisting}
 This will take a few seconds to run then give the network speed. The network 10.42.0.1 is over a 1000 Mbps wired connection between the ODROID and andrewdesktop. \\
 
 \begin{center}
@@ -110,10 +114,14 @@ ODroid XU4 & 615 - 625 \\
 
 \section{Switch Benchmark}
 \begin{description}
-\item [11/03/15] With two ODROID devices attached to the switch via direct ethernet (no USB 3.0 to ethernet adapter), the connection speed was tested. This was accomplished by one device running: \\ \\
-> iperf -s \\ \\
-and the other running: \\ \\
+\item [11/03/15] With two ODROID devices attached to the switch via direct ethernet (no USB 3.0 to ethernet adapter), the connection speed was tested. This was accomplished by one device running:
+\begin{lstlisting}
+> iperf -s
+\end{lstlisting}
+and the other running:
+\begin{lstlisting}
 > iperf -c [IP of the first device]
+\end{lstlisting}
 
 \begin{center}
 \begin{tabular}{ | l || l | }
@@ -157,48 +165,96 @@ The drastically lower speed of the USB to ethernet adapters and the inability to
 %Sprint 3
 \section{Auto-Mounting Snow White's Home Directory}
 \begin{description}
-\item [11/10/15] Attempting to auto-mount Snow White's homedirectory onto the dwarfs. Changed Sleepy's fstab file with this line: \\ \\
-> 192.168.1.11:/home /home nfs auto 0 0 \\ \\
+\item [11/10/15] Attempting to auto-mount Snow White's homedirectory onto the dwarfs. Changed Sleepy's fstab file with this line:
+
+\begin{lstlisting}
+192.168.1.11:/home /home nfs auto 0 0
+\end{lstlisting}
+
 We can now mount Snow White's home directory automatically onto Sleepy. Adding this to other dwarfs' fstab file.
 \end{description}
 
-%%%% THIS NEEDS TO BE FINISHED
 \section{Assigning IP Addresses}
 \begin{description}
 \item [11/5/15] Setting up the IP addresses for the ODROIDs. \\
-> sudo vim /etc/network/interfaces \\ \\
-These lines should be in there: \\
-\# interfaces(5) file used by ifup(8) and ifdown(8) \\
-\# Include files from /etc/network/interfaces.d \\
-source-directory /etc/network/interfaces.d \\
-auto eth0 \\
-iface eth0 inet static \\
-address 192.168.1.11 \\
-gateway 192.168.1.1 \\ \\
-Under address, edit what address you want. Confirm that the IP address was changed: \\
-> ifconfig \\ \\
-Switch control to another ODROID connected on the switch. Attempt to ping to the ODROID who's IP address you changed. \\
-> ping 192.168.1.11 \\ \\
-It should be successful. Attempt to ssh into it. \\
-> ssh 192.168.1.11 \\ \\
-Use iperf to time and ping the network. Set up the server and set the client \\
-> iperf -s \\
-> iperf -c 192.168.1.11 \\ \\
-To set up the netowork, perform these two command: \\
->sudo ifdown eth0 \\
->sudo ifup eth0 \\ \\
-Again, test pinging to another ODROID and ssh-ing into it. \\
-%%Andrew, in 11_5_FixingIPAddresses.txt, there's some more stuff with apt-gets. I'm not sure how to understand them. I don't know if it's even relavent, I'm just saying there's more to this entry.
+\begin{lstlisting}
+> sudo vim /etc/network/interfaces
+\end{lstlisting}
+These lines should be in there:
+\begin{lstlisting}
+# interfaces(5) file used by ifup(8) and ifdown(8) 
+# Include files from /etc/network/interfaces.d 
+source-directory /etc/network/interfaces.d 
+auto eth0
+iface eth0 inet static
+address 192.168.1.11
+gateway 192.168.1.1
+\end{lstlisting}
+
+Under address, edit what address you want. Confirm that the IP address was changed:
+\begin{lstlisting}
+> ifconfig
+\end{lstlisting}
+Switch control to another ODROID connected on the switch. Attempt to ping to the ODROID who's IP address you changed.
+\begin{lstlisting}
+> ping 192.168.1.11
+\end{lstlisting}
+It should be successful. Attempt to ssh into it.
+\begin{lstlisting}
+> ssh 192.168.1.11
+\end{lstlisting}
+Use iperf to time and ping the network. Set up the server and set the client.
+\begin{lstlisting}
+> iperf -s
+> iperf -c 192.168.1.11
+\end{lstlisting}
+To set up the netowork, perform these two command:
+\begin{lstlisting}
+>sudo ifdown eth0
+>sudo ifup eth0
+\end{lstlisting}
+Again, test pinging to another ODROID and ssh-ing into it.
 \end{description}
 
 \section{Naming the Dwarfs}
 \begin{description}
-\item[11/10/15] Changing the hostnames of the ODROIDs. Working on ODROID 2, it's being difficult so I will name it Dopey. To change the hostname: \\ \\
-> sudo vim /etc/hostname \\ \\
-Overwrite ``odroid'' with ``Dopey'' \\ \\
-> sudo vim /etc/hosts \\ \\
-Replace ``127.0.0.1 odroid'' to ``127.0.0.1 dopey''. \\ \\
-In /etc/nsswitch.conf, change ``hosts: files mdns4\textunderscore minimal [NOTFOUND=return] dns'' to ``hosts: files dns''
+\item[11/10/15] Changing the hostnames of the ODROIDs. Working on ODROID 2, it's being difficult so I will name it Dopey. To change the hostname:
+\begin{lstlisting}
+> sudo vim /etc/hostname
+\end{lstlisting}
+In there, it should look like:
+\begin{lstlisting}
+odroid
+\end{lstlisting}
+Overwrite ``odroid'' with the new hostname, in this case, dopey.
+\begin{lstlisting}
+dopey
+\end{lstlisting}
+And then in the hosts file, change the hostname in there. To get into the hosts file:
+\begin{lstlisting}
+> sudo vim /etc/hosts
+\end{lstlisting}
+Replace 
+\begin{lstlisting}
+127.0.0.1 odroid
+\end{lstlisting} 
+to:
+\begin{lstlisting}
+127.0.0.1 dopey
+\end{lstlisting}
+In /etc/nsswitch.conf, change
+\begin{lstlisting}
+hosts: files mdns4_minimal [NOTFOUND=return] dns
+\end{lstlisting}
+to:
+\begin{lstlisting}
+hosts: files dns
+\end{lstlisting}
+Check to see if the hostname has successfully changed:
+\begin{lstlisting}
+> hostname
+\end{lstlisting}
+It should print the new hostname, dopey. If it doesn't, restart the ODROID and again try the hostname command.
 \end{description}
 
 \section{Problems with the ODROIDs}
@@ -209,24 +265,33 @@ In /etc/nsswitch.conf, change ``hosts: files mdns4\textunderscore minimal [NOTFO
 
 \section{Getting Internet on the ODROIDs}
 \begin{description}
-\item [11/13/15] We need internet access on the ODROIDs to install applications, such as vim. To get the internet, we had to plug in Ethernet to internet and then edit /etc/network/interfaces. Then needed to reset eth0: \\ \\
-> sudo ifdown eth0 \\
-> sudo ifup eth0 \\ \\
+\item [11/13/15] We need internet access on the ODROIDs to install applications, such as vim. To get the internet, we had to plug in Ethernet to internet and then edit /etc/network/interfaces. Then needed to reset eth0:
+\begin{lstlisting}
+> sudo ifdown eth0
+> sudo ifup eth0
+\end{lstlisting}
 That didn't always work. Rebooting is another option.
 \end{description}
 
-\section{SSH-ing Via Hostame}
+\section{SSH Via Hostame}
 \begin{description}
-\item [11/17/15] For ease of use, we need to be able to ssh into each of the dwarfs by their given name. In order to do that, we need to add a list of every ODROID and their corresponding IP address to each ODROID. \\
->sudo vim /etc/hosts \\ \\
+\item [11/17/15] For ease of use, we need to be able to ssh into each of the dwarfs by their given name. In order to do that, we need to add a list of every ODROID and their corresponding IP address to each ODROID.
+\begin{lstlisting}
+> sudo vim /etc/hosts
+\end{lstlisting}
 In there, add the others' IP Addresses and hostnames in this format: \\
 <ipaddress> <hostname> \\
-Example: 192.188.1.11 snowwhite \\ \\
-In order to perform MPI, we need to take down the passwords from each of the ODROIDs so you don't need them when you ssh: \\
->ssh-keygen \\ \\
-Press enter through all of the promts, then: \\
+Example: 192.168.1.11 snow\textunderscore white \\ \\
+In order to perform MPI, we need to take down the passwords from each of the ODROIDs so you don't need them when you ssh:
+\begin{lstlisting}
+>ssh-keygen
+\end{lstlisting}
+Press enter through all of the promts, then:
+\begin{lstlisting}
 > ssh-copy-id <ipaddress>
+\end{lstlisting}
 \end{description}
+%is this right?
 
 \section{Starting up the Cluster}
 \begin{description}
@@ -256,11 +321,11 @@ It is important to run the procedure in this order so Snow White's home director
 
 \section{Formatting Executable Commands}
 \begin{description}
-\item [12/2/15] In order to use the tools we created easily, they have been formatted as executable commands through these steps:
-\begin{enumerate}
-	\item Add \#!/bin/bash or \#!/bin/usr/python to the top of the file.
-	\item > chmod +x <file>
-\end{enumerate}
+\item [12/2/15] In order to use the tools we created easily, they have been formatted as executable commands through these steps: \\ \\
+First, add \#!/bin/bash or \#!/bin/usr/python to the top of the file. Then perform:
+\begin{lstlisting}
+> chmod +x <filename>
+\end{lstlisting}
 This will allow us to put them in /usr/bin and call them from any directory to easily mount all the dwarfs, shutdown all of the dwarfs, change and reboot the network to use the internet or go back on to the switch, or execute LINPACK. While not a drastic change, this should prove to make our lives a little easier.
 \end{description}
 
@@ -316,24 +381,36 @@ Set backs:
 % Sprint 4
 \section{Build Environment}
 \begin{description}
-\item [1/14/16] Some quitck notes on how to set up the build environment. First, we created ssh keys on Dr. Karlsson's computer, Red Queen, with the command: \\
-> ssh-keygen \\ \\
-Leaving all of the options as default by hitting enter through the prompts.  The first thing we used the keys for was to configure the Github account to not make us enter the password every time we pushed to the repo. To do this: \\
-> cat .ssh/id\textunderscore .pub \\ \\
-Then copied and pasted the public RSA key into Github under the Settings --> SSH keys option. Then gloned the current repository with: \\
-> git clone git@github.com:SDSMT-CSC464-F15/arm \\ \\
-The next thing we did was use the keys to be able to ssh to snow\textunderscore white without being prompted for a password. Did this with: \\
-> ssh-copy-id odroid@snow\textunderscore white \\ \\
-Finally, we configured the ssh setting so we wouldn't have to type out ``odroid@snow\textunderscore white'' every time we needed to ssh over or use scp to move files. This was done by creating the file: \\
-.ssh/config \\ \\
-And then putting in the contents: \\
+\item [1/14/16] Some quitck notes on how to set up the build environment. First, we created ssh keys on Dr. Karlsson's computer, Red Queen, with the command:
+\begin{lstlisting}
+> ssh-keygen
+\end{lstlisting}
+Leaving all of the options as default by hitting enter through the prompts.  The first thing we used the keys for was to configure the Github account to not make us enter the password every time we pushed to the repo. To do this:
+\begin{lstlisting}
+> cat .ssh/id_.pub
+\end{lstlisting}
+Then copied and pasted the public RSA key into Github under the Settings --> SSH keys option. Then gloned the current repository with:
+\begin{lstlisting}
+> git clone git@github.com:SDSMT-CSC464-F15/arm
+\end{lstlisting}
+The next thing we did was use the keys to be able to ssh to snow\textunderscore white without being prompted for a password. Did this with:
+\begin{lstlisting}
+> ssh-copy-id odroid@snow_white
+\end{lstlisting}
+Finally, we configured the ssh setting so we wouldn't have to type out ``odroid@snow\textunderscore white'' every time we needed to ssh over or use scp to move files. This was done by creating the file .ssh/config. And then putting in the contents:
+\begin{lstlisting}
 Host sw 
-	HostName snow\textunderscore white
-	User odroid \\ \\
-Now, we can ssh to the cluster with the command: \\
-> ssh sw \\ \\
-or copy files from the repository with: \\
+	HostName snow_white
+	User odroid
+\end{lstlisting}
+Now, we can ssh to the cluster with the command:
+\begin{lstlisting}
+> ssh sw
+\end{lstlisting}
+or copy files from the repository with:
+\begin{lstlisting}
 > scp [path to the file on Red Queen] sw:[path to where to put the file on Snow White]
+\end{lstlisting}
 \end{description}
 
 
@@ -347,16 +424,22 @@ This let us create a Debian package. Going forward, the next step is to use the 
 
 \section{USB to USB Communication}
 \begin{description}
-\item [1/26/16] Figuring out how to communicate through USB. In /etc/network/interface, changed USB's from static to dhcp. Then performed: \\ \\ 
-> sudo ifup usb0 \\ \\
-Setting up the USB IP Addresses, go the the ODROID to change: \\
-> wget http://tex.stackexchange.com \\
-> sudo modprob g\textunderscore ether \\
-> dmesg \\
-> sudo ifconfig usb0 ipaddress \\
+\item [1/26/16] Figuring out how to communicate through USB. In /etc/network/interface, changed USB's from static to dhcp. Then performed:
+\begin{lstlisting}
+> sudo ifup usb0
+\end{lstlisting}
+Setting up the USB IP Addresses, go the the ODROID to change:
+\begin{lstlisting}
+> wget http://tex.stackexchange.com
+> sudo modprob g_ether
+> dmesg
+> sudo ifconfig usb0 ipaddress
+\end{lstlisting}
 
-Verify the USB IP address was changed. \\
-> ifconfig \\ \\
+Verify the USB IP address was changed.
+\begin{lstlisting}
+> ifconfig
+\end{lstlisting}
 Changed Doc, Happy, Bashful, and Sneezy's USB IP addresses:
 	\begin{itemize}
 		\item Doc - 192.168.1.25
@@ -372,39 +455,48 @@ Changed Doc, Happy, Bashful, and Sneezy's USB IP addresses:
 \item [2/4/16]  Connected index pin 8 (UART TXD) (Export Pin 172) on Doc to index pin 6 (UART RXD) (Export Pin 171) on Happy. Communicating by changing the physical bit in the corresponding GPIO export pin file (not the physical index number).  \\
 %put a gpio diagram somewhere and reference it here
 
-In Happy: \\
-> cd /sys/class/gpio \\ \\
-Mount the export pin: \\
-> echo 171 > export \\ \\
-It makes gpio171\\
-> cd gpio171 \\ \\
-Edit the text file direction:\\
->echo in > direction \\ \\
-In Doc: \\
-> cd /sys/class/gpio \\
-> echo 172 > export \\
-It makes a directory for that pin number. \\
-> cd gpio172 \\
-Edit the text file direction to out: \\
-> echo out > direction \\
-Edit the text file direction: \\
-> echo 1 > value \\ \\
-In Happy: \\
-> cd /sys/class/gpio/gpio171 \\
-> echo value \\
-It'll print 1 \\ \\
+In Happy, mount the export pin. This makes the directory gpio171. Go in there and change the file direction to recieve the data.
+\begin{lstlisting}
+> cd /sys/class/gpio
+> echo 171 > export
+> cd gpio171
+>echo in > direction
+\end{lstlisting}
+In Doc, mount the export pin. Again, this makes a directory to that pin. Go in there and changed the file direction to send out the data.
+\begin{lstlisting}
+> cd /sys/class/gpio 
+> echo 172 > export 
+> cd gpio172 
+> echo out > direction
+\end{lstlisting}
+Then in Doc, change the value (0 or 1) to send out. Here, it will send out 1.
+\begin{lstlisting}
+> cd /ss/class/gpio/gpio172
+> echo 1 > value
+\end{lstlisting}
+In Happy, check to see if the value was submitted.
+\begin{lstlisting}
+> cd /sys/class/gpio/gpio171
+> echo value
+\end{lstlisting}
+It'll print 1. \\ \\
 Repeat with value 0. Happy's value will be 0. \\ \\
-To unmount the GPIO Export Pin: \\
-In Happy: \\
-> cd /sys/class/gpio \\
-> echo 171 > unexport \\ \\
-In Doc: \\
-> cd /sys/class/gpio \\
+To unmount the GPIO Export Pin, in Happy:
+\begin{lstlisting}
+> cd /sys/class/gpio
+> echo 171 > unexport
+\end{lstlisting}
+In Doc:
+\begin{lstlisting}
+> cd /sys/class/gpio
 > echo 172 > unexport
+\end{lstlisting}
 
 \item [2/11/16] Successfully got wiringPi to work between two dwarfs. We got 0.61 MBits/sec on GPIO with one pin. Communication speed between two dwarfs through Ethernet was 750 MBits/sec. This was found using iperf. GPIO was 120 times slower than Ethernet.
+%%add table here
 
 \item [2/16/16] The ODroid XU4 UART has a default baud rate of 115200, and maximum of 921600. This means that the maximum possible data transer speed is 0.88Mpbs. This is drastically slower than Ethernet communication, which we benchmarked at a minimum of 750 Mpbs. In fact, in order to make a protocol faster than Ethernet, even if we used all 40 pins to tranfer data, we would need each pin to send over 19.5 million bits per second. WiringPi, in our preliminary testing, was only able to send about 500,000 bits per second on a pin. Therefore, we conclude that it is likely that GPIO communication is only practical in terms of theoretical protocols, and our cluster will always be faster using Ethernet. Moving forward, in terms of researching if it's possible for the cluster to compute more gigaflops than our current set-up, we believe that experimenting with different designs of Etherent clusterings is our most promising solution.
+%Add table here (?)
 \end{description}
 
 \section{Updating Kernel}
@@ -414,41 +506,50 @@ Change the fstab so it doesn't mount Snow White's home directory automatically. 
 Edit etc/interfaces, comment out so the ODROID can connect to the internet.\\
 Reboot the ODROID.\\
 Connect to internet ethernet while rebooting. \\
-Check the current kernel: \\
-> uname -a \\ \\
-Update the repos: \\
-> sudo apt-get update \\ \\
-Upgrade the kernel: \\
-> apt-get upgrade linux-image-xu3 \\ \\
-Got a purple screen prompting if we want to continue and if we know what we're doing. Continued. \\
-Ignore warning errors. \\
-Check the current kernel to see if it successfully updated: \\
-> uname -a \\ \\
-Upgrade all of the packages for the kernel: \\
-> sudo apt-get update \&\& sudo apt-get dist upgrade
+Check the current kernel, update the repositories, then update the kernel:
+\begin{lstlisting}
+> uname -a
+> sudo apt-get update
+> apt-get upgrade linux-image-xu3
+\end{lstlisting}
+Got a purple screen prompting if we want to continue and if we know what we're doing. Continued and ignored other warning errors. Check the current kernel to see if it successfully updated. Then upgrade all of the packages for the kernel: \\
+%add reference to purple screen here
+\begin{lstlisting}
+> uname -a
+> sudo apt-get update && sudo apt-get dist upgrade
+\end{lstlisting}
 \end{description}
 
 % Sprint 5
 \section{Routing Tables}
 \begin{description}
 \item [2/25/16] Each device should have the /etc/network/interfaces file such as: \\
-auto eth0 \\
-iface eth0 inet static \\
-	address 192.168.x.11 \\
-	netmask 255.255.0.0 \\
-	gateway 192.168.0.1 \\ \\
-auto eth1 \\
-iface eth1 inet static \\
-	address 192.168.x.12 \\
-	netmask 255.255.0.0 \\
-	gateway 192.168.0.1 \\ \\
-where eth0 is the Ethernet port, and eth1 is the USB to Ethernet port, and X is the number of the device (0 - 7). With that configured, the Ethernet port of device N should be connected to the USB to Ethernet port of device N + 1 (i.e. snow white to dopey, dopey to sleepy, etc). The USB to Ethernet port of each device is then connected to the Ethernet port of the device behind it. \\ \\
-Once that is set up, each device needs to run the following two commands: \\
->sudo route add -host 192.168.x+1.11 gw 192.168.x.12 \\
->sudo route add -host 192.168.x-1.12 gw 192.168.x.11 \\ \\
-where y is the number of the device. This will allow each device to ping the devices next to it. In theory, adding something like: \\
-sudo route add -host 192.168.x-2.12 gw 192.168.x.11 \\ \\
-should let the device then be able to ping the one that's two behind it. But that's not working with us. Also, going x+2 isn't working.
+\begin{lstlisting}
+auto eth0
+iface eth0 inet static
+	address 192.168.N.11
+	netmask 255.255.0.0
+	gateway 192.168.0.1
+auto eth1
+iface eth1 inet static 
+	address 192.168.N.12
+	netmask 255.255.255
+	gateway 192.168.0.1
+\end{lstlisting}
+
+where eth0 is the Ethernet port, and eth1 is the USB to Ethernet port, and N is the number of the device (0 - 7). With that configured, the Ethernet port of device N should be connected to the USB to Ethernet port of device N + 1 (i.e. snow white to dopey, dopey to sleepy, etc). The USB to Ethernet port of each device is then connected to the Ethernet port of the device behind it. \\ \\
+Once that is set up, each device needs to run the following two commands:
+
+\begin{lstlisting}
+> sudo route add -host 192.168.N+1.11 gw 192.168.N.12
+> sudo route add -host 192.168.N-1.12 gw 192.168.N.11
+\end{lstlisting}
+
+where N is the number of the device. This will allow each device to ping the devices next to it. In theory, adding something like:
+\begin{lstlisting}
+> sudo route add -host 192.168.N-2.12 gw 192.168.N.11
+\end{lstlisting}
+should let the device then be able to ping the one that's two behind it. But that's not working with us. Also, going N+2 isn't working.
 
 \item [2/28/16] We have been connecting the cluster into a ring topology, however, we haven't been successful at communicating between two ODROIDs that are not adjacent to each other. So we seeked advice from Dr. Qiao about setting up networks and routing tables. \\ \\
 First, each ODROID should have the same first three numbers of their IP address. For instance, Snow White's IP addresses should all be 192.168.0.x, where x is the port we're assigning it. Dopey's addresses will be 192.168.1.x, again where x is the port. \\ \\
@@ -466,5 +567,7 @@ We are now successful at communicating through ODROIDs.
 
  \section{A7 and A15 Cores}
  \begin{description}
- \item [3/31/16] We looked in to which core were actually being used at the advice of Dr. McGough. We installed a tool HTOP that monitors real-time usage of memory, processes running, and core utilization. Running HTOP and LINPACK at the same time showed us that usually only the A7 cores were being used, despite LINPACK configured to use eight processes per node. In order to attempt to correct this, we ran mpiexec with the command line argument --bind-by-core, which will ensure that of the eight processes are assigned to different cores. However, that gave an error message saying that the detected architecture could not support such a setting. Apparently, the ODROIDs completely shut down the A15 cores and hide them entirely from the user when they are not in use. We found that immediately after booting the devices, they sometime use the A15 cores instead of the A7s if only one or two processes are assigned to each node. This allowed us to get some data from those higher performance cores for our results, but since we don't know why the operating system chooses to use the A15 cores at that time, and have no control over forcing the kernel to use those cores, we aren't able to reliably use those cores. Therefore, we are unable to fully test the cluster at it's theoretical maximum performance of 32 A7 cores and 32 A15 cores at this time.
+ \item [3/31/16] We looked in to which core were actually being used at the advice of Dr. McGough. We installed a tool HTOP that monitors real-time usage of memory, processes running, and core utilization. \\ \\
+Running HTOP and LINPACK at the same time showed us that usually only the A7 cores were being used, despite LINPACK configured to use eight processes per node. In order to attempt to correct this, we ran mpiexec with the command line argument --bind-by-core, which will ensure that of the eight processes are assigned to different cores. However, that gave an error message saying that the detected architecture could not support such a setting. \\ \\
+Apparently, the ODROIDs completely shut down the A15 cores and hide them entirely from the user when they are not in use. We found that immediately after booting the devices, they sometime use the A15 cores instead of the A7s if only one or two processes are assigned to each node. This allowed us to get some data from those higher performance cores for our results, but since we don't know why the operating system chooses to use the A15 cores at that time, and have no control over forcing the kernel to use those cores, we aren't able to reliably use those cores. Therefore, we are unable to fully test the cluster at it's theoretical maximum performance of 32 A7 cores and 32 A15 cores at this time.
  \end{description} 

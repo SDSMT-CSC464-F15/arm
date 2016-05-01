@@ -10,15 +10,210 @@
 %%  The user guide can be an external document which is included here if necessary ...
 %%  a single source is the way to go.
 
-\section{User Guide}
+This chapter holds the basis for running the cluster and how to perform some of the commands and tests explained elsewhere in this document.
+
+\section{Cluster User Guide}
 
 %%The source for the user guide can go here.    You have some options for how to handle the user docs.  If you have some {\tt newpage} commands around the guide then you can just print out those pages.   If a different formatting is required, then have the source in a separate file {\tt userguide.tex} and include that file here.  That file can also be included into a driver (like the senior design template) which has the client specified formatting.  Again, this is a single source approach.   
+\subsection{Turning on the Cluster}
+The cluster needs to follow these steps for start up successfully:
+\begin{enumerate}
+	\item Make sure the two flip-switches are turned off.
+	\item Plug in the cluster to power. This will start up Snow White, the power box, and the switch.
+	\item Once Snow White has fully been powered up, the two switches at the top can be switched on. Each switch coresponds to the column of ODROIDs they are on and they will power up the remaining ODROIDs.
+\end{enumerate}
+This order is need in order for Snow White's home directory to successfully mount on the other ODROIDs.
 
+%Andrew, talk about our code we wrote?
+\subsection{SHUTTING DOWN THE CLUSTER}
+Talk about the code we wrote? And about how to shut them down via ssh with that command?
 
-%% \newpage  %%  if needed ...
-\section{Installation Guide}
+\subsection{Benchmarking the Switch}
+With two ODROID devices attached to the switch via direct ethernet, the connection speed can be tested. This is done by one device running:
+\begin{lstlisting}
+> iperf -s
+\end{lstlisting}
+and the other running:
+\begin{lstlisting}
+> iperf -c [IP of the first device]
+\end{lstlisting}
+This will print out the connection speed of the switch.
 
+\subsection{Mounting the Home Directory}
+For many tests on the cluster, the home directory of Snow White must be mounted on the other devices. This is done with the following command:
+\begin{lstlisting}
+192.168.0.1:/home /home nfs auto 0 0
+\end{lstlisting}
+Where 192.168.0.1 is the IP address of Snow White.
 
-%% \newpage  %%  if needed ...
+\subsection{Assigning Hostnames}
+The ODROIDs on the cluster needed to be renamed. This is done with an example of changing the name from ``odroid'' to ``dopey'':
+\begin{lstlisting}
+> sudo vim /etc/hostname
+\end{lstlisting}
+In that text file, it should look like:
+\begin{lstlisting}
+odroid
+\end{lstlisting}
+Overwrite ``odroid'' with the new hostname. In this example, dopey.
+\begin{lstlisting}
+dopey
+\end{lstlisting}
+And then go to the hosts file, change the hostname in there. To get into the hosts file:
+\begin{lstlisting}
+> sudo vim /etc/hosts
+\end{lstlisting}
+And then replace this line:
+\begin{lstlisting}
+127.0.0.1 odroid
+\end{lstlisting} 
+with this:
+\begin{lstlisting}
+127.0.0.1 dopey
+\end{lstlisting}
+The IP address 127.0.0.1 is the address of the local host. Then in the config file:
+\begin{lstlisting}
+> sudo vim /etc/nsswitch.conf
+\end{lstlisting}
+Change this line from:
+\begin{lstlisting}
+hosts: files mdns4_minimal [NOTFOUND=return] dns
+\end{lstlisting}
+to this line:
+\begin{lstlisting}
+hosts: files dns
+\end{lstlisting}
+Check to see if the hostname has successfully changed:
+\begin{lstlisting}
+> hostname
+\end{lstlisting}
+It should print the new hostname, dopey. If it doesn't, restart the ODROID and again try the hostname command.
+
+%ANDREW I NEED YOUR HELP
+\subsection{Getting Internet on the ODROIDs}
+ANDREW I NEED YOUR HELP
+
+\subsection{SSH Via Hostname}
+After the ODROIDs have been renamed, it's essential to be able to access each of them by their new names. To do this, we have to add a list of the ODROIDs' host names and their IP addresses into each ODROID. These can be added to the hosts file of the ODROID:
+\begin{lstlisting}
+> sudo vim /etc/hosts
+\end{lstlisting}
+In that file, add the other's IP addresses and hostnames in this format: \\
+<ipaddress> <hostname> \\
+Exampe: 192.168.1.11 snow\textunderscore white \\ \\
+
+%is this right?
+\subsection{Taking Down the Passwords}
+In order to perform MPI programs throughout the cluster, the passwords from each of the ODROIDs need to be taken down so the user doesn't need them when ssh-ing into them. To do this, generate an ssh key:
+\begin{lstlisting}
+> ssh-kegen
+\end{lstlisting}
+Enter through all of the prompts, then:
+\begin{lstlisting}
+> ssh-copy-id <ipaddress>
+\end{lstlisting}
+
+%Andrew
+\subsection{USB to USB Communication??}
+Andrew... help?
+
+\subsection{GPIO Communication}
+Part of this project involved communication through GPIO. This example shows how to pass data through a single pin from one ODROID to the other. \\ \\
+Taking Doc and Happy, connect index pin 8 (UART TXD) (Export Pin 172) on Doc to index pin 6 (UART RXD) (Export Pin 171) on Happy. \\ \\
+In Happy, mount the export pin. This makes the directory gpio171. Go in there and change the file direction to recieve the data.
+\begin{lstlisting}
+> cd /sys/class/gpio
+> echo 171 > export
+> cd gpio171
+>echo in > direction
+\end{lstlisting}
+In Doc, mount the export pin. Again, this makes a directory to that pin. Go in there and changed the file direction to send out the data.
+\begin{lstlisting}
+> cd /sys/class/gpio 
+> echo 172 > export 
+> cd gpio172 
+> echo out > direction
+\end{lstlisting}
+Then in Doc, change the value (0 or 1) to send out. Here, it sends out 1.
+\begin{lstlisting}
+> cd /ss/class/gpio/gpio172
+> echo 1 > value
+\end{lstlisting}
+In Happy, check to see if the value was submitted.
+\begin{lstlisting}
+> cd /sys/class/gpio/gpio171
+> echo value
+\end{lstlisting}
+It'll print 1, the value that Doc sent to Happy.
+
+\subsection{Unmounting a GPIO Pin}
+After mounting and communication through the pins in one of the dwarfs, the pin need to be unmounted. To unmount the GPIO Export Pin:
+\begin{lstlisting}
+> cd /sys/class/gpio
+> echo [GPIO Export Pin] > unexport
+\end{lstlisting}
+
+%Andrew, is this correct? In the log, it said it didn't work, but we changed the mask to does this work correctly now?
+\subsection{Creating Routing Tables}
+Each device should have the /etc/network/interfaces file such as: \\
+\begin{lstlisting}
+auto eth0
+iface eth0 inet static
+	address 192.168.N.11
+	netmask 255.255.255.255
+	gateway 192.168.0.1
+auto eth1
+iface eth1 inet static 
+	address 192.168.N.12
+	netmask 255.255.255
+	gateway 192.168.0.1
+\end{lstlisting}
+where eth0 is the Ethernet port, and eth1 is the USB to Ethernet port, and N is the number of the device (0 - 7). With that configured, the Ethernet port of device N should be connected to the USB to Ethernet port of device N + 1 (i.e. snow white to dopey, dopey to sleepy, etc). The USB to Ethernet port of each device is then connected to the Ethernet port of the device behind it. \\ \\
+Once that is set up, each device needs to run the following two commands:
+\begin{lstlisting}
+> sudo route add -host 192.168.N+1.11 gw 192.168.N.12
+> sudo route add -host 192.168.N-1.12 gw 192.168.N.11
+\end{lstlisting}
+where N is the number of the device. This will allow each device to ping the devices next to it. 
+\begin{lstlisting}
+> sudo route add -host 192.168.N-2.12 gw 192.168.N.11
+\end{lstlisting}
+should let the device then be able to ping the one that's two behind it. 
+
 \section{Programmer Manual}
+These manual are not specific to the cluster, but were needed for the project and are useful to the programmer.
+\subsection{Formatting Executable Commands}
+Some of the tools created were formatted as executable commands. This was done by adding one of these two lines at the top of the program:
+\begin{lstlisting}
+#!/bin/bash
+\end{lstlisting}
+\begin{lstlisting}
+#!/bin/usr/python
+\end{lstlisting}
+And the run this command:
+\begin{lstlisting}
+> chmod +x <filename>
+\end{lstlisting}
+%ANDREW!!
+\subsection{BUILD ENVIRONMETN??}
+ANDREW! I'M NOT SURE IF THIS IS NEEDED...but it's in the log and I'm not sure exactly how it works or how to phrase it. If you want to, put it here. Or just take out this subsection.
 
+\subsection{BUILD A DEBIAN PACKAGE??}
+Again, I don't know if we need this. The log says the steps are on the wiki. I didn't put the exact steps, but I also don't know if we need them here.
+
+\subsection{Updating the Kernel}
+To update the kernel of one of the ODROIDs, first the user needs to have connection to the internet. Then check the current kernel, update its repositories, then follow through and update the kernel:
+\begin{lstlisting}
+> uname -a
+> sudo apt-get update
+> apt-get upgrade linux-image-xu3
+\end{lstlisting}
+A purple screen asking if the user knows what they're doing and want to continue will appear. Continue and ignore all other warning errors. It will take some time to complete the update. Once complete, check the currrent kernel to see if it sucessully update, then upgrade all of the packages for the kernel:
+%reference the purple screen here?
+\begin{lstlisting}
+> uname -a
+> sudo apt-get update && sudo apt-get dist upgrade
+\end{lstlisting}
+
+\subsection{HOW TO TELL WHAT CORES ARE BEING USED}
+If needed, Andrew.

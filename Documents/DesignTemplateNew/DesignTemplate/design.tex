@@ -209,7 +209,7 @@ Next, we set each device to be able to use our naming convention in place of an 
 
 We then set the /home directory of Snow White to be an NFS share that could be mounted on the dwarfs. After nfs-kernel-server was installed on Snow White, we edited it's /etc/exports file to include /home as an export. The dwarfs then installed nfs-common and used the command "mount SnowWhite:/home /home" to mount the home directory of Snow White over their own. \\
 
-To make this mount process automatic on boot, we edited the /etc/fstab file on each dwarf to make them mount Snow White's home directory as part of the boot process. This proved unsuccesful, however, on all devices except for on. As a work around, we wrote a Python tool that can be run from Snow White to mount it's home directory on the dwarfs.
+To make this mount process automatic on boot, we edited the /etc/fstab file on each dwarf to make them mount Snow White's home directory as part of the boot process. This proved unsuccesful, however, on all devices except for on. As a work around, we wrote a Python tool that can be run from Snow White to mount it's home directory on the dwarfs. \pagebreak
 
 \begin{lstlisting}
 #!/bin/usr/python
@@ -218,17 +218,17 @@ import os
 
 def Main():
 
-        hosts = [ 'snow_white', 'dopey', 'sleepy', 'grumpy', 'doc', 'happy',
- 				  'bashful', 'sneezy' ]
+	hosts = [ 'snow_white', 'dopey', 'sleepy', 'grumpy', 'doc', 'happy',
+			   'bashful', 'sneezy' ]
 
-        for host in hosts:
-                if host != 'snow_white':
-                        cmd = "ssh odroid@" + host + " 'sudo mount -t nfs snow_white:/
-							   home /home'"
-                        os.system( cmd )
+	for host in hosts:
+		if host != 'snow_white':
+			cmd = "ssh odroid@" + host + " 'sudo mount -t nfs snow_white:/ 
+					home /home'"
+			os.system( cmd )
 
 if __name__ == '__main__':
-        Main()
+	Main()
 \end{lstlisting}
 %%This code listing is not floating or automatically numbered.  If you want auto-numbering, but it in the algorithm environment (not algorithmic however) shown above.
 
