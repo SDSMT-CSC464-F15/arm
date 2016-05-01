@@ -1,7 +1,6 @@
 % New Templete!!
 % !TEX root = DesignDocument.tex
 
-%Andrew, can you complete the last entry here?
 %Other todos: add tables (if we wanna and/or have time) to some of our data
 
 \chapter{Experimental Log}
@@ -465,8 +464,7 @@ We are now successful at communicating through ODROIDs.
 \item [3/17/16] After research and observation, we found that OpenMPI with LINPACK doesn't work with multiple network interfaces on one ODROID device. We looked into switching from OpenMPI to MPICH, but that has also become unsuccessful. We are at a loss as to where to go from here.
 \end{description}
 
-%%Andrew, can you add the stuff about it not running on all cores here??
  \section{A7 and A15 Cores}
  \begin{description}
- \item [4/20/16] Blaze it!
+ \item [3/31/16] We looked in to which core were actually being used at the advice of Dr. McGough. We installed a tool HTOP that monitors real-time usage of memory, processes running, and core utilization. Running HTOP and LINPACK at the same time showed us that usually only the A7 cores were being used, despite LINPACK configured to use eight processes per node. In order to attempt to correct this, we ran mpiexec with the command line argument --bind-by-core, which will ensure that of the eight processes are assigned to different cores. However, that gave an error message saying that the detected architecture could not support such a setting. Apparently, the ODROIDs completely shut down the A15 cores and hide them entirely from the user when they are not in use. We found that immediately after booting the devices, they sometime use the A15 cores instead of the A7s if only one or two processes are assigned to each node. This allowed us to get some data from those higher performance cores for our results, but since we don't know why the operating system chooses to use the A15 cores at that time, and have no control over forcing the kernel to use those cores, we aren't able to reliably use those cores. Therefore, we are unable to fully test the cluster at it's theoretical maximum performance of 32 A7 cores and 32 A15 cores at this time.
  \end{description} 

@@ -35,9 +35,8 @@
 \contentsline {subsection}{\numberline {2.3.1}Network Requirements}{6}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Development Environment Requirements}{6}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Project Management Methodology}{6}{subsection.2.3.3}
-\contentsline {section}{\numberline {2.4}Specifications}{6}{section.2.4}
-\contentsline {section}{\numberline {2.5}Product Backlog}{6}{section.2.5}
-\contentsline {section}{\numberline {2.6}Research or Proof of Concept Results}{7}{section.2.6}
+\contentsline {section}{\numberline {2.4}Product Backlog}{6}{section.2.4}
+\contentsline {section}{\numberline {2.5}Research or Proof of Concept Results}{7}{section.2.5}
 \contentsline {chapter}{\numberline {3}Project Overview}{9}{chapter.3}
 \contentsline {section}{\numberline {3.1}Team Member's Roles}{9}{section.3.1}
 \contentsline {section}{\numberline {3.2}Project Management Approach}{9}{section.3.2}
@@ -68,8 +67,7 @@
 \contentsline {subsection}{\numberline {4.3.1}Technologies Used}{15}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}Component Overview}{16}{subsection.4.3.2}
 \contentsline {subsection}{\numberline {4.3.3}Phase Overview}{16}{subsection.4.3.3}
-\contentsline {subsection}{\numberline {4.3.4} Architecture Diagram}{16}{subsection.4.3.4}
-\contentsline {subsection}{\numberline {4.3.5}Design Details}{16}{subsection.4.3.5}
+\contentsline {subsection}{\numberline {4.3.4}Design Details}{16}{subsection.4.3.4}
 \contentsline {chapter}{\numberline {5}System and Unit Testing}{23}{chapter.5}
 \contentsline {section}{\numberline {5.1}Overview}{23}{section.5.1}
 \contentsline {section}{\numberline {5.2}Dependencies}{23}{section.5.2}
@@ -101,6 +99,10 @@
 \contentsline {subsection}{\numberline {6.5.1}Deliverable}{31}{subsection.6.5.1}
 \contentsline {subsection}{\numberline {6.5.2}Backlog}{32}{subsection.6.5.2}
 \contentsline {subsection}{\numberline {6.5.3}Success/Fail}{32}{subsection.6.5.3}
+\contentsline {section}{\numberline {6.6}Sprint 6 Prototype}{32}{section.6.6}
+\contentsline {subsection}{\numberline {6.6.1}Deliverable}{33}{subsection.6.6.1}
+\contentsline {subsection}{\numberline {6.6.2}Backlog}{34}{subsection.6.6.2}
+\contentsline {subsection}{\numberline {6.6.3}Success/Fail}{34}{subsection.6.6.3}
 \contentsline {chapter}{\numberline {7}User Documentation}{35}{chapter.7}
 \contentsline {section}{\numberline {7.1}User Guide}{35}{section.7.1}
 \contentsline {section}{\numberline {7.2}Installation Guide}{35}{section.7.2}

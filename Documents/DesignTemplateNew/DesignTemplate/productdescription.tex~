@@ -1,8 +1,10 @@
 %% New Templete!!
 
 %% Comment this out... then Latex will bitch at you
-]
+
 \vspace{2\baselineskip}
 
-\centerline{\Large {\bf NOTE:} {\em This is part of the contract.}}
+%% \centerline{\Large {\bf NOTE:} {\em This is part of the contract.}}
+
+This product will consist of 8 - 12 single board computers clustered together to produce the maximum amount of performance in the most efficient manner possible. The focus will be a research project, to determine the most effective methods of comunication in terms of topologies and communication protocols, as well as the most effective way to benchmark the cluster. The project will last for the duration of the Fall and Spring sememsters, from October 2, 2015 to the Senior Design fair on April 19, 2016. 
 

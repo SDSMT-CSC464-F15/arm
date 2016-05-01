@@ -7,33 +7,18 @@ Docmentation To Do:
 -*Read through entire document
 -Elevator Pitch could be extended
 -*Update Documentation Preparation
--*Major System Component #3
 -User stories need to be looked over
--*Requirements: system, network, development environment
--*Specifications
 -*Project overview: some of the things need to be expanded. 
 	You can tell there are some things Samantha wrote
 -*Terminology and Acronyms
--*Design and Implementation: Take away tabs, make blank line between paragraphs
--*Data structures and Algorithms
--*Classes (?)
--*UML (?)
--*Component overview, architecture diagram, dataflow diagram, design details (?)
--*Major Component #3 (?)
--*System testing: format paragraphs to blank line between paragraphs
--*System testing, system integration analysis, risk anal, risk mitigation (?)
--*System texting: Successes, issues and probs, changes to backlog
 -*Prototypes: Add sprint 6
 -*USER DOCUMENTATION --> mostly just copy from log
 -Software contract: straighten out. I might still have it to rescan. -cns
--*Product description (?)
+-*Product description (?)(???)
 -Sprint reports: sprint 1, add overview, same with sprint 4 and 5
--*Add sprint 6 (?)
--*Acknowledgements
 -Take out the automatic tabs in some paragraphs
 -Add LINPACK stuff to the log
 -Formatting in the logs for the stuff we write in text files like interface
 -Make tables for some of the values in the log section
--Add the 8 core problem stuff in the log
 -Some sort of spiel in the Publications about what the following
 	documents are.

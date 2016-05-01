@@ -1,0 +1,470 @@
+% New Templete!!
+% !TEX root = DesignDocument.tex
+
+%Other todos: add tables (if we wanna and/or have time) to some of our data
+
+\chapter{Experimental Log}
+
+As the ARM cluster is a research project, all of the research and lab activities are logged here. This includes benchmark results, other tests and observations, step-by-step of procedures, and conclusions drawn. 
+
+% Sprint 1
+\section{Benchmarking the Individual Computers}
+
+\begin{description}
+\item [9/17/15]  PcDuino isn't working according to Dr. Karlsson. The PcDuinos are about \$160 each, so chances were that the PcDuino wasn't going to be selected for the cluster. We will not put the PcDuino in consideration with our benchmarking. \\
+
+\item [9/17/15]  PcDuino isn't working according to Dr. Karlsson. The PcDuinos are about \$160 each, so chances were that the PcDuino wasn't going to be selected for the cluster. We will not put the PcDuino in consideration with our benchmarking. \\
+
+\item [9/22/15] We begin work on benchmarking the remaining candidates. The code we will be using to benchmark the two devices will test the addition, multiplication, division, trigonmetric function in single and double point precision of two massively large arrays filled with random numbers. \\
+
+\item [9/29/15] OpenMP is added to the benchmark code so the program runs on all cores. Results are as follows: \\
+
+\begin{center}
+\begin{tabular}{ | l || l | l | l | l | }
+\hline
+\multicolumn{5}
+{ |c| }{ Length of Time (seconds) } \\
+\hline
+Device & Addition & Multiplication & Division & Sine \\
+\hline
+ODroid 4xU & 29.925 & 31.341 & 37.032 & 227.40 \\
+\hline
+Raspberry Pi 2B & 221.645 & 221.034 & 297.204 & 1468.63 \\
+\hline
+\end{tabular}
+\end{center}
+
+\item [9/30/15] The gigaflops are calculated. \\
+\begin{center}
+\begin{tabular}{ | l || l | l | l | l | }
+\hline
+\multicolumn{5}
+{ |c| }{ Gigaflops } \\
+\hline
+Device & Addition & Multiplication & Division & Sine \\
+\hline
+ODroid 4xU & 0.311 & 0.297 & 0.251 & 0.0410 \\
+\hline
+Raspberry Pi 2B & 0.0420 & 0.0421 & 0.0313 & 0.00634 \\
+\hline
+\end{tabular}
+\end{center}
+
+\item [10/1/15] The wattage is measured when the devices are running these operations. Using the wattage, the metric of GFlops/Dollar/Watt is calculated. \\
+
+\begin{center}
+\begin{tabular}{ | l || l | l | l | l | }
+\hline
+\multicolumn{5}
+{ |c| }{ Gigaflops per Dollar per Watts } \\
+\hline
+Device & Addition & Multiplication & Division & Sine \\
+\hline
+ODroid 4xU & 0.00028 & 0.000268 & 0.000226 & 0.0000369 \\
+\hline
+Raspberry Pi 2B & 0.0003 & 0.0003 & 0.000224 & 0.0000453 \\
+\hline
+\end{tabular}
+\end{center}
+
+\item [10/1/15] The results show that the Raspberry Pi and the ODroid perform nearly the same. The Raspberry Pi in our benchmarking proved the best. However, it is inconclusive as to which computer will be used. \\
+
+\item [10/24/15] Decided to go with the ODroid. Performance and the number of ports outweighted the cost of the Raspberry Pi. \\
+
+\end{description}
+
+% Sprint 2
+\section{Ethernet Benchmark}
+\begin{description}
+\item [10/25/15] Created network between a machine with gigabit Ethernet port and ODROID. Installed iperf, a tool in the standard Debian repositories to text the network speed, on both the server machine and ODROID. \\
+
+This text can be run over the existing network by the following steps: \\ \\
+> ssh andrewdesktop@108.107.223.45 \\
+Password: design \\
+>iperf -s \& \\ \\
+Leave that running in the background. \\ \\
+>ssh odroid@10.42.0.2 \\
+Password: odroid \\
+>iperf -c 10.42.0.1 \\ \\
+This will take a few seconds to run then give the network speed. The network 10.42.0.1 is over a 1000 Mbps wired connection between the ODROID and andrewdesktop. \\
+
+\begin{center}
+\begin{tabular}{ | l || l | }
+\hline
+\multicolumn{2}
+{ |c| }{ Ethernet Speed } \\
+\hline
+Device & Speed (Mbps) \\
+\hline
+ODroid XU4 & 615 - 625 \\
+\hline
+\end{tabular}
+\end{center}
+
+\end{description}
+
+\section{Hardware Test}
+\begin{description}
+\item [11/03/15] All eight ODroids are functional. To test them, each device was connected to a router with internet access via Ethernet. A monitor was connected through HDMI, and the mouse and keyboard were connected to both USB 3.0 ports to ensure they worked. The packages mpi-default-dev and openmpi-bin were installed. The test MPI code found this directory and successfully compiled and executed. No issues found on any device. \\
+\end{description}
+
+\section{Switch Benchmark}
+\begin{description}
+\item [11/03/15] With two ODROID devices attached to the switch via direct ethernet (no USB 3.0 to ethernet adapter), the connection speed was tested. This was accomplished by one device running: \\ \\
+> iperf -s \\ \\
+and the other running: \\ \\
+> iperf -c [IP of the first device]
+
+\begin{center}
+\begin{tabular}{ | l || l | }
+\hline
+\multicolumn{2}
+{ |c| }{ Switch Speed } \\
+\hline
+Device & Speed (Mbps) \\
+\hline
+ODroid XU4 & 775 - 800 \\
+\hline
+\end{tabular}
+\end{center}
+
+This is notably faster than the previous benchmark between one ODROID and a non-ODROID machine not using a switch.
+\end{description}
+
+\section{USB to Ethernet Benchmark}
+\begin{description}
+\item [11/03/15] Tested speed of USB 3.0 to ethernet adapter using iperf. Found slower than direct ethernet conection. Test speeds varied greatly, between 300 Mbps and 700 Mbps. The USB ethernet adapted was faster acting as a server than a client with the highest value as a client being only about 475 Mbps. In contrast, the ethernet connections were consistent reguarless of which device was the client or server, and stayed between 775 and 800 Mbps. 
+
+\begin{center}
+\begin{tabular}{ | l || l | }
+\hline
+\multicolumn{2}
+{ |c| }{ USB 3.0 to Ethernet Adapter Speed } \\
+\hline
+Device & Speed (Mbps) \\
+\hline
+ODroid XU4 & 300 - 700 \\
+\hline
+\end{tabular}
+\end{center}
+
+Additionally, there hasn't been a found way to connect two devices over USB-ethernet to ethernet directly. When attached to the switch, the devices can communicate; however, if we were using the USB to ethernet adapters, they would be directly connected, without the switch. Therefore, being unable to direct connect devices defeats the purpose of the adapters. In conclusion, the drastically lower speed of the USB to Ethernet adapters and the inability to directly connect devices means that the devices are very unlikely to useful for our purposes. \\
+
+\item [11/05/15] There isn't a found way to connect two devices over USB-ethernet to ethernet directly. When attached to the switch, the devices can communicate. If using the USB to ethernet adapter, they would be directly connected without the switch. Therefore, it was unable to directly connect devices. \\ \\
+The drastically lower speed of the USB to ethernet adapters and the inability to directly connect the devices means that the devices are very unlikely to be useful for this project.
+\end{description}
+
+%Sprint 3
+\section{Auto-Mounting Snow White's Home Directory}
+\begin{description}
+\item [11/10/15] Attempting to auto-mount Snow White's homedirectory onto the dwarfs. Changed Sleepy's fstab file with this line: \\ \\
+> 192.168.1.11:/home /home nfs auto 0 0 \\ \\
+We can now mount Snow White's home directory automatically onto Sleepy. Adding this to other dwarfs' fstab file.
+\end{description}
+
+%%%% THIS NEEDS TO BE FINISHED
+\section{Assigning IP Addresses}
+\begin{description}
+\item [11/5/15] Setting up the IP addresses for the ODROIDs. \\
+> sudo vim /etc/network/interfaces \\ \\
+These lines should be in there: \\
+\# interfaces(5) file used by ifup(8) and ifdown(8) \\
+\# Include files from /etc/network/interfaces.d \\
+source-directory /etc/network/interfaces.d \\
+auto eth0 \\
+iface eth0 inet static \\
+address 192.168.1.11 \\
+gateway 192.168.1.1 \\ \\
+Under address, edit what address you want. Confirm that the IP address was changed: \\
+> ifconfig \\ \\
+Switch control to another ODROID connected on the switch. Attempt to ping to the ODROID who's IP address you changed. \\
+> ping 192.168.1.11 \\ \\
+It should be successful. Attempt to ssh into it. \\
+> ssh 192.168.1.11 \\ \\
+Use iperf to time and ping the network. Set up the server and set the client \\
+> iperf -s \\
+> iperf -c 192.168.1.11 \\ \\
+To set up the netowork, perform these two command: \\
+>sudo ifdown eth0 \\
+>sudo ifup eth0 \\ \\
+Again, test pinging to another ODROID and ssh-ing into it. \\
+%%Andrew, in 11_5_FixingIPAddresses.txt, there's some more stuff with apt-gets. I'm not sure how to understand them. I don't know if it's even relavent, I'm just saying there's more to this entry.
+\end{description}
+
+\section{Naming the Dwarfs}
+\begin{description}
+\item[11/10/15] Changing the hostnames of the ODROIDs. Working on ODROID 2, it's being difficult so I will name it Dopey. To change the hostname: \\ \\
+> sudo vim /etc/hostname \\ \\
+Overwrite ``odroid'' with ``Dopey'' \\ \\
+> sudo vim /etc/hosts \\ \\
+Replace ``127.0.0.1 odroid'' to ``127.0.0.1 dopey''. \\ \\
+In /etc/nsswitch.conf, change ``hosts: files mdns4\textunderscore minimal [NOTFOUND=return] dns'' to ``hosts: files dns''
+\end{description}
+
+\section{Problems with the ODROIDs}
+\begin{description}
+\item [11/12/15] We have been having errors on ODROID \#3 and ODROID \#4. When we start these up, the status on the startup prints, ``Buffer I/O error on device... logical block 0.'' We thought that we needed to re-image them. Looking at the fstab file that we changed in order for the dwarfs to mount Snow White's home directory automatically, we found a spelling error on our part. However, that didn't solve our problem. We're going to change the fstab file back to the original. \\
+\item [12/1/15] Sleepy and Sneezy have not been booting up, therefore we have had to replace them. With the two new one, we have everything now working again. We hypothesize that the ODROIDs were short circuited after we set them on top of the power box. Now that we have assembled them onto an acrylic board, they should be safe.
+\end{description}
+
+\section{Getting Internet on the ODROIDs}
+\begin{description}
+\item [11/13/15] We need internet access on the ODROIDs to install applications, such as vim. To get the internet, we had to plug in Ethernet to internet and then edit /etc/network/interfaces. Then needed to reset eth0: \\ \\
+> sudo ifdown eth0 \\
+> sudo ifup eth0 \\ \\
+That didn't always work. Rebooting is another option.
+\end{description}
+
+\section{SSH-ing Via Hostame}
+\begin{description}
+\item [11/17/15] For ease of use, we need to be able to ssh into each of the dwarfs by their given name. In order to do that, we need to add a list of every ODROID and their corresponding IP address to each ODROID. \\
+>sudo vim /etc/hosts \\ \\
+In there, add the others' IP Addresses and hostnames in this format: \\
+<ipaddress> <hostname> \\
+Example: 192.188.1.11 snowwhite \\ \\
+In order to perform MPI, we need to take down the passwords from each of the ODROIDs so you don't need them when you ssh: \\
+>ssh-keygen \\ \\
+Press enter through all of the promts, then: \\
+> ssh-copy-id <ipaddress>
+\end{description}
+
+\section{Starting up the Cluster}
+\begin{description}
+\item [12/1/15] We developed a procedure to safely start of the cluser:
+\begin{enumerate}
+	\item Plug the cluster into power. This will start up Snow White, the power box, and the switch.
+	\item Flip the two switches at the top of the cluster. Those will start the remaining dwarfs in their corresponding columns.
+\end{enumerate}
+It is important to run the procedure in this order so Snow White's home directory will successfully mount in the other dwarfs.
+\end{description}
+
+\section{IP Addresses}
+\begin{description}
+\item [12/1/15] We assigned IP addresses to the ODROIDs:
+\begin{itemize}
+	\item IP ADDRESS - hostname
+	\item 192.168.1.11 - snow\textunderscore white
+	\item 192.168.1.12 - dopey
+	\item 192.168.1.13 - sleepy
+	\item 192.168.1.14 - grumpy
+	\item 192.168.1.15 - doc
+	\item 192.168.1.16 - happy
+	\item 192.168.1.17 - bashful
+	\item 192.168.1.18 - sneezy
+\end{itemize}
+\end{description}
+
+\section{Formatting Executable Commands}
+\begin{description}
+\item [12/2/15] In order to use the tools we created easily, they have been formatted as executable commands through these steps:
+\begin{enumerate}
+	\item Add \#!/bin/bash or \#!/bin/usr/python to the top of the file.
+	\item > chmod +x <file>
+\end{enumerate}
+This will allow us to put them in /usr/bin and call them from any directory to easily mount all the dwarfs, shutdown all of the dwarfs, change and reboot the network to use the internet or go back on to the switch, or execute LINPACK. While not a drastic change, this should prove to make our lives a little easier.
+\end{description}
+
+\section{Current State of Cluster}
+\begin{description}
+\item [12/2/15] An overview of the cluster as the end of the first semester concludes. \\ \\
+Hardware:
+\begin{itemize}
+ 	\item Eight functioning odroids, two non functioning.
+	\item One switch.
+	\item Power supply with nine power cables.
+	\item Eight one gigabit ethernet cables.
+	\item All securely mounted on an acrylic board. 
+\end{itemize}
+Configuration:
+\begin{itemize}
+	\item All odroids are on the same network, connected over the switch (192.169.1.x)
+	\item All odroids are named, and able to recognize the IP address of the names of
+    the others (i.e. any command that needs an IP can be executed with the name
+    instead, such as ping dopey or ssh happy)
+	\item Snow White can SSH into any dwarf without a password, and vise versa.
+	\item Any dwarf can execute sudo without needed a password input.
+	\item The /home directory of Snow White is an NFS share that the dwarfs can mount.
+\end{itemize}
+Software:
+\begin{itemize}
+	\item Linpack and ATLAS are built on Snow White, in the home directory.
+	\item MPI is installed and working on all eight devices.
+	\item Four tools exist in Snow White in the /usr/bin directory:
+	\begin{enumerate}
+      	\item mountHomeDir - mounts the /home directory of all seven dwarfs to the /home
+        directory of Snow White.
+      	\item killDwarfs - shuts down the seven dwarfs.
+      	\item changeNetwork - changes the network configuration to allow the device to
+        	\item connect to the interent instead of the local network, or vise vera.
+      	\item LINPACK - executes linpack on a given number of processes. 
+      \end{enumerate}
+\end{itemize}
+Knowledge:
+\begin{itemize}
+	\item Speed of Etherent switch: ~750 Mbps
+	\item Maximum gigaflops possible: ~3e-4
+\end{itemize}
+Set backs:
+\begin{itemize}
+	\item Two odroids burned, they have been replaced.
+	\item Editing /etc/fstab to automatically mount the home directory of Snow White
+    on the dwarfs proved unsuccessful. This is something the team will continue
+    to persue in future sprints.
+\end{itemize}
+\end{description}
+
+% Sprint 4
+\section{Build Environment}
+\begin{description}
+\item [1/14/16] Some quitck notes on how to set up the build environment. First, we created ssh keys on Dr. Karlsson's computer, Red Queen, with the command: \\
+> ssh-keygen \\ \\
+Leaving all of the options as default by hitting enter through the prompts.  The first thing we used the keys for was to configure the Github account to not make us enter the password every time we pushed to the repo. To do this: \\
+> cat .ssh/id\textunderscore .pub \\ \\
+Then copied and pasted the public RSA key into Github under the Settings --> SSH keys option. Then gloned the current repository with: \\
+> git clone git@github.com:SDSMT-CSC464-F15/arm \\ \\
+The next thing we did was use the keys to be able to ssh to snow\textunderscore white without being prompted for a password. Did this with: \\
+> ssh-copy-id odroid@snow\textunderscore white \\ \\
+Finally, we configured the ssh setting so we wouldn't have to type out ``odroid@snow\textunderscore white'' every time we needed to ssh over or use scp to move files. This was done by creating the file: \\
+.ssh/config \\ \\
+And then putting in the contents: \\
+Host sw 
+	HostName snow\textunderscore white
+	User odroid \\ \\
+Now, we can ssh to the cluster with the command: \\
+> ssh sw \\ \\
+or copy files from the repository with: \\
+> scp [path to the file on Red Queen] sw:[path to where to put the file on Snow White]
+\end{description}
+
+
+\section{Creating a Debian Package}
+\begin{description}
+\item [1/18/16] To create a simple Debian package, we followed the instructions located at:\\ \\
+\url{https://wiki.debian.org/IntroDebianPackaging}\\ \\
+%add the steps here?
+This let us create a Debian package. Going forward, the next step is to use the instructions to make HPLinpack into a Debian package.
+\end{description}
+
+\section{USB to USB Communication}
+\begin{description}
+\item [1/26/16] Figuring out how to communicate through USB. In /etc/network/interface, changed USB's from static to dhcp. Then performed: \\ \\ 
+> sudo ifup usb0 \\ \\
+Setting up the USB IP Addresses, go the the ODROID to change: \\
+> wget http://tex.stackexchange.com \\
+> sudo modprob g\textunderscore ether \\
+> dmesg \\
+> sudo ifconfig usb0 ipaddress \\
+
+Verify the USB IP address was changed. \\
+> ifconfig \\ \\
+Changed Doc, Happy, Bashful, and Sneezy's USB IP addresses:
+	\begin{itemize}
+		\item Doc - 192.168.1.25
+		\item Happy - 192.168.1.26
+		\item Bashful - 192.168.1.27
+		\item Sneezy - 192.168.1.28
+	\end{itemize}
+\item[2/1/16] Over USB 2.0, it is possible to use USB crossover cables to simulate Ethernet over USB. The same technology is possible for USB 3.0, but no operating system currently supports it, Linux or otherwise. As such, direct communication would have to be done in a different way than Ethernet, such as PyUSB. However, there is no found way to communicate from hsot node to another host node using PyUSB.
+\end{description}
+
+\section{GPIO Communication}
+\begin{description}
+\item [2/4/16]  Connected index pin 8 (UART TXD) (Export Pin 172) on Doc to index pin 6 (UART RXD) (Export Pin 171) on Happy. Communicating by changing the physical bit in the corresponding GPIO export pin file (not the physical index number).  \\
+%put a gpio diagram somewhere and reference it here
+
+In Happy: \\
+> cd /sys/class/gpio \\ \\
+Mount the export pin: \\
+> echo 171 > export \\ \\
+It makes gpio171\\
+> cd gpio171 \\ \\
+Edit the text file direction:\\
+>echo in > direction \\ \\
+In Doc: \\
+> cd /sys/class/gpio \\
+> echo 172 > export \\
+It makes a directory for that pin number. \\
+> cd gpio172 \\
+Edit the text file direction to out: \\
+> echo out > direction \\
+Edit the text file direction: \\
+> echo 1 > value \\ \\
+In Happy: \\
+> cd /sys/class/gpio/gpio171 \\
+> echo value \\
+It'll print 1 \\ \\
+Repeat with value 0. Happy's value will be 0. \\ \\
+To unmount the GPIO Export Pin: \\
+In Happy: \\
+> cd /sys/class/gpio \\
+> echo 171 > unexport \\ \\
+In Doc: \\
+> cd /sys/class/gpio \\
+> echo 172 > unexport
+
+\item [2/11/16] Successfully got wiringPi to work between two dwarfs. We got 0.61 MBits/sec on GPIO with one pin. Communication speed between two dwarfs through Ethernet was 750 MBits/sec. This was found using iperf. GPIO was 120 times slower than Ethernet.
+
+\item [2/16/16] The ODroid XU4 UART has a default baud rate of 115200, and maximum of 921600. This means that the maximum possible data transer speed is 0.88Mpbs. This is drastically slower than Ethernet communication, which we benchmarked at a minimum of 750 Mpbs. In fact, in order to make a protocol faster than Ethernet, even if we used all 40 pins to tranfer data, we would need each pin to send over 19.5 million bits per second. WiringPi, in our preliminary testing, was only able to send about 500,000 bits per second on a pin. Therefore, we conclude that it is likely that GPIO communication is only practical in terms of theoretical protocols, and our cluster will always be faster using Ethernet. Moving forward, in terms of researching if it's possible for the cluster to compute more gigaflops than our current set-up, we believe that experimenting with different designs of Etherent clusterings is our most promising solution.
+\end{description}
+
+\section{Updating Kernel}
+\begin{description}
+\item [2/6/16] Trying to install the wiringPi2 library on the ODROIDs to communicate via GPIO. Our online sources said we need to update the kernels. \\ \\
+Change the fstab so it doesn't mount Snow White's home directory automatically. (Comment out) \\
+Edit etc/interfaces, comment out so the ODROID can connect to the internet.\\
+Reboot the ODROID.\\
+Connect to internet ethernet while rebooting. \\
+Check the current kernel: \\
+> uname -a \\ \\
+Update the repos: \\
+> sudo apt-get update \\ \\
+Upgrade the kernel: \\
+> apt-get upgrade linux-image-xu3 \\ \\
+Got a purple screen prompting if we want to continue and if we know what we're doing. Continued. \\
+Ignore warning errors. \\
+Check the current kernel to see if it successfully updated: \\
+> uname -a \\ \\
+Upgrade all of the packages for the kernel: \\
+> sudo apt-get update \&\& sudo apt-get dist upgrade
+\end{description}
+
+% Sprint 5
+\section{Routing Tables}
+\begin{description}
+\item [2/25/16] Each device should have the /etc/network/interfaces file such as: \\
+auto eth0 \\
+iface eth0 inet static \\
+	address 192.168.x.11 \\
+	netmask 255.255.0.0 \\
+	gateway 192.168.0.1 \\ \\
+auto eth1 \\
+iface eth1 inet static \\
+	address 192.168.x.12 \\
+	netmask 255.255.0.0 \\
+	gateway 192.168.0.1 \\ \\
+where eth0 is the Ethernet port, and eth1 is the USB to Ethernet port, and X is the number of the device (0 - 7). With that configured, the Ethernet port of device N should be connected to the USB to Ethernet port of device N + 1 (i.e. snow white to dopey, dopey to sleepy, etc). The USB to Ethernet port of each device is then connected to the Ethernet port of the device behind it. \\ \\
+Once that is set up, each device needs to run the following two commands: \\
+>sudo route add -host 192.168.x+1.11 gw 192.168.x.12 \\
+>sudo route add -host 192.168.x-1.12 gw 192.168.x.11 \\ \\
+where y is the number of the device. This will allow each device to ping the devices next to it. In theory, adding something like: \\
+sudo route add -host 192.168.x-2.12 gw 192.168.x.11 \\ \\
+should let the device then be able to ping the one that's two behind it. But that's not working with us. Also, going x+2 isn't working.
+
+\item [2/28/16] We have been connecting the cluster into a ring topology, however, we haven't been successful at communicating between two ODROIDs that are not adjacent to each other. So we seeked advice from Dr. Qiao about setting up networks and routing tables. \\ \\
+First, each ODROID should have the same first three numbers of their IP address. For instance, Snow White's IP addresses should all be 192.168.0.x, where x is the port we're assigning it. Dopey's addresses will be 192.168.1.x, again where x is the port. \\ \\
+Another mistake we realized we made was that our mask should be 255.255.255.255 whereas ours was 255.255.255.0. 255 is a string of eight 1's in binary. It masks with our IP addresses. AND-ing it with all 1's makes the values static and important. AND-ing it with 0's allows for the network to be flexible, which isn't what we want. \\ \\
+A routing table must be made for each ODROID, and each one is unique to each ODROID. It is similar to a roadmap. If a packet of data arrives at Snow White, but it needs to get to Sleepy, the roadmap inside of Snow White will tell the packet to go to Dopey next. \\ \\
+Internel forwarding needs to be implemented. Say a packet is sent to an ODROID, but it's not the destination, the ODROID needs redirect it through one of its other ports. \\ \\
+We are now successful at communicating through ODROIDs.
+\end{description}
+
+\section{LINPACK on Ring Topology}
+\begin{description}
+\item [3/3/16] We currently have the cluster hooked into a ring and are trying to run LINPACK on the dwarfs. When it runs, it shows no output, but the dwarfs' fans continue to spin so something is happening.
+\item [3/17/16] After research and observation, we found that OpenMPI with LINPACK doesn't work with multiple network interfaces on one ODROID device. We looked into switching from OpenMPI to MPICH, but that has also become unsuccessful. We are at a loss as to where to go from here.
+\end{description}
+
+ \section{A7 and A15 Cores}
+ \begin{description}
+ \item [4/20/16] We looked in to which core were actually being used at the advice of Dr. McGough. We installed a tool HTOP that monitors real-time usage of memory, processes running, and core utilization. Running HTOP and LINPACK at the same time showed us that usually only the A7 cores were being used, despite LINPACK configured to use eight processes per node. In order to attempt to correct this, we ran mpiexec with the command line argument --bind-by-core, which will ensure that of the eight processes are assigned to different cores. However, that gave an error message saying that the detected architecture could not support such a setting. Apparently, the ODROIDs completely shut down the A15 cores and hide them entirely from the user when they are not in use. We found that immediately after booting the devices, they sometime use the A15 cores instead of the A7s if only one or two processes are assigned to each node. This allowed us to get some data from those higher performance cores for our results, but since we don't know why the operating system chooses to use the A15 cores at that time, and have no control over forcing the kernel to use those cores, we aren't able to reliably use those cores. Therefore, we are unable to fully test the cluster at it's theoretical maximum performance of 32 A7 cores and 32 A15 cores at this time.
+ \end{description} 

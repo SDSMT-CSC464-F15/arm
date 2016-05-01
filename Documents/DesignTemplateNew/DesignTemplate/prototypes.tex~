@@ -38,7 +38,7 @@ The work completed in the first sprint was largely information gathering. The go
 
 \subsection{Success/Fail}
 
-We successfuly found data for which device was faster, the cost of each device, and the power consumption while running. The benchmark results are in the following tables:
+We successfuly found data for which device was faster, the cost of each device, and the power consumption while running. The benchmark results are in the following tables: \\
 
 \begin{figure}[tbh]
 	\caption{Performance of Raspberry Pi and ODROID}
@@ -80,7 +80,7 @@ However, the ODroids were backordered, and took two weeks longer than expected t
 
 \section{Sprint 3 Prototype}
 
-The Cluster of eight ODroid XU4s was assembled, completing our first physical prototype. The ODroids were attached to a piece of plexiglass, along with a power supply with a 5 volt power cord for each ODroid, and an 8 port switch. The end result is pictured in the following figure.
+The Cluster of eight ODroid XU4s was assembled, completing our first physical prototype. The ODroids were attached to a piece of plexiglass, along with a power supply with a 5 volt power cord for each ODroid, and an 8 port switch. The end result is pictured in the following figure. \\
 
 \begin{figure}[tbh]
 	\caption{Cluster in Star Topology.}
@@ -159,7 +159,7 @@ We successfully bencharked the cluster using Linpack. Results are shown in the f
 
 \section{Sprint 5 Prototype}
 
-For this sprint, we tested the USB and GPIO communication. We were able to communicate over GPIO using the library WiringPi. In order to be able to do so, we had to install the source code on the ODROIDs and build it. We ran in to a few issues originally. First, the operatin system installed was not at it's most recent version, and therefore unable to work with the WiringPi libraries. We had to update each kernel individually, as shown in Figure~\ref{fig:purple} Once that was done, we still had to be able to use the library correctly. Extensive documentation existed for use with Raspberry Pis, but not for ODROID XU4s. Therefore, through a process of trial and error to see which WiringPi pin number corresponded to each physical pin, we were able to create our own in Figure~\ref{fig:gpio} 
+For this sprint, we tested the USB and GPIO communication. We were able to communicate over GPIO using the library WiringPi. In order to be able to do so, we had to install the source code on the ODROIDs and build it. We ran in to a few issues originally. First, the operatin system installed was not at it's most recent version, and therefore unable to work with the WiringPi libraries. We had to update each kernel individually, as shown in Figure~\ref{fig:purple} Once that was done, we still had to be able to use the library correctly. Extensive documentation existed for use with Raspberry Pis, but not for ODROID XU4s. Therefore, through a process of trial and error to see which WiringPi pin number corresponded to each physical pin, we were able to create our own in Figure~\ref{fig:gpio} \\
 
 \begin{figure}[tbh]
 	\caption{Linpack results.}
@@ -171,7 +171,7 @@ For this sprint, we tested the USB and GPIO communication. We were able to commu
 \begin{figure}[tbh]
 	\caption{Updating kernel.}
 	\centering
-		\includegraphics[width=0.75\textwidth]{PurpleScreen.JPG}
+		\includegraphics[width=0.75\textwidth]{PurpleScreen.jpg}
 	\label{fig:purple}
 \end{figure}
 
@@ -210,3 +210,31 @@ It was determined that netiher were pratcical for our purposes due to the scope 
 \subsection{Success/Fail}
 
 Our largest failure this sprint was our inability to benchmark the different topologies. We found that MPI does not work with different network interfaces on the same subnet. Even after changing the IP addresses so that each IP address was on a different subnet, the code still did not work. Therefore, we are unable to use Linpack to benchmark the cluster in the ring or hypercube topology.
+
+\section{Sprint 6 Prototype}
+
+The final sprint comprised largely of two parts. Our first goal was to overcome the issues we encountered previously, both with LINPACK not working over the Ring and Hypercube topologies, and a new issue we discovered between sprints with the cores in the ODROIDs being used. It was learned through using the tool HTOP that LINPACK was not running on the A15 cores, even when told to use eight processes per node. Therefore, in this sprint our goal was to find a way to use those higher performance cores. However, we were unable to fully solve either problem, though by seemingly random chance we were able to get some results for the A15s. \\
+
+Our second goal was finalizing our results and preparing for three presentation, the SDSMT Research Symnposiusm, MICS, and the design fair. We created two posters for the research symnposium and design fair, and a PowerPoint presentation for MICS. We also created better graphs to visually represent our results and final conclusions. \\
+
+\subsection{Deliverable}
+
+\begin{itemize}
+\item Final results and conclusions.
+\item Data values A7 and A15 cores.
+\item Poster for the SDSMT Research Symnposium.
+\item Poster for the Design Fair.
+\item Presentation for MICS.
+\end{itemize}
+
+\subsection{Backlog}
+
+\begin{itemize}
+\item Final documentation.
+\item Attend presentations.
+\item Return all hardware to Dr. Karlsson.
+\end{itemize}
+
+\subsection{Success/Fail}
+
+Our largest failures this sprint was our continued inability to benchmark the different topologies, and our inability to use all four A15 cores on every device. 

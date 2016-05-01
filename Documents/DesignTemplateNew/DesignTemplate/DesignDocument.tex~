@@ -1,0 +1,115 @@
+% !TEX encoding = UTF-8 Unicode
+% !TEX root = DesignDocument.tex
+
+\documentclass{book}
+
+\usepackage{float}
+
+\input{seniordesignstyle.tex} % This sets the format.
+
+% Add your title page contents here 
+\title{{\color{SDColor3} \rule{\linewidth}{0.5mm}}\\[2mm] {\huge \bfseries \color{SDColor3} ARM Cluster }\\[-1mm] {\color{SDColor3}\rule{\linewidth}{0.5mm}} \\  \vfill
+{\LARGE \bfseries \color{SDColor4} Senior Design Final Documentation }\\  \vfill 
+{\color{SDColor3} A Research Tool} }
+\author{\color{SDColor3}  Andrew Kenneth Hoover \and \color{SDColor3} Christine Norma Sorensen }
+\date{\color{SDColor3} \today}
+
+
+\begin{document}
+
+\frontmatter
+
+\addcontentsline{toc}{chapter}{Title}
+\maketitle
+\tableofcontents
+\addcontentsline{toc}{chapter}{Contents}
+\listoffigures
+%%\addcontentsline{toc}{chapter}{List of Figures}
+%%\listoftables
+%%\addcontentsline{toc}{chapter}{List of Tables}
+%%\listofalgorithms
+%%\addcontentsline{toc}{chapter}{List of Algorithms}
+
+\chapter{Overview Statements}
+\input{mission.tex}  % add mission statement to mission.tex
+
+\chapter{Document Preparation and Updates}
+\input{preparation.tex}
+ 
+\mainmatter
+
+%% The term "cleaning" used in the syllabus means removing all of the sample content I
+%% have provided.   You can comment out by using the comment character or the comment
+%% environment.  
+
+%%  Add to the following chapters
+
+\input{overview.tex}  %% All tracks
+\input{requirements.tex}  %% All tracks (minimal for research track)
+\input{project.tex}   %% All tracks
+\input{design.tex}  %% All tracks
+\input{testing.tex}  %% All tracks
+\input{prototypes.tex}  %% All tracks %%NEW!!!!!!!!!!!!
+\input{userdocs.tex} %% All tracks
+\input{refman.tex}  %% All tracks
+\input{log.tex}   %% Research track  only
+\input{results.tex}  %% Research track  only
+
+%%\bibliographystyle{plain}
+%%\bibliography{designrefs.bib}
+%%\addcontentsline{toc}{chapter}{Bibliography}
+
+
+% We want to add the Software agreement to the end and number the
+% pages separately from the document.  We don't want to do a standard
+% chapter heading, but we do want it to appear in the table of contents
+% and in the index used for on-line viewing.  We defined the \agreement
+% macro to set things up for us.
+\agreement
+
+\chapter{Software Agreement}
+\includepdf[pages={1-5}]{SoftwareContract.pdf}
+
+% In our style file, appendices are numbered with capital letters
+\appendix
+
+\chapter{Product Description}
+\input{productdescription.tex}
+
+\chapter{Publications}   %% Research track 
+\input{pubs.tex}
+
+\chapter{Sprint Reports}
+\input{sprints.tex}
+
+\chapter{Industrial Experience and Resumes}
+\input{industrial.tex}
+
+\chapter{Acknowledgment}
+\label{SpecialThanks}
+
+The members of the ARM Cluster senior design team would like to express our appreciation for the assistance provided by the following people in the completion of our project. \\
+  
+Dr. Christer Karlsson for being the client, Product Owner, and assisting the team with hardware assembly and general knowledge when requested. \\
+
+Dan Nix and Stephanie Athow for assisting us with writing the research paper for MICS. //
+
+Dr. Jeff McGough for providing the means for the senior design team to exist, offering feedback at every turn, and supporting the team in general.
+
+%%\chapter{Supporting Materials}
+%%\input{supporting.tex}
+
+% chapters in backmatter don't have numbers, but they appear in the
+% table of contents, and are numbered BM-X where X is the page number
+% relative to where the backmatter begins.
+\backmatter
+
+%% Example
+%\chapter{Course Syllabus}
+%\includepdf[pages={1-17}]{syllabus.pdf}
+
+
+
+
+
+\end{document}
