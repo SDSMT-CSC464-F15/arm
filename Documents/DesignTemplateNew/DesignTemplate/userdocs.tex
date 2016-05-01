@@ -191,8 +191,8 @@ iface eth1 inet static
 where eth0 is the Ethernet port, and eth1 is the USB to Ethernet port, and N is the number of the device (0 - 7). With that configured, the Ethernet port of device N should be connected to the USB to Ethernet port of device N + 1 (i.e. snow white to dopey, dopey to sleepy, etc). The USB to Ethernet port of each device is then connected to the Ethernet port of the device behind it. \\ \\
 Once that is set up, each device needs to run the following two commands:
 \begin{lstlisting}
-> sudo route add -host 192.168.N+1.1 gw 192.168.N.2
-> sudo route add -host 192.168.N-1.2 gw 192.168.N.1
+> sudo route add -host 192.168.N+1.1 netmask 255.255.255.255 gw 192.168.N.2
+> sudo route add -host 192.168.N-1.2 netmask 255.255.255.255 gw 192.168.N.1
 \end{lstlisting}
 where N is the number of the device. This will allow each device to ping the devices next to it. 
 \begin{lstlisting}
