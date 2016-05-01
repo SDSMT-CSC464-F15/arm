@@ -24,9 +24,13 @@ The cluster needs to follow these steps for start up successfully:
 \end{enumerate}
 This order is need in order for Snow White's home directory to successfully mount on the other ODROIDs.
 
-%Andrew, talk about our code we wrote?
-\subsection{SHUTTING DOWN THE CLUSTER}
-Talk about the code we wrote? And about how to shut them down via ssh with that command?
+\subsection{Shutting Down the Cluster}
+To safely shut down the cluster, use the python script killDwarfs located in Snow White's bin directory. The script will SSH to each dwarf in sequence and issue the command
+\begin{lstlisting}
+> sudo shutdown now
+\end{lstlisting}
+
+The output will show messages that Snow White failed to connect to each dwarf. This means that the script was successful and powered off the device, breaking the SSH connection. Once the script returns for the final dwarf, wait until all the fans of the ODROIDs stop spinning and flip the flip-switches to off.
 
 \subsection{Benchmarking the Switch}
 With two ODROID devices attached to the switch via direct ethernet, the connection speed can be tested. This is done by one device running:
@@ -89,9 +93,27 @@ Check to see if the hostname has successfully changed:
 \end{lstlisting}
 It should print the new hostname, dopey. If it doesn't, restart the ODROID and again try the hostname command.
 
-%ANDREW I NEED YOUR HELP
 \subsection{Getting Internet on the ODROIDs}
-ANDREW I NEED YOUR HELP
+If and Internet connection is required on Snow White or any of the dwarfs for tasks such as installing packages, a few steps will have to be taken to disable the networking done to allow the cluster's internal network to exists. First, edit the content of the /etc/networking/interfaces file from
+\begin{lstlisting}
+auto eth0
+iface eth0 inet static
+	address 192.168.N.1
+	netmask 255.255.0.0
+	gateway 192.168.0.1
+\end{lstlisting}
+
+to 
+
+\begin{lstlisting}
+# auto eth0
+# iface eth0 inet static
+#	address 192.168.N.1
+#	netmask 255.255.0.0
+#	gateway 192.168.0.1
+\end{lstlisting}
+
+and restart the ODROID. Then plug in the Ethernet cable with internet access. This will allow the default networking settings to be used, and the device will be able to connect to the internet as normal. When you want the device to go back to using the internal network of the cluster, undo the changes to the file and restart again.
 
 \subsection{SSH Via Hostname}
 After the ODROIDs have been renamed, it's essential to be able to access each of them by their new names. To do this, we have to add a list of the ODROIDs' host names and their IP addresses into each ODROID. These can be added to the hosts file of the ODROID:
@@ -101,8 +123,7 @@ After the ODROIDs have been renamed, it's essential to be able to access each of
 In that file, add the other's IP addresses and hostnames in this format: \\
 <ipaddress> <hostname> \\
 Exampe: 192.168.1.11 snow\textunderscore white \\ \\
-
-%is this right?
+ 
 \subsection{Taking Down the Passwords}
 In order to perform MPI programs throughout the cluster, the passwords from each of the ODROIDs need to be taken down so the user doesn't need them when ssh-ing into them. To do this, generate an ssh key:
 \begin{lstlisting}
@@ -113,9 +134,9 @@ Enter through all of the prompts, then:
 > ssh-copy-id <ipaddress>
 \end{lstlisting}
 
-%Andrew
-\subsection{USB to USB Communication??}
-Andrew... help?
+\subsection{USB to USB Communication}
+
+Direct USB 3.0 to USB 3.0 connection is not supported at this time. The current operating system on the devices cannot communicate in such a way, and neither can any other modern operated system in widespread use. 
 
 \subsection{GPIO Communication}
 Part of this project involved communication through GPIO. This example shows how to pass data through a single pin from one ODROID to the other. \\ \\
@@ -153,30 +174,29 @@ After mounting and communication through the pins in one of the dwarfs, the pin 
 > echo [GPIO Export Pin] > unexport
 \end{lstlisting}
 
-%Andrew, is this correct? In the log, it said it didn't work, but we changed the mask to does this work correctly now?
 \subsection{Creating Routing Tables}
 Each device should have the /etc/network/interfaces file such as: \\
 \begin{lstlisting}
 auto eth0
 iface eth0 inet static
-	address 192.168.N.11
-	netmask 255.255.255.255
+	address 192.168.N.1
+	netmask 255.255.0.0
 	gateway 192.168.0.1
 auto eth1
 iface eth1 inet static 
-	address 192.168.N.12
-	netmask 255.255.255
+	address 192.168.N.2
+	netmask 255.0.0
 	gateway 192.168.0.1
 \end{lstlisting}
 where eth0 is the Ethernet port, and eth1 is the USB to Ethernet port, and N is the number of the device (0 - 7). With that configured, the Ethernet port of device N should be connected to the USB to Ethernet port of device N + 1 (i.e. snow white to dopey, dopey to sleepy, etc). The USB to Ethernet port of each device is then connected to the Ethernet port of the device behind it. \\ \\
 Once that is set up, each device needs to run the following two commands:
 \begin{lstlisting}
-> sudo route add -host 192.168.N+1.11 gw 192.168.N.12
-> sudo route add -host 192.168.N-1.12 gw 192.168.N.11
+> sudo route add -host 192.168.N+1.1 gw 192.168.N.2
+> sudo route add -host 192.168.N-1.2 gw 192.168.N.1
 \end{lstlisting}
 where N is the number of the device. This will allow each device to ping the devices next to it. 
 \begin{lstlisting}
-> sudo route add -host 192.168.N-2.12 gw 192.168.N.11
+> sudo route add -host 192.168.N-2.2 gw 192.168.N.1
 \end{lstlisting}
 should let the device then be able to ping the one that's two behind it. 
 
@@ -194,12 +214,28 @@ And the run this command:
 \begin{lstlisting}
 > chmod +x <filename>
 \end{lstlisting}
-%ANDREW!!
-\subsection{BUILD ENVIRONMETN??}
-ANDREW! I'M NOT SURE IF THIS IS NEEDED...but it's in the log and I'm not sure exactly how it works or how to phrase it. If you want to, put it here. Or just take out this subsection.
 
-\subsection{BUILD A DEBIAN PACKAGE??}
-Again, I don't know if we need this. The log says the steps are on the wiki. I didn't put the exact steps, but I also don't know if we need them here.
+\subsection{Build a Debian Package}
+
+For ease of installing LINPACK on the seven dwarfs, it is recommended to create a Debian package on Snow White that can be easily installed on any ARM machine. To do this, build LINPACK as normal, and install the packages build-essentials, devscripts and debhelper with
+
+\begin{lstlisting}
+> sudo apt-get install build-essentials
+> sudo apt-get install devscripts
+> sudo apt-get install debhelper
+\end{lstlisting}
+
+Then, follow the steps located on the Debian wiki page Intro to Debian Packaging to create the necessary configuration files and follow the outlined naming convention. When that is done, run
+
+\begin{lstlisting}
+> debuild -us -uc
+\end{lstlisting}
+
+and the final .deb package will be created. It can be copied to the other dwarfs and installed with
+
+\begin{lstlisting}
+> sudo dpkg -i *.deb
+\end{lstlisting}
 
 \subsection{Updating the Kernel}
 To update the kernel of one of the ODROIDs, first the user needs to have connection to the internet. Then check the current kernel, update its repositories, then follow through and update the kernel:
@@ -215,5 +251,14 @@ A purple screen asking if the user knows what they're doing and want to continue
 > sudo apt-get update && sudo apt-get dist upgrade
 \end{lstlisting}
 
-\subsection{HOW TO TELL WHAT CORES ARE BEING USED}
-If needed, Andrew.
+\subsection{Monitor Core Use}
+
+To ensure that the benchmarks on running with the maximum capacity of the system, install the package htop on Snow White, and any dwarf of interest using the command
+\begin{lstlisting}
+> sudo apt-get install htop
+\end{lstlisting}
+Once that is installed, run it from a terminal with the command
+\begin{lstlisting}
+> htop
+\end{lstlisting}
+It will use the terminal window to visually display the detected cores in the system, how much each core is being used, how much memory is in use, and a list of all running processes. This information can be used to verify how many cores are being used by MPI when running the benchmarks, and how much memory is being used. 

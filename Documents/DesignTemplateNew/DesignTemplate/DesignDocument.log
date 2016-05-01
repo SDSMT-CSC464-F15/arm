@@ -1,23 +1,14 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.21)  1 MAY 2016 10:43
+This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=pdflatex 2014.10.21)  1 MAY 2016 11:32
 entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
 **DesignDocument.tex
-
-(C:\Users\1959287\Desktop\arm\Documents\DesignTemplateNew\DesignTemplate\Design
-Document.tex
+(./DesignDocument.tex
 LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
-abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
-croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
- lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
-german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
-ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
-an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
-ishmax, welsh, loaded.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\book.cls"
+Babel <3.9h> and hyphenation patterns for 59 languages loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\bk10.clo"
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk10.clo
 File: bk10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -33,7 +24,7 @@ File: bk10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count88
 \float@exts=\toks14
@@ -41,24 +32,23 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks15
 \@floatcapt=\box27
 )
-(C:\Users\1959287\Desktop\arm\Documents\DesignTemplateNew\DesignTemplate\senior
-designstyle.tex
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+(./seniordesignstyle.tex
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks16
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count89
@@ -73,29 +63,28 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen109
 \Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks17
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count92
@@ -103,24 +92,24 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen111
 \Gin@req@width=\dimen112
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks18
 \ex@=\dimen113
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen114
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count93
@@ -161,7 +150,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amscls\amsthm.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2004/08/06 v2.20
 \thm@style=\toks23
 \thm@bodyfont=\toks24
@@ -173,17 +162,17 @@ Package: amsthm 2004/08/06 v2.20
 \thm@headsep=\skip48
 \dth@everypar=\toks28
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\textcomp.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
@@ -198,7 +187,7 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             See the documentation for details.
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1enc.def"
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 )
 LaTeX Info: Redefining \oldstylenums on input line 266.
@@ -264,11 +253,10 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xy.sty"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xy.tex" Bootstrap'ing:
-catcodes, docmode,
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xyrecat.tex")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xyidioms.tex")
+(/usr/share/texlive/texmf-dist/tex/generic/xypic/xy.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xypic/xy.tex Bootstrap'ing:
+catcodes, docmode, (/usr/share/texlive/texmf-dist/tex/generic/xypic/xyrecat.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/xypic/xyidioms.tex)
 
  Xy-pic version 3.8.9 <2013/10/06>
  Copyright (c) 1991-2013 by Kristoffer H. Rose <krisrose@tug.org> and others
@@ -325,9 +313,9 @@ kernel objects: directionals, circles, text; options; algorithms: directions,
 edges, connections;  Xy-pic loaded)
 Package: xy 2013/10/06 Xy-pic version 3.8.9
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xyall.tex"
+(/usr/share/texlive/texmf-dist/tex/generic/xypic/xyall.tex
  Xy-pic option: All features v.3.8
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xycurve.tex"
+(/usr/share/texlive/texmf-dist/tex/generic/xypic/xycurve.tex
  Xy-pic option: Curve and Spline extension v.3.12 curve,
 \crv@cnt@=\count109
 \crvpts@=\toks33
@@ -339,21 +327,21 @@ Package: xy 2013/10/06 Xy-pic version 3.8.9
  circles,
 \L@=\dimen154
  loaded)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xyframe.tex"
+(/usr/share/texlive/texmf-dist/tex/generic/xypic/xyframe.tex
  Xy-pic option: Frame and Bracket extension v.3.14 loaded)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xycmtip.tex"
+(/usr/share/texlive/texmf-dist/tex/generic/xypic/xycmtip.tex
  Xy-pic option: Computer Modern tip extension v.3.7
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xytips.tex"
+(/usr/share/texlive/texmf-dist/tex/generic/xypic/xytips.tex
  Xy-pic option: More Tips extension v.3.11 loaded) loaded)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xyline.tex"
+(/usr/share/texlive/texmf-dist/tex/generic/xypic/xyline.tex
  Xy-pic option: Line styles extension v.3.10
 \xylinethick@=\dimen155
  loaded)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xyrotate.tex"
+(/usr/share/texlive/texmf-dist/tex/generic/xypic/xyrotate.tex
  Xy-pic option: Rotate and Scale extension v.3.8 loaded)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xycolor.tex"
+(/usr/share/texlive/texmf-dist/tex/generic/xypic/xycolor.tex
  Xy-pic option: Colour extension v.3.11 loaded)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xymatrix.tex"
+(/usr/share/texlive/texmf-dist/tex/generic/xypic/xymatrix.tex
  Xy-pic option: Matrix feature v.3.14
 \Row=\count110
 \Col=\count111
@@ -363,22 +351,22 @@ Package: xy 2013/10/06 Xy-pic version 3.8.9
 \qcount@@=\count113
 \matrixsize@=\count114
  loaded)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xyarrow.tex"
+(/usr/share/texlive/texmf-dist/tex/generic/xypic/xyarrow.tex
  Xy-pic option: Arrow and Path feature v.3.9 path, \ar, loaded)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xygraph.tex"
+(/usr/share/texlive/texmf-dist/tex/generic/xypic/xygraph.tex
  Xy-pic option: Graph feature v.3.11 loaded) loaded)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xypdf.tex"
+(/usr/share/texlive/texmf-dist/tex/generic/xypic/xypdf.tex
  Xy-pic option: PDF driver v.1.7 Xy-pic pdf driver: `color' extension support
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xypdf-co.tex" loaded)
+(/usr/share/texlive/texmf-dist/tex/generic/xypic/xypdf-co.tex loaded)
 Xy-pic pdf driver: `curve' extension support
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xypdf-cu.tex" loaded)
+(/usr/share/texlive/texmf-dist/tex/generic/xypic/xypdf-cu.tex loaded)
 Xy-pic pdf driver: `frame' extension support
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xypdf-fr.tex" loaded)
+(/usr/share/texlive/texmf-dist/tex/generic/xypic/xypdf-fr.tex loaded)
 Xy-pic pdf driver: `line' extension support
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xypdf-li.tex" loaded)
+(/usr/share/texlive/texmf-dist/tex/generic/xypic/xypdf-li.tex loaded)
 Xy-pic pdf driver: `rotate' extension support
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xypdf-ro.tex" loaded)
-loaded)) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/xypic/xypdf-ro.tex loaded) loaded))
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip49
 \f@ncyO@elh=\skip50
 \f@ncyO@erh=\skip51
@@ -389,16 +377,16 @@ loaded)) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
 \f@ncyO@olf=\skip56
 \f@ncyO@orf=\skip57
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
-Package: hobsub-hyperref 2012/04/25 v1.12 Bundle oberdiek, subset hyperref (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
 
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
-Package: hobsub-generic 2012/04/25 v1.12 Bundle oberdiek, subset generic (HO)
-Package: hobsub 2012/04/25 v1.12 Construct package bundles (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
 Package hobsub Info: Skipping package `ltxcmds' (already loaded).
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
@@ -427,7 +415,7 @@ Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
 )
 Package hobsub Info: Skipping package `hobsub' (already loaded).
 Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
-Package: hopatch 2011/06/24 v1.1 Wrapper for package hooks (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
 Package: xcolor-patch 2011/01/30 xcolor patch
 Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
@@ -435,22 +423,22 @@ Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen156
 \Hy@linkcounter=\count115
 \Hy@pagecounter=\count116
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count117
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4443.
@@ -462,9 +450,9 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count118
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\url\url.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen157
@@ -487,35 +475,35 @@ LaTeX Info: Redefining \pageref on input line 6369.
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 \Fld@listcount=\count123
 \c@bookmark@seq@number=\count124
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip58
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks36
 \verbatim@line=\toks37
 \verbatim@in@stream=\read2
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\algorithms\algorithm.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \@float@every@algorithm=\toks38
 \c@algorithm=\count125
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\algorithms\algorithmic.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 \c@ALC@unique=\count126
 \c@ALC@line=\count127
@@ -524,7 +512,7 @@ Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 \ALC@tlm=\skip59
 \algorithmicindent=\skip60
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\array.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen160
 \extrarowheight=\dimen161
@@ -532,15 +520,15 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \extratabsurround=\skip61
 \backup@length=\skip62
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\color.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count130
 \lst@gtempboxa=\box34
 \lst@token=\toks40
@@ -554,18 +542,18 @@ Package color Info: Driver file: pdftex.def on input line 130.
 \lst@lineno=\count135
 \lst@maxwidth=\dimen165
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
-File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
 \c@lstnumber=\count136
 \lst@skipnumbers=\count137
 \lst@framebox=\box35
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
-File: listings.cfg 2014/09/06 1.5e listings configuration
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2013/08/26 1.5b listings configuration
 ))
-Package: listings 2014/09/06 1.5e (Carsten Heinz)
+Package: listings 2013/08/26 1.5b (Carsten Heinz)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\calc.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count138
 \calc@Bcount=\count139
@@ -577,22 +565,21 @@ LaTeX Info: Redefining \setlength on input line 76.
 LaTeX Info: Redefining \addtolength on input line 77.
 \calc@Ccount=\count140
 \calc@Cskip=\skip65
-)
-(C:\Users\1959287\Desktop\arm\Documents\DesignTemplateNew\DesignTemplate\doxyge
-n.sty
+) (./doxygen.sty
 Package: doxygen 
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\alltt.sty"
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/alltt.sty
 Package: alltt 1997/06/16 v2.0g defines alltt environment
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\colortbl\colortbl.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
 \everycr=\toks41
 \minrowclearance=\skip66
@@ -609,7 +596,7 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xtab\xtab.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/xtab/xtab.sty
 Package: xtab 2011/07/31 v2.3f Extended supertabular package
 \c@tracingst=\count142
 \PWSTcapht=\dimen168
@@ -642,19 +629,19 @@ Package: xtab 2011/07/31 v2.3f Extended supertabular package
 \xreflength=\skip70
 \tmplength=\skip71
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks42
 \inpenc@posthook=\toks43
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
 File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -804,7 +791,7 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
 File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -835,7 +822,7 @@ File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
+(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
 File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -851,7 +838,7 @@ Now handling font encoding U ...
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1enc.dfu"
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.dfu
 File: ts1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A2 (decimal 162)
    defining Unicode char U+00A3 (decimal 163)
@@ -936,10 +923,10 @@ Now handling font encoding PD1 ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\makeidx.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
 Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\multicol.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
 \c@tracingmulticols=\count149
 \mult@box=\box38
@@ -987,10 +974,10 @@ Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
 \colbreak@box=\box63
 \multicol@sort@counter=\count157
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen191
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\tabularx.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
 \TX@col@width=\dimen192
 \TX@old@table=\dimen193
@@ -1000,7 +987,7 @@ Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
 \TX@cols=\count158
 \TX@ftn=\toks44
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\framed\framed.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \OuterFrameSep=\skip74
 \fb@frw=\dimen197
@@ -1008,378 +995,335 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \FrameRule=\dimen199
 \FrameSep=\dimen200
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\xspace.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\misc\etex.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/etex-pkg/etex.sty
 Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
 \et@xins=\count159
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\todonotes\todonotes.sty"
-Package: todonotes 2015/07/09 .dtx Todonotes source and documentation.
+(/usr/share/texlive/texmf-dist/tex/latex/todonotes/todonotes.sty
+Package: todonotes 2012/07/25 .dtx Todonotes source and documentation.
 Package: todonotes 2012/07/25
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2012/10/14 v2.6b package option processing (HA)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 \XKV@toks=\toks45
 \XKV@tempa@toks=\toks46
 \XKV@depth=\count160
 File: xkeyval.tex 2012/10/14 v2.6b key=value parser (HA)
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\frontendlayer\tikz.sty"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf.sty"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\utilities\pgfrcs.sty"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common.te
-x"
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks47
-\pgfutil@tempdima=\dimen201
-\pgfutil@tempdimb=\dimen202
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common-li
-sts.tex"))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-latex.def
-"
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
 \pgfutil@abb=\box64
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
+
+(/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfrcs.code.tex"
-Package: pgfrcs 2013/12/20 v3.0.0 (rcs-revision 1.28)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2010/10/25 v2.10 (rcs-revision 1.24)
 ))
-Package: pgf 2013/12/18 v3.0.0 (rcs-revision 1.14)
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgfcore.sty"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\systemlayer\pgfsys.sty"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys.code.tex
-"
-Package: pgfsys 2013/11/30 v3.0.0 (rcs-revision 1.47)
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex
-"
+Package: pgf 2008/01/15 v2.10 (rcs-revision 1.12)
+
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks48
 \pgfkeys@temptoks=\toks49
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeysfiltered.c
-ode.tex"
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex
 \pgfkeys@tmptoks=\toks50
 ))
-\pgf@x=\dimen203
-\pgf@y=\dimen204
-\pgf@xa=\dimen205
-\pgf@ya=\dimen206
-\pgf@xb=\dimen207
-\pgf@yb=\dimen208
-\pgf@xc=\dimen209
-\pgf@yc=\dimen210
+\pgf@x=\dimen201
+\pgf@y=\dimen202
+\pgf@xa=\dimen203
+\pgf@ya=\dimen204
+\pgf@xb=\dimen205
+\pgf@yb=\dimen206
+\pgf@xc=\dimen207
+\pgf@yc=\dimen208
 \w@pgf@writea=\write4
 \r@pgf@reada=\read3
 \c@pgf@counta=\count161
 \c@pgf@countb=\count162
 \c@pgf@countc=\count163
 \c@pgf@countd=\count164
-\t@pgf@toka=\toks51
-\t@pgf@tokb=\toks52
-\t@pgf@tokc=\toks53
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgf.cfg"
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
-Driver file for pgf: pgfsys-pdftex.def
+Package pgfsys Info: Driver file for pgf: pgfsys-pdftex.def on input line 900.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-pdftex.d
-ef"
-File: pgfsys-pdftex.def 2013/07/18  (rcs-revision 1.33)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2009/05/22  (rcs-revision 1.26)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-common-p
-df.def"
-File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f
+File: pgfsys-common-pdf.def 2008/05/19  (rcs-revision 1.10)
 )))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsyssoftpath.
-code.tex"
-File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex
+File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
 \pgfsyssoftpath@smallbuffer@items=\count165
 \pgfsyssoftpath@bigbuffer@items=\count166
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsysprotocol.
-code.tex"
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcore.code.tex
-"
-Package: pgfcore 2010/04/11 v3.0.0 (rcs-revision 1.7)
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathcalc.code.tex"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathutil.code.tex")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathparser.code.tex
-"
-\pgfmath@dimen=\dimen211
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen209
 \pgfmath@count=\count167
 \pgfmath@box=\box65
-\pgfmath@toks=\toks54
-\pgfmath@stack@operand=\toks55
-\pgfmath@stack@operation=\toks56
+\pgfmath@toks=\toks51
+\pgfmath@stack@operand=\toks52
+\pgfmath@stack@operation=\toks53
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.code.
-tex"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.basic
-.code.tex")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.trigo
-nometric.code.tex")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.rando
-m.code.tex")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.compa
-rison.code.tex")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.base.
-code.tex")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.round
-.code.tex")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.misc.
-code.tex")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.integ
-erarithmetics.code.tex")))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfloat.code.tex"
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count168
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepoints.co
-de.tex"
-File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen212
-\pgf@picmaxx=\dimen213
-\pgf@picminy=\dimen214
-\pgf@picmaxy=\dimen215
-\pgf@pathminx=\dimen216
-\pgf@pathmaxx=\dimen217
-\pgf@pathminy=\dimen218
-\pgf@pathmaxy=\dimen219
-\pgf@xx=\dimen220
-\pgf@xy=\dimen221
-\pgf@yx=\dimen222
-\pgf@yy=\dimen223
-\pgf@zx=\dimen224
-\pgf@zy=\dimen225
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x
+File: pgfcorepoints.code.tex 2010/04/09  (rcs-revision 1.20)
+\pgf@picminx=\dimen210
+\pgf@picmaxx=\dimen211
+\pgf@picminy=\dimen212
+\pgf@picmaxy=\dimen213
+\pgf@pathminx=\dimen214
+\pgf@pathmaxx=\dimen215
+\pgf@pathminy=\dimen216
+\pgf@pathmaxy=\dimen217
+\pgf@xx=\dimen218
+\pgf@xy=\dimen219
+\pgf@yx=\dimen220
+\pgf@yy=\dimen221
+\pgf@zx=\dimen222
+\pgf@zy=\dimen223
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathconst
-ruct.code.tex"
-File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen226
-\pgf@path@lasty=\dimen227
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex
+File: pgfcorepathconstruct.code.tex 2010/08/03  (rcs-revision 1.24)
+\pgf@path@lastx=\dimen224
+\pgf@path@lasty=\dimen225
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathusage
-.code.tex"
-File: pgfcorepathusage.code.tex 2013/12/13  (rcs-revision 1.23)
-\pgf@shorten@end@additional=\dimen228
-\pgf@shorten@start@additional=\dimen229
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex
+File: pgfcorepathusage.code.tex 2008/04/22  (rcs-revision 1.12)
+\pgf@shorten@end@additional=\dimen226
+\pgf@shorten@start@additional=\dimen227
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorescopes.co
-de.tex"
-File: pgfcorescopes.code.tex 2013/10/09  (rcs-revision 1.44)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x
+File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
 \pgfpic=\box66
 \pgf@hbox=\box67
 \pgf@layerbox@main=\box68
 \pgf@picture@serial@count=\count169
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoregraphicst
-ate.code.tex"
-File: pgfcoregraphicstate.code.tex 2013/09/19  (rcs-revision 1.11)
-\pgflinewidth=\dimen230
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex
+File: pgfcoregraphicstate.code.tex 2008/04/22  (rcs-revision 1.9)
+\pgflinewidth=\dimen228
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransform
-ations.code.tex"
-File: pgfcoretransformations.code.tex 2013/10/10  (rcs-revision 1.17)
-\pgf@pt@x=\dimen231
-\pgf@pt@y=\dimen232
-\pgf@pt@temp=\dimen233
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex
+File: pgfcoretransformations.code.tex 2009/06/10  (rcs-revision 1.11)
+\pgf@pt@x=\dimen229
+\pgf@pt@y=\dimen230
+\pgf@pt@temp=\dimen231
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorequick.cod
-e.tex"
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreobjects.c
-ode.tex"
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex
 File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathproce
-ssing.code.tex"
-File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex
+File: pgfcorepathprocessing.code.tex 2008/10/09  (rcs-revision 1.8)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorearrows.co
-de.tex"
-File: pgfcorearrows.code.tex 2013/11/07  (rcs-revision 1.40)
-Normal \dimen register pool exhausted, switching to extended pool.
-\pgfarrowsep=\dimen256
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x
+File: pgfcorearrows.code.tex 2008/04/23  (rcs-revision 1.11)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreshade.cod
-e.tex"
-File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen257
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2008/11/23  (rcs-revision 1.13)
+\pgf@max=\dimen232
 \pgf@sys@shading@range@num=\count170
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreimage.cod
-e.tex"
-File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreexternal.
-code.tex"
-File: pgfcoreexternal.code.tex 2013/07/15  (rcs-revision 1.20)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex
+File: pgfcoreexternal.code.tex 2010/09/01  (rcs-revision 1.17)
 \pgfexternal@startupbox=\box69
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorelayers.co
-de.tex"
-File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x
+File: pgfcorelayers.code.tex 2010/08/27  (rcs-revision 1.2)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretranspare
-ncy.code.tex"
-File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex
+File: pgfcoretransparency.code.tex 2008/01/17  (rcs-revision 1.2)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepatterns.
-code.tex"
-File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex
+File: pgfcorepatterns.code.tex 2009/07/02  (rcs-revision 1.3)
 )))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleshapes.cod
-e.tex"
-File: pgfmoduleshapes.code.tex 2013/10/31  (rcs-revision 1.34)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2010/09/09  (rcs-revision 1.13)
 \pgfnodeparttextbox=\box70
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2010/10/22  (rcs-revision 1.8)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleplot.code.
-tex"
-File: pgfmoduleplot.code.tex 2013/07/31  (rcs-revision 1.12)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty
+Package: pgfcomp-version-0-65 2007/07/03 v2.10 (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen233
+Normal \dimen register pool exhausted, switching to extended pool.
+\pgf@nodesepend=\dimen256
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version
--0-65.sty"
-Package: pgfcomp-version-0-65 2007/07/03 v3.0.0 (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen258
-\pgf@nodesepend=\dimen259
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version
--1-18.sty"
-Package: pgfcomp-version-1-18 2007/07/23 v3.0.0 (rcs-revision 1.1)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty
+Package: pgfcomp-version-1-18 2007/07/23 v2.10 (rcs-revision 1.1)
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2010/03/23 v2.10 (rcs-revision 1.18)
+\pgffor@iter=\dimen257
+\pgffor@skip=\dimen258
+\pgffor@stack=\toks54
+\pgffor@toks=\toks55
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\utilities\pgffor.sty"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\utilities\pgfkeys.sty"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex"
-)) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\math\pgfmath.sty"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex"))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgffor.code.tex"
-Package: pgffor 2013/12/13 v3.0.0 (rcs-revision 1.25)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex")
-\pgffor@iter=\dimen260
-\pgffor@skip=\dimen261
-\pgffor@stack=\toks57
-\pgffor@toks=\toks58
-))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\tikz.cod
-e.tex"
-Package: tikz 2013/12/13 v3.0.0 (rcs-revision 1.142)
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryplothan
-dlers.code.tex"
-File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex
+File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
 \pgf@plot@mark@count=\count171
-\pgfplotmarksize=\dimen262
+\pgfplotmarksize=\dimen259
 )
-\tikz@lastx=\dimen263
-\tikz@lasty=\dimen264
-\tikz@lastxsaved=\dimen265
-\tikz@lastysaved=\dimen266
-\tikzleveldistance=\dimen267
-\tikzsiblingdistance=\dimen268
+\tikz@lastx=\dimen260
+\tikz@lasty=\dimen261
+\tikz@lastxsaved=\dimen262
+\tikz@lastysaved=\dimen263
+\tikzleveldistance=\dimen264
+\tikzsiblingdistance=\dimen265
 \tikz@figbox=\box71
-\tikz@figbox@bg=\box72
-\tikz@tempbox=\box73
-\tikz@tempbox@bg=\box74
+\tikz@tempbox=\box72
 \tikztreelevel=\count172
 \tikznumberofchildren=\count173
 \tikznumberofcurrentchild=\count174
 \tikz@fig@count=\count175
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\modules\pgfmodulematrix.cod
-e.tex"
-File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
 \pgfmatrixcurrentrow=\count176
 \pgfmatrixcurrentcolumn=\count177
 \pgf@matrix@numberofcolumns=\count178
 )
 \tikz@expandcount=\count179
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\librarie
-s\tikzlibrarytopaths.code.tex"
-File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.0 (rcs-revision 1.2)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
 )))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\librarie
-s\tikzlibrarypositioning.code.tex"
-File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.0 (rcs-revision 1.7)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2008/10/06 v2.10 (rcs-revision 1.7)
 )
 \c@@todonotes@numberoftodonotes=\count180
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdfpages\pdfpages.sty"
-Package: pdfpages 2015/08/16 v0.5c Insert pages of external PDF documents (AM)
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2013/08/25 v0.4v Insert pages of external PDF documents (AM)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.sty"
-Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2013/10/06 v2.0d eso-pic (RN)
 )
-\AM@pagewidth=\dimen269
-\AM@pageheight=\dimen270
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdfpages\pppdftex.def"
-File: pppdftex.def 2015/08/16 v0.5c Pdfpages driver for pdfTeX (AM)
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2013/08/25 v0.4v Pdfpages driver for pdfTeX (AM)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty"
-Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\lscape.sty"
-Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
-)
-Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
-)
-\AM@pagebox=\box75
-\AM@toc@title=\toks59
+\AM@pagebox=\box73
+\AM@toc@title=\toks56
 \c@AM@survey=\count181
-\AM@templatesizebox=\box76
+\AM@templatesizebox=\box74
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgfgantt\pgfgantt.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/pgfgantt/pgfgantt.sty
 Package: pgfgantt 2013/06/01 v4.0 Draw Gantt diagrams with TikZ
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\librarie
-s\tikzlibraryarrows.code.tex"
-File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryarrows.
-code.tex"
-File: pgflibraryarrows.code.tex 2013/09/23 v3.0.0 (rcs-revision 1.16)
-\arrowsize=\dimen271
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.
+tex
+File: pgflibraryarrows.code.tex 2008/10/27 v2.10 (rcs-revision 1.9)
+\arrowsize=\dimen266
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\librarie
-s\tikzlibrarybackgrounds.code.tex"
-File: tikzlibrarybackgrounds.code.tex 2013/07/18 v3.0.0 (rcs-revision 1.3)
-\pgf@layerbox@background=\box77
-\pgf@layerboxsaved@background=\box78
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarybackgrounds.code.tex
+File: tikzlibrarybackgrounds.code.tex 2010/02/08 v2.10 (rcs-revision 1.2)
+\pgf@layerbox@background=\box75
+\pgf@layerboxsaved@background=\box76
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\librarie
-s\tikzlibrarycalc.code.tex"
-File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.0 (rcs-revision 1.9)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2009/09/04 v2.10 (rcs-revision 1.6)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\librarie
-s\tikzlibrarypatterns.code.tex"
-File: tikzlibrarypatterns.code.tex 2008/01/15 v3.0.0 (rcs-revision 1.2)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarypatterns.code.tex
+File: tikzlibrarypatterns.code.tex 2008/01/15 v2.10 (rcs-revision 1.2)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibrarypattern
-s.code.tex"
-File: pgflibrarypatterns.code.tex 2008/03/03 v3.0.0 (rcs-revision 1.13)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.cod
+e.tex
+File: pgflibrarypatterns.code.tex 2008/03/03 v2.10 (rcs-revision 1.13)
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\librarie
-s\tikzlibraryshapes.geometric.code.tex"
-File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
 
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\libraries\shapes\pgflibrary
-shapes.geometric.code.tex"
-File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.0 (rcs-revision 1.1)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2008/06/26 v2.10 (rcs-revision 1.1)
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\utilities\pgfcalendar.sty"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfcalendar.code.
-tex"
-File: pgfcalendar.code.tex 2007/07/23 v3.0.0 (rcs-revision 1.11)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfcalendar.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfcalendar.code.tex
+File: pgfcalendar.code.tex 2007/07/23 v2.10 (rcs-revision 1.11)
 \pgfcalendarcurrentjulian=\count182
 ))
 \gtt@currentline=\count183
@@ -1396,7 +1340,7 @@ File: pgfcalendar.code.tex 2007/07/23 v3.0.0 (rcs-revision 1.11)
 \gtt@calendar@startofweek=\count194
 \gtt@left@slot=\count195
 \gtt@right@slot=\count196
-) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\lmodern.sty"
+) (/usr/share/texlive/texmf-dist/tex/latex/lm/lmodern.sty
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -1431,32 +1375,41 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.def"
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
-File: lstlang1.sty 2014/09/06 1.5e listings language file
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2013/08/26 1.5b listings language file
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
-File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\titlesec\titlesec.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
-\ttl@box=\box79
+\ttl@box=\box77
 \beforetitleunit=\skip75
 \aftertitleunit=\skip76
-\ttl@plus=\dimen272
-\ttl@minus=\dimen273
-\ttl@toksa=\toks60
-\titlewidth=\dimen274
-\titlewidthlast=\dimen275
-\titlewidthfirst=\dimen276
+\ttl@plus=\dimen267
+\ttl@minus=\dimen268
+\ttl@toksa=\toks57
+\titlewidth=\dimen269
+\titlewidthlast=\dimen270
+\titlewidthfirst=\dimen271
 ))
-No file DesignDocument.aux.
+(./DesignDocument.aux
+
+LaTeX Warning: Label `fig:ring' multiply defined.
+
+
+LaTeX Warning: Label `fig:ring' multiply defined.
+
+)
+\openout1 = `DesignDocument.aux'.
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
@@ -1471,7 +1424,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 18.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 18.
@@ -1479,7 +1432,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
 LaTeX Font Info:    Try loading font information for T1+lmss on input line 18.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
+(/usr/share/texlive/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 *geometry* driver: auto-detecting
@@ -1516,39 +1469,54 @@ File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count197
-\scratchdimen=\dimen277
-\scratchbox=\box80
+\scratchdimen=\dimen272
+\scratchbox=\box78
 \nofMPsegments=\count198
 \nofMParguments=\count199
-\everyMPshowfont=\toks61
+\everyMPshowfont=\toks58
 \MPscratchCnt=\count200
-\MPscratchDim=\dimen278
+\MPscratchDim=\dimen273
 \MPnumerator=\count201
 \makeMPintoPDFobject=\count202
-\everyMPtoPDFconversion=\toks62
+\everyMPtoPDFconversion=\toks59
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 )
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 18.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
+
+(/usr/share/texlive/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OML+lmm on input line 18.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
+(/usr/share/texlive/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 18.
 
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
+(/usr/share/texlive/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OMX+lmex on input line 18.
 
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
+(/usr/share/texlive/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1559,22 +1527,22 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 18.
 LaTeX Font Info:    Try loading font information for U+msa on input line 18.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 18.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Package xypdf Info: Line width: 0.39998pt on input line 18.
-\AtBeginShipoutBox=\box81
+\AtBeginShipoutBox=\box79
 Package hyperref Info: Link coloring OFF on input line 18.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count203
@@ -1582,7 +1550,11 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 18.
 LaTeX Info: Redefining \pageref on input line 18.
 LaTeX Info: Redefining \nameref on input line 18.
+
+(./DesignDocument.out) (./DesignDocument.out)
 \@outlinefile=\write5
+\openout5 = `DesignDocument.out'.
+
 \c@lstlisting=\count204
 
 ABD: EveryShipout initializing macros
@@ -1596,23 +1568,29 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
+{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}] [2
 
-]
+] (./DesignDocument.toc [3] [4] [5]
+Overfull \hbox (4.2223pt too wide) detected at line 168
+ []\T1/lmss/m/n/10 C-10
+ []
+
+)
 \tf@toc=\write6
- [3] [4
+\openout6 = `DesignDocument.toc'.
 
-]
+ [6] (./DesignDocument.lof)
 \tf@lof=\write7
- [5] [6
+\openout7 = `DesignDocument.lof'.
+
+ [7
+
+] [8
+
+] (./mission.tex) [9] [10
 
 ]
-(C:\Users\1959287\Desktop\arm\Documents\DesignTemplateNew\DesignTemplate\missio
-n.tex) [7] [8
-
-]
-(C:\Users\1959287\Desktop\arm\Documents\DesignTemplateNew\DesignTemplate\prepar
-ation.tex
+(./preparation.tex
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 10.
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <10> not available
@@ -1657,35 +1635,24 @@ Overfull \hbox (7.03629pt too wide) in paragraph at lines 16--64
 [] 
  []
 
-) [9] [10
+) [11] [12
 
-]
-(C:\Users\1959287\Desktop\arm\Documents\DesignTemplateNew\DesignTemplate\overvi
-ew.tex
+] (./overview.tex
 Chapter 1.
 LaTeX Font Info:    Try loading font information for TS1+lmss on input line 35.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\ts1lmss.fd"
+(/usr/share/texlive/texmf-dist/tex/latex/lm/ts1lmss.fd
 File: ts1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [1
 
 ]
-
-LaTeX Warning: Reference `star' on page 2 undefined on input line 83.
-
-<cluster_star.png, id=73, 325.81725pt x 506.49225pt>
+<cluster_star.png, id=949, 325.81725pt x 506.49225pt>
 File: cluster_star.png Graphic file (type png)
  <use cluster_star.png>
 Package pdftex.def Info: cluster_star.png used on input line 88.
 (pdftex.def)             Requested size: 352.31624pt x 547.69131pt.
-
-
-LaTeX Warning: Reference `languages' on page 2 undefined on input line 102.
-
 )
-(C:\Users\1959287\Desktop\arm\Documents\DesignTemplateNew\DesignTemplate\requir
-ements.tex [2] [3 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/Des
-ignTemplate/cluster_star.png>] [4
+(./requirements.tex [2] [3 <./cluster_star.png>] [4
 
 ]
 Chapter 2.
@@ -1699,9 +1666,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--127
 
  []
 
-)
-(C:\Users\1959287\Desktop\arm\Documents\DesignTemplateNew\DesignTemplate\projec
-t.tex [7] [8
+) (./project.tex [7] [8
 
 ]
 Chapter 3.
@@ -1720,9 +1685,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 98--104
 
  []
 
-[10] [11])
-(C:\Users\1959287\Desktop\arm\Documents\DesignTemplateNew\DesignTemplate\design
-.tex [12]
+[10] [11]) (./design.tex [12]
 Chapter 4.
 
 Underfull \hbox (badness 10000) in paragraph at lines 45--46
@@ -1734,11 +1697,6 @@ File: cluster_star.png Graphic file (type png)
 Package pdftex.def Info: cluster_star.png used on input line 50.
 (pdftex.def)             Requested size: 352.31624pt x 547.69131pt.
 
-
-LaTeX Warning: Reference `fig:ipaddresses' on page 13 undefined on input line 5
-4.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
@@ -1748,20 +1706,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
-<cluster_ipaddresses.png, id=164, 787.14075pt x 522.753pt>
+<cluster_ipaddresses.png, id=1005, 787.14075pt x 522.753pt>
 File: cluster_ipaddresses.png Graphic file (type png)
 
 <use cluster_ipaddresses.png>
 Package pdftex.def Info: cluster_ipaddresses.png used on input line 61.
 (pdftex.def)             Requested size: 352.31624pt x 233.97638pt.
-
-
-LaTeX Warning: Reference `fig:hypercube' on page 13 undefined on input line 65.
-
-
-<HyperCube2.png, id=166, 378.213pt x 286.671pt>
+ <HyperCube2.png, id=1008, 378.213pt x 286.671pt>
 File: HyperCube2.png Graphic file (type png)
- <use HyperCube2.png>
+
+<use HyperCube2.png>
 Package pdftex.def Info: HyperCube2.png used on input line 70.
 (pdftex.def)             Requested size: 352.31624pt x 267.05618pt.
  [13
@@ -1772,27 +1726,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 87--88
  []
 
 
-LaTeX Warning: Reference `fig:ring' on page 14 undefined on input line 89.
-
-
 LaTeX Warning: Reference `rig:hypercube' on page 14 undefined on input line 89.
 
-
-
-LaTeX Warning: Reference `fig:routing' on page 14 undefined on input line 89.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 89--90
 
  []
 
-<routingtable.JPG, id=174, 413.74574pt x 226.446pt>
+<routingtable.JPG, id=1016, 413.74574pt x 226.446pt>
 File: routingtable.JPG Graphic file (type jpg)
  <use routingtable.JPG>
 Package pdftex.def Info: routingtable.JPG used on input line 94.
 (pdftex.def)             Requested size: 352.31624pt x 192.83589pt.
 
-<ring.png, id=175, 701.019pt x 543.2295pt>
+<ring.png, id=1017, 701.019pt x 543.2295pt>
 File: ring.png Graphic file (type png)
  <use ring.png>
 Package pdftex.def Info: ring.png used on input line 101.
@@ -1801,7 +1749,7 @@ Package pdftex.def Info: ring.png used on input line 101.
 
 LaTeX Warning: Reference `fig:cluster' on page 15 undefined on input line 148.
 
-<IMG_20151201_104751350_HDR.jpg, id=185, 3697.815pt x 2425.06pt>
+<IMG_20151201_104751350_HDR.jpg, id=1022, 3697.815pt x 2425.06pt>
 File: IMG_20151201_104751350_HDR.jpg Graphic file (type jpg)
 
 <use IMG_20151201_104751350_HDR.jpg>
@@ -1830,20 +1778,14 @@ Underfull \vbox (badness 7540) has occurred while \output is active []
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 215.
 
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
+(/usr/share/texlive/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 217.
-)
-(C:\Users\1959287\Desktop\arm\Documents\DesignTemplateNew\DesignTemplate\testin
-g.tex [17] [18] [19 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/D
-esignTemplate/cluster_ipaddresses.png> <C:/Users/1959287/Desktop/arm/Documents/
-DesignTemplateNew/DesignTemplate/HyperCube2.png>] [20 <C:/Users/1959287/Desktop
-/arm/Documents/DesignTemplateNew/DesignTemplate/routingtable.JPG> <C:/Users/195
-9287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/ring.png>] [21 <C:/
-Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/IMG_201512
-01_104751350_HDR.jpg>] [22
+) (./testing.tex [17]
+[18] [19 <./cluster_ipaddresses.png> <./HyperCube2.png>] [20 <./routingtable.JP
+G> <./ring.png>] [21 <./IMG_20151201_104751350_HDR.jpg>] [22
 
 ]
 Chapter 5.
@@ -1861,12 +1803,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--43
 Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
-
-
-LaTeX Warning: Reference `fig:ring' on page 24 undefined on input line 50.
-
-
-LaTeX Warning: Reference `fig:cube' on page 24 undefined on input line 50.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 50--51
@@ -1887,25 +1823,22 @@ File: HyperCube2.png Graphic file (type png)
  <use HyperCube2.png>
 Package pdftex.def Info: HyperCube2.png used on input line 66.
 (pdftex.def)             Requested size: 352.31624pt x 267.05618pt.
- [25])
-(C:\Users\1959287\Desktop\arm\Documents\DesignTemplateNew\DesignTemplate\protot
-ypes.tex [26]
+ [25]) (./prototypes.tex [26]
 Chapter 6.
 
 Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
-<pivsxu4table2.JPG, id=282, 532.99126pt x 237.88875pt>
+<pivsxu4table2.JPG, id=1098, 532.99126pt x 237.88875pt>
 File: pivsxu4table2.JPG Graphic file (type jpg)
- <use pivsxu4table2.JPG>
+
+<use pivsxu4table2.JPG>
 Package pdftex.def Info: pivsxu4table2.JPG used on input line 46.
 (pdftex.def)             Requested size: 352.31624pt x 157.25388pt.
+ [27
 
-[27
-
-] [28 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/
-pivsxu4table2.JPG>]
+] [28 <./pivsxu4table2.JPG>]
 Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
  []
@@ -1915,18 +1848,11 @@ File: IMG_20151201_104751350_HDR.jpg Graphic file (type jpg)
 Package pdftex.def Info: IMG_20151201_104751350_HDR.jpg used on input line 88.
 (pdftex.def)             Requested size: 352.31624pt x 231.04915pt.
  [29] [30]
-<minimalgraph.JPG, id=320, 728.7225pt x 451.08525pt>
+<minimalgraph.JPG, id=1116, 728.7225pt x 451.08525pt>
 File: minimalgraph.JPG Graphic file (type jpg)
  <use minimalgraph.JPG>
 Package pdftex.def Info: minimalgraph.JPG used on input line 157.
 (pdftex.def)             Requested size: 352.31624pt x 218.0809pt.
-
-
-LaTeX Warning: Reference `fig:purple' on page 31 undefined on input line 162.
-
-
-LaTeX Warning: Reference `fig:gpio' on page 31 undefined on input line 162.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 162--163
 
@@ -1936,20 +1862,19 @@ File: minimalgraph.JPG Graphic file (type jpg)
 <use minimalgraph.JPG>
 Package pdftex.def Info: minimalgraph.JPG used on input line 167.
 (pdftex.def)             Requested size: 352.31624pt x 218.0809pt.
- <PurpleScreen.jpg, id=321, 1284.8pt x 963.6pt>
+ <PurpleScreen.jpg, id=1119, 1284.8pt x 963.6pt>
 File: PurpleScreen.jpg Graphic file (type jpg)
 
 <use PurpleScreen.jpg>
 Package pdftex.def Info: PurpleScreen.jpg used on input line 174.
 (pdftex.def)             Requested size: 352.31624pt x 264.2336pt.
- <gpio.JPG, id=322, 536.60475pt x 240.9pt>
+ <gpio.JPG, id=1120, 536.60475pt x 240.9pt>
 File: gpio.JPG Graphic file (type jpg)
 
 <use gpio.JPG>
 Package pdftex.def Info: gpio.JPG used on input line 181.
 (pdftex.def)             Requested size: 352.31624pt x 158.16742pt.
- [31 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/m
-inimalgraph.JPG>]
+ [31 <./minimalgraph.JPG>]
 Underfull \hbox (badness 10000) in paragraph at lines 216--217
 
  []
@@ -1959,51 +1884,41 @@ Underfull \hbox (badness 10000) in paragraph at lines 218--219
 
  []
 
-[32] [33 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTempla
-te/PurpleScreen.jpg> <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/
-DesignTemplate/gpio.JPG>])
-(C:\Users\1959287\Desktop\arm\Documents\DesignTemplateNew\DesignTemplate\userdo
-cs.tex [34]
+[32] [33 <./PurpleScreen.jpg> <./gpio.JPG>]) (./userdocs.tex [34]
 Chapter 7.
 [35
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 101--104
+] [36]
+Underfull \hbox (badness 10000) in paragraph at lines 123--126
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--104
-
- []
-
-[36]
-Underfull \hbox (badness 10000) in paragraph at lines 121--124
+Underfull \hbox (badness 10000) in paragraph at lines 123--126
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--124
+Underfull \hbox (badness 10000) in paragraph at lines 142--145
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--145
 
  []
 
 [37]
-Underfull \hbox (badness 10000) in paragraph at lines 158--159
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 171--173
+[38]
+Underfull \hbox (badness 10000) in paragraph at lines 191--193
 
  []
 
-[38])
-(C:\Users\1959287\Desktop\arm\Documents\DesignTemplateNew\DesignTemplate\refman
-.tex)
-(C:\Users\1959287\Desktop\arm\Documents\DesignTemplateNew\DesignTemplate\log.te
-x [39] [40
-
-]
+[39]) (./refman.tex) (./log.tex [40]
 Chapter 8.
 
 Underfull \hbox (badness 10000) in paragraph at lines 14--15
@@ -2035,7 +1950,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
 
-[41]
+[41
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 70--71
 
  []
@@ -2182,37 +2099,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 570--573
 
  []
 
-[51])
-(C:\Users\1959287\Desktop\arm\Documents\DesignTemplateNew\DesignTemplate\result
-s.tex [52]
+[51]) (./results.tex [52]
 Chapter 9.
-
-LaTeX Warning: Reference `pivodroid' on page 53 undefined on input line 12.
-
 File: pivsxu4table2.JPG Graphic file (type jpg)
 <use pivsxu4table2.JPG>
 Package pdftex.def Info: pivsxu4table2.JPG used on input line 16.
 (pdftex.def)             Requested size: 352.31624pt x 157.25388pt.
-
-
-LaTeX Warning: Reference `ethernet' on page 53 undefined on input line 23.
-
-[53
+ [53
 
 ]
-
-LaTeX Warning: Reference `linpackresults' on page 54 undefined on input line 48
-.
-
 File: minimalgraph.JPG Graphic file (type jpg)
-<use minimalgraph.JPG>
+ <use minimalgraph.JPG>
 Package pdftex.def Info: minimalgraph.JPG used on input line 52.
 (pdftex.def)             Requested size: 352.31624pt x 218.0809pt.
-
-
-LaTeX Warning: Reference `a15' on page 54 undefined on input line 57.
-
-[54]
+ [54]
 Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
@@ -2229,7 +2129,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
 ) [55] [56
 
-] <SoftwareContract.pdf, id=731, 614.295pt x 794.97pt>
+] <SoftwareContract.pdf, id=1497, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf>
@@ -2240,7 +2140,7 @@ File: SoftwareContract.pdf Graphic file (type pdf)
 Package pdftex.def Info: SoftwareContract.pdf used on input line 71.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
-<SoftwareContract.pdf, id=734, page=1, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=1500, page=1, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 1>
@@ -2264,9 +2164,8 @@ File: SoftwareContract.pdf Graphic file (type pdf)
 <use SoftwareContract.pdf, page 1>
 Package pdftex.def Info: SoftwareContract.pdf, page1 used on input line 71.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [1 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/So
-ftwareContract.pdf>]
-<SoftwareContract.pdf, id=742, page=2, 614.295pt x 794.97pt>
+ [1 <./SoftwareContract.pdf>]
+<SoftwareContract.pdf, id=1506, page=2, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 2>
@@ -2281,9 +2180,8 @@ File: SoftwareContract.pdf Graphic file (type pdf)
 <use SoftwareContract.pdf, page 2>
 Package pdftex.def Info: SoftwareContract.pdf, page2 used on input line 71.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [2 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/So
-ftwareContract.pdf>]
-<SoftwareContract.pdf, id=748, page=3, 614.295pt x 794.97pt>
+ [2 <./SoftwareContract.pdf>]
+<SoftwareContract.pdf, id=1512, page=3, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 3>
@@ -2298,9 +2196,8 @@ File: SoftwareContract.pdf Graphic file (type pdf)
 <use SoftwareContract.pdf, page 3>
 Package pdftex.def Info: SoftwareContract.pdf, page3 used on input line 71.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [3 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/So
-ftwareContract.pdf>]
-<SoftwareContract.pdf, id=754, page=4, 614.295pt x 794.97pt>
+ [3 <./SoftwareContract.pdf>]
+<SoftwareContract.pdf, id=1519, page=4, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 4>
@@ -2315,9 +2212,8 @@ File: SoftwareContract.pdf Graphic file (type pdf)
 <use SoftwareContract.pdf, page 4>
 Package pdftex.def Info: SoftwareContract.pdf, page4 used on input line 71.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [4 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/So
-ftwareContract.pdf>]
-<SoftwareContract.pdf, id=760, page=5, 614.295pt x 794.97pt>
+ [4 <./SoftwareContract.pdf>]
+<SoftwareContract.pdf, id=1525, page=5, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 5>
@@ -2332,31 +2228,26 @@ File: SoftwareContract.pdf Graphic file (type pdf)
 <use SoftwareContract.pdf, page 5>
 Package pdftex.def Info: SoftwareContract.pdf, page5 used on input line 71.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [5 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/So
-ftwareContract.pdf>] [6
+ [5 <./SoftwareContract.pdf>] [6
 
 ]
 Appendix A.
-
-(C:\Users\1959287\Desktop\arm\Documents\DesignTemplateNew\DesignTemplate\produc
-tdescription.tex) [1] [2
+(./productdescription.tex) [1] [2
 
 ]
 Appendix B.
-
-(C:\Users\1959287\Desktop\arm\Documents\DesignTemplateNew\DesignTemplate\pubs.t
-ex <MICSAbstract.pdf, id=780, 614.295pt x 794.97pt>
-File: MICSAbstract.pdf Graphic file (type pdf)
- <use MICSAbstract.pdf>
-Package pdftex.def Info: MICSAbstract.pdf used on input line 9.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+(./pubs.tex <MICSAbstract.pdf, id=1544, 614.295pt x 794.97pt>
 File: MICSAbstract.pdf Graphic file (type pdf)
 
 <use MICSAbstract.pdf>
 Package pdftex.def Info: MICSAbstract.pdf used on input line 9.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-
-<MICSAbstract.pdf, id=783, page=1, 614.295pt x 794.97pt>
+File: MICSAbstract.pdf Graphic file (type pdf)
+ <use MICSAbstract.pdf>
+Package pdftex.def Info: MICSAbstract.pdf used on input line 9.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+ [1]
+<MICSAbstract.pdf, id=1551, page=1, 614.295pt x 794.97pt>
 File: MICSAbstract.pdf Graphic file (type pdf)
 
 <use MICSAbstract.pdf, page 1>
@@ -2366,7 +2257,6 @@ File: MICSAbstract.pdf Graphic file (type pdf)
  <use MICSAbstract.pdf, page 1>
 Package pdftex.def Info: MICSAbstract.pdf, page1 used on input line 9.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [1]
 File: MICSAbstract.pdf Graphic file (type pdf)
 
 <use MICSAbstract.pdf, page 1>
@@ -2381,9 +2271,8 @@ File: MICSAbstract.pdf Graphic file (type pdf)
 <use MICSAbstract.pdf, page 1>
 Package pdftex.def Info: MICSAbstract.pdf, page1 used on input line 9.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [2 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/MI
-CSAbstract.pdf>]
-<MICSAbstract.pdf, id=801, page=2, 614.295pt x 794.97pt>
+ [2 <./MICSAbstract.pdf>]
+<MICSAbstract.pdf, id=1564, page=2, 614.295pt x 794.97pt>
 File: MICSAbstract.pdf Graphic file (type pdf)
 
 <use MICSAbstract.pdf, page 2>
@@ -2398,9 +2287,8 @@ File: MICSAbstract.pdf Graphic file (type pdf)
 <use MICSAbstract.pdf, page 2>
 Package pdftex.def Info: MICSAbstract.pdf, page2 used on input line 9.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [3 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/MI
-CSAbstract.pdf>]
-<SDSMTResearchAbstract.pdf, id=809, 614.295pt x 794.97pt>
+ [3 <./MICSAbstract.pdf>]
+<SDSMTResearchAbstract.pdf, id=1573, 614.295pt x 794.97pt>
 File: SDSMTResearchAbstract.pdf Graphic file (type pdf)
 
 <use SDSMTResearchAbstract.pdf>
@@ -2411,7 +2299,7 @@ File: SDSMTResearchAbstract.pdf Graphic file (type pdf)
 Package pdftex.def Info: SDSMTResearchAbstract.pdf used on input line 10.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
-<SDSMTResearchAbstract.pdf, id=812, page=1, 614.295pt x 794.97pt>
+<SDSMTResearchAbstract.pdf, id=1576, page=1, 614.295pt x 794.97pt>
 File: SDSMTResearchAbstract.pdf Graphic file (type pdf)
 
 <use SDSMTResearchAbstract.pdf, page 1>
@@ -2442,9 +2330,8 @@ File: SDSMTResearchAbstract.pdf Graphic file (type pdf)
 Package pdftex.def Info: SDSMTResearchAbstract.pdf, page1 used on input line 10
 .
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [4 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/SD
-SMTResearchAbstract.pdf>]
-<MICSPaper.pdf, id=839, 614.295pt x 794.97pt>
+ [4 <./SDSMTResearchAbstract.pdf>]
+<MICSPaper.pdf, id=1603, 614.295pt x 794.97pt>
 File: MICSPaper.pdf Graphic file (type pdf)
  <use MICSPaper.pdf>
 Package pdftex.def Info: MICSPaper.pdf used on input line 11.
@@ -2454,7 +2341,7 @@ File: MICSPaper.pdf Graphic file (type pdf)
 <use MICSPaper.pdf>
 Package pdftex.def Info: MICSPaper.pdf used on input line 11.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- <MICSPaper.pdf, id=842, page=1, 614.295pt x 794.97pt>
+ <MICSPaper.pdf, id=1606, page=1, 614.295pt x 794.97pt>
 File: MICSPaper.pdf Graphic file (type pdf)
 
 <use MICSPaper.pdf, page 1>
@@ -2478,9 +2365,8 @@ File: MICSPaper.pdf Graphic file (type pdf)
 <use MICSPaper.pdf, page 1>
 Package pdftex.def Info: MICSPaper.pdf, page1 used on input line 11.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [5 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/MI
-CSPaper.pdf>]
-<MICSPaper.pdf, id=858, page=2, 614.295pt x 794.97pt>
+ [5 <./MICSPaper.pdf>]
+<MICSPaper.pdf, id=1621, page=2, 614.295pt x 794.97pt>
 File: MICSPaper.pdf Graphic file (type pdf)
 
 <use MICSPaper.pdf, page 2>
@@ -2495,9 +2381,8 @@ File: MICSPaper.pdf Graphic file (type pdf)
 <use MICSPaper.pdf, page 2>
 Package pdftex.def Info: MICSPaper.pdf, page2 used on input line 11.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [6 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/MI
-CSPaper.pdf>]
-<MICSPaper.pdf, id=876, page=3, 614.295pt x 794.97pt>
+ [6 <./MICSPaper.pdf>]
+<MICSPaper.pdf, id=1639, page=3, 614.295pt x 794.97pt>
 File: MICSPaper.pdf Graphic file (type pdf)
 
 <use MICSPaper.pdf, page 3>
@@ -2512,9 +2397,8 @@ File: MICSPaper.pdf Graphic file (type pdf)
 <use MICSPaper.pdf, page 3>
 Package pdftex.def Info: MICSPaper.pdf, page3 used on input line 11.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [7 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/MI
-CSPaper.pdf>]
-<MICSPaper.pdf, id=883, page=4, 614.295pt x 794.97pt>
+ [7 <./MICSPaper.pdf>]
+<MICSPaper.pdf, id=1646, page=4, 614.295pt x 794.97pt>
 File: MICSPaper.pdf Graphic file (type pdf)
 
 <use MICSPaper.pdf, page 4>
@@ -2529,9 +2413,8 @@ File: MICSPaper.pdf Graphic file (type pdf)
 <use MICSPaper.pdf, page 4>
 Package pdftex.def Info: MICSPaper.pdf, page4 used on input line 11.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [8 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/MI
-CSPaper.pdf>]
-<MICSPaper.pdf, id=890, page=5, 614.295pt x 794.97pt>
+ [8 <./MICSPaper.pdf>]
+<MICSPaper.pdf, id=1653, page=5, 614.295pt x 794.97pt>
 File: MICSPaper.pdf Graphic file (type pdf)
 
 <use MICSPaper.pdf, page 5>
@@ -2546,9 +2429,8 @@ File: MICSPaper.pdf Graphic file (type pdf)
 <use MICSPaper.pdf, page 5>
 Package pdftex.def Info: MICSPaper.pdf, page5 used on input line 11.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [9 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/MI
-CSPaper.pdf>]
-<MICSPaper.pdf, id=897, page=6, 614.295pt x 794.97pt>
+ [9 <./MICSPaper.pdf>]
+<MICSPaper.pdf, id=1661, page=6, 614.295pt x 794.97pt>
 File: MICSPaper.pdf Graphic file (type pdf)
 
 <use MICSPaper.pdf, page 6>
@@ -2563,9 +2445,8 @@ File: MICSPaper.pdf Graphic file (type pdf)
 <use MICSPaper.pdf, page 6>
 Package pdftex.def Info: MICSPaper.pdf, page6 used on input line 11.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [10 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/M
-ICSPaper.pdf>]
-<MICSPaper.pdf, id=904, page=7, 614.295pt x 794.97pt>
+ [10 <./MICSPaper.pdf>]
+<MICSPaper.pdf, id=1669, page=7, 614.295pt x 794.97pt>
 File: MICSPaper.pdf Graphic file (type pdf)
 
 <use MICSPaper.pdf, page 7>
@@ -2580,9 +2461,8 @@ File: MICSPaper.pdf Graphic file (type pdf)
 <use MICSPaper.pdf, page 7>
 Package pdftex.def Info: MICSPaper.pdf, page7 used on input line 11.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [11 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/M
-ICSPaper.pdf>]
-<MICSPaper.pdf, id=911, page=8, 614.295pt x 794.97pt>
+ [11 <./MICSPaper.pdf>]
+<MICSPaper.pdf, id=1675, page=8, 614.295pt x 794.97pt>
 File: MICSPaper.pdf Graphic file (type pdf)
 
 <use MICSPaper.pdf, page 8>
@@ -2597,9 +2477,8 @@ File: MICSPaper.pdf Graphic file (type pdf)
 <use MICSPaper.pdf, page 8>
 Package pdftex.def Info: MICSPaper.pdf, page8 used on input line 11.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [12 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/M
-ICSPaper.pdf>]
-<MICSPaper.pdf, id=917, page=9, 614.295pt x 794.97pt>
+ [12 <./MICSPaper.pdf>]
+<MICSPaper.pdf, id=1681, page=9, 614.295pt x 794.97pt>
 File: MICSPaper.pdf Graphic file (type pdf)
 
 <use MICSPaper.pdf, page 9>
@@ -2614,28 +2493,23 @@ File: MICSPaper.pdf Graphic file (type pdf)
 <use MICSPaper.pdf, page 9>
 Package pdftex.def Info: MICSPaper.pdf, page9 used on input line 11.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [13 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/M
-ICSPaper.pdf>]) [14
+ [13 <./MICSPaper.pdf>]) [14
 
 ]
 Appendix C.
-
-(C:\Users\1959287\Desktop\arm\Documents\DesignTemplateNew\DesignTemplate\sprint
-s.tex [1]
+(./sprints.tex [1]
 Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
  []
 
 [2] [3] [4] [5] [6] [7] [8] [9] [10]) [11] [12]
 Appendix D.
-
-(C:\Users\1959287\Desktop\arm\Documents\DesignTemplateNew\DesignTemplate\indust
-rial.tex
+(./industrial.tex
 Underfull \hbox (badness 10000) in paragraph at lines 11--13
 
  []
 
-<HooverResume.pdf, id=985, 614.295pt x 794.97pt>
+<HooverResume.pdf, id=1741, 614.295pt x 794.97pt>
 File: HooverResume.pdf Graphic file (type pdf)
  <use HooverResume.pdf>
 Package pdftex.def Info: HooverResume.pdf used on input line 20.
@@ -2645,8 +2519,10 @@ File: HooverResume.pdf Graphic file (type pdf)
 <use HooverResume.pdf>
 Package pdftex.def Info: HooverResume.pdf used on input line 20.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+ [1
 
-<HooverResume.pdf, id=988, page=1, 614.295pt x 794.97pt>
+]
+<HooverResume.pdf, id=1749, page=1, 614.295pt x 794.97pt>
 File: HooverResume.pdf Graphic file (type pdf)
 
 <use HooverResume.pdf, page 1>
@@ -2656,9 +2532,6 @@ File: HooverResume.pdf Graphic file (type pdf)
  <use HooverResume.pdf, page 1>
 Package pdftex.def Info: HooverResume.pdf, page1 used on input line 20.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [1
-
-]
 File: HooverResume.pdf Graphic file (type pdf)
 
 <use HooverResume.pdf, page 1>
@@ -2673,13 +2546,11 @@ File: HooverResume.pdf Graphic file (type pdf)
 <use HooverResume.pdf, page 1>
 Package pdftex.def Info: HooverResume.pdf, page1 used on input line 20.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [2 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/Ho
-overResume.pdf
+ [2 <./HooverResume.pdf
 
-pdfTeX warning: miktex-pdftex.exe (file C:/Users/1959287/Desktop/arm/Documents/
-DesignTemplateNew/DesignTemplate/HooverResume.pdf): PDF inclusion: invalid othe
+pdfTeX warning: pdflatex (file ./HooverResume.pdf): PDF inclusion: invalid othe
 r resource which is no dict (key 'ProcSets', type <array>); ignored.
->] <SorensenResume.pdf, id=1013, 614.295pt x 794.97pt>
+>] <SorensenResume.pdf, id=1765, 614.295pt x 794.97pt>
 File: SorensenResume.pdf Graphic file (type pdf)
 
 <use SorensenResume.pdf>
@@ -2690,7 +2561,7 @@ File: SorensenResume.pdf Graphic file (type pdf)
 Package pdftex.def Info: SorensenResume.pdf used on input line 21.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
-<SorensenResume.pdf, id=1016, page=1, 614.295pt x 794.97pt>
+<SorensenResume.pdf, id=1768, page=1, 614.295pt x 794.97pt>
 File: SorensenResume.pdf Graphic file (type pdf)
 
 <use SorensenResume.pdf, page 1>
@@ -2714,8 +2585,7 @@ File: SorensenResume.pdf Graphic file (type pdf)
 <use SorensenResume.pdf, page 1>
 Package pdftex.def Info: SorensenResume.pdf, page1 used on input line 21.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [3 <C:/Users/1959287/Desktop/arm/Documents/DesignTemplateNew/DesignTemplate/So
-rensenResume.pdf>]) [4
+ [3 <./SorensenResume.pdf>]) [4
 
 ]
 Appendix E.
@@ -2739,9 +2609,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 95--96
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 115.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 115.
-
-(C:\Users\1959287\Desktop\arm\Documents\DesignTemplateNew\DesignTemplate\Design
-Document.aux)
+ (./DesignDocument.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 115.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 115.
 
@@ -2751,42 +2619,42 @@ Package rerunfilecheck Warning: File `DesignDocument.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `DesignDocument.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  08E34199C2858B68E3F44D3F0D6EA1A1;11569.
+(rerunfilecheck)             Before: 9814044AC52E3224268D72AEC2080D1B;11303
+(rerunfilecheck)             After:  557B741CA25D0291E71012A6587E7066;11301.
 
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 115.
  ) 
 Here is how much of TeX's memory you used:
- 26728 strings out of 493921
- 471586 string characters out of 3144870
- 614873 words of memory out of 3000000
- 28842 multiletter control sequences out of 15000+200000
- 64513 words of font info for 70 fonts, out of 3000000 for 9000
- 841 hyphenation exceptions out of 8191
- 64i,18n,72p,3300b,1880s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Progr
-am Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files (x86)/
-MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files (x86)/MiKTeX 2.9/
-fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips
-/lm/lm-ts1.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.
-pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr7.pfb><C:/Program Files (x8
-6)/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Program Files (x86)/MiKTeX 2
-.9/fonts/type1/public/lm/lmss12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
-pe1/public/lm/lmss17.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
-lm/lmssbo10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmssbx
-10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsso10.pfb><C:
-/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtk10.pfb><C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on DesignDocument.pdf (106 pages, 7426759 bytes).
+ 25103 strings out of 493417
+ 416938 string characters out of 6144318
+ 579652 words of memory out of 5000000
+ 27322 multiletter control sequences out of 15000+600000
+ 64513 words of font info for 70 fonts, out of 8000000 for 9000
+ 953 hyphenation exceptions out of 8191
+ 65i,18n,72p,3300b,1880s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/t
+exlive/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texlive/texmf-dist/f
+onts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/
+lm/lm-ec.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}</usr
+/share/texlive/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/lm/lmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/
+lmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmss12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/lm/lmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/lm/lmsso10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmsy10
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
+Output written on DesignDocument.pdf (108 pages, 7340685 bytes).
 PDF statistics:
- 1229 PDF objects out of 1440 (max. 8388607)
- 547 named destinations out of 1000 (max. 500000)
- 248 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1989 PDF objects out of 2073 (max. 8388607)
+ 1775 compressed objects within 18 object streams
+ 574 named destinations out of 1000 (max. 500000)
+ 1592 words of extra memory for PDF output out of 10000 (max. 10000000)
 

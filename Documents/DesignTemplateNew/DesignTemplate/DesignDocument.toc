@@ -1,9 +1,9 @@
 \contentsline {chapter}{Title}{i}{Doc-Start}
-\contentsline {chapter}{Contents}{iii}{chapter*.1}
-\contentsline {chapter}{Overview Statements}{vii}{chapter*.3}
-\contentsline {section}{\numberline {0.1}Mission Statement}{vii}{section.0.1}
-\contentsline {section}{\numberline {0.2}Elevator Pitch}{vii}{section.0.2}
-\contentsline {chapter}{Document Preparation and Updates}{ix}{chapter*.4}
+\contentsline {chapter}{Contents}{vi}{chapter*.1}
+\contentsline {chapter}{Overview Statements}{ix}{chapter*.3}
+\contentsline {section}{\numberline {0.1}Mission Statement}{ix}{section.0.1}
+\contentsline {section}{\numberline {0.2}Elevator Pitch}{ix}{section.0.2}
+\contentsline {chapter}{Document Preparation and Updates}{xi}{chapter*.4}
 \contentsline {chapter}{\numberline {1}Overview and concept of operations}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Team Members and Team Name}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Client}{1}{section.1.2}
@@ -106,23 +106,22 @@
 \contentsline {chapter}{\numberline {7}User Documentation}{35}{chapter.7}
 \contentsline {section}{\numberline {7.1}Cluster User Guide}{35}{section.7.1}
 \contentsline {subsection}{\numberline {7.1.1}Turning on the Cluster}{35}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}SHUTTING DOWN THE CLUSTER}{35}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.2}Shutting Down the Cluster}{35}{subsection.7.1.2}
 \contentsline {subsection}{\numberline {7.1.3}Benchmarking the Switch}{35}{subsection.7.1.3}
-\contentsline {subsection}{\numberline {7.1.4}Mounting the Home Directory}{35}{subsection.7.1.4}
+\contentsline {subsection}{\numberline {7.1.4}Mounting the Home Directory}{36}{subsection.7.1.4}
 \contentsline {subsection}{\numberline {7.1.5}Assigning Hostnames}{36}{subsection.7.1.5}
-\contentsline {subsection}{\numberline {7.1.6}Getting Internet on the ODROIDs}{36}{subsection.7.1.6}
-\contentsline {subsection}{\numberline {7.1.7}SSH Via Hostname}{36}{subsection.7.1.7}
+\contentsline {subsection}{\numberline {7.1.6}Getting Internet on the ODROIDs}{37}{subsection.7.1.6}
+\contentsline {subsection}{\numberline {7.1.7}SSH Via Hostname}{37}{subsection.7.1.7}
 \contentsline {subsection}{\numberline {7.1.8}Taking Down the Passwords}{37}{subsection.7.1.8}
-\contentsline {subsection}{\numberline {7.1.9}USB to USB Communication??}{37}{subsection.7.1.9}
-\contentsline {subsection}{\numberline {7.1.10}GPIO Communication}{37}{subsection.7.1.10}
-\contentsline {subsection}{\numberline {7.1.11}Unmounting a GPIO Pin}{37}{subsection.7.1.11}
+\contentsline {subsection}{\numberline {7.1.9}USB to USB Communication}{37}{subsection.7.1.9}
+\contentsline {subsection}{\numberline {7.1.10}GPIO Communication}{38}{subsection.7.1.10}
+\contentsline {subsection}{\numberline {7.1.11}Unmounting a GPIO Pin}{38}{subsection.7.1.11}
 \contentsline {subsection}{\numberline {7.1.12}Creating Routing Tables}{38}{subsection.7.1.12}
-\contentsline {section}{\numberline {7.2}Programmer Manual}{38}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Formatting Executable Commands}{38}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}BUILD ENVIRONMETN??}{38}{subsection.7.2.2}
-\contentsline {subsection}{\numberline {7.2.3}BUILD A DEBIAN PACKAGE??}{39}{subsection.7.2.3}
-\contentsline {subsection}{\numberline {7.2.4}Updating the Kernel}{39}{subsection.7.2.4}
-\contentsline {subsection}{\numberline {7.2.5}HOW TO TELL WHAT CORES ARE BEING USED}{39}{subsection.7.2.5}
+\contentsline {section}{\numberline {7.2}Programmer Manual}{39}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Formatting Executable Commands}{39}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Build a Debian Package}{39}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}Updating the Kernel}{40}{subsection.7.2.3}
+\contentsline {subsection}{\numberline {7.2.4}Monitor Core Use}{40}{subsection.7.2.4}
 \contentsline {chapter}{\numberline {8}Experimental Log}{41}{chapter.8}
 \contentsline {section}{\numberline {8.1}Benchmarking the Individual Computers}{41}{section.8.1}
 \contentsline {section}{\numberline {8.2}Ethernet Benchmark}{42}{section.8.2}
