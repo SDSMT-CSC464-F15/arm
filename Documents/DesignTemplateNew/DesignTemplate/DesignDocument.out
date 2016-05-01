@@ -121,29 +121,31 @@
 \BOOKMARK [1][-]{section.8.19}{GPIO Communication}{chapter.8}% 121
 \BOOKMARK [1][-]{section.8.20}{Updating Kernel}{chapter.8}% 122
 \BOOKMARK [1][-]{section.8.21}{Routing Tables}{chapter.8}% 123
-\BOOKMARK [0][-]{chapter.9}{Research Results}{}% 124
-\BOOKMARK [1][-]{section.9.1}{Result 1}{chapter.9}% 125
-\BOOKMARK [1][-]{section.9.2}{Result 2}{chapter.9}% 126
-\BOOKMARK [1][-]{section.9.3}{Result 3}{chapter.9}% 127
-\BOOKMARK [1][-]{section.9.4}{Result 4}{chapter.9}% 128
-\BOOKMARK [1][-]{section.9.5}{Result 5}{chapter.9}% 129
-\BOOKMARK [1][-]{section.9.6}{Result 6}{chapter.9}% 130
-\BOOKMARK [1][-]{section.9.7}{Conclusions}{chapter.9}% 131
-\BOOKMARK [1][-]{section.9.8}{Further work}{chapter.9}% 132
-\BOOKMARK [0][-]{chapter.10}{Software Agreement}{}% 133
-\BOOKMARK [0][-]{appendix.A}{Product Description}{}% 134
-\BOOKMARK [0][-]{appendix.B}{Publications}{}% 135
-\BOOKMARK [0][-]{appendix.C}{Sprint Reports}{}% 136
-\BOOKMARK [1][-]{section.C.1}{Sprint Report \0431}{appendix.C}% 137
-\BOOKMARK [1][-]{section.C.2}{Sprint Report \0432}{appendix.C}% 138
-\BOOKMARK [1][-]{section.C.3}{Sprint Report \0433}{appendix.C}% 139
-\BOOKMARK [2][-]{subsection.C.3.1}{Overview}{section.C.3}% 140
-\BOOKMARK [1][-]{section.C.4}{Sprint Report \0434}{appendix.C}% 141
-\BOOKMARK [1][-]{section.C.5}{Sprint Report \0435}{appendix.C}% 142
-\BOOKMARK [1][-]{section.C.6}{Sprint Report \0436}{appendix.C}% 143
-\BOOKMARK [0][-]{appendix.D}{Industrial Experience and Resumes}{}% 144
-\BOOKMARK [1][-]{section.D.1}{Experience}{appendix.D}% 145
-\BOOKMARK [2][-]{subsection.D.1.1}{Andrew Hoover}{section.D.1}% 146
-\BOOKMARK [2][-]{subsection.D.1.2}{Christine Sorensen}{section.D.1}% 147
-\BOOKMARK [1][-]{section.D.2}{Resumes}{appendix.D}% 148
-\BOOKMARK [0][-]{appendix.E}{Acknowledgment}{}% 149
+\BOOKMARK [1][-]{section.8.22}{LINPACK on Ring Topology}{chapter.8}% 124
+\BOOKMARK [1][-]{section.8.23}{A7 and A15 Cores}{chapter.8}% 125
+\BOOKMARK [0][-]{chapter.9}{Research Results}{}% 126
+\BOOKMARK [1][-]{section.9.1}{Result 1}{chapter.9}% 127
+\BOOKMARK [1][-]{section.9.2}{Result 2}{chapter.9}% 128
+\BOOKMARK [1][-]{section.9.3}{Result 3}{chapter.9}% 129
+\BOOKMARK [1][-]{section.9.4}{Result 4}{chapter.9}% 130
+\BOOKMARK [1][-]{section.9.5}{Result 5}{chapter.9}% 131
+\BOOKMARK [1][-]{section.9.6}{Result 6}{chapter.9}% 132
+\BOOKMARK [1][-]{section.9.7}{Conclusions}{chapter.9}% 133
+\BOOKMARK [1][-]{section.9.8}{Further work}{chapter.9}% 134
+\BOOKMARK [0][-]{chapter.10}{Software Agreement}{}% 135
+\BOOKMARK [0][-]{appendix.A}{Product Description}{}% 136
+\BOOKMARK [0][-]{appendix.B}{Publications}{}% 137
+\BOOKMARK [0][-]{appendix.C}{Sprint Reports}{}% 138
+\BOOKMARK [1][-]{section.C.1}{Sprint Report \0431}{appendix.C}% 139
+\BOOKMARK [1][-]{section.C.2}{Sprint Report \0432}{appendix.C}% 140
+\BOOKMARK [1][-]{section.C.3}{Sprint Report \0433}{appendix.C}% 141
+\BOOKMARK [2][-]{subsection.C.3.1}{Overview}{section.C.3}% 142
+\BOOKMARK [1][-]{section.C.4}{Sprint Report \0434}{appendix.C}% 143
+\BOOKMARK [1][-]{section.C.5}{Sprint Report \0435}{appendix.C}% 144
+\BOOKMARK [1][-]{section.C.6}{Sprint Report \0436}{appendix.C}% 145
+\BOOKMARK [0][-]{appendix.D}{Industrial Experience and Resumes}{}% 146
+\BOOKMARK [1][-]{section.D.1}{Experience}{appendix.D}% 147
+\BOOKMARK [2][-]{subsection.D.1.1}{Andrew Hoover}{section.D.1}% 148
+\BOOKMARK [2][-]{subsection.D.1.2}{Christine Sorensen}{section.D.1}% 149
+\BOOKMARK [1][-]{section.D.2}{Resumes}{appendix.D}% 150
+\BOOKMARK [0][-]{appendix.E}{Acknowledgment}{}% 151

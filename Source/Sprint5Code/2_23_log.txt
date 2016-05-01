@@ -9,3 +9,5 @@ screen. Come on man, you can do it!
 
 Trying to update routing table so that things work pretty much so each dwarf
 knows what port to use to connect to each dwarf.
+
+FUCK THIS ONE TOO

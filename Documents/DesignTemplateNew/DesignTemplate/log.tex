@@ -1,19 +1,12 @@
 % New Templete!!
 % !TEX root = DesignDocument.tex
 
+%Andrew, can you complete the last entry here?
+%Other todos: add tables (if we wanna and/or have time) to some of our data
 
 \chapter{Experimental Log}
 
-For research projects one needs to keep a log of all research/lab activities.
-
-%% If you have multiple labs, you may want to break the labs into sections, check 
-%% with the profession on format.
-%% \section{Lab 1}
-
-%%\begin{description}
-%%\item [10/15/15]  Ran modified filter on data sets 1 - 6.  Results were ...
-%%\item [10/17/15]  Changed tolerance on sensor and collected data.  These ...
-%%\end{description}
+As the ARM cluster is a research project, all of the research and lab activities are logged here. This includes benchmark results, other tests and observations, step-by-step of procedures, and conclusions drawn. 
 
 % Sprint 1
 \section{Benchmarking the Individual Computers}
@@ -173,9 +166,9 @@ We can now mount Snow White's home directory automatically onto Sleepy. Adding t
 %%%% THIS NEEDS TO BE FINISHED
 \section{Assigning IP Addresses}
 \begin{description}
-\item [11/5/15] Setting up the IP addresses for the ODROIDs. \\ \\
+\item [11/5/15] Setting up the IP addresses for the ODROIDs. \\
 > sudo vim /etc/network/interfaces \\ \\
-These lines should be in there: \\ \\
+These lines should be in there: \\
 \# interfaces(5) file used by ifup(8) and ifdown(8) \\
 \# Include files from /etc/network/interfaces.d \\
 source-directory /etc/network/interfaces.d \\
@@ -183,18 +176,20 @@ auto eth0 \\
 iface eth0 inet static \\
 address 192.168.1.11 \\
 gateway 192.168.1.1 \\ \\
-Under address, edit what address you want.\\
-Confirm the ip address was changed: \\ \\
+Under address, edit what address you want. Confirm that the IP address was changed: \\
 > ifconfig \\ \\
-Switch control to another ODROID connected on the switch. \\
-Attempt to ping to the ODROID who's IP address you changed. \\ \\
+Switch control to another ODROID connected on the switch. Attempt to ping to the ODROID who's IP address you changed. \\
 > ping 192.168.1.11 \\ \\
-It should be successful. Attempt to ssh into it. \\ \\
+It should be successful. Attempt to ssh into it. \\
 > ssh 192.168.1.11 \\ \\
-Use iperf to time and ping the network. Set up the server and set the client \\ \\
+Use iperf to time and ping the network. Set up the server and set the client \\
 > iperf -s \\
-> iperf -c 192.168.1.11 \\
-%% I NEED HELP WITH THIS ONE
+> iperf -c 192.168.1.11 \\ \\
+To set up the netowork, perform these two command: \\
+>sudo ifdown eth0 \\
+>sudo ifup eth0 \\ \\
+Again, test pinging to another ODROID and ssh-ing into it. \\
+%%Andrew, in 11_5_FixingIPAddresses.txt, there's some more stuff with apt-gets. I'm not sure how to understand them. I don't know if it's even relavent, I'm just saying there's more to this entry.
 \end{description}
 
 \section{Naming the Dwarfs}
@@ -408,8 +403,9 @@ In Doc: \\
 > cd /sys/class/gpio \\
 > echo 172 > unexport
 
-\item [2/11/16] Successfully got wiringPi to work between two dwarfs. We got 0.61 MBits\/sec on GPIO with one pin. Communication speed between two dwarfs through Ethernet was 750 MBits/sec. This was found using iperf. GPIO was 120 times slower than Ethernet. It was concluded that GPIO will not be continued for this project.
+\item [2/11/16] Successfully got wiringPi to work between two dwarfs. We got 0.61 MBits/sec on GPIO with one pin. Communication speed between two dwarfs through Ethernet was 750 MBits/sec. This was found using iperf. GPIO was 120 times slower than Ethernet.
 
+\item [2/16/16] The ODroid XU4 UART has a default baud rate of 115200, and maximum of 921600. This means that the maximum possible data transer speed is 0.88Mpbs. This is drastically slower than Ethernet communication, which we benchmarked at a minimum of 750 Mpbs. In fact, in order to make a protocol faster than Ethernet, even if we used all 40 pins to tranfer data, we would need each pin to send over 19.5 million bits per second. WiringPi, in our preliminary testing, was only able to send about 500,000 bits per second on a pin. Therefore, we conclude that it is likely that GPIO communication is only practical in terms of theoretical protocols, and our cluster will always be faster using Ethernet. Moving forward, in terms of researching if it's possible for the cluster to compute more gigaflops than our current set-up, we believe that experimenting with different designs of Etherent clusterings is our most promising solution.
 \end{description}
 
 \section{Updating Kernel}
@@ -436,7 +432,41 @@ Upgrade all of the packages for the kernel: \\
 % Sprint 5
 \section{Routing Tables}
 \begin{description}
+\item [2/25/16] Each device should have the /etc/network/interfaces file such as: \\
+auto eth0 \\
+iface eth0 inet static \\
+	address 192.168.x.11 \\
+	netmask 255.255.0.0 \\
+	gateway 192.168.0.1 \\ \\
+auto eth1 \\
+iface eth1 inet static \\
+	address 192.168.x.12 \\
+	netmask 255.255.0.0 \\
+	gateway 192.168.0.1 \\ \\
+where eth0 is the Ethernet port, and eth1 is the USB to Ethernet port, and X is the number of the device (0 - 7). With that configured, the Ethernet port of device N should be connected to the USB to Ethernet port of device N + 1 (i.e. snow white to dopey, dopey to sleepy, etc). The USB to Ethernet port of each device is then connected to the Ethernet port of the device behind it. \\ \\
+Once that is set up, each device needs to run the following two commands: \\
+>sudo route add -host 192.168.x+1.11 gw 192.168.x.12 \\
+>sudo route add -host 192.168.x-1.12 gw 192.168.x.11 \\ \\
+where y is the number of the device. This will allow each device to ping the devices next to it. In theory, adding something like: \\
+sudo route add -host 192.168.x-2.12 gw 192.168.x.11 \\ \\
+should let the device then be able to ping the one that's two behind it. But that's not working with us. Also, going x+2 isn't working.
+
 \item [2/28/16] We have been connecting the cluster into a ring topology, however, we haven't been successful at communicating between two ODROIDs that are not adjacent to each other. So we seeked advice from Dr. Qiao about setting up networks and routing tables. \\ \\
-First, each ODROID should have the same first three numbers of their IP address. For instance, Snow White's IP addresses should all be 192.168.0.x, where x is the port we're assigning it. Dopey's addresses will be 192.168.1.x, again where x is the port.
-%%Pick up here, Chrissy
+First, each ODROID should have the same first three numbers of their IP address. For instance, Snow White's IP addresses should all be 192.168.0.x, where x is the port we're assigning it. Dopey's addresses will be 192.168.1.x, again where x is the port. \\ \\
+Another mistake we realized we made was that our mask should be 255.255.255.255 whereas ours was 255.255.255.0. 255 is a string of eight 1's in binary. It masks with our IP addresses. AND-ing it with all 1's makes the values static and important. AND-ing it with 0's allows for the network to be flexible, which isn't what we want. \\ \\
+A routing table must be made for each ODROID, and each one is unique to each ODROID. It is similar to a roadmap. If a packet of data arrives at Snow White, but it needs to get to Sleepy, the roadmap inside of Snow White will tell the packet to go to Dopey next. \\ \\
+Internel forwarding needs to be implemented. Say a packet is sent to an ODROID, but it's not the destination, the ODROID needs redirect it through one of its other ports. \\ \\
+We are now successful at communicating through ODROIDs.
 \end{description}
+
+\section{LINPACK on Ring Topology}
+\begin{description}
+\item [3/3/16] We currently have the cluster hooked into a ring and are trying to run LINPACK on the dwarfs. When it runs, it shows no output, but the dwarfs' fans continue to spin so something is happening.
+\item [3/17/16] After research and observation, we found that OpenMPI with LINPACK doesn't work with multiple network interfaces on one ODROID device. We looked into switching from OpenMPI to MPICH, but that has also become unsuccessful. We are at a loss as to where to go from here.
+\end{description}
+
+%%Andrew, can you add the stuff about it not running on all cores here??
+ \section{A7 and A15 Cores}
+ \begin{description}
+ \item [4/20/16] Blaze it!
+ \end{description} 

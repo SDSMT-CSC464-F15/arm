@@ -123,19 +123,21 @@
 \contentsline {section}{\numberline {8.15}Current State of Cluster}{42}{section.8.15}
 \contentsline {section}{\numberline {8.16}Build Environment}{43}{section.8.16}
 \contentsline {section}{\numberline {8.17}Creating a Debian Package}{43}{section.8.17}
-\contentsline {section}{\numberline {8.18}USB to USB Communication}{43}{section.8.18}
+\contentsline {section}{\numberline {8.18}USB to USB Communication}{44}{section.8.18}
 \contentsline {section}{\numberline {8.19}GPIO Communication}{44}{section.8.19}
 \contentsline {section}{\numberline {8.20}Updating Kernel}{45}{section.8.20}
-\contentsline {section}{\numberline {8.21}Routing Tables}{45}{section.8.21}
-\contentsline {chapter}{\numberline {9}Research Results}{47}{chapter.9}
-\contentsline {section}{\numberline {9.1}Result 1}{47}{section.9.1}
-\contentsline {section}{\numberline {9.2}Result 2}{47}{section.9.2}
-\contentsline {section}{\numberline {9.3}Result 3}{47}{section.9.3}
-\contentsline {section}{\numberline {9.4}Result 4}{48}{section.9.4}
-\contentsline {section}{\numberline {9.5}Result 5}{48}{section.9.5}
-\contentsline {section}{\numberline {9.6}Result 6}{49}{section.9.6}
-\contentsline {section}{\numberline {9.7}Conclusions}{49}{section.9.7}
-\contentsline {section}{\numberline {9.8}Further work}{49}{section.9.8}
+\contentsline {section}{\numberline {8.21}Routing Tables}{46}{section.8.21}
+\contentsline {section}{\numberline {8.22}LINPACK on Ring Topology}{47}{section.8.22}
+\contentsline {section}{\numberline {8.23}A7 and A15 Cores}{47}{section.8.23}
+\contentsline {chapter}{\numberline {9}Research Results}{49}{chapter.9}
+\contentsline {section}{\numberline {9.1}Result 1}{49}{section.9.1}
+\contentsline {section}{\numberline {9.2}Result 2}{49}{section.9.2}
+\contentsline {section}{\numberline {9.3}Result 3}{49}{section.9.3}
+\contentsline {section}{\numberline {9.4}Result 4}{50}{section.9.4}
+\contentsline {section}{\numberline {9.5}Result 5}{50}{section.9.5}
+\contentsline {section}{\numberline {9.6}Result 6}{51}{section.9.6}
+\contentsline {section}{\numberline {9.7}Conclusions}{51}{section.9.7}
+\contentsline {section}{\numberline {9.8}Further work}{51}{section.9.8}
 \contentsline {chapter}{Software Agreement}{SA-1}{chapter.10}
 \contentsline {chapter}{\numberline {A}Product Description}{A-1}{appendix.A}
 \contentsline {chapter}{\numberline {B}Publications}{B-1}{appendix.B}

@@ -32,3 +32,5 @@ sudo route add -host 192.168.x-2.12 gw 192.168.x.11
 should let the device then be able to ping the one that's two behind it. But that's not working :(
 
 Also going x+2 doesn't work. Just checked. I am filled with an unending well of sorrow.
+
+ADDED TO DOCUMENTATION

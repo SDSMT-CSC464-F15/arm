@@ -40,3 +40,5 @@ NOTE: Default is going clockwise. Happy from Doc can be achieved both was in the
 In the text file, you would find "Happy", and next to it, it tells you to go to
 "Sneezy". It will then go to Sneezy. In its text file, you'll look for "Happy" and
 it'll tell you to go to "Sleepy" and so on an so fourth from now until ever amen.
+
+NOT NEEDED IN DOCUMENTATION

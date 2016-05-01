@@ -18,3 +18,5 @@ In the meantime, we're going to Bashful. Our latest issue was that it won't
 
 Had to change the ip addresses on bashful again. We have to update some of
 	the ip addresses on the odroids. This is a bitch and a half.
+
+ADDED TO DOCUMENTATION

@@ -6,3 +6,5 @@ in order to ssh via hostname
 
 I have to add these to the authenticity of host ECDSA key fingerprint
 Updated sneezy's, bashful, snow_white, and sleepy's hosts files
+
+DONT NEED IT

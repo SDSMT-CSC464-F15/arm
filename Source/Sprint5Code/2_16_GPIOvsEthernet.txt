@@ -12,4 +12,6 @@ Moving forward, in terms of researching if it's possible for the cluster to comp
 
 (1) http://forum.odroid.com/viewtopic.php?f=97&t=18736
 
+ADDED TO DOCUMENTATION
+
 

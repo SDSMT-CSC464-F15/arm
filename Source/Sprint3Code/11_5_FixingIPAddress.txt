@@ -47,3 +47,5 @@ sudo apt-get install nfs-common
 sudo mount -t nfs <ipsnowwhite>:/home /home
 
 -ah, cns
+
+FOR THE MOST PART, IN DOCUMENTATION
