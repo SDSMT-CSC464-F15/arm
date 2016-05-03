@@ -4,15 +4,6 @@ Docmentation To Do:
 - Maybe
 (?) Do we need it?
 
--*Read through entire document
--*Add page breaks where needed after we write everything
--*Project overview: some of the things need to be expanded. 
-	You can tell there are some things Samantha wrote
--*Update Documentation Preparation
--*Product description (?)(???)
--*In Userdocumentation, Andrew, I have some questions in there for you 
-	to answer.
-
 -Elevator Pitch could be extended
 -User stories need to be looked over
 -Terminology and Acronyms-I've been adding more as I've been working

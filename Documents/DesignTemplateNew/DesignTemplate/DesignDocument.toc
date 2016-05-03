@@ -51,9 +51,8 @@
 \contentsline {section}{\numberline {3.7}Terminology and Acronyms}{10}{section.3.7}
 \contentsline {section}{\numberline {3.8}Sprint Schedule}{10}{section.3.8}
 \contentsline {section}{\numberline {3.9}Backlogs}{10}{section.3.9}
-\contentsline {section}{\numberline {3.10}Burndown Charts}{12}{section.3.10}
-\contentsline {section}{\numberline {3.11}Source Control}{12}{section.3.11}
-\contentsline {section}{\numberline {3.12}Build Environment}{12}{section.3.12}
+\contentsline {section}{\numberline {3.10}Source Control}{11}{section.3.10}
+\contentsline {section}{\numberline {3.11}Build Environment}{12}{section.3.11}
 \contentsline {chapter}{\numberline {4}Design and Implementation}{13}{chapter.4}
 \contentsline {section}{\numberline {4.1}Architecture and System Design}{13}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Design Selection}{13}{subsection.4.1.1}
@@ -114,7 +113,7 @@
 \contentsline {subsection}{\numberline {7.1.7}SSH Via Hostname}{37}{subsection.7.1.7}
 \contentsline {subsection}{\numberline {7.1.8}Taking Down the Passwords}{37}{subsection.7.1.8}
 \contentsline {subsection}{\numberline {7.1.9}USB to USB Communication}{37}{subsection.7.1.9}
-\contentsline {subsection}{\numberline {7.1.10}GPIO Communication}{38}{subsection.7.1.10}
+\contentsline {subsection}{\numberline {7.1.10}GPIO Communication}{37}{subsection.7.1.10}
 \contentsline {subsection}{\numberline {7.1.11}Unmounting a GPIO Pin}{38}{subsection.7.1.11}
 \contentsline {subsection}{\numberline {7.1.12}Creating Routing Tables}{38}{subsection.7.1.12}
 \contentsline {section}{\numberline {7.2}Programmer Manual}{39}{section.7.2}
